@@ -1,57 +1,5 @@
 return {
-	['testburger'] = {
-		label = 'Test Burger',
-		weight = 220,
-		degrade = 60,
-		client = {
-			status = { hunger = 200000 },
-			anim = 'eating',
-			prop = 'burger',
-			usetime = 2500,
-			export = 'ox_inventory_examples.testburger'
-		},
-		server = {
-			export = 'ox_inventory_examples.testburger',
-			test = 'what an amazingly delicious burger, amirite?'
-		},
-		buttons = {
-			{
-				label = 'Lick it',
-				action = function(slot)
-					print('You licked the burger')
-				end
-			},
-			{
-				label = 'Squeeze it',
-				action = function(slot)
-					print('You squeezed the burger :(')
-				end
-			},
-			{
-				label = 'What do you call a vegan burger?',
-				group = 'Hamburger Puns',
-				action = function(slot)
-					print('A misteak.')
-				end
-			},
-			{
-				label = 'What do frogs like to eat with their hamburgers?',
-				group = 'Hamburger Puns',
-				action = function(slot)
-					print('French flies.')
-				end
-			},
-			{
-				label = 'Why were the burger and fries running?',
-				group = 'Hamburger Puns',
-				action = function(slot)
-					print('Because they\'re fast food.')
-				end
-			}
-		},
-		consume = 0.3
-	},
-
+	-- medic
 	['bandage'] = {
 		label = 'Bandage',
 		weight = 115,
@@ -62,11 +10,17 @@ return {
 			usetime = 2500,
 		}
 	},
-
+	-- illegal
 	['black_money'] = {
 		label = 'Dirty Money',
 	},
-
+	['unwrapped_money'] = {
+		label = 'Unwrapped Money',
+	},
+	['packed_money'] = {
+		label = 'Packed Money',
+	},
+	-- food
 	['burger'] = {
 		label = 'Burger',
 		weight = 220,
@@ -78,7 +32,6 @@ return {
 			notification = 'You ate a delicious burger'
 		},
 	},
-
 	['cola'] = {
 		label = 'eCola',
 		weight = 350,
@@ -90,7 +43,7 @@ return {
 			notification = 'You quenched your thirst with cola'
 		}
 	},
-
+	-- tools
 	['parachute'] = {
 		label = 'Parachute',
 		weight = 8000,
@@ -100,11 +53,14 @@ return {
 			usetime = 1500
 		}
 	},
-
+	['lockpick'] = {
+		label = 'Lockpick',
+		weight = 160,
+	},
+	-- others
 	['garbage'] = {
 		label = 'Garbage',
 	},
-
 	['paperbag'] = {
 		label = 'Paper Bag',
 		weight = 1,
@@ -112,28 +68,10 @@ return {
 		close = false,
 		consume = 0
 	},
-
-	['identification'] = {
-		label = 'Identification',
+	['money'] = {
+		label = 'Money',
 	},
-
-	['panties'] = {
-		label = 'Knickers',
-		weight = 10,
-		consume = 0,
-		client = {
-			status = { thirst = -100000, stress = -25000 },
-			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
-			prop = { model = `prop_cs_panties_02`, pos = vec3(0.03, 0.0, 0.02), rot = vec3(0.0, -13.5, -1.5) },
-			usetime = 2500,
-		}
-	},
-
-	['lockpick'] = {
-		label = 'Lockpick',
-		weight = 160,
-	},
-
+	-- npwd
 	['phone'] = {
 		label = 'Phone',
 		weight = 190,
@@ -153,43 +91,14 @@ return {
 			end
 		}
 	},
-
-	['money'] = {
-		label = 'Money',
-	},
-
-	['mustard'] = {
-		label = 'Mustard',
-		weight = 500,
-		client = {
-			status = { hunger = 25000, thirst = 25000 },
-			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
-			prop = { model = `prop_food_mustard`, pos = vec3(0.01, 0.0, -0.07), rot = vec3(1.0, 1.0, -1.5) },
-			usetime = 2500,
-			notification = 'You.. drank mustard'
-		}
-	},
-
-	['water'] = {
-		label = 'Water',
-		weight = 500,
-		client = {
-			status = { thirst = 200000 },
-			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
-			prop = { model = `prop_ld_flow_bottle`, pos = vec3(0.03, 0.03, 0.02), rot = vec3(0.0, 0.0, -1.5) },
-			usetime = 2500,
-			cancel = true,
-			notification = 'You drank some refreshing water'
-		}
-	},
-
+	-- radio
 	['radio'] = {
 		label = 'Radio',
 		weight = 1000,
 		stack = false,
 		allowArmed = true
 	},
-
+	-- fight
 	['armour'] = {
 		label = 'Bulletproof Vest',
 		weight = 3000,
@@ -199,20 +108,37 @@ return {
 			usetime = 3500
 		}
 	},
-
-	['clothing'] = {
-		label = 'Clothing',
-		consume = 0,
+	-- ss_vehicleshops
+	["vcontract"] = {
+		label = "Vehicle contract",
+		weight = 100,
+		stack = true,
+		close = true,
+		description = "Vehicle contract",
+		client = {
+			image = "vcontract.png",
+		}
 	},
-
-	['mastercard'] = {
-		label = 'Mastercard',
+	-- cdn-fuel
+	["syphoningkit"] = {
+		label = "Syphoning Kit",
+		weight = 0,
 		stack = false,
-		weight = 10,
+		close = false,
+		description = "A Syphoning Kit for Fuel stealing",
+		client = {
+			image = "syphoningkit.png",
+		}
 	},
 
-	['scrapmetal'] = {
-		label = 'Scrap Metal',
-		weight = 80,
+	["jerrycan"] = {
+		label = "Jerrycan",
+		weight = 0,
+		stack = false,
+		close = false,
+		description = "A Jerrycan to carry Fuel with you",
+		client = {
+			image = "jerrycan.png",
+		}
 	},
 }
