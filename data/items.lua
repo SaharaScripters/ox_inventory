@@ -14,35 +14,6 @@ return {
 	['black_money'] = {
 		label = 'Dirty Money',
 	},
-	['unwrapped_money'] = {
-		label = 'Unwrapped Money',
-	},
-	['packed_money'] = {
-		label = 'Packed Money',
-	},
-	-- food
-	['burger'] = {
-		label = 'Burger',
-		weight = 220,
-		client = {
-			status = { hunger = 200000 },
-			anim = 'eating',
-			prop = 'burger',
-			usetime = 2500,
-			notification = 'You ate a delicious burger'
-		},
-	},
-	['cola'] = {
-		label = 'eCola',
-		weight = 350,
-		client = {
-			status = { thirst = 200000 },
-			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
-			prop = { model = `prop_ecola_can`, pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
-			usetime = 2500,
-			notification = 'You quenched your thirst with cola'
-		}
-	},
 	-- tools
 	['parachute'] = {
 		label = 'Parachute',
@@ -58,18 +29,19 @@ return {
 		weight = 160,
 	},
 	-- others
-	['garbage'] = {
-		label = 'Garbage',
-	},
-	['paperbag'] = {
-		label = 'Paper Bag',
-		weight = 1,
-		stack = false,
-		close = false,
-		consume = 0
-	},
 	['money'] = {
 		label = 'Money',
+	},
+	-- cards/permit
+	["id_card"] = {
+		label = "ID Card",
+		weight = 0,
+		stack = false,
+		close = false,
+		description = "A card containing all your information to identify yourself",
+		client = {
+			image = "id_card.png",
+		}
 	},
 	-- npwd
 	['phone'] = {
@@ -139,6 +111,161 @@ return {
 		description = "A Jerrycan to carry Fuel with you",
 		client = {
 			image = "jerrycan.png",
+		}
+	},
+
+	-- ss_spray
+	["spray_can"] = {
+		label = "Spray can",
+		weight = 250,
+		stack = true,
+		close = true,
+		description = "Spray can that can be used to draw on walls",
+		client = {
+			image = "spray_can.png",
+		},
+	},
+
+	["spray_rag"] = {
+		label = "Spray rag",
+		weight = 250,
+		stack = true,
+		close = true,
+		description = "Rag that can be used to remove spray",
+		client = {
+			image = "spray_rag.png",
+		},
+	},
+	-- ss_vehicleKeys
+	["vehiclekey"] = {
+		label = "Vehicle Key",
+		weight = 50,
+		stack = false,
+		close = false,
+		description = "Your Vehicle Key",
+		client = {
+			image = "vehiclekey.png",
+		}
+	},
+	-- ss_farming
+	["pomegranate"] = {
+		label = "Pomegranate",
+		weight = 250,
+		stack = true,
+		close = true,
+		description = "Pomegranate",
+		client = {
+			image = "pomegranate.png",
+		}
+	},
+
+	["rawbeef"] = {
+		label = "Raw Beef",
+		weight = 1000,
+		stack = true,
+		close = true,
+		description = "Raw Beef",
+		client = {
+			image = "rawbeef.png",
+		}
+	},
+
+	["eggs"] = {
+		label = "Eggs",
+		weight = 50,
+		stack = true,
+		close = true,
+		description = "Eggs",
+		client = {
+			image = "eggs.png",
+		}
+	},
+
+	["rawchicken"] = {
+		label = "Raw Chicken",
+		weight = 2000,
+		stack = true,
+		close = true,
+		description = "Raw Chicken",
+		client = {
+			image = "rawchicken.png",
+		}
+	},
+
+	["apple"] = {
+		label = "Apple",
+		weight = 100,
+		stack = true,
+		close = true,
+		description = "Apple",
+		client = {
+			image = "apple.png",
+		}
+	},
+
+	["milkbucket"] = {
+		label = "Milk Bucket",
+		weight = 2500,
+		stack = true,
+		close = true,
+		description = "Milk Bucket",
+		client = {
+			image = "milkbucket.png",
+		}
+	},
+
+	["peach"] = {
+		label = "Peach",
+		weight = 100,
+		stack = true,
+		close = true,
+		description = "Peach",
+		client = {
+			image = "peach.png",
+		}
+	},
+
+	["emptybucket"] = {
+		label = "Empty Bucket",
+		weight = 500,
+		stack = true,
+		close = true,
+		description = "Empty Bucket",
+		client = {
+			image = "emptybucket.png",
+		}
+	},
+
+	["lime"] = {
+		label = "Lime",
+		weight = 100,
+		stack = true,
+		close = true,
+		description = "Lime",
+		client = {
+			image = "lime.png",
+		}
+	},
+
+	["orange"] = {
+		label = "Orange",
+		weight = 100,
+		stack = true,
+		close = true,
+		description = "Orange",
+		client = {
+			image = "orange.png",
+		}
+	},
+	-- ss_stealparkmeter
+	["parkmeter_hack_card"] = {
+		label = "Parkmeter H-card",
+		weight = 10,
+		stack = false,
+		close = true,
+		description = "Parkmeter hacking card",
+		client = {
+			image = "parkmeter_hack_card.png",
 		}
 	},
 }
