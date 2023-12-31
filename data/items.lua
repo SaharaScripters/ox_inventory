@@ -1554,4 +1554,75 @@ return {
 			image = "goldchain.png",
 		}
 	},
+	
+	["finger_scanner"] = {
+		label = "Finger Scanner",
+		weight = 500,
+		stack = false,
+		close = true,
+		description = "Finger Scanner",
+		client = {
+			image = "finger_scanner.png",
+		}
+	},
+
+	['casasports'] = {
+		label = 'Casasports',
+		weight = 500,
+		stack = false,
+		description = 'Casasports',
+		client = {
+			image = 'casasports.png',
+		}
+	},
+
+	['marquise'] = {
+		label = 'Marquise',
+		weight = 500,
+		stack = true,
+		description = 'Marquise',
+		client = {
+			image = 'marquise.png',
+		}
+	},
+
+	['winston'] = {
+		label = 'Winston',
+		weight = 500,
+		stack = true,
+		description = 'Winston',
+		client = {
+			image = 'winston.png',
+		}
+	},
+
+	['cigarette'] = {
+		label = 'Cigarette',
+		weight = 500,
+		stack = true,
+		description = 'Cigarette',
+		client = {
+			image = 'cigarette.png',
+		}
+	},
+
+	['cohibacigar'] = {
+		label = 'Cohiba',
+		weight = 500,
+		stack = true,
+		description = 'Cohiba Cigar',
+		client = {
+			image = 'cohibacigar.png',
+		}
+	},
+
+	['davidoffcigar'] = {
+		label = 'Davidoff',
+		weight = 500,
+		stack = true,
+		description = 'Davidoff Cigar',
+		client = {
+			image = 'cigarette.png',
+		}
+	},	
 }
