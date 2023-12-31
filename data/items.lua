@@ -123,6 +123,7 @@ return {
 		description = "Spray can that can be used to draw on walls",
 		client = {
 			image = "spray_can.png",
+			event = 'ss_spray:client:openSprayMenu',
 		},
 	},
 
@@ -134,6 +135,7 @@ return {
 		description = "Rag that can be used to remove spray",
 		client = {
 			image = "spray_rag.png",
+			event = 'ss_spray:client:removeSpray',
 		},
 	},
 	-- ss_vehicleKeys
@@ -1367,15 +1369,68 @@ return {
 			image = "advancedlockpick.png",
 		}
 	},
-
+	-- ss_mechanic
 	["advancedrepairkit"] = {
 		label = "Advanced Repairkit",
-		weight = 4000,
+		weight = 3000,
 		stack = true,
 		close = true,
 		description = "A nice toolbox with stuff to repair your vehicle",
 		client = {
-			image = "advancedkit.png",
+			image = "advancedrepairkit.png",
+			event = 'ss_mechanic:client:openToolbox',
+		}
+	},
+	["weldingtool"] = {
+		label = "Welding Tool",
+		weight = 1000,
+		stack = true,
+		close = true,
+		description = "A welding tool to repair your vehicle body",
+		client = {
+			image = "weldingtool.png",
+			event = 'ss_mechanic:client:useWeldingTool',
+		}
+	},
+	["vtire"] = {
+		label = "Vehicle Tire",
+		weight = 3000,
+		stack = true,
+		close = true,
+		description = "A vehicle tire to repair your vehicle",
+		client = {
+			image = "vtire.png",
+		}
+	},
+	["vdoor"] = {
+		label = "Vehicle Door",
+		weight = 3000,
+		stack = true,
+		close = true,
+		description = "A vehicle door to repair your vehicle",
+		client = {
+			image = "vdoor.png",
+		}
+	},
+	["vwindow"] = {
+		label = "Vehicle Window",
+		weight = 1000,
+		stack = true,
+		close = true,
+		description = "A vehicle window to repair your vehicle",
+		client = {
+			image = "vwindow.png",
+		}
+	},
+	["platform_tablet"] = {
+		label = "Platform Tablet",
+		weight = 500,
+		stack = false,
+		close = true,
+		description = "Platform Tablet to customize your vehicle",
+		client = {
+			image = "platform_tablet.png",
+			event = 'ss_mechanic:client:openPlatformTablet',
 		}
 	},
 
