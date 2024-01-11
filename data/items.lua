@@ -1422,6 +1422,46 @@ return {
 			image = "vwindow.png",
 		}
 	},
+	["vpaint_can"] = {
+		label = "Vehicle Paint Can",
+		weight = 500,
+		stack = true,
+		close = true,
+		description = "A paint can for vehicles",
+		client = {
+			image = "vpaint_can.png",
+		}
+	},
+	["vneon_led"] = {
+		label = "Vehicle Neon LED",
+		weight = 100,
+		stack = true,
+		close = true,
+		description = "A neon led for vehicles",
+		client = {
+			image = "vneon_led.png",
+		}
+	},
+	["vxenon_bulb"] = {
+		label = "Vehicle Xenon Bulb",
+		weight = 100,
+		stack = true,
+		close = true,
+		description = "A xenon bulb for vehicles",
+		client = {
+			image = "vxenon_bulb.png",
+		}
+	},
+	["vtint_film"] = {
+		label = "Vehicle Tint Film",
+		weight = 100,
+		stack = true,
+		close = true,
+		description = "A tint film for vehicle windows",
+		client = {
+			image = "vtint_film.png",
+		}
+	},
 	["platform_tablet"] = {
 		label = "Platform Tablet",
 		weight = 500,
@@ -1554,7 +1594,7 @@ return {
 			image = "goldchain.png",
 		}
 	},
-	
+
 	["finger_scanner"] = {
 		label = "Finger Scanner",
 		weight = 500,
@@ -1624,5 +1664,5 @@ return {
 		client = {
 			image = 'cigarette.png',
 		}
-	},	
+	},
 }
