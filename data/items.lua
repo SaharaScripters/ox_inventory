@@ -1392,6 +1392,17 @@ return {
 			event = 'ss_mechanic:client:useWeldingTool',
 		}
 	},
+	["platform_tablet"] = {
+		label = "Platform Tablet",
+		weight = 500,
+		stack = false,
+		close = true,
+		description = "Platform Tablet to customize your vehicle",
+		client = {
+			image = "platform_tablet.png",
+			event = 'ss_mechanic:client:openPlatformTablet',
+		}
+	},	
 	["vtire"] = {
 		label = "Vehicle Tire",
 		weight = 3000,
@@ -1422,58 +1433,26 @@ return {
 			image = "vwindow.png",
 		}
 	},
-	["vpaint_can"] = {
-		label = "Vehicle Paint Can",
-		weight = 500,
+	["vshammy"] = {
+		label = "Vehicle Shammy",
+		weight = 200,
 		stack = true,
 		close = true,
-		description = "A paint can for vehicles",
+		description = "A piece of fibre to clean your vehicle",
 		client = {
-			image = "vpaint_can.png",
+			image = "vshammy.png",
 		}
 	},
-	["vneon_led"] = {
-		label = "Vehicle Neon LED",
-		weight = 100,
+	["vrepairkit"] = {
+		label = "Vehicle Repair Kit",
+		weight = 1000,
 		stack = true,
 		close = true,
-		description = "A neon led for vehicles",
+		description = "A tool to repair your vehicle partially",
 		client = {
-			image = "vneon_led.png",
+			image = "vrepairkit.png",
 		}
-	},
-	["vxenon_bulb"] = {
-		label = "Vehicle Xenon Bulb",
-		weight = 100,
-		stack = true,
-		close = true,
-		description = "A xenon bulb for vehicles",
-		client = {
-			image = "vxenon_bulb.png",
-		}
-	},
-	["vtint_film"] = {
-		label = "Vehicle Tint Film",
-		weight = 100,
-		stack = true,
-		close = true,
-		description = "A tint film for vehicle windows",
-		client = {
-			image = "vtint_film.png",
-		}
-	},
-	["platform_tablet"] = {
-		label = "Platform Tablet",
-		weight = 500,
-		stack = false,
-		close = true,
-		description = "Platform Tablet to customize your vehicle",
-		client = {
-			image = "platform_tablet.png",
-			event = 'ss_mechanic:client:openPlatformTablet',
-		}
-	},
-
+	},	
 	["water_bottle"] = {
 		label = "Bottle of Water",
 		weight = 500,
@@ -1665,4 +1644,25 @@ return {
 			image = 'cigarette.png',
 		}
 	},
+	
+	["notepad"] = {
+		label = "Notepad",
+		weight = 500,
+		stack = false,
+		close = true,
+		description = "Notepad for writing and note",
+		client = {
+			image = "notepad.png",
+		}
+	},
+	["tornnote"] = {
+		label = "Torn Note",
+		weight = 500,
+		stack = false,
+		close = true,
+		description = "A paper note that has been torn or ripped",
+		client = {
+			image = "tornnote.png",
+		}
+	},	
 }
