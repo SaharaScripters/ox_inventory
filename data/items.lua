@@ -1664,5 +1664,26 @@ return {
 		client = {
 			image = "tornnote.png",
 		}
+	},
+
+	['crutch'] = {
+		label = 'Crutch',
+		weight = 165,
+		stack = false,
+		close = true,
+		description = "Supportive underarm mobility aid",
+		client = {
+			image = "crutch.png",
+		}		
+	},
+	['wheelchair'] = {
+		label = 'Wheelchair',
+		weight = 540,
+		stack = false,
+		close = true,
+		description = "Mobility aid with rolling wheels.",
+		client = {
+			image = "wheelchair.png",
+		}		
 	},	
 }
