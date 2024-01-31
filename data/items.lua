@@ -27,6 +27,13 @@ return {
 	['lockpick'] = {
 		label = 'Lockpick',
 		weight = 160,
+		stack = true,
+		close = true,
+		description = "If you lose your keys a lot this is very useful... Also useful to open your beers",
+		client = {
+			image = 'lockpick.png',
+			event = 'lockpicks:UseLockpick',
+		}
 	},
 	-- others
 	['money'] = {
@@ -1367,6 +1374,7 @@ return {
 		description = "If you lose your keys a lot this is very useful... Also useful to open your beers",
 		client = {
 			image = "advancedlockpick.png",
+			event = 'lockpicks:UseLockpick',
 		}
 	},
 	-- ss_mechanic
@@ -1402,7 +1410,7 @@ return {
 			image = "platform_tablet.png",
 			event = 'ss_mechanic:client:openPlatformTablet',
 		}
-	},	
+	},
 	["vtire"] = {
 		label = "Vehicle Tire",
 		weight = 3000,
@@ -1452,7 +1460,7 @@ return {
 		client = {
 			image = "vrepairkit.png",
 		}
-	},	
+	},
 	["water_bottle"] = {
 		label = "Bottle of Water",
 		weight = 500,
@@ -1644,7 +1652,7 @@ return {
 			image = 'cigarette.png',
 		}
 	},
-	
+
 	["notepad"] = {
 		label = "Notepad",
 		weight = 500,
@@ -1674,7 +1682,7 @@ return {
 		description = "Supportive underarm mobility aid",
 		client = {
 			image = "crutch.png",
-		}		
+		}
 	},
 	['wheelchair'] = {
 		label = 'Wheelchair',
@@ -1684,7 +1692,7 @@ return {
 		description = "Mobility aid with rolling wheels.",
 		client = {
 			image = "wheelchair.png",
-		}		
+		}
 	},
 
     ['diving_fill'] = {
@@ -1702,12 +1710,12 @@ return {
         close = true,
         description = "Underwater equipment for divers."
     },
-	
+
     ['binoculars'] = {
         label = 'Binoculars',
         weight = 3000,
         stack = false,
         close = true,
         description = "Optical magnifying viewing device"
-    },	
+    },
 }
