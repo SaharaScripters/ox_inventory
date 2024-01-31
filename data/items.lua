@@ -1685,5 +1685,29 @@ return {
 		client = {
 			image = "wheelchair.png",
 		}		
-	},	
+	},
+
+    ['diving_fill'] = {
+        label = 'Diving Tube',
+        weight = 3000,
+        stack = false,
+        close = true,
+        description = "Breathing tube for gear's oxygen supply."
+    },
+
+    ['diving_gear'] = {
+        label = 'Diving Gear',
+        weight = 30000,
+        stack = false,
+        close = true,
+        description = "Underwater equipment for divers."
+    },
+	
+    ['binoculars'] = {
+        label = 'Binoculars',
+        weight = 3000,
+        stack = false,
+        close = true,
+        description = "Optical magnifying viewing device"
+    },	
 }

@@ -11,4 +11,15 @@ return {
 	-- 		maxZ = 31.89
 	-- 	}
 	-- }
+	{
+		target = { -- qtarget support
+	 		name = 'dgsn_evidence', -- name of zone must be uniuqe
+	 		loc = vec3(466.1, -996.8, 30.2),
+	 		length = 0.3,
+	 		width = 0.5,
+	 		heading = 0.0,
+	 		minZ = 30.1,
+	 		maxZ = 30.3
+	 	}		
+	}	
 }
