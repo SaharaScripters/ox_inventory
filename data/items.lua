@@ -29,7 +29,7 @@ return {
 		weight = 160,
 		stack = true,
 		close = true,
-		description = "If you lose your keys a lot this is very useful... Also useful to open your beers",
+		description = 'If you lose your keys a lot this is very useful... Also useful to open your beers',
 		client = {
 			image = 'lockpick.png',
 			event = 'lockpicks:UseLockpick',
@@ -40,14 +40,14 @@ return {
 		label = 'Money',
 	},
 	-- cards/permit
-	["id_card"] = {
-		label = "ID Card",
+	['id_card'] = {
+		label = 'ID Card',
 		weight = 0,
 		stack = false,
 		close = false,
-		description = "A card containing all your information to identify yourself",
+		description = 'A card containing all your information to identify yourself',
 		client = {
-			image = "id_card.png",
+			image = 'id_card.png',
 		}
 	},
 	-- npwd
@@ -88,1511 +88,1509 @@ return {
 		}
 	},
 	-- ss_vehicleshops
-	["vcontract"] = {
-		label = "Vehicle contract",
+	['vcontract'] = {
+		label = 'Vehicle contract',
 		weight = 100,
 		stack = true,
 		close = true,
-		description = "Vehicle contract",
+		description = 'Vehicle contract',
 		client = {
-			image = "vcontract.png",
+			image = 'vcontract.png',
 		}
 	},
 	-- cdn-fuel
-	["syphoningkit"] = {
-		label = "Syphoning Kit",
+	['syphoningkit'] = {
+		label = 'Syphoning Kit',
 		weight = 0,
 		stack = false,
 		close = false,
-		description = "A Syphoning Kit for Fuel stealing",
+		description = 'A Syphoning Kit for Fuel stealing',
 		client = {
-			image = "syphoningkit.png",
+			image = 'syphoningkit.png',
 		}
 	},
 
-	["jerrycan"] = {
-		label = "Jerrycan",
+	['jerrycan'] = {
+		label = 'Jerrycan',
 		weight = 0,
 		stack = false,
 		close = false,
-		description = "A Jerrycan to carry Fuel with you",
+		description = 'A Jerrycan to carry Fuel with you',
 		client = {
-			image = "jerrycan.png",
+			image = 'jerrycan.png',
 		}
 	},
 
 	-- ss_spray
-	["spray_can"] = {
-		label = "Spray can",
+	['spray_can'] = {
+		label = 'Spray can',
 		weight = 250,
 		stack = true,
 		close = true,
-		description = "Spray can that can be used to draw on walls",
+		description = 'Spray can that can be used to draw on walls',
 		client = {
-			image = "spray_can.png",
+			image = 'spray_can.png',
 			event = 'ss_spray:client:openSprayMenu',
 		},
 	},
 
-	["spray_rag"] = {
-		label = "Spray rag",
+	['spray_rag'] = {
+		label = 'Spray rag',
 		weight = 250,
 		stack = true,
 		close = true,
-		description = "Rag that can be used to remove spray",
+		description = 'Rag that can be used to remove spray',
 		client = {
-			image = "spray_rag.png",
+			image = 'spray_rag.png',
 			event = 'ss_spray:client:removeSpray',
 		},
 	},
 	-- ss_vehicleKeys
-	["vehiclekey"] = {
-		label = "Vehicle Key",
+	['vehiclekey'] = {
+		label = 'Vehicle Key',
 		weight = 50,
 		stack = false,
 		close = false,
-		description = "Your Vehicle Key",
+		description = 'Your Vehicle Key',
 		client = {
-			image = "vehiclekey.png",
+			image = 'vehiclekey.png',
 		}
 	},
 	-- ss_farming
-	["pomegranate"] = {
-		label = "Pomegranate",
+	['pomegranate'] = {
+		label = 'Pomegranate',
 		weight = 250,
 		stack = true,
 		close = true,
-		description = "Pomegranate",
+		description = 'Pomegranate',
 		client = {
-			image = "pomegranate.png",
+			image = 'pomegranate.png',
 		}
 	},
 
-	["rawbeef"] = {
-		label = "Raw Beef",
+	['rawbeef'] = {
+		label = 'Raw Beef',
 		weight = 1000,
 		stack = true,
 		close = true,
-		description = "Raw Beef",
+		description = 'Raw Beef',
 		client = {
-			image = "rawbeef.png",
+			image = 'rawbeef.png',
 		}
 	},
 
-	["eggs"] = {
-		label = "Eggs",
+	['eggs'] = {
+		label = 'Eggs',
 		weight = 50,
 		stack = true,
 		close = true,
-		description = "Eggs",
+		description = 'Eggs',
 		client = {
-			image = "eggs.png",
+			image = 'eggs.png',
 		}
 	},
 
-	["rawchicken"] = {
-		label = "Raw Chicken",
+	['rawchicken'] = {
+		label = 'Raw Chicken',
 		weight = 2000,
 		stack = true,
 		close = true,
-		description = "Raw Chicken",
+		description = 'Raw Chicken',
 		client = {
-			image = "rawchicken.png",
+			image = 'rawchicken.png',
 		}
 	},
 
-	["apple"] = {
-		label = "Apple",
+	['apple'] = {
+		label = 'Apple',
 		weight = 100,
 		stack = true,
 		close = true,
-		description = "Apple",
+		description = 'Apple',
 		client = {
-			image = "apple.png",
+			image = 'apple.png',
 		}
 	},
 
-	["milkbucket"] = {
-		label = "Milk Bucket",
+	['milkbucket'] = {
+		label = 'Milk Bucket',
 		weight = 2500,
 		stack = true,
 		close = true,
-		description = "Milk Bucket",
+		description = 'Milk Bucket',
 		client = {
-			image = "milkbucket.png",
+			image = 'milkbucket.png',
 		}
 	},
 
-	["peach"] = {
-		label = "Peach",
+	['peach'] = {
+		label = 'Peach',
 		weight = 100,
 		stack = true,
 		close = true,
-		description = "Peach",
+		description = 'Peach',
 		client = {
-			image = "peach.png",
+			image = 'peach.png',
 		}
 	},
 
-	["emptybucket"] = {
-		label = "Empty Bucket",
+	['emptybucket'] = {
+		label = 'Empty Bucket',
 		weight = 500,
 		stack = true,
 		close = true,
-		description = "Empty Bucket",
+		description = 'Empty Bucket',
 		client = {
-			image = "emptybucket.png",
+			image = 'emptybucket.png',
 		}
 	},
 
-	["lime"] = {
-		label = "Lime",
+	['lime'] = {
+		label = 'Lime',
 		weight = 100,
 		stack = true,
 		close = true,
-		description = "Lime",
+		description = 'Lime',
 		client = {
-			image = "lime.png",
+			image = 'lime.png',
 		}
 	},
 
-	["orange"] = {
-		label = "Orange",
+	['orange'] = {
+		label = 'Orange',
 		weight = 100,
 		stack = true,
 		close = true,
-		description = "Orange",
+		description = 'Orange',
 		client = {
-			image = "orange.png",
+			image = 'orange.png',
 		}
 	},
 	-- ss_stealparkmeter
-	["parkmeter_hack_card"] = {
-		label = "Parkmeter H-card",
+	['parkmeter_hack_card'] = {
+		label = 'Parkmeter H-card',
 		weight = 10,
 		stack = false,
 		close = true,
-		description = "Parkmeter hacking card",
+		description = 'Parkmeter hacking card',
 		client = {
-			image = "parkmeter_hack_card.png",
+			image = 'parkmeter_hack_card.png',
 		}
 	},
 	-- qbx_core
-	["heavyarmor"] = {
-		label = "Heavy Armor",
+	['heavyarmor'] = {
+		label = 'Heavy Armor',
 		weight = 5000,
 		stack = true,
 		close = true,
-		description = "Some protection won't hurt... right?",
+		description = 'Some protection will not hurt... right?',
 		client = {
-			image = "armor.png",
+			image = 'armor.png',
 		}
 	},
 
-	["rolex"] = {
-		label = "Golden Watch",
+	['rolex'] = {
+		label = 'Golden Watch',
 		weight = 1500,
 		stack = true,
 		close = true,
-		description = "A golden watch seems like the jackpot to me!",
+		description = 'A golden watch seems like the jackpot to me!',
 		client = {
-			image = "rolex.png",
+			image = 'rolex.png',
 		}
 	},
 
-	["security_card_02"] = {
-		label = "Security Card B",
+	['security_card_02'] = {
+		label = 'Security Card B',
 		weight = 0,
 		stack = true,
 		close = true,
-		description = "A security card... I wonder what it goes to",
+		description = 'A security card... I wonder what it goes to',
 		client = {
-			image = "security_card_02.png",
+			image = 'security_card_02.png',
 		}
 	},
 
-	["repairkit"] = {
-		label = "Repairkit",
+	['repairkit'] = {
+		label = 'Repairkit',
 		weight = 2500,
 		stack = true,
 		close = true,
-		description = "A nice toolbox with stuff to repair your vehicle",
+		description = 'A nice toolbox with stuff to repair your vehicle',
 		client = {
-			image = "repairkit.png",
+			image = 'repairkit.png',
 		}
 	},
 
-	["tosti"] = {
-		label = "Grilled Cheese Sandwich",
+	['tosti'] = {
+		label = 'Grilled Cheese Sandwich',
 		weight = 200,
 		stack = true,
 		close = true,
-		description = "Nice to eat",
+		description = 'Nice to eat',
 		client = {
-			image = "tosti.png",
+			image = 'tosti.png',
 		}
 	},
 
-	["empty_evidence_bag"] = {
-		label = "Empty Evidence Bag",
+	['empty_evidence_bag'] = {
+		label = 'Empty Evidence Bag',
 		weight = 0,
 		stack = true,
 		close = false,
-		description = "Used a lot to keep DNA from blood, bullet shells and more",
+		description = 'Used a lot to keep DNA from blood, bullet shells and more',
 		client = {
-			image = "evidence.png",
+			image = 'evidence.png',
 		}
 	},
 
-	["steel"] = {
-		label = "Steel",
+	['steel'] = {
+		label = 'Steel',
 		weight = 100,
 		stack = true,
 		close = false,
-		description = "Nice piece of metal that you can probably use for something",
+		description = 'Nice piece of metal that you can probably use for something',
 		client = {
-			image = "steel.png",
+			image = 'steel.png',
 		}
 	},
 
-	["aluminumoxide"] = {
-		label = "Aluminium Powder",
+	['aluminumoxide'] = {
+		label = 'Aluminium Powder',
 		weight = 100,
 		stack = true,
 		close = false,
-		description = "Some powder to mix with",
+		description = 'Some powder to mix with',
 		client = {
-			image = "aluminumoxide.png",
+			image = 'aluminumoxide.png',
 		}
 	},
 
-	["cleaningkit"] = {
-		label = "Cleaning Kit",
+	['cleaningkit'] = {
+		label = 'Cleaning Kit',
 		weight = 250,
 		stack = true,
 		close = true,
-		description = "A microfiber cloth with some soap will let your car sparkle again!",
+		description = 'A microfiber cloth with some soap will let your car sparkle again!',
 		client = {
-			image = "cleaningkit.png",
+			image = 'cleaningkit.png',
 		}
 	},
 
-	["weed_ak47_seed"] = {
-		label = "AK47 Seed",
+	['weed_ak47_seed'] = {
+		label = 'AK47 Seed',
 		weight = 0,
 		stack = true,
 		close = true,
-		description = "A weed seed of AK47",
+		description = 'A weed seed of AK47',
 		client = {
-			image = "weed_seed.png",
+			image = 'weed_seed.png',
 		}
 	},
 
-	["weed_og-kush_seed"] = {
-		label = "OGKush Seed",
+	['weed_og-kush_seed'] = {
+		label = 'OGKush Seed',
 		weight = 0,
 		stack = true,
 		close = true,
-		description = "A weed seed of OG Kush",
+		description = 'A weed seed of OG Kush',
 		client = {
-			image = "weed_seed.png",
+			image = 'weed_seed.png',
 		}
 	},
 
-	["printerdocument"] = {
-		label = "Document",
+	['printerdocument'] = {
+		label = 'Document',
 		weight = 500,
 		stack = false,
 		close = true,
-		description = "A nice document",
+		description = 'A nice document',
 		client = {
-			image = "printerdocument.png",
+			image = 'printerdocument.png',
 		}
 	},
 
-	["electronickit"] = {
-		label = "Electronic Kit",
+	['electronickit'] = {
+		label = 'Electronic Kit',
 		weight = 100,
 		stack = true,
 		close = true,
-		description = "If you've always wanted to build a robot you can maybe start here. Maybe you'll be the new Elon Musk?",
+		description = 'If you have always wanted to build a robot you can maybe start here. Maybe you will be the new Elon Musk?',
 		client = {
-			image = "electronickit.png",
+			image = 'electronickit.png',
 		}
 	},
 
-	["grapejuice"] = {
-		label = "Grape Juice",
+	['grapejuice'] = {
+		label = 'Grape Juice',
 		weight = 200,
 		stack = true,
 		close = false,
-		description = "Grape juice is said to be healthy",
+		description = 'Grape juice is said to be healthy',
 		client = {
-			image = "grapejuice.png",
+			image = 'grapejuice.png',
 		}
 	},
 
-	["glass"] = {
-		label = "Glass",
+	['glass'] = {
+		label = 'Glass',
 		weight = 100,
 		stack = true,
 		close = false,
-		description = "It is very fragile, watch out",
+		description = 'It is very fragile, watch out',
 		client = {
-			image = "glass.png",
+			image = 'glass.png',
 		}
 	},
 
-	["jerry_can"] = {
-		label = "Jerrycan 20L",
+	['jerry_can'] = {
+		label = 'Jerrycan 20L',
 		weight = 20000,
 		stack = true,
 		close = true,
-		description = "A can full of Fuel",
+		description = 'A can full of Fuel',
 		client = {
-			image = "jerry_can.png",
+			image = 'jerry_can.png',
 		}
 	},
 
-	["dendrogyra_coral"] = {
-		label = "Dendrogyra",
+	['dendrogyra_coral'] = {
+		label = 'Dendrogyra',
 		weight = 1000,
 		stack = true,
 		close = true,
-		description = "Its also known as pillar coral",
+		description = 'Its also known as pillar coral',
 		client = {
-			image = "dendrogyra_coral.png",
+			image = 'dendrogyra_coral.png',
 		}
 	},
 
-	["snikkel_candy"] = {
-		label = "Snikkel",
+	['snikkel_candy'] = {
+		label = 'Snikkel',
 		weight = 100,
 		stack = true,
 		close = true,
-		description = "Some delicious candy :O",
+		description = 'Some delicious candy :O',
 		client = {
-			image = "snikkel_candy.png",
+			image = 'snikkel_candy.png',
 		}
 	},
 
-	["diamond"] = {
-		label = "Diamond",
+	['diamond'] = {
+		label = 'Diamond',
 		weight = 1000,
 		stack = true,
 		close = true,
-		description = "A diamond seems like the jackpot to me!",
+		description = 'A diamond seems like the jackpot to me!',
 		client = {
-			image = "diamond.png",
+			image = 'diamond.png',
 		}
 	},
 
-	["beer"] = {
-		label = "Beer",
+	['beer'] = {
+		label = 'Beer',
 		weight = 500,
 		stack = true,
 		close = true,
-		description = "Nothing like a good cold beer!",
+		description = 'Nothing like a good cold beer!',
 		client = {
-			image = "beer.png",
+			image = 'beer.png',
 		}
 	},
 
-	["walkstick"] = {
-		label = "Walking Stick",
+	['walkstick'] = {
+		label = 'Walking Stick',
 		weight = 1000,
 		stack = true,
 		close = true,
-		description = "Walking stick for ya'll grannies out there.. HAHA",
+		description = 'Walking stick for you all grannies out there.. HAHA',
 		client = {
-			image = "walkstick.png",
+			image = 'walkstick.png',
 		}
 	},
 
-	["joint"] = {
-		label = "Joint",
+	['joint'] = {
+		label = 'Joint',
 		weight = 0,
 		stack = true,
 		close = true,
-		description = "Sidney would be very proud at you",
+		description = 'Sidney would be very proud at you',
 		client = {
-			image = "joint.png",
+			image = 'joint.png',
 		}
 	},
 
-	["drill"] = {
-		label = "Drill",
+	['drill'] = {
+		label = 'Drill',
 		weight = 20000,
 		stack = true,
 		close = false,
-		description = "The real deal...",
+		description = 'The real deal...',
 		client = {
-			image = "drill.png",
+			image = 'drill.png',
 		}
 	},
 
-	["metalscrap"] = {
-		label = "Metal Scrap",
+	['metalscrap'] = {
+		label = 'Metal Scrap',
 		weight = 100,
 		stack = true,
 		close = false,
-		description = "You can probably make something nice out of this",
+		description = 'You can probably make something nice out of this',
 		client = {
-			image = "metalscrap.png",
+			image = 'metalscrap.png',
 		}
 	},
 
-	["firework1"] = {
-		label = "2Brothers",
+	['firework1'] = {
+		label = '2Brothers',
 		weight = 1000,
 		stack = true,
 		close = true,
-		description = "Fireworks",
+		description = 'Fireworks',
 		client = {
-			image = "firework1.png",
+			image = 'firework1.png',
 		}
 	},
 
-	["weed_white-widow"] = {
-		label = "White Widow 2g",
+	['weed_white-widow'] = {
+		label = 'White Widow 2g',
 		weight = 200,
 		stack = true,
 		close = false,
-		description = "A weed bag with 2g White Widow",
+		description = 'A weed bag with 2g White Widow',
 		client = {
-			image = "weed_baggy.png",
+			image = 'weed_baggy.png',
 		}
 	},
 
-	["diving_fill"] = {
-		label = "Diving Tube",
+	['diving_fill'] = {
+		label = 'Diving Tube',
 		weight = 3000,
 		stack = false,
 		close = true,
 		client = {
-			image = "diving_tube.png",
+			image = 'diving_tube.png',
 		}
 	},
 
-	["firework4"] = {
-		label = "Weeping Willow",
+	['firework4'] = {
+		label = 'Weeping Willow',
 		weight = 1000,
 		stack = true,
 		close = true,
-		description = "Fireworks",
+		description = 'Fireworks',
 		client = {
-			image = "firework4.png",
+			image = 'firework4.png',
 		}
 	},
 
-	["antipatharia_coral"] = {
-		label = "Antipatharia",
+	['antipatharia_coral'] = {
+		label = 'Antipatharia',
 		weight = 1000,
 		stack = true,
 		close = true,
-		description = "Its also known as black corals or thorn corals",
+		description = 'Its also known as black corals or thorn corals',
 		client = {
-			image = "antipatharia_coral.png",
+			image = 'antipatharia_coral.png',
 		}
 	},
 
-	["trojan_usb"] = {
-		label = "Trojan USB",
+	['trojan_usb'] = {
+		label = 'Trojan USB',
 		weight = 0,
 		stack = true,
 		close = true,
-		description = "Handy software to shut down some systems",
+		description = 'Handy software to shut down some systems',
 		client = {
-			image = "usb_device.png",
+			image = 'usb_device.png',
 		}
 	},
 
-	["weed_skunk"] = {
-		label = "Skunk 2g",
+	['weed_skunk'] = {
+		label = 'Skunk 2g',
 		weight = 200,
 		stack = true,
 		close = false,
-		description = "A weed bag with 2g Skunk",
+		description = 'A weed bag with 2g Skunk',
 		client = {
-			image = "weed_baggy.png",
+			image = 'weed_baggy.png',
 		}
 	},
 
-	["painkillers"] = {
-		label = "Painkillers",
+	['painkillers'] = {
+		label = 'Painkillers',
 		weight = 0,
 		stack = true,
 		close = true,
-		description = "For pain you can't stand anymore, take this pill that'd make you feel great again",
+		description = 'For pain you can not stand anymore, take this pill that would make you feel great again',
 		client = {
-			image = "painkillers.png",
+			image = 'painkillers.png',
 		}
 	},
 
-	["weed_skunk_seed"] = {
-		label = "Skunk Seed",
+	['weed_skunk_seed'] = {
+		label = 'Skunk Seed',
 		weight = 0,
 		stack = true,
 		close = true,
-		description = "A weed seed of Skunk",
+		description = 'A weed seed of Skunk',
 		client = {
-			image = "weed_seed.png",
+			image = 'weed_seed.png',
 		}
 	},
 
-	["screwdriverset"] = {
-		label = "Toolkit",
+	['screwdriverset'] = {
+		label = 'Toolkit',
 		weight = 1000,
 		stack = true,
 		close = false,
-		description = "Very useful to screw... screws...",
+		description = 'Very useful to screw... screws...',
 		client = {
-			image = "screwdriverset.png",
+			image = 'screwdriverset.png',
 		}
 	},
 
-	["goldbar"] = {
-		label = "Gold Bar",
+	['goldbar'] = {
+		label = 'Gold Bar',
 		weight = 7000,
 		stack = true,
 		close = true,
-		description = "Looks pretty expensive to me",
+		description = 'Looks pretty expensive to me',
 		client = {
-			image = "goldbar.png",
+			image = 'goldbar.png',
 		}
 	},
 
-	["filled_evidence_bag"] = {
-		label = "Evidence Bag",
+	['filled_evidence_bag'] = {
+		label = 'Evidence Bag',
 		weight = 200,
 		stack = false,
 		close = false,
-		description = "A filled evidence bag to see who committed the crime >:(",
+		description = 'A filled evidence bag to see who committed the crime >:(',
 		client = {
-			image = "evidence.png",
+			image = 'evidence.png',
 		}
 	},
 
-	["weed_purple-haze_seed"] = {
-		label = "Purple Haze Seed",
+	['weed_purple-haze_seed'] = {
+		label = 'Purple Haze Seed',
 		weight = 0,
 		stack = true,
 		close = true,
-		description = "A weed seed of Purple Haze",
+		description = 'A weed seed of Purple Haze',
 		client = {
-			image = "weed_seed.png",
+			image = 'weed_seed.png',
 		}
 	},
 
-	["security_card_01"] = {
-		label = "Security Card A",
+	['security_card_01'] = {
+		label = 'Security Card A',
 		weight = 0,
 		stack = true,
 		close = true,
-		description = "A security card... I wonder what it goes to",
+		description = 'A security card... I wonder what it goes to',
 		client = {
-			image = "security_card_01.png",
+			image = 'security_card_01.png',
 		}
 	},
 
-	["copper"] = {
-		label = "Copper",
+	['copper'] = {
+		label = 'Copper',
 		weight = 100,
 		stack = true,
 		close = false,
-		description = "Nice piece of metal that you can probably use for something",
+		description = 'Nice piece of metal that you can probably use for something',
 		client = {
-			image = "copper.png",
+			image = 'copper.png',
 		}
 	},
 
-	["rubber"] = {
-		label = "Rubber",
+	['rubber'] = {
+		label = 'Rubber',
 		weight = 100,
 		stack = true,
 		close = false,
-		description = "Rubber, I believe you can make your own rubber ducky with it :D",
+		description = 'Rubber, I believe you can make your own rubber ducky with it :D',
 		client = {
-			image = "rubber.png",
+			image = 'rubber.png',
 		}
 	},
 
-	["nitrous"] = {
-		label = "Nitrous",
+	['nitrous'] = {
+		label = 'Nitrous',
 		weight = 1000,
 		stack = true,
 		close = true,
-		description = "Speed up, gas pedal! :D",
+		description = 'Speed up, gas pedal! :D',
 		client = {
-			image = "nitrous.png",
+			image = 'nitrous.png',
 		}
 	},
 
-	["diving_gear"] = {
-		label = "Diving Gear",
+	['diving_gear'] = {
+		label = 'Diving Gear',
 		weight = 30000,
 		stack = false,
 		close = true,
-		description = "An oxygen tank and a rebreather",
+		description = 'An oxygen tank and a rebreather',
 		client = {
-			image = "diving_gear.png",
+			image = 'diving_gear.png',
 		}
 	},
 
-	["lighter"] = {
-		label = "Lighter",
+	['lighter'] = {
+		label = 'Lighter',
 		weight = 0,
 		stack = true,
 		close = true,
-		description = "On new years eve a nice fire to stand next to",
+		description = 'On new years eve a nice fire to stand next to',
 		client = {
-			image = "lighter.png",
+			image = 'lighter.png',
 		}
 	},
 
-	["meth"] = {
-		label = "Meth",
+	['meth'] = {
+		label = 'Meth',
 		weight = 100,
 		stack = true,
 		close = true,
-		description = "A baggie of Meth",
+		description = 'A baggie of Meth',
 		client = {
-			image = "meth_baggy.png",
+			image = 'meth_baggy.png',
 		}
 	},
 
-	["weed_purple-haze"] = {
-		label = "Purple Haze 2g",
+	['weed_purple-haze'] = {
+		label = 'Purple Haze 2g',
 		weight = 200,
 		stack = true,
 		close = false,
-		description = "A weed bag with 2g Purple Haze",
+		description = 'A weed bag with 2g Purple Haze',
 		client = {
-			image = "weed_baggy.png",
+			image = 'weed_baggy.png',
 		}
 	},
 
-	["fitbit"] = {
-		label = "Fitbit",
+	['fitbit'] = {
+		label = 'Fitbit',
 		weight = 500,
 		stack = false,
 		close = true,
-		description = "I like fitbit",
+		description = 'I like fitbit',
 		client = {
-			image = "fitbit.png",
+			image = 'fitbit.png',
 		}
 	},
 
-	["oxy"] = {
-		label = "Prescription Oxy",
+	['oxy'] = {
+		label = 'Prescription Oxy',
 		weight = 0,
 		stack = true,
 		close = true,
-		description = "The Label Has Been Ripped Off",
+		description = 'The Label Has Been Ripped Off',
 		client = {
-			image = "oxy.png",
+			image = 'oxy.png',
 		}
 	},
 
-	["labkey"] = {
-		label = "Key",
+	['labkey'] = {
+		label = 'Key',
 		weight = 500,
 		stack = false,
 		close = true,
-		description = "Key for a lock...?",
+		description = 'Key for a lock...?',
 		client = {
-			image = "labkey.png",
+			image = 'labkey.png',
 		}
 	},
 
-	["weed_amnesia"] = {
-		label = "Amnesia 2g",
+	['weed_amnesia'] = {
+		label = 'Amnesia 2g',
 		weight = 200,
 		stack = true,
 		close = false,
-		description = "A weed bag with 2g Amnesia",
+		description = 'A weed bag with 2g Amnesia',
 		client = {
-			image = "weed_baggy.png",
+			image = 'weed_baggy.png',
 		}
 	},
 
-	["iphone"] = {
-		label = "iPhone",
+	['iphone'] = {
+		label = 'iPhone',
 		weight = 1000,
 		stack = true,
 		close = true,
-		description = "Very expensive phone",
+		description = 'Very expensive phone',
 		client = {
-			image = "iphone.png",
+			image = 'iphone.png',
 		}
 	},
 
-	["small_tv"] = {
-		label = "Small TV",
+	['small_tv'] = {
+		label = 'Small TV',
 		weight = 30000,
 		stack = false,
 		close = true,
-		description = "TV",
+		description = 'TV',
 		client = {
-			image = "placeholder.png",
+			image = 'placeholder.png',
 		}
 	},
 
-	["thermite"] = {
-		label = "Thermite",
+	['thermite'] = {
+		label = 'Thermite',
 		weight = 1000,
 		stack = true,
 		close = true,
-		description = "Sometimes you'd wish for everything to burn",
+		description = 'Sometimes you would wish for everything to burn',
 		client = {
-			image = "thermite.png",
+			image = 'thermite.png',
 		}
 	},
 
-	["kurkakola"] = {
-		label = "Cola",
+	['kurkakola'] = {
+		label = 'Cola',
 		weight = 500,
 		stack = true,
 		close = true,
-		description = "For all the thirsty out there",
+		description = 'For all the thirsty out there',
 		client = {
-			image = "cola.png",
+			image = 'cola.png',
 		}
 	},
 
-	["lawyerpass"] = {
-		label = "Lawyer Pass",
+	['lawyerpass'] = {
+		label = 'Lawyer Pass',
 		weight = 0,
 		stack = false,
 		close = false,
-		description = "Pass exclusive to lawyers to show they can represent a suspect",
+		description = 'Pass exclusive to lawyers to show they can represent a suspect',
 		client = {
-			image = "lawyerpass.png",
+			image = 'lawyerpass.png',
 		}
 	},
 
-	["weed_amnesia_seed"] = {
-		label = "Amnesia Seed",
+	['weed_amnesia_seed'] = {
+		label = 'Amnesia Seed',
 		weight = 0,
 		stack = true,
 		close = true,
-		description = "A weed seed of Amnesia",
+		description = 'A weed seed of Amnesia',
 		client = {
-			image = "weed_seed.png",
+			image = 'weed_seed.png',
 		}
 	},
 
-	["samsungphone"] = {
-		label = "Samsung S10",
+	['samsungphone'] = {
+		label = 'Samsung S10',
 		weight = 1000,
 		stack = true,
 		close = true,
-		description = "Very expensive phone",
+		description = 'Very expensive phone',
 		client = {
-			image = "samsungphone.png",
+			image = 'samsungphone.png',
 		}
 	},
 
-	["markedbills"] = {
-		label = "Marked Money",
+	['markedbills'] = {
+		label = 'Marked Money',
 		weight = 1000,
 		stack = false,
 		close = true,
-		description = "Money?",
+		description = 'Money?',
 		client = {
-			image = "markedbills.png",
+			image = 'markedbills.png',
 		}
 	},
 
-	["certificate"] = {
-		label = "Certificate",
+	['certificate'] = {
+		label = 'Certificate',
 		weight = 0,
 		stack = true,
 		close = true,
-		description = "Certificate that proves you own certain stuff",
+		description = 'Certificate that proves you own certain stuff',
 		client = {
-			image = "certificate.png",
+			image = 'certificate.png',
 		}
 	},
 
-	["wine"] = {
-		label = "Wine",
+	['wine'] = {
+		label = 'Wine',
 		weight = 300,
 		stack = true,
 		close = false,
-		description = "Some good wine to drink on a fine evening",
+		description = 'Some good wine to drink on a fine evening',
 		client = {
-			image = "wine.png",
+			image = 'wine.png',
 		}
 	},
 
-	["handcuffs"] = {
-		label = "Handcuffs",
+	['handcuffs'] = {
+		label = 'Handcuffs',
 		weight = 100,
 		stack = true,
 		close = true,
-		description = "Comes in handy when people misbehave. Maybe it can be used for something else?",
+		description = 'Comes in handy when people misbehave. Maybe it can be used for something else?',
 		client = {
-			image = "handcuffs.png",
+			image = 'handcuffs.png',
 		}
 	},
 
-	["tablet"] = {
-		label = "Tablet",
+	['tablet'] = {
+		label = 'Tablet',
 		weight = 2000,
 		stack = true,
 		close = true,
-		description = "Expensive tablet",
+		description = 'Expensive tablet',
 		client = {
-			image = "tablet.png",
+			image = 'tablet.png',
 		}
 	},
 
-	["gatecrack"] = {
-		label = "Gatecrack",
+	['gatecrack'] = {
+		label = 'Gatecrack',
 		weight = 0,
 		stack = true,
 		close = true,
-		description = "Handy software to tear down some fences",
+		description = 'Handy software to tear down some fences',
 		client = {
-			image = "usb_device.png",
+			image = 'usb_device.png',
 		}
 	},
 
-	["coffee"] = {
-		label = "Coffee",
+	['coffee'] = {
+		label = 'Coffee',
 		weight = 200,
 		stack = true,
 		close = true,
-		description = "Pump 4 Caffeine",
+		description = 'Pump 4 Caffeine',
 		client = {
-			image = "coffee.png",
+			image = 'coffee.png',
 		}
 	},
 
-	["weed_og-kush"] = {
-		label = "OGKush 2g",
+	['weed_og-kush'] = {
+		label = 'OGKush 2g',
 		weight = 200,
 		stack = true,
 		close = false,
-		description = "A weed bag with 2g OG Kush",
+		description = 'A weed bag with 2g OG Kush',
 		client = {
-			image = "weed_baggy.png",
+			image = 'weed_baggy.png',
 		}
 	},
 
-	["driver_license"] = {
-		label = "Drivers License",
+	['driver_license'] = {
+		label = 'Drivers License',
 		weight = 0,
 		stack = false,
 		close = false,
-		description = "Permit to show you can drive a vehicle",
+		description = 'Permit to show you can drive a vehicle',
 		client = {
-			image = "driver_license.png",
+			image = 'driver_license.png',
 		}
 	},
 
-	["weed_white-widow_seed"] = {
-		label = "White Widow Seed",
+	['weed_white-widow_seed'] = {
+		label = 'White Widow Seed',
 		weight = 0,
 		stack = true,
 		close = false,
-		description = "A weed seed of White Widow",
+		description = 'A weed seed of White Widow',
 		client = {
-			image = "weed_seed.png",
+			image = 'weed_seed.png',
 		}
 	},
 
-	["laptop"] = {
-		label = "Laptop",
+	['laptop'] = {
+		label = 'Laptop',
 		weight = 4000,
 		stack = true,
 		close = true,
-		description = "Expensive laptop",
+		description = 'Expensive laptop',
 		client = {
-			image = "laptop.png",
+			image = 'laptop.png',
 		}
 	},
 
-	["plastic"] = {
-		label = "Plastic",
+	['plastic'] = {
+		label = 'Plastic',
 		weight = 100,
 		stack = true,
 		close = false,
-		description = "RECYCLE! - Greta Thunberg 2019",
+		description = 'RECYCLE! - Greta Thunberg 2019',
 		client = {
-			image = "plastic.png",
+			image = 'plastic.png',
 		}
 	},
 
-	["ironoxide"] = {
-		label = "Iron Powder",
+	['ironoxide'] = {
+		label = 'Iron Powder',
 		weight = 100,
 		stack = true,
 		close = false,
-		description = "Some powder to mix with.",
+		description = 'Some powder to mix with.',
 		client = {
-			image = "ironoxide.png",
+			image = 'ironoxide.png',
 		}
 	},
 
-	["sandwich"] = {
-		label = "Sandwich",
+	['sandwich'] = {
+		label = 'Sandwich',
 		weight = 200,
 		stack = true,
 		close = true,
-		description = "Nice bread for your stomach",
+		description = 'Nice bread for your stomach',
 		client = {
-			image = "sandwich.png",
+			image = 'sandwich.png',
 		}
 	},
 
-	["coke_brick"] = {
-		label = "Coke Brick",
+	['coke_brick'] = {
+		label = 'Coke Brick',
 		weight = 1000,
 		stack = false,
 		close = true,
-		description = "Heavy package of cocaine, mostly used for deals and takes a lot of space",
+		description = 'Heavy package of cocaine, mostly used for deals and takes a lot of space',
 		client = {
-			image = "coke_brick.png",
+			image = 'coke_brick.png',
 		}
 	},
 
-	["mastercard"] = {
-		label = "Master Card",
+	['mastercard'] = {
+		label = 'Master Card',
 		weight = 0,
 		stack = false,
 		close = false,
-		description = "MasterCard can be used via ATM",
+		description = 'MasterCard can be used via ATM',
 		client = {
-			image = "mastercard.png",
+			image = 'mastercard.png',
 		}
 	},
 
-	["coke_small_brick"] = {
-		label = "Coke Package",
+	['coke_small_brick'] = {
+		label = 'Coke Package',
 		weight = 350,
 		stack = false,
 		close = true,
-		description = "Small package of cocaine, mostly used for deals and takes a lot of space",
+		description = 'Small package of cocaine, mostly used for deals and takes a lot of space',
 		client = {
-			image = "coke_small_brick.png",
+			image = 'coke_small_brick.png',
 		}
 	},
 
-	["binoculars"] = {
-		label = "Binoculars",
+	['binoculars'] = {
+		label = 'Binoculars',
 		weight = 600,
 		stack = true,
 		close = true,
-		description = "Sneaky Breaky...",
+		description = 'Sneaky Breaky...',
 		client = {
-			image = "binoculars.png",
+			image = 'binoculars.png',
 		}
 	},
 
-	["armor"] = {
-		label = "Armor",
+	['armor'] = {
+		label = 'Armor',
 		weight = 5000,
 		stack = true,
 		close = true,
-		description = "Some protection won't hurt... right?",
+		description = 'Some protection will not hurt... right?',
 		client = {
-			image = "armor.png",
+			image = 'armor.png',
 		}
 	},
 
-	["police_stormram"] = {
-		label = "Stormram",
+	['police_stormram'] = {
+		label = 'Stormram',
 		weight = 18000,
 		stack = true,
 		close = true,
-		description = "A nice tool to break into doors",
+		description = 'A nice tool to break into doors',
 		client = {
-			image = "police_stormram.png",
+			image = 'police_stormram.png',
 		}
 	},
 
-	["whiskey"] = {
-		label = "Whiskey",
+	['whiskey'] = {
+		label = 'Whiskey',
 		weight = 500,
 		stack = true,
 		close = true,
-		description = "For all the thirsty out there",
+		description = 'For all the thirsty out there',
 		client = {
-			image = "whiskey.png",
+			image = 'whiskey.png',
 		}
 	},
 
-	["crack_baggy"] = {
-		label = "Bag of Crack",
+	['crack_baggy'] = {
+		label = 'Bag of Crack',
 		weight = 0,
 		stack = true,
 		close = true,
-		description = "To get happy faster",
+		description = 'To get happy faster',
 		client = {
-			image = "crack_baggy.png",
+			image = 'crack_baggy.png',
 		}
 	},
 
-	["moneybag"] = {
-		label = "Money Bag",
+	['moneybag'] = {
+		label = 'Money Bag',
 		weight = 0,
 		stack = false,
 		close = true,
-		description = "A bag with cash",
+		description = 'A bag with cash',
 		client = {
-			image = "moneybag.png",
+			image = 'moneybag.png',
 		}
 	},
 
-	["casinochips"] = {
-		label = "Casino Chips",
+	['casinochips'] = {
+		label = 'Casino Chips',
 		weight = 0,
 		stack = true,
 		close = false,
-		description = "Chips For Casino Gambling",
+		description = 'Chips For Casino Gambling',
 		client = {
-			image = "casinochips.png",
+			image = 'casinochips.png',
 		}
 	},
 
-	["harness"] = {
-		label = "Race Harness",
+	['harness'] = {
+		label = 'Race Harness',
 		weight = 1000,
 		stack = false,
 		close = true,
-		description = "Racing Harness so no matter what you stay in the car",
+		description = 'Racing Harness so no matter what you stay in the car',
 		client = {
-			image = "harness.png",
+			image = 'harness.png',
 		}
 	},
 
-	["stickynote"] = {
-		label = "Sticky note",
+	['stickynote'] = {
+		label = 'Sticky note',
 		weight = 0,
 		stack = false,
 		close = false,
-		description = "Sometimes handy to remember something :)",
+		description = 'Sometimes handy to remember something :)',
 		client = {
-			image = "stickynote.png",
+			image = 'stickynote.png',
 		}
 	},
 
-	["firework3"] = {
-		label = "WipeOut",
+	['firework3'] = {
+		label = 'WipeOut',
 		weight = 1000,
 		stack = true,
 		close = true,
-		description = "Fireworks",
+		description = 'Fireworks',
 		client = {
-			image = "firework3.png",
+			image = 'firework3.png',
 		}
 	},
 
-	["weed_brick"] = {
-		label = "Weed Brick",
+	['weed_brick'] = {
+		label = 'Weed Brick',
 		weight = 1000,
 		stack = true,
 		close = true,
-		description = "1KG Weed Brick to sell to large customers.",
+		description = '1KG Weed Brick to sell to large customers.',
 		client = {
-			image = "weed_brick.png",
+			image = 'weed_brick.png',
 		}
 	},
 
-	["weaponlicense"] = {
-		label = "Weapon License",
+	['weaponlicense'] = {
+		label = 'Weapon License',
 		weight = 0,
 		stack = false,
 		close = true,
-		description = "Weapon License",
+		description = 'Weapon License',
 		client = {
-			image = "weapon_license.png",
+			image = 'weapon_license.png',
 		}
 	},
 
-	["empty_weed_bag"] = {
-		label = "Empty Weed Bag",
+	['empty_weed_bag'] = {
+		label = 'Empty Weed Bag',
 		weight = 0,
 		stack = true,
 		close = true,
-		description = "A small empty bag",
+		description = 'A small empty bag',
 		client = {
-			image = "weed_baggy_empty.png",
+			image = 'weed_baggy_empty.png',
 		}
 	},
 
-	["rolling_paper"] = {
-		label = "Rolling Paper",
+	['rolling_paper'] = {
+		label = 'Rolling Paper',
 		weight = 0,
 		stack = true,
 		close = true,
-		description = "Paper made specifically for encasing and smoking tobacco or cannabis.",
+		description = 'Paper made specifically for encasing and smoking tobacco or cannabis.',
 		client = {
-			image = "rolling_paper.png",
+			image = 'rolling_paper.png',
 		}
 	},
 
-	["toaster"] = {
-		label = "Toaster",
+	['toaster'] = {
+		label = 'Toaster',
 		weight = 18000,
 		stack = false,
 		close = true,
-		description = "Toast",
+		description = 'Toast',
 		client = {
-			image = "placeholder.png",
+			image = 'placeholder.png',
 		}
 	},
 
-	["xtcbaggy"] = {
-		label = "Bag of XTC",
+	['xtcbaggy'] = {
+		label = 'Bag of XTC',
 		weight = 0,
 		stack = true,
 		close = true,
-		description = "Pop those pills baby",
+		description = 'Pop those pills baby',
 		client = {
-			image = "xtc_baggy.png",
+			image = 'xtc_baggy.png',
 		}
 	},
 
-	["firstaid"] = {
-		label = "First Aid",
+	['firstaid'] = {
+		label = 'First Aid',
 		weight = 2500,
 		stack = true,
 		close = true,
-		description = "You can use this First Aid kit to get people back on their feet",
+		description = 'You can use this First Aid kit to get people back on their feet',
 		client = {
-			image = "firstaid.png",
+			image = 'firstaid.png',
 		}
 	},
 
-	["diamond_ring"] = {
-		label = "Diamond Ring",
+	['diamond_ring'] = {
+		label = 'Diamond Ring',
 		weight = 1500,
 		stack = true,
 		close = true,
-		description = "A diamond ring seems like the jackpot to me!",
+		description = 'A diamond ring seems like the jackpot to me!',
 		client = {
-			image = "diamond_ring.png",
+			image = 'diamond_ring.png',
 		}
 	},
 
-	["visa"] = {
-		label = "Visa Card",
+	['visa'] = {
+		label = 'Visa Card',
 		weight = 0,
 		stack = false,
 		close = false,
-		description = "Visa can be used via ATM",
+		description = 'Visa can be used via ATM',
 		client = {
-			image = "visacard.png",
+			image = 'visacard.png',
 		}
 	},
 
-	["weed_ak47"] = {
-		label = "AK47 2g",
+	['weed_ak47'] = {
+		label = 'AK47 2g',
 		weight = 200,
 		stack = true,
 		close = false,
-		description = "A weed bag with 2g AK47",
+		description = 'A weed bag with 2g AK47',
 		client = {
-			image = "weed_baggy.png",
+			image = 'weed_baggy.png',
 		}
 	},
 
-	["ifaks"] = {
-		label = "ifaks",
+	['ifaks'] = {
+		label = 'ifaks',
 		weight = 200,
 		stack = true,
 		close = true,
-		description = "ifaks for healing and a complete stress remover.",
+		description = 'ifaks for healing and a complete stress remover.',
 		client = {
-			image = "ifaks.png",
+			image = 'ifaks.png',
 		}
 	},
 
-	["cokebaggy"] = {
-		label = "Bag of Coke",
+	['cokebaggy'] = {
+		label = 'Bag of Coke',
 		weight = 0,
 		stack = true,
 		close = true,
-		description = "To get happy real quick",
+		description = 'To get happy real quick',
 		client = {
-			image = "cocaine_baggy.png",
+			image = 'cocaine_baggy.png',
 		}
 	},
 
-	["grape"] = {
-		label = "Grape",
+	['grape'] = {
+		label = 'Grape',
 		weight = 100,
 		stack = true,
 		close = false,
-		description = "Mmmmh yummie, grapes",
+		description = 'Mmmmh yummie, grapes',
 		client = {
-			image = "grape.png",
+			image = 'grape.png',
 		}
 	},
 
-	["iron"] = {
-		label = "Iron",
+	['iron'] = {
+		label = 'Iron',
 		weight = 100,
 		stack = true,
 		close = false,
-		description = "Handy piece of metal that you can probably use for something",
+		description = 'Handy piece of metal that you can probably use for something',
 		client = {
-			image = "iron.png",
+			image = 'iron.png',
 		}
 	},
 
-	["microwave"] = {
-		label = "Microwave",
+	['microwave'] = {
+		label = 'Microwave',
 		weight = 46000,
 		stack = false,
 		close = true,
-		description = "Microwave",
+		description = 'Microwave',
 		client = {
-			image = "placeholder.png",
+			image = 'placeholder.png',
 		}
 	},
 
-	["aluminum"] = {
-		label = "Aluminium",
+	['aluminum'] = {
+		label = 'Aluminium',
 		weight = 100,
 		stack = true,
 		close = false,
-		description = "Nice piece of metal that you can probably use for something",
+		description = 'Nice piece of metal that you can probably use for something',
 		client = {
-			image = "aluminum.png",
+			image = 'aluminum.png',
 		}
 	},
 
-	["advancedlockpick"] = {
-		label = "Advanced Lockpick",
+	['advancedlockpick'] = {
+		label = 'Advanced Lockpick',
 		weight = 500,
 		stack = true,
 		close = true,
-		description = "If you lose your keys a lot this is very useful... Also useful to open your beers",
+		description = 'If you lose your keys a lot this is very useful... Also useful to open your beers',
 		client = {
-			image = "advancedlockpick.png",
+			image = 'advancedlockpick.png',
 			event = 'lockpicks:UseLockpick',
 		}
 	},
 	-- ss_mechanic
-	["advancedrepairkit"] = {
-		label = "Advanced Repairkit",
+	['advancedrepairkit'] = {
+		label = 'Advanced Repairkit',
 		weight = 3000,
 		stack = true,
 		close = true,
-		description = "A nice toolbox with stuff to repair your vehicle",
+		description = 'A nice toolbox with stuff to repair your vehicle',
 		client = {
-			image = "advancedrepairkit.png",
+			image = 'advancedrepairkit.png',
 			event = 'ss_mechanic:client:openToolbox',
 		}
 	},
-	["weldingtool"] = {
-		label = "Welding Tool",
+	['weldingtool'] = {
+		label = 'Welding Tool',
 		weight = 1000,
 		stack = true,
 		close = true,
-		description = "A welding tool to repair your vehicle body",
+		description = 'A welding tool to repair your vehicle body',
 		client = {
-			image = "weldingtool.png",
+			image = 'weldingtool.png',
 			event = 'ss_mechanic:client:useWeldingTool',
 		}
 	},
-	["platform_tablet"] = {
-		label = "Platform Tablet",
+	['platform_tablet'] = {
+		label = 'Platform Tablet',
 		weight = 500,
 		stack = false,
 		close = true,
-		description = "Platform Tablet to customize your vehicle",
+		description = 'Platform Tablet to customize your vehicle',
 		client = {
-			image = "platform_tablet.png",
+			image = 'platform_tablet.png',
 			event = 'ss_mechanic:client:openPlatformTablet',
 		}
 	},
-	["vtire"] = {
-		label = "Vehicle Tire",
+	['vtire'] = {
+		label = 'Vehicle Tire',
 		weight = 3000,
 		stack = true,
 		close = true,
-		description = "A vehicle tire to repair your vehicle",
+		description = 'A vehicle tire to repair your vehicle',
 		client = {
-			image = "vtire.png",
+			image = 'vtire.png',
 		}
 	},
-	["vdoor"] = {
-		label = "Vehicle Door",
+	['vdoor'] = {
+		label = 'Vehicle Door',
 		weight = 3000,
 		stack = true,
 		close = true,
-		description = "A vehicle door to repair your vehicle",
+		description = 'A vehicle door to repair your vehicle',
 		client = {
-			image = "vdoor.png",
+			image = 'vdoor.png',
 		}
 	},
-	["vwindow"] = {
-		label = "Vehicle Window",
+	['vwindow'] = {
+		label = 'Vehicle Window',
 		weight = 1000,
 		stack = true,
 		close = true,
-		description = "A vehicle window to repair your vehicle",
+		description = 'A vehicle window to repair your vehicle',
 		client = {
-			image = "vwindow.png",
+			image = 'vwindow.png',
 		}
 	},
-	["vshammy"] = {
-		label = "Vehicle Shammy",
+	['vshammy'] = {
+		label = 'Vehicle Shammy',
 		weight = 200,
 		stack = true,
 		close = true,
-		description = "A piece of fibre to clean your vehicle",
+		description = 'A piece of fibre to clean your vehicle',
 		client = {
-			image = "vshammy.png",
+			image = 'vshammy.png',
 		}
 	},
-	["vrepairkit"] = {
-		label = "Vehicle Repair Kit",
+	['vrepairkit'] = {
+		label = 'Vehicle Repair Kit',
 		weight = 1000,
 		stack = true,
 		close = true,
-		description = "A tool to repair your vehicle partially",
+		description = 'A tool to repair your vehicle partially',
 		client = {
-			image = "vrepairkit.png",
+			image = 'vrepairkit.png',
 		}
 	},
-	["water_bottle"] = {
-		label = "Bottle of Water",
+	['water_bottle'] = {
+		label = 'Bottle of Water',
 		weight = 500,
 		stack = true,
 		close = true,
-		description = "For all the thirsty out there",
+		description = 'For all the thirsty out there',
 		client = {
-			image = "water_bottle.png",
+			image = 'water_bottle.png',
 		}
 	},
 
-	["vodka"] = {
-		label = "Vodka",
+	['vodka'] = {
+		label = 'Vodka',
 		weight = 500,
 		stack = true,
 		close = true,
-		description = "For all the thirsty out there",
+		description = 'For all the thirsty out there',
 		client = {
-			image = "vodka.png",
+			image = 'vodka.png',
 		}
 	},
 
-	["cryptostick"] = {
-		label = "Crypto Stick",
+	['cryptostick'] = {
+		label = 'Crypto Stick',
 		weight = 200,
 		stack = false,
 		close = true,
-		description = "Why would someone ever buy money that doesn't exist.. How many would it contain..?",
+		description = 'Why would someone ever buy money that does not exist.. How many would it contain..?',
 		client = {
-			image = "cryptostick.png",
+			image = 'cryptostick.png',
 		}
 	},
 
-	["weed_nutrition"] = {
-		label = "Plant Fertilizer",
+	['weed_nutrition'] = {
+		label = 'Plant Fertilizer',
 		weight = 2000,
 		stack = true,
 		close = true,
-		description = "Plant nutrition",
+		description = 'Plant nutrition',
 		client = {
-			image = "weed_nutrition.png",
+			image = 'weed_nutrition.png',
 		}
 	},
 
-	["pinger"] = {
-		label = "Pinger",
+	['pinger'] = {
+		label = 'Pinger',
 		weight = 1000,
 		stack = true,
 		close = true,
-		description = "With a pinger and your phone you can send out your location",
+		description = 'With a pinger and your phone you can send out your location',
 		client = {
-			image = "pinger.png",
+			image = 'pinger.png',
 		}
 	},
 
-	["10kgoldchain"] = {
-		label = "10k Gold Chain",
+	['10kgoldchain'] = {
+		label = '10k Gold Chain',
 		weight = 2000,
 		stack = true,
 		close = true,
-		description = "10 carat golden chain",
+		description = '10 carat golden chain',
 		client = {
-			image = "10kgoldchain.png",
+			image = '10kgoldchain.png',
 		}
 	},
 
-	["twerks_candy"] = {
-		label = "Twerks",
+	['twerks_candy'] = {
+		label = 'Twerks',
 		weight = 100,
 		stack = true,
 		close = true,
-		description = "Some delicious candy :O",
+		description = 'Some delicious candy :O',
 		client = {
-			image = "twerks_candy.png",
+			image = 'twerks_candy.png',
 		}
 	},
 
-	["tunerlaptop"] = {
-		label = "Tunerchip",
+	['tunerlaptop'] = {
+		label = 'Tunerchip',
 		weight = 2000,
 		stack = false,
 		close = true,
-		description = "With this tunerchip you can get your car on steroids... If you know what you're doing",
+		description = 'With this tunerchip you can get your car on steroids... If you know what you are doing',
 		client = {
-			image = "tunerchip.png",
+			image = 'tunerchip.png',
 		}
 	},
 
-	["radioscanner"] = {
-		label = "Radio Scanner",
+	['radioscanner'] = {
+		label = 'Radio Scanner',
 		weight = 1000,
 		stack = true,
 		close = true,
-		description = "With this you can get some police alerts. Not 100% effective however",
+		description = 'With this you can get some police alerts. Not 100% effective however',
 		client = {
-			image = "radioscanner.png",
+			image = 'radioscanner.png',
 		}
 	},
 
-	["firework2"] = {
-		label = "Poppelers",
+	['firework2'] = {
+		label = 'Poppelers',
 		weight = 1000,
 		stack = true,
 		close = true,
-		description = "Fireworks",
+		description = 'Fireworks',
 		client = {
-			image = "firework2.png",
+			image = 'firework2.png',
 		}
 	},
 
-	["goldchain"] = {
-		label = "Golden Chain",
+	['goldchain'] = {
+		label = 'Golden Chain',
 		weight = 1500,
 		stack = true,
 		close = true,
-		description = "A golden chain seems like the jackpot to me!",
+		description = 'A golden chain seems like the jackpot to me!',
 		client = {
-			image = "goldchain.png",
+			image = 'goldchain.png',
 		}
 	},
-
-	["finger_scanner"] = {
-		label = "Finger Scanner",
+	['finger_scanner'] = {
+		label = 'Finger Scanner',
 		weight = 500,
 		stack = false,
 		close = true,
-		description = "Finger Scanner",
+		description = 'Finger Scanner',
 		client = {
-			image = "finger_scanner.png",
+			image = 'finger_scanner.png',
 		}
 	},
-
 	['casasports'] = {
 		label = 'Casasports',
 		weight = 500,
@@ -1602,7 +1600,6 @@ return {
 			image = 'casasports.png',
 		}
 	},
-
 	['marquise'] = {
 		label = 'Marquise',
 		weight = 500,
@@ -1612,7 +1609,6 @@ return {
 			image = 'marquise.png',
 		}
 	},
-
 	['winston'] = {
 		label = 'Winston',
 		weight = 500,
@@ -1622,7 +1618,6 @@ return {
 			image = 'winston.png',
 		}
 	},
-
 	['cigarette'] = {
 		label = 'Cigarette',
 		weight = 500,
@@ -1632,7 +1627,6 @@ return {
 			image = 'cigarette.png',
 		}
 	},
-
 	['cohibacigar'] = {
 		label = 'Cohiba',
 		weight = 500,
@@ -1642,7 +1636,6 @@ return {
 			image = 'cohibacigar.png',
 		}
 	},
-
 	['davidoffcigar'] = {
 		label = 'Davidoff',
 		weight = 500,
@@ -1652,36 +1645,14 @@ return {
 			image = 'cigarette.png',
 		}
 	},
-
-	["notepad"] = {
-		label = "Notepad",
-		weight = 500,
-		stack = false,
-		close = true,
-		description = "Notepad for writing and note",
-		client = {
-			image = "notepad.png",
-		}
-	},
-	["tornnote"] = {
-		label = "Torn Note",
-		weight = 500,
-		stack = false,
-		close = true,
-		description = "A paper note that has been torn or ripped",
-		client = {
-			image = "tornnote.png",
-		}
-	},
-
 	['crutch'] = {
 		label = 'Crutch',
 		weight = 165,
 		stack = false,
 		close = true,
-		description = "Supportive underarm mobility aid",
+		description = 'Supportive underarm mobility aid',
 		client = {
-			image = "crutch.png",
+			image = 'crutch.png',
 		}
 	},
 	['wheelchair'] = {
@@ -1689,33 +1660,102 @@ return {
 		weight = 540,
 		stack = false,
 		close = true,
-		description = "Mobility aid with rolling wheels.",
+		description = 'Mobility aid with rolling wheels.',
 		client = {
-			image = "wheelchair.png",
+			image = 'wheelchair.png',
 		}
 	},
-
     ['diving_fill'] = {
         label = 'Diving Tube',
         weight = 3000,
         stack = false,
         close = true,
-        description = "Breathing tube for gear's oxygen supply."
+        description = 'Breathing tube for gear oxygen supply.'
     },
-
     ['diving_gear'] = {
         label = 'Diving Gear',
         weight = 30000,
         stack = false,
         close = true,
-        description = "Underwater equipment for divers."
+        description = 'Underwater equipment for divers.'
     },
-
     ['binoculars'] = {
         label = 'Binoculars',
         weight = 3000,
         stack = false,
         close = true,
-        description = "Optical magnifying viewing device"
+        description = 'Optical magnifying viewing device'
     },
+	['jammer'] = {
+		label = 'Jammer',
+		weight = 2500,
+		stack = true,
+		close = true,
+		description = 'Radio Signal Jammer',
+		client = {
+			image = 'jammer.png',
+		}
+	},
+	['uvlight'] = {
+		label = 'UV Light',
+		weight = 95,
+		stack = false,
+		close = true,
+		description = 'Reveals hidden fingerprints with UV light',
+		client = {
+			image = 'uvlight.png',
+		}		
+	},
+	['bleachwipes'] = {
+		label = 'Bleach Wipes',
+		weight = 185,
+		stack = true,
+		close = true,
+		description = 'Disinfecting wipes for surface germ control.',
+		client = {
+			image = 'bleachwipes.png',
+		}		
+	},
+    ['shield'] = {
+        label = 'Police Shield',
+        weight = 8000,
+        stack = false,
+        consume = 0,
+		description = 'Protective barrier for police officers.',		
+        client = {
+            export = 'ss_policejob.useShield',
+            add = function(total)
+                if total > 0 then
+                        pcall(function() return exports['ss_policejob']:hasShield(true) end)
+                    end
+                end,
+            remove = function(total)
+                if total < 1 then
+                    pcall(function() return exports['ss_policejob']:hasShield(false) end)
+                end
+            end
+        }
+    },
+	['notepad'] = {
+		label = 'Notepad',
+		weight = 500,
+		stack = false,
+		close = true,
+		description = 'Notepad for writing and note',
+		client = {
+			image = 'notepad.png',
+			event = 'ss_notepad:client:openNotepad',
+		}
+	},
+	['notepadpage'] = {
+		label = 'NotePad Page',
+		weight = 50,
+		stack = false,
+		close = true,
+		description = 'Notepad page for writing and note',
+		client = {
+			image = 'notepadpage.png',
+			event = 'ss_notepad:client:openNotepadPage',
+		}
+	},	
 }

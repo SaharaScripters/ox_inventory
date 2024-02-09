@@ -31,7 +31,6 @@ return {
 			{ loc = vec3(373.13, 326.29, 103.57), length = 0.6, width = 0.5, heading = 345.0, minZ = 103.57, maxZ = 103.97, distance = 1.5 },
 		}
 	},
-
 	Liquor = {
 		name = 'Liquor Store',
 		blip = {
@@ -57,8 +56,29 @@ return {
 			{ loc = vec3(1393.0, 3605.95, 35.11), length = 0.6, width = 0.6, heading = 200.0, minZ = 35.0, maxZ = 35.4, distance = 1.5 }
 		}
 	},
-
-	YouTool = {
+	PoliceArmoury = {
+		name = 'DGSN Armoury',
+		groups = shared.police,
+		inventory = {
+			{ name = 'ammo-9', price = 5, grade = 8 },
+			{ name = 'ammo-rifle', price = 5, grade = 8 },
+			{ name = 'handcuffs', price = 200, grade = 8 },
+			{ name = 'WEAPON_FLASHLIGHT', price = 200, grade = 8 },
+			{ name = 'WEAPON_NIGHTSTICK', price = 100, grade = 8 },
+			{ name = 'WEAPON_PISTOL', price = 500, metadata = { registered = true, serial = 'POL' }, grade = 8 },
+			{ name = 'WEAPON_CARBINERIFLE', price = 1000, metadata = { registered = true, serial = 'POL' }, grade = 8 },
+			{ name = 'WEAPON_STUNGUN', price = 500, metadata = { registered = true, serial = 'POL'}, grade = 8 },
+		}, 
+		targets = {
+            {
+                ped = `s_m_m_fiboffice_02`,
+                scenario = 'WORLD_HUMAN_COP_IDLES',
+                loc = vec3(455.89, -1000.00, 34.06),
+                heading = 4,
+            },
+		}
+	},	
+	--[[YouTool = {
 		name = 'YouTool',
 		blip = {
 			id = 402, colour = 69, scale = 0.8
@@ -70,9 +90,8 @@ return {
 		}, targets = {
 			{ loc = vec3(2746.8, 3473.13, 55.67), length = 0.6, width = 3.0, heading = 65.0, minZ = 55.0, maxZ = 56.8, distance = 3.0 }
 		}
-	},
-
-	Ammunation = {
+	},--]]
+	--[[Ammunation = {
 		name = 'Ammunation',
 		blip = {
 			id = 110, colour = 69, scale = 0.8
@@ -102,31 +121,8 @@ return {
 			{ loc = vec3(-1117.61, 2700.26, 18.67), length = 0.6, width = 0.5, heading = 221.82, minZ = 18.5, maxZ = 18.9, distance = 2.0 },
 			{ loc = vec3(841.05, -1034.76, 28.31), length = 0.6, width = 0.5, heading = 360.0, minZ = 28.2, maxZ = 28.6, distance = 2.0 }
 		}
-	},
-
-	PoliceArmoury = {
-		name = 'DGSN Armoury',
-		groups = shared.police,
-		inventory = {
-			{ name = 'ammo-9', price = 5, grade = 8 },
-			{ name = 'ammo-rifle', price = 5, grade = 8 },
-			{ name = 'WEAPON_FLASHLIGHT', price = 200, grade = 8 },
-			{ name = 'WEAPON_NIGHTSTICK', price = 100, grade = 8 },
-			{ name = 'WEAPON_PISTOL', price = 500, metadata = { registered = true, serial = 'POL' }, grade = 8 },
-			{ name = 'WEAPON_CARBINERIFLE', price = 1000, metadata = { registered = true, serial = 'POL' }, grade = 8 },
-			{ name = 'WEAPON_STUNGUN', price = 500, metadata = { registered = true, serial = 'POL'}, grade = 8 },
-		}, 
-		targets = {
-            {
-                ped = `s_m_m_fiboffice_02`,
-                scenario = 'WORLD_HUMAN_COP_IDLES',
-                loc = vec3(455.89, -1000.00, 34.06),
-                heading = 4,
-            },
-		}
-	},
-
-	Medicine = {
+	},--]]
+	--[[Medicine = {
 		name = 'Medicine Cabinet',
 		groups = {
 			['ambulance'] = 0
@@ -141,9 +137,8 @@ return {
 		}, targets = {
 
 		}
-	},
-
-	BlackMarketArms = {
+	},--]]
+	--[[BlackMarketArms = {
 		name = 'Black Market (Arms)',
 		inventory = {
 			{ name = 'WEAPON_DAGGER', price = 5000, metadata = { registered = false	}, currency = 'black_money' },
@@ -156,9 +151,8 @@ return {
 		}, targets = {
 
 		}
-	},
-
-	VendingMachineDrinks = {
+	},--]]
+	--[[VendingMachineDrinks = {
 		name = 'Vending Machine',
 		inventory = {
 			{ name = 'water', price = 10 },
@@ -167,5 +161,5 @@ return {
 		model = {
 			`prop_vend_soda_02`, `prop_vend_fridge01`, `prop_vend_water_01`, `prop_vend_soda_01`
 		}
-	}
+	}--]]
 }
