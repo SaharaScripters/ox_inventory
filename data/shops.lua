@@ -77,6 +77,31 @@ return {
                 heading = 4,
             },
 		}
+	},
+	HospitalShop = {
+		name = 'Hospital Shop',
+		groups = {
+			['ambulance'] = 0
+		},
+		inventory = {
+			{ name = 'medbag', price = 5, grade = 4 },
+			{ name = 'medikit', price = 5, grade = 4 },
+			{ name = 'morphine30', price = 200, grade = 4 },
+			{ name = 'morphine15', price = 200, grade = 4 },
+			{ name = 'perc30', price = 100, grade = 4 },
+			{ name = 'perc10', price = 500, grade = 4 },
+			{ name = 'perc5', price = 1000, grade = 4 },
+			{ name = 'vic10', price = 500, grade = 4 },
+			{ name = 'vic5', price = 500, grade = 4 },
+		}, 
+		targets = {
+            {
+                ped = `s_m_m_doctor_01`,
+                scenario = 'WORLD_HUMAN_COP_IDLES',
+                loc = vec3(-678.05, 334.80, 82.09),
+                heading = 172,
+            },
+		}
 	},	
 	--[[YouTool = {
 		name = 'YouTool',
