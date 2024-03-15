@@ -5,8 +5,8 @@ return {
 			weight = 1500,
 			durability = 0.075,
 			ammoname = 'ammo-9',
-		},--]]
-		--[[['WEAPON_ADVANCEDRIFLE'] = {
+		},
+		['WEAPON_ADVANCEDRIFLE'] = {
 			label = 'Advanced Rifle',
 			weight = 3100,
 			durability = 0.03,
@@ -732,7 +732,7 @@ return {
 					`COMPONENT_AT_AR_SUPP`,
 					`COMPONENT_AT_AR_SUPP_02`,
 					`COMPONENT_AT_SR_SUPP`,
-					`COMPONENT_AT_SR_SUPP_03`
+					`COMPONENT_AT_SR_SUPP_03`,
 				},
 				usetime = 2500
 			}
@@ -846,6 +846,7 @@ return {
 					`COMPONENT_SPECIALCARBINE_CLIP_02`,
 					`COMPONENT_SPECIALCARBINE_MK2_CLIP_02`,
 					`COMPONENT_TACTICALRIFLE_CLIP_02`,
+					`COMPONENT_BATTLERIFLE_CLIP_02`,
 				},
 				usetime = 2500
 			}
