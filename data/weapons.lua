@@ -1,92 +1,120 @@
 return {
 	Weapons = {
+		['WEAPON_BATTLERIFLE'] = {
+			label = 'Battle Rifle',
+			weight = 3300,
+			durability = 0.03,
+			ammoname = 'ammo-rifle2',
+		},
+
+		['WEAPON_SNOWLAUNCHER'] = {
+			label = 'Snowball Launcher',
+			weight = 1000,
+			durability = 0.03,
+			ammoname = 'WEAPON_SNOWBALL',
+		},
+
 		--[[['WEAPON_TECPISTOL'] = {
 			label = 'Tactical SMG',
 			weight = 1500,
 			durability = 0.075,
 			ammoname = 'ammo-9',
 		},
+
 		['WEAPON_ADVANCEDRIFLE'] = {
 			label = 'Advanced Rifle',
 			weight = 3100,
 			durability = 0.03,
 			ammoname = 'ammo-rifle',
-		},--]]
-		--[[['WEAPON_APPISTOL'] = {
+		},
+
+		['WEAPON_APPISTOL'] = {
 			label = 'AP Pistol',
 			weight = 1400,
 			durability = 0.1,
 			ammoname = 'ammo-9',
 		},--]]
-		['WEAPON_ASSAULTRIFLE'] = { -- Illegal
+
+		['WEAPON_ASSAULTRIFLE'] = {
 			label = 'Assault Rifle',
 			weight = 4500,
 			durability = 0.03,
 			ammoname = 'ammo-rifle2',
 		},
+
 		--[[['WEAPON_ASSAULTRIFLE_MK2'] = {
 			label = 'Assault Rifle MK2',
 			weight = 2950,
 			durability = 0.03,
 			ammoname = 'ammo-rifle2',
-		},--]]
-		--[[['WEAPON_ASSAULTSHOTGUN'] = {
+		},
+
+		['WEAPON_ASSAULTSHOTGUN'] = {
 			label = 'Assault Shotgun',
 			weight = 5200,
 			durability = 0.05,
 			ammoname = 'ammo-shotgun'
 		},--]]
-		['WEAPON_ASSAULTSMG'] = { -- Legal
+
+		['WEAPON_ASSAULTSMG'] = {
 			label = 'Assault SMG',
 			weight = 2900,
 			durability = 0.05,
 			ammoname = 'ammo-rifle'
 		},
+
 		--[[['WEAPON_BALL'] = {
 			label = 'Ball',
 			weight = 149,
 			throwable = true,
 		},--]]
+
 		['WEAPON_BAT'] = {
 			label = 'Bat',
 			weight = 1134,
 			durability = 0.1,
 		},
-		['WEAPON_BATTLEAXE'] = {
+
+		--[[['WEAPON_BATTLEAXE'] = {
 			label = 'Battle Axe',
 			weight = 6500,
 			durability = 0.1,
 		},
-		--[[['WEAPON_BOTTLE'] = {
+
+		['WEAPON_BOTTLE'] = {
 			label = 'Bottle',
 			weight = 350,
 			durability = 0.1,
-		},--]]
-		--[[['WEAPON_BULLPUPRIFLE'] = {
+		},
+
+		['WEAPON_BULLPUPRIFLE'] = {
 			label = 'Bullpup Rifle',
 			weight = 2900,
 			durability = 0.03,
 			ammoname = 'ammo-rifle'
-		},--]]
-		--[[['WEAPON_BULLPUPRIFLE_MK2'] = {
+		},
+
+		['WEAPON_BULLPUPRIFLE_MK2'] = {
 			label = 'Bullpup Rifle MK2',
 			weight = 2900,
 			durability = 0.03,
 			ammoname = 'ammo-rifle'
-		},--]]
-		--[[['WEAPON_BULLPUPSHOTGUN'] = {
+		},
+
+		['WEAPON_BULLPUPSHOTGUN'] = {
 			label = 'Bullpup Shotgun',
 			weight = 3100,
 			durability = 0.2,
 			ammoname = 'ammo-shotgun'
-		},--]]
+		},]]--
+
 		['WEAPON_BZGAS'] = {
 			label = 'BZ Gas',
 			weight = 600,
 			throwable = true,
 		},
 
-		['WEAPON_CARBINERIFLE'] = { -- Legal
+		['WEAPON_CARBINERIFLE'] = {
 			label = 'Carbine Rifle',
 			weight = 3100,
 			durability = 0.03,
