@@ -517,6 +517,7 @@ return {
 		description = 'Sidney would be very proud at you',
 		client = {
 			image = 'joint.png',
+			event = 'ss_consumable:client:useItem',
 		}
 	},
 
