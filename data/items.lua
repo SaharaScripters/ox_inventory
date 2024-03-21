@@ -39,7 +39,7 @@ return {
 	['money'] = {
 		label = 'Money',
 	},
-	-- cards/permit
+	-- cards/permit/licenses
 	['id_card'] = {
 		label = 'ID Card',
 		weight = 0,
@@ -50,8 +50,58 @@ return {
 			image = 'id_card.png',
 		}
 	},
+	['driver_license'] = {
+		label = 'Driver License',
+		weight = 0,
+		stack = false,
+		close = false,
+		description = 'Permit to show you can drive a vehicle',
+		client = {
+			image = 'driver_license.png',
+		}
+	},
+	['pilot_license'] = {
+		label = 'Pilot License',
+		weight = 0,
+		stack = false,
+		close = false,
+		description = 'Permit to show you can fly a plane',
+		client = {
+			image = 'pilot_license.png',
+		}
+	},
+	['boating_license'] = {
+		label = 'Boating License',
+		weight = 0,
+		stack = false,
+		close = false,
+		description = 'Permit to show you can drive a boat',
+		client = {
+			image = 'boating_license.png',
+		}
+	},
+	['weapon_license'] = {
+		label = 'Drivers License',
+		weight = 0,
+		stack = false,
+		close = false,
+		description = 'Permit to show you can have a weapon legally',
+		client = {
+			image = 'weapon_license.png',
+		}
+	},
+	['hunting_license'] = {
+		label = 'Drivers License',
+		weight = 0,
+		stack = false,
+		close = false,
+		description = 'Permit to show you can hunt in the forest',
+		client = {
+			image = 'hunting_license.png',
+		}
+	},	
 	-- npwd
-	['phone'] = {
+	--[[['phone'] = {
 		label = 'Phone',
 		weight = 190,
 		stack = false,
@@ -69,7 +119,27 @@ return {
 				end
 			end
 		}
+	},--]]
+	['phone'] = {
+		label = 'Phone',
+		weight = 1000,
+		stack = true,
+		close = true,
+		description = 'A working Phone for calls and other stuff',
+		client = {
+			image = 'phone.png',
+		}
 	},
+	['cryptophone'] = {
+		label = 'Crypto Phone',
+		weight = 1000,
+		stack = true,
+		close = true,
+		description = 'A stock market phone',
+		client = {
+			image = 'cryptophone.png',
+		}
+	},	
 	-- radio
 	['radio'] = {
 		label = 'Radio',
@@ -154,116 +224,6 @@ return {
 		description = 'Your Vehicle Key',
 		client = {
 			image = 'vehiclekey.png',
-		}
-	},
-	-- ss_farming
-	['pomegranate'] = {
-		label = 'Pomegranate',
-		weight = 250,
-		stack = true,
-		close = true,
-		description = 'Pomegranate',
-		client = {
-			image = 'pomegranate.png',
-		}
-	},
-
-	['rawbeef'] = {
-		label = 'Raw Beef',
-		weight = 1000,
-		stack = true,
-		close = true,
-		description = 'Raw Beef',
-		client = {
-			image = 'rawbeef.png',
-		}
-	},
-
-	['eggs'] = {
-		label = 'Eggs',
-		weight = 50,
-		stack = true,
-		close = true,
-		description = 'Eggs',
-		client = {
-			image = 'eggs.png',
-		}
-	},
-
-	['rawchicken'] = {
-		label = 'Raw Chicken',
-		weight = 2000,
-		stack = true,
-		close = true,
-		description = 'Raw Chicken',
-		client = {
-			image = 'rawchicken.png',
-		}
-	},
-
-	['apple'] = {
-		label = 'Apple',
-		weight = 100,
-		stack = true,
-		close = true,
-		description = 'Apple',
-		client = {
-			image = 'apple.png',
-		}
-	},
-
-	['milkbucket'] = {
-		label = 'Milk Bucket',
-		weight = 2500,
-		stack = true,
-		close = true,
-		description = 'Milk Bucket',
-		client = {
-			image = 'milkbucket.png',
-		}
-	},
-
-	['peach'] = {
-		label = 'Peach',
-		weight = 100,
-		stack = true,
-		close = true,
-		description = 'Peach',
-		client = {
-			image = 'peach.png',
-		}
-	},
-
-	['emptybucket'] = {
-		label = 'Empty Bucket',
-		weight = 500,
-		stack = true,
-		close = true,
-		description = 'Empty Bucket',
-		client = {
-			image = 'emptybucket.png',
-		}
-	},
-
-	['lime'] = {
-		label = 'Lime',
-		weight = 100,
-		stack = true,
-		close = true,
-		description = 'Lime',
-		client = {
-			image = 'lime.png',
-		}
-	},
-
-	['orange'] = {
-		label = 'Orange',
-		weight = 100,
-		stack = true,
-		close = true,
-		description = 'Orange',
-		client = {
-			image = 'orange.png',
 		}
 	},
 	-- ss_stealparkmeter
@@ -959,7 +919,6 @@ return {
 			image = 'usb_device.png',
 		}
 	},
-
 	['coffee'] = {
 		label = 'Coffee',
 		weight = 200,
@@ -970,7 +929,6 @@ return {
 			image = 'coffee.png',
 		}
 	},
-
 	['weed_og-kush'] = {
 		label = 'OGKush 2g',
 		weight = 200,
@@ -981,18 +939,6 @@ return {
 			image = 'weed_baggy.png',
 		}
 	},
-
-	['driver_license'] = {
-		label = 'Drivers License',
-		weight = 0,
-		stack = false,
-		close = false,
-		description = 'Permit to show you can drive a vehicle',
-		client = {
-			image = 'driver_license.png',
-		}
-	},
-
 	['weed_white-widow_seed'] = {
 		label = 'White Widow Seed',
 		weight = 0,
@@ -1003,7 +949,6 @@ return {
 			image = 'weed_seed.png',
 		}
 	},
-
 	['laptop'] = {
 		label = 'Laptop',
 		weight = 4000,
@@ -1014,7 +959,6 @@ return {
 			image = 'laptop.png',
 		}
 	},
-
 	['plastic'] = {
 		label = 'Plastic',
 		weight = 100,
@@ -1025,7 +969,6 @@ return {
 			image = 'plastic.png',
 		}
 	},
-
 	['ironoxide'] = {
 		label = 'Iron Powder',
 		weight = 100,
@@ -1036,7 +979,6 @@ return {
 			image = 'ironoxide.png',
 		}
 	},
-
 	['sandwich'] = {
 		label = 'Sandwich',
 		weight = 200,
@@ -1047,7 +989,6 @@ return {
 			image = 'sandwich.png',
 		}
 	},
-
 	['coke_brick'] = {
 		label = 'Coke Brick',
 		weight = 1000,
@@ -1058,7 +999,6 @@ return {
 			image = 'coke_brick.png',
 		}
 	},
-
 	['mastercard'] = {
 		label = 'Master Card',
 		weight = 0,
@@ -1069,7 +1009,6 @@ return {
 			image = 'mastercard.png',
 		}
 	},
-
 	['coke_small_brick'] = {
 		label = 'Coke Package',
 		weight = 350,
@@ -1080,7 +1019,6 @@ return {
 			image = 'coke_small_brick.png',
 		}
 	},
-
 	['binoculars'] = {
 		label = 'Binoculars',
 		weight = 600,
@@ -1091,7 +1029,6 @@ return {
 			image = 'binoculars.png',
 		}
 	},
-
 	['armor'] = {
 		label = 'Armor',
 		weight = 5000,
@@ -1102,7 +1039,6 @@ return {
 			image = 'armor.png',
 		}
 	},
-
 	['police_stormram'] = {
 		label = 'Stormram',
 		weight = 18000,
@@ -1113,9 +1049,488 @@ return {
 			image = 'police_stormram.png',
 		}
 	},
-
 	['scrapmetal'] = {
 		label = 'Scrap Metal',
 		weight = 80,
 	},
+	-- ss_businesses
+		-- Agri Maroc
+	['apple'] = {
+		label = 'Fresh Apple',
+		weight = 250,
+		stack = true,
+		close = true,
+		description = 'Fresh Apple',
+		client = {
+			image = 'apple.png',
+		},
+	},
+	['grape'] = {
+		label = 'Fresh Grape',
+		weight = 250,
+		stack = true,
+		close = true,
+		description = 'Fresh Grape',
+		client = {
+			image = 'grape.png',
+		},
+	},
+	['lime'] = {
+		label = 'Fresh Lime',
+		weight = 250,
+		stack = true,
+		close = true,
+		description = 'Fresh Lime',
+		client = {
+			image = 'lime.png',
+		},
+	},
+	['orange'] = {
+		label = 'Fresh Orange',
+		weight = 250,
+		stack = true,
+		close = true,
+		description = 'Fresh Orange',
+		client = {
+			image = 'orange.png',
+		},
+	},
+	['peach'] = {
+		label = 'Fresh Peach',
+		weight = 250,
+		stack = true,
+		close = true,
+		description = 'Fresh Peach',
+		client = {
+			image = 'peach.png',
+		},
+	},
+	['pineapple'] = {
+		label = 'Fresh Pineapple',
+		weight = 250,
+		stack = true,
+		close = true,
+		description = 'Fresh Pineapple',
+		client = {
+			image = 'pineapple.png',
+		},
+	},
+	['pomegranate'] = {
+		label = 'Fresh Pomegranate',
+		weight = 250,
+		stack = true,
+		close = true,
+		description = 'Fresh Pomegranate',
+		client = {
+			image = 'pomegranate.png',
+		},
+	},
+	['pumpkin'] = {
+		label = 'Pizza Pumpkin',
+		weight = 250,
+		stack = true,
+		close = true,
+		description = 'Pizza Pumpkin',
+		client = {
+			image = 'pumpkin.png',
+		},
+	},		
+	['lettuce'] = {
+		label = 'Fresh Lettuce',
+		weight = 250,
+		stack = true,
+		close = true,
+		description = 'Fresh Lettuce',
+		client = {
+			image = 'lettuce.png',
+		},
+	},
+	['onion'] = {
+		label = 'Fresh Onion',
+		weight = 250,
+		stack = true,
+		close = true,
+		description = 'Fresh Onion',
+		client = {
+			image = 'onion.png',
+		},
+	},
+	['potato'] = {
+		label = 'Fresh Potato',
+		weight = 250,
+		stack = true,
+		close = true,
+		description = 'Fresh Potato',
+		client = {
+			image = 'potato.png',
+		},
+	},		
+	['tomato'] = {
+		label = 'Fresh Tomato',
+		weight = 250,
+		stack = true,
+		close = true,
+		description = 'Fresh Tomato',
+		client = {
+			image = 'tomato.png',
+		},
+	},
+	['bottled_milk'] = {
+		label = 'Bottle of Milk',
+		weight = 250,
+		stack = true,
+		close = true,
+		description = 'Bottle of Milk',
+		client = {
+			image = 'bottled_milk.png',
+		},
+	},
+	['cheese'] = {
+		label = 'Fresh Cheese',
+		weight = 250,
+		stack = true,
+		close = true,
+		description = 'Fresh Cheese',
+		client = {
+			image = 'cheese.png',
+		},
+	},
+	['butter'] = {
+		label = 'Fresh Butter',
+		weight = 250,
+		stack = true,
+		close = true,
+		description = 'Fresh Butter',
+		client = {
+			image = 'butter.png',
+		},
+	},
+	['yeast'] = {
+		label = 'Yeast',
+		weight = 250,
+		stack = true,
+		close = true,
+		description = 'Yeast',
+		client = {
+			image = 'yeast.png',
+		},
+	},
+	['packed_coffee'] = {
+		label = 'Packed Coffee',
+		weight = 250,
+		stack = true,
+		close = true,
+		description = 'Packed Coffee',
+		client = {
+			image = 'packed_coffee.png',
+		},
+	},
+	['packed_flour'] = {
+		label = 'Corn Flour',
+		weight = 250,
+		stack = true,
+		close = true,
+		description = 'Corn Flour',
+		client = {
+			image = 'packed_flour.png',
+		},
+	},
+	['bottled_oil'] = {
+		label = 'Bottle of Oil',
+		weight = 250,
+		stack = true,
+		close = true,
+		description = 'Bottle of Oil',
+		client = {
+			image = 'bottled_oil.png',
+		},
+	},	
+	['mint'] = {
+		label = 'Fresh Mint',
+		weight = 250,
+		stack = true,
+		close = true,
+		description = 'Fresh Mint',
+		client = {
+			image = 'mint.png',
+		},
+	},
+	['raw_beef'] = {
+		label = 'Raw Beef',
+		weight = 250,
+		stack = true,
+		close = true,
+		description = 'Raw Beef',
+		client = {
+			image = 'raw_beef.png',
+		},
+	},
+	['raw_chicken'] = {
+		label = 'Raw Chicken',
+		weight = 250,
+		stack = true,
+		close = true,
+		description = 'Raw Chicken',
+		client = {
+			image = 'raw_chicken.png',
+		},
+	},
+	['egg'] = {
+		label = 'Fresh Eggs',
+		weight = 250,
+		stack = true,
+		close = true,
+		description = 'Fresh Eggs',
+		client = {
+			image = 'egg.png',
+		},
+	},	
+		-- Medina Burger
+			-- MB Sellable Items	
+	['mb_chicken_burger'] = {
+		label = 'Chicken Burger',
+		weight = 250,
+		stack = true,
+		close = true,
+		description = 'Medina Burger Chicken Burger',
+		client = {
+			image = 'mb_chicken_burger.png',
+		},
+	},
+	['mb_beef_burger'] = {
+		label = 'Beef Burger',
+		weight = 250,
+		stack = true,
+		close = true,
+		description = 'Medina Burger Beef Burger',
+		client = {
+			image = 'mb_beef_burger.png',
+		},
+	},
+	['mb_fries'] = {
+		label = 'BK Fries',
+		weight = 250,
+		stack = true,
+		close = true,
+		description = 'Medina Burger Burger King Fries',
+		client = {
+			image = 'mb_fries.png',
+		},
+	},
+			-- MB Kitchen Items
+	['bun_dough'] = {
+		label = 'Bun Dough',
+		weight = 250,
+		stack = true,
+		close = true,
+		description = 'Bun Dough',
+		client = {
+			image = 'bun_dough.png',
+		},
+	},
+	['bun'] = {
+		label = 'Burger Bun',
+		weight = 250,
+		stack = true,
+		close = true,
+		description = 'Burger Bun',
+		client = {
+			image = 'bun.png',
+		},
+	},
+	['sliced_lettuce'] = {
+		label = 'Sliced Lettuce',
+		weight = 250,
+		stack = true,
+		close = true,
+		description = 'Sliced Lettuce',
+		client = {
+			image = 'sliced_lettuce.png',
+		},
+	},
+	['cooked_patty_ground_beef'] = {
+		label = 'Cooked Patty Ground Beef',
+		weight = 250,
+		stack = true,
+		close = true,
+		description = 'Cooked Patty Ground Beef for Burger',
+		client = {
+			image = 'cooked_patty_ground_beef.png',
+		},
+	},	
+		-- Black Pan
+			-- BP Sellable Items
+	['bp_chicken_pizza'] = {
+		label = 'Chicken Pizza',
+		weight = 250,
+		stack = true,
+		close = true,
+		description = 'Black Pan Chicken Pizza',
+		client = {
+			image = 'bp_chicken_pizza.png',
+		},
+	},
+	['bp_beef_pizza'] = {
+		label = 'Beef Pizza',
+		weight = 250,
+		stack = true,
+		close = true,
+		description = 'Black Pan Beef Pizza',
+		client = {
+			image = 'bp_beef_pizza.png',
+		},
+	},
+	['bp_fries'] = {
+		label = 'Fries',
+		weight = 250,
+		stack = true,
+		close = true,
+		description = 'Black Pan Fries',
+		client = {
+			image = 'bp_fries.png',
+		},
+	},
+			-- BP Kitchen Items
+	['pizza_dough'] = {
+		label = 'Pizza Dough',
+		weight = 250,
+		stack = true,
+		close = true,
+		description = 'Pizza Dough',
+		client = {
+			image = 'pizza_dough.png',
+		},
+	},
+	['sliced_onion'] = {
+		label = 'Sliced Onion',
+		weight = 250,
+		stack = true,
+		close = true,
+		description = 'Sliced Onion',
+		client = {
+			image = 'sliced_onion.png',
+		},
+	},
+	['cooked_shredded_ground_beef'] = {
+		label = 'Cooked Shredded Ground Beef',
+		weight = 250,
+		stack = true,
+		close = true,
+		description = 'Cooked Shredded Ground Beef for Burger',
+		client = {
+			image = 'cooked_shredded_ground_beef.png',
+		},
+	},	
+			-- Shared Kitchen Item (MB & BP)
+	['sliced_potato'] = {
+		label = 'Sliced Potato',
+		weight = 250,
+		stack = true,
+		close = true,
+		description = 'Sliced Potato',
+		client = {
+			image = 'sliced_potato.png',
+		},
+	},
+	['fried_potato'] = {
+		label = 'Fried Potato',
+		weight = 250,
+		stack = true,
+		close = true,
+		description = 'Fried Potato',
+		client = {
+			image = 'fried_potato.png',
+		},
+	},
+	['sliced_tomato'] = {
+		label = 'Sliced Tomato',
+		weight = 250,
+		stack = true,
+		close = true,
+		description = 'Sliced Tomato',
+		client = {
+			image = 'sliced_tomato.png',
+		},
+	},	
+	['sliced_chicken'] = {
+		label = 'Sliced Chicken',
+		weight = 250,
+		stack = true,
+		close = true,
+		description = 'Sliced Chicken',
+		client = {
+			image = 'sliced_chicken.png',
+		},
+	},
+	['fried_chicken'] = {
+		label = 'Fried Chicken',
+		weight = 250,
+		stack = true,
+		close = true,
+		description = 'Fried Chicken',
+		client = {
+			image = 'fried_chicken.png',
+		},
+	},
+	['ground_beef'] = {
+		label = 'Ground Beef',
+		weight = 250,
+		stack = true,
+		close = true,
+		description = 'Ground Beef',
+		client = {
+			image = 'ground_beef.png',
+		},
+	},
+	['kitchen_knife'] = {
+		label = 'Kitchen Knife',
+		weight = 250,
+		stack = true,
+		close = true,
+		description = 'Kitchen Knife',
+		client = {
+			image = 'kitchen_knife.png',
+		},
+	},	
+	-- ss_farmerjob
+	['raw_coffee_beans'] = {
+		label = 'Raw Coffee Beans',
+		weight = 250,
+		stack = true,
+		close = true,
+		description = 'Raw Coffee Beans',
+		client = {
+			image = 'raw_coffee_beans.png',
+		},
+	},
+	['corn_cob'] = {
+		label = 'Corn Cob',
+		weight = 250,
+		stack = true,
+		close = true,
+		description = 'Corn Cob',
+		client = {
+			image = 'corn_cob.png',
+		},
+	},
+	['empty_milk_bucket'] = {
+		label = 'Empty Bucket of Milk',
+		weight = 250,
+		stack = true,
+		close = true,
+		description = 'Empty Bucket of Milk',
+		client = {
+			image = 'empty_milk_bucket.png',
+		},
+	},	
+	['bucket_milk'] = {
+		label = 'Bucket of Milk',
+		weight = 250,
+		stack = true,
+		close = true,
+		description = 'Bucket of Milk',
+		client = {
+			image = 'bucket_milk.png',
+		},
+	},	
 }
