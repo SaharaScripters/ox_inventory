@@ -99,7 +99,7 @@ return {
 		client = {
 			image = 'hunting_license.png',
 		}
-	},	
+	},
 	-- npwd
 	--[[['phone'] = {
 		label = 'Phone',
@@ -139,7 +139,7 @@ return {
 		client = {
 			image = 'cryptophone.png',
 		}
-	},	
+	},
 	-- radio
 	['radio'] = {
 		label = 'Radio',
@@ -1134,7 +1134,7 @@ return {
 		client = {
 			image = 'pumpkin.png',
 		},
-	},		
+	},
 	['lettuce'] = {
 		label = 'Fresh Lettuce',
 		weight = 250,
@@ -1164,7 +1164,7 @@ return {
 		client = {
 			image = 'potato.png',
 		},
-	},		
+	},
 	['tomato'] = {
 		label = 'Fresh Tomato',
 		weight = 250,
@@ -1244,7 +1244,7 @@ return {
 		client = {
 			image = 'bottled_oil.png',
 		},
-	},	
+	},
 	['mint'] = {
 		label = 'Fresh Mint',
 		weight = 250,
@@ -1284,9 +1284,9 @@ return {
 		client = {
 			image = 'egg.png',
 		},
-	},	
+	},
 		-- Medina Burger
-			-- MB Sellable Items	
+			-- MB Sellable Items
 	['mb_chicken_burger'] = {
 		label = 'Chicken Burger',
 		weight = 250,
@@ -1295,6 +1295,7 @@ return {
 		description = 'Medina Burger Chicken Burger',
 		client = {
 			image = 'mb_chicken_burger.png',
+			event = 'ss_consumable:client:useItem',
 		},
 	},
 	['mb_beef_burger'] = {
@@ -1305,6 +1306,7 @@ return {
 		description = 'Medina Burger Beef Burger',
 		client = {
 			image = 'mb_beef_burger.png',
+			event = 'ss_consumable:client:useItem',
 		},
 	},
 	['mb_fries'] = {
@@ -1315,6 +1317,7 @@ return {
 		description = 'Medina Burger Burger King Fries',
 		client = {
 			image = 'mb_fries.png',
+			event = 'ss_consumable:client:useItem',
 		},
 	},
 			-- MB Kitchen Items
@@ -1357,7 +1360,7 @@ return {
 		client = {
 			image = 'cooked_patty_ground_beef.png',
 		},
-	},	
+	},
 		-- Black Pan
 			-- BP Sellable Items
 	['bp_chicken_pizza'] = {
@@ -1368,6 +1371,7 @@ return {
 		description = 'Black Pan Chicken Pizza',
 		client = {
 			image = 'bp_chicken_pizza.png',
+			event = 'ss_consumable:client:useItem',
 		},
 	},
 	['bp_beef_pizza'] = {
@@ -1378,6 +1382,7 @@ return {
 		description = 'Black Pan Beef Pizza',
 		client = {
 			image = 'bp_beef_pizza.png',
+			event = 'ss_consumable:client:useItem',
 		},
 	},
 	['bp_fries'] = {
@@ -1388,6 +1393,7 @@ return {
 		description = 'Black Pan Fries',
 		client = {
 			image = 'bp_fries.png',
+			event = 'ss_consumable:client:useItem',
 		},
 	},
 			-- BP Kitchen Items
@@ -1420,7 +1426,7 @@ return {
 		client = {
 			image = 'cooked_shredded_ground_beef.png',
 		},
-	},	
+	},
 			-- Shared Kitchen Item (MB & BP)
 	['sliced_potato'] = {
 		label = 'Sliced Potato',
@@ -1451,7 +1457,7 @@ return {
 		client = {
 			image = 'sliced_tomato.png',
 		},
-	},	
+	},
 	['sliced_chicken'] = {
 		label = 'Sliced Chicken',
 		weight = 250,
@@ -1491,7 +1497,7 @@ return {
 		client = {
 			image = 'kitchen_knife.png',
 		},
-	},	
+	},
 	-- ss_farmerjob
 	['raw_coffee_beans'] = {
 		label = 'Raw Coffee Beans',
@@ -1522,7 +1528,7 @@ return {
 		client = {
 			image = 'empty_milk_bucket.png',
 		},
-	},	
+	},
 	['bucket_milk'] = {
 		label = 'Bucket of Milk',
 		weight = 250,
@@ -1532,5 +1538,5 @@ return {
 		client = {
 			image = 'bucket_milk.png',
 		},
-	},	
+	},
 }
