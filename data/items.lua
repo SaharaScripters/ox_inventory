@@ -1,4 +1,28 @@
 return {
+	['water'] = {
+		label = 'Water',
+		weight = 500,
+	},
+	['deodorant'] = {
+		label = 'Deodorant',
+		weight = 500,
+	},
+	['toothpaste'] = {
+		label = 'Toothpaste',
+		weight = 500,
+	},
+	['toothbrush'] = {
+		label = 'Toothbrush',
+		weight = 500,
+	},
+	['shampoo'] = {
+		label = 'Shampoo',
+		weight = 500,
+	},
+	['conditioner'] = {
+		label = 'Conditioner',
+		weight = 500,
+	},	
 	-- medic
 	['bandage'] = {
 		label = 'Bandage',
@@ -158,16 +182,26 @@ return {
 		}
 	},
 	-- ss_vehicleshops
-	['vcontract'] = {
-		label = 'Vehicle contract',
+	['prepurchase_contract'] = {
+		label = 'Pre-Purchase Contract',
 		weight = 100,
 		stack = true,
 		close = true,
-		description = 'Vehicle contract',
+		description = 'Agreement detailing terms before vehicle purchase',
 		client = {
-			image = 'vcontract.png',
+			image = 'prepurchase_contract.png',
 		}
 	},
+	['purchase_contract'] = {
+		label = 'Purchase Contract',
+		weight = 100,
+		stack = true,
+		close = true,
+		description = 'Agreement for vehicle purchase',
+		client = {
+			image = 'purchase_contract.png',
+		}
+	},	
 	-- cdn-fuel
 	['syphoningkit'] = {
 		label = 'Syphoning Kit',
@@ -435,7 +469,6 @@ return {
 			image = 'snikkel_candy.png',
 		}
 	},
-
 	['diamond'] = {
 		label = 'Diamond',
 		weight = 1000,
@@ -446,7 +479,6 @@ return {
 			image = 'diamond.png',
 		}
 	},
-
 	['beer'] = {
 		label = 'Beer',
 		weight = 500,
@@ -1539,4 +1571,98 @@ return {
 			image = 'bucket_milk.png',
 		},
 	},
+	-- ss_vehicleinsurance 
+	['vehicle_insurance'] = {
+		label = 'Vehicle Insurance',
+		weight = 100,
+		stack = false,
+		server = {
+			export = 'ss_vehicleinsurance.UseInsurance'
+		}
+	},
+	-- ss_electricianjob
+	['electrician_ladder'] = {
+		label = 'Electrician Ladder',
+		weight = 1,
+		stack = true,
+		description = ""
+	},
+	['electrician_lift'] = {
+		label = 'Electrician Lift',
+		weight = 1,
+		stack = true,
+		description = ""
+	},
+	['electrician_rail'] = {
+		label = 'Electrician Rail',
+		weight = 1,
+		stack = true,
+		description = ""
+	},
+	-- ss_mechanic
+	["advancedrepairkit"] = {
+		label = "Advanced Repairkit",
+		weight = 4000,
+		weight = 3000,
+		stack = true,
+		close = true,
+		description = "A nice toolbox with stuff to repair your vehicle",
+		client = {
+			image = "advancedkit.png",
+			image = "advancedrepairkit.png",
+			event = 'ss_mechanic:client:openToolbox',
+		}
+	},
+	["weldingtool"] = {
+		label = "Welding Tool",
+		weight = 1000,
+		stack = true,
+		close = true,
+		description = "A welding tool to repair your vehicle body",
+		client = {
+			image = "weldingtool.png",
+			event = 'ss_mechanic:client:useWeldingTool',
+		}
+	},
+	["vtire"] = {
+		label = "Vehicle Tire",
+		weight = 3000,
+		stack = true,
+		close = true,
+		description = "A vehicle tire to repair your vehicle",
+		client = {
+			image = "vtire.png",
+		}
+	},
+	["vdoor"] = {
+		label = "Vehicle Door",
+		weight = 3000,
+		stack = true,
+		close = true,
+		description = "A vehicle door to repair your vehicle",
+		client = {
+			image = "vdoor.png",
+		}
+	},
+	["vwindow"] = {
+		label = "Vehicle Window",
+		weight = 1000,
+		stack = true,
+		close = true,
+		description = "A vehicle window to repair your vehicle",
+		client = {
+			image = "vwindow.png",
+		}
+	},
+	["platform_tablet"] = {
+		label = "Platform Tablet",
+		weight = 500,
+		stack = false,
+		close = true,
+		description = "Platform Tablet to customize your vehicle",
+		client = {
+			image = "platform_tablet.png",
+			event = 'ss_mechanic:client:openPlatformTablet',
+		}
+	},	
 }

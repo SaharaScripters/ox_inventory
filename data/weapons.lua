@@ -1,5 +1,10 @@
 return {
 	Weapons = {
+		['WEAPON_RADARGUN'] = {
+			label = 'Radar Gun',
+			weight = 3300,
+		},
+		
 		['WEAPON_BATTLERIFLE'] = {
 			label = 'Battle Rifle',
 			weight = 3300,
