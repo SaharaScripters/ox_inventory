@@ -215,7 +215,7 @@ return {
 	-- money
 	['black_money'] = {
 		label = 'Black Money',
-		weight = 10,
+		weight = 0,
 		stack = true,
 		description = 'Illegally obtained funds',
 		client = {
@@ -224,7 +224,7 @@ return {
 	},
 	['money'] = {
 		label = 'Money',
-		weight = 10,
+		weight = 0,
 		stack = true,
 		description = 'Medium of exchange and unit of value used in transactions',
 		client = {
@@ -655,6 +655,15 @@ return {
 	},		
 	-- ss_businesses
 	-- ONA
+	['pickaxe'] = {
+		label = 'Pickaxe',
+		weight = 100,
+		stack = false,
+		description = 'Tool with a pointed end and a flat blade, used for breaking and extracting minerals from rocks or ore deposits',
+		client = {
+			image = 'pickaxe.png',
+		}
+	},	
 	['plastic'] = { -- recycle prop_water_bottle_dark
 		label = 'Plastic',
 		weight = 100,
@@ -709,7 +718,7 @@ return {
 			image = 'carbon.png',
 		}
 	},	
-	['copper'] = { -- bzzz_prop_mine_copper_big
+	['copper'] = {
 		label = 'Copper',
 		weight = 100,
 		stack = true,
@@ -717,8 +726,35 @@ return {
 		client = {
 			image = 'copper.png',
 		}
+	},	
+	['copper_stone'] = { -- bzzz_prop_mine_copper_big
+		label = 'Copper Stone',
+		weight = 100,
+		stack = true,
+		description = 'Naturally occurring rock containing copper ore, extracted from mines for further processing and refining',
+		client = {
+			image = 'copper_stone.png',
+		}
+	},	
+	['copper_cracked_stone'] = {
+		label = 'Cracked Copper Stone',
+		weight = 100,
+		stack = true,
+		description = 'Copper-bearing rock with fissures or fractures, typically extracted from mines for refining into usable copper',
+		client = {
+			image = 'copper_cracked_stone.png',
+		}
+	},	
+	['copper_washed_stone'] = {
+		label = 'Washed Copper Stone',
+		weight = 100,
+		stack = true,
+		description = 'Copper-bearing rock cleaned or rinsed after extraction from mines, typically as a preliminary step before further processing',
+		client = {
+			image = 'copper_washed_stone.png',
+		}
 	},
-	['aluminum'] = { -- bzzz_prop_mine_tin_big
+	['aluminum'] = {
 		label = 'Aluminum',
 		weight = 100,
 		stack = true,
@@ -727,6 +763,24 @@ return {
 			image = 'aluminum.png',
 		}
 	},
+	['bauxite_stone'] = { -- bzzz_prop_mine_tin_big
+		label = 'Bauxite',
+		weight = 100,
+		stack = true,
+		description = 'Mineral ore rich in aluminum oxide, commonly used as the primary source for aluminum production',
+		client = {
+			image = 'bauxite.png',
+		}
+	},
+	['bauxite_cracked_stone'] = {
+		label = 'Cracked Bauxite Stone',
+		weight = 100,
+		stack = true,
+		description = 'Bauxite ore with fissures or fractures, typically extracted from mines for refining into aluminum',
+		client = {
+			image = 'bauxite_cracked_stone.png',
+		}
+	},	
 	['iron'] = { -- bzzz_prop_mine_iron_big
 		label = 'Iron',
 		weight = 100,
@@ -1248,6 +1302,26 @@ return {
 			image = 'vwindow.png',
 		}
 	},
+	['vshammy'] = {
+		label = 'Vehicle Window',
+		weight = 1000,
+		stack = true,
+		description = 'A vehicle window to repair your vehicle',
+		client = {
+			image = 'vwindow.png',
+			event = 'ss_vehicletools:client:useTool',			
+		}
+	},
+	['vrepairkit'] = {
+		label = 'Vehicle Window',
+		weight = 1000,
+		stack = true,
+		description = 'A vehicle window to repair your vehicle',
+		client = {
+			image = 'vwindow.png',
+			event = 'ss_vehicletools:client:useTool',			
+		}
+	},
 	['platform_tablet'] = {
 		label = 'Platform Tablet',
 		weight = 500,
@@ -1294,6 +1368,25 @@ return {
 		description = 'A nice tool to break into doors',
 		client = {
 			image = 'police_stormram.png',
+		}
+	},
+	['finger_scanner'] = {
+		label = 'Finger Prints Scanner',
+		weight = 100,
+		stack = false,
+		description = 'Finger Prints Scanner',
+		client = {
+			image = 'finger_scanner.png',
+		}
+	},
+	['jammer'] = {
+		label = 'Jammer',
+		weight = 2500,
+		stack = true,
+		close = true,
+		description = 'Radio Signal Jammer',
+		client = {
+			image = 'jammer.png',
 		}
 	},	
 	-- ss_courierjob
@@ -1386,5 +1479,33 @@ return {
 		client = {
 			image = 'toothpaste_box.png',
 		}
+	},
+	
+	['chalkboard1'] = {
+		label = 'Chalkboard - Floor Stand',
+		weight = 5000,
+		stack = false,
+		description = 'A chalkboard on a stand.',
+	},
+
+	['chalkboard2'] = {
+		label = 'Chalkboard - Wall Mount',
+		weight = 5000,
+		stack = false,
+		description = 'A chalkboard mounted to a wall.',
+	},
+
+	['chalkboard3'] = {
+		label = 'Chalkboard - Square',
+		weight = 5000,
+		stack = false,
+		description = 'A square chalkboard.',
+	},
+
+	['chalkboard4'] = {
+		label = 'Chalkboard - Vertical Frameless',
+		weight = 5000,
+		stack = false,
+		description = 'A frameless vertical chalkboard.',
 	},	
 }
