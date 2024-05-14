@@ -3,229 +3,229 @@ return {
 		label = 'Water',
 		weight = 150,
 		stack = true,
-		close = true,		
+		close = true,
 		description = 'Water',
 		client = {
 			image = 'water.png',
-			event = 'ss_consumable:client:useItem',			
+			event = 'ss_consumable:client:useItem',
 		}
 	},
 	['water_bottle_black'] = {
 		label = 'Black Water Bottle',
 		weight = 150,
 		stack = true,
-		close = true,		
+		close = true,
 		description = 'Black Water Bottle',
 		client = {
 			image = 'water_bottle_black.png',
-			event = 'ss_consumable:client:useItem',			
+			event = 'ss_consumable:client:useItem',
 		}
 	},
 	['water_bottle_blue'] = {
 		label = 'Blue Water Bottle',
 		weight = 150,
 		stack = true,
-		close = true,		
+		close = true,
 		description = 'Blue Water Bottle',
 		client = {
 			image = 'water_bottle_blue.png',
-			event = 'ss_consumable:client:useItem',			
+			event = 'ss_consumable:client:useItem',
 		}
 	},
 	['water_bottle_mint'] = {
 		label = 'Green Water Bottle',
 		weight = 150,
 		stack = true,
-		close = true,		
+		close = true,
 		description = 'Green Water Bottle',
 		client = {
 			image = 'water_bottle_mint.png',
-			event = 'ss_consumable:client:useItem',			
+			event = 'ss_consumable:client:useItem',
 		}
 	},
 	['water_bottle_orange'] = {
 		label = 'Orange Water Bottle',
 		weight = 150,
 		stack = true,
-		close = true,		
+		close = true,
 		description = 'Orange Water Bottle',
 		client = {
 			image = 'water_bottle_orange.png',
-			event = 'ss_consumable:client:useItem',			
+			event = 'ss_consumable:client:useItem',
 		}
 	},
 	['water_bottle_pink'] = {
 		label = 'Pink Water Bottle',
 		weight = 150,
 		stack = true,
-		close = true,		
+		close = true,
 		description = 'Pink Water Bottle',
 		client = {
 			image = 'water_bottle_pink.png',
-			event = 'ss_consumable:client:useItem',			
+			event = 'ss_consumable:client:useItem',
 		}
 	},
 	['water_bottle_purple'] = {
 		label = 'Water',
 		weight = 150,
 		stack = true,
-		close = true,		
+		close = true,
 		description = 'Water',
 		client = {
 			image = 'water_bottle_purple.png',
-			event = 'ss_consumable:client:useItem',			
+			event = 'ss_consumable:client:useItem',
 		}
 	},
 	['water_bottle_red'] = {
 		label = 'Water',
 		weight = 150,
 		stack = true,
-		close = true,		
+		close = true,
 		description = 'Water',
 		client = {
 			image = 'water_bottle_red.png',
-			event = 'ss_consumable:client:useItem',			
+			event = 'ss_consumable:client:useItem',
 		}
 	},
 	['water_bottle_white'] = {
 		label = 'Water',
 		weight = 150,
 		stack = true,
-		close = true,		
+		close = true,
 		description = 'Water',
 		client = {
 			image = 'water_bottle_white.png',
-			event = 'ss_consumable:client:useItem',			
+			event = 'ss_consumable:client:useItem',
 		}
 	},
 	['water_bottle_yellow'] = {
 		label = 'Water',
 		weight = 150,
 		stack = true,
-		close = true,		
+		close = true,
 		description = 'Water',
 		client = {
 			image = 'water_bottle_yellow.png',
-			event = 'ss_consumable:client:useItem',			
+			event = 'ss_consumable:client:useItem',
 		}
-	},	
+	},
 	-- consumables (Public Shops)
 	['peanuts'] = {
 		label = 'Peanuts',
 		weight = 100,
 		stack = true,
-		close = true,		
+		close = true,
 		description = 'Peanuts',
 		client = {
 			image = 'peanuts.png',
-			event = 'ss_consumable:client:useItem',			
+			event = 'ss_consumable:client:useItem',
 		}
 	},
 	['pretzels'] = {
 		label = 'Pretzels',
 		weight = 100,
 		stack = true,
-		close = true,		
+		close = true,
 		description = 'Pretzels',
 		client = {
 			image = 'pretzels.png',
-			event = 'ss_consumable:client:useItem',			
+			event = 'ss_consumable:client:useItem',
 		}
 	},
 	['pepsi'] = {
 		label = 'Pepsi',
 		weight = 100,
 		stack = true,
-		close = true,		
+		close = true,
 		description = 'Pepsi',
 		client = {
 			image = 'pepsi.png',
-			event = 'ss_consumable:client:useItem',			
+			event = 'ss_consumable:client:useItem',
 		}
 	},
 	['pepsi_zero'] = {
 		label = 'Pepsi Zero',
 		weight = 100,
 		stack = true,
-		close = true,		
+		close = true,
 		description = 'Pepsi Zero',
 		client = {
 			image = 'pepsi_zero.png',
-			event = 'ss_consumable:client:useItem',			
+			event = 'ss_consumable:client:useItem',
 		}
 	},
 	['energy_drink'] = {
 		label = 'Energy Drink',
 		weight = 100,
 		stack = true,
-		close = true,		
+		close = true,
 		description = 'Energy Drink',
 		client = {
 			image = 'energy_drink.png',
-			event = 'ss_consumable:client:useItem',			
+			event = 'ss_consumable:client:useItem',
 		}
 	},
 	['lollipop_red'] = {
 		label = 'Red Lollipop',
 		weight = 100,
 		stack = true,
-		close = true,		
+		close = true,
 		description = 'Red Lollipop',
 		client = {
 			image = 'lollipop_red.png',
-			event = 'ss_consumable:client:useItem',			
+			event = 'ss_consumable:client:useItem',
 		}
 	},
 	['lollipop_green'] = {
 		label = 'Green Lollipop',
 		weight = 100,
 		stack = true,
-		close = true,		
+		close = true,
 		description = 'Green Lollipop',
 		client = {
 			image = 'lollipop_green.png',
-			event = 'ss_consumable:client:useItem',			
+			event = 'ss_consumable:client:useItem',
 		}
 	},
 	['lollipop_purple'] = {
 		label = 'Purple Lollipop',
 		weight = 100,
 		stack = true,
-		close = true,		
+		close = true,
 		description = 'Purple Lollipop',
 		client = {
 			image = 'lollipop_purple.png',
-			event = 'ss_consumable:client:useItem',			
+			event = 'ss_consumable:client:useItem',
 		}
 	},
 	['lollipop_yellow'] = {
 		label = 'Yellow Lollipop',
 		weight = 100,
 		stack = true,
-		close = true,		
+		close = true,
 		description = 'Yellow Lollipop',
 		client = {
 			image = 'lollipop_yellow.png',
-			event = 'ss_consumable:client:useItem',			
+			event = 'ss_consumable:client:useItem',
 		}
 	},
 	['lollipop_blue'] = {
 		label = 'Blue Lollipop',
 		weight = 100,
 		stack = true,
-		close = true,		
+		close = true,
 		description = 'Blue Lollipop',
 		client = {
 			image = 'lollipop_blue.png',
-			event = 'ss_consumable:client:useItem',			
+			event = 'ss_consumable:client:useItem',
 		}
-	},	
+	},
 	-- consumables (Smoking)
 	['pipe'] = {
 		label = 'Pipe',
 		weight = 0,
 		stack = true,
-		close = true,		
+		close = true,
 		description = 'Pipe',
 		client = {
 			image = 'pipe.png',
@@ -236,7 +236,7 @@ return {
 		label = 'Cigar',
 		weight = 0,
 		stack = true,
-		close = true,		
+		close = true,
 		description = 'Cigar',
 		client = {
 			image = 'cigar.png',
@@ -247,18 +247,18 @@ return {
 		label = 'Cigarette',
 		weight = 0,
 		stack = true,
-		close = true,		
+		close = true,
 		description = 'Cigarette',
 		client = {
 			image = 'cigarette.png',
 			event = 'ss_consumable:client:useItem',
 		}
-	},	
+	},
 	['joint'] = {
 		label = 'Joint',
 		weight = 0,
 		stack = true,
-		close = true,		
+		close = true,
 		description = 'Sidney would be very proud at you',
 		client = {
 			image = 'joint.png',
@@ -271,7 +271,7 @@ return {
 		weight = 1000,
 		stack = true,
 		close = true,
-		allowArmed = false,	
+		allowArmed = false,
 		description = 'Electronic device for communication and accessing information',
 		client = {
 			image = 'phone.png',
@@ -281,19 +281,19 @@ return {
 		label = 'Radio',
 		weight = 1000,
 		stack = false,
-		close = true,		
+		close = true,
 		allowArmed = false,
 		description = 'Portable two-way radio for short-distance communication',
 		client = {
 			image = 'radio.png',
-		}		
+		}
 	},
 	['parachute'] = {
 		label = 'Parachute',
 		weight = 8000,
 		stack = true,
 		close = true,
-		description = 'Safety device for slowing descent during falls',		
+		description = 'Safety device for slowing descent during falls',
 		client = {
 			anim = { dict = 'clothingshirt', clip = 'try_shirt_positive_d' },
 			usetime = 1500
@@ -310,7 +310,7 @@ return {
 			image = 'lockpick.png',
 			event = 'lockpicks:UseLockpick',
 		}
-	},	
+	},
 	['advancedlockpick'] = {
 		label = 'Advanced Lockpick',
 		weight = 160,
@@ -322,7 +322,7 @@ return {
 			image = 'lockpick.png',
 			event = 'lockpicks:UseLockpick',
 		}
-	},	
+	},
 	['lockpick'] = {
 		label = 'Lockpick',
 		weight = 160,
@@ -349,10 +349,10 @@ return {
 		label = 'Diving Gear',
 		weight = 30000,
 		stack = false,
-		close = true,		
+		close = true,
 		description = 'An oxygen tank and a rebreather',
 		client = {
-			anim = { dict = 'clothingshirt', clip = 'try_shirt_positive_d' },		
+			anim = { dict = 'clothingshirt', clip = 'try_shirt_positive_d' },
 			image = 'diving_gear.png',
 		}
 	},
@@ -360,7 +360,7 @@ return {
 		label = 'Diving Tube',
 		weight = 3000,
 		stack = false,
-		close = true,		
+		close = true,
 		client = {
 			image = 'diving_tube.png',
 		}
@@ -382,7 +382,7 @@ return {
 		client = {
 			image = 'nitrous.png',
 		}
-	},	
+	},
 	-- robberies
 	['electronickit'] = {
 		label = 'Electronic Kit',
@@ -398,16 +398,16 @@ return {
 		label = 'Drill',
 		weight = 20000,
 		stack = true,
-		close = true,		
+		close = true,
 		description = 'The real deal...',
 		client = {
 			image = 'drill.png',
 		}
-	},	
+	},
 	['rolex'] = {
 		label = 'Golden Watch',
 		weight = 1500,
-		stack = true,		
+		stack = true,
 		description = 'A golden watch seems like the jackpot to me!',
 		client = {
 			image = 'rolex.png',
@@ -490,13 +490,13 @@ return {
 		client = {
 			image = 'plastic_bag.png',
 		}
-	},	
+	},
 	-- medic
 	['bandage'] = {
 		label = 'Bandage',
 		weight = 115,
 		stack = true,
-		close = true,		
+		close = true,
 		client = {
 			anim = { dict = 'missheistdockssetup1clipboard@idle_a', clip = 'idle_a', flag = 49 },
 			prop = { model = `prop_rolled_sock_02`, pos = vec3(-0.14, -0.14, -0.08), rot = vec3(-50.0, -50.0, 0.0) },
@@ -512,7 +512,7 @@ return {
 		description = 'Illegally obtained funds',
 		client = {
 			image = 'black_money.png',
-		}		
+		}
 	},
 	['money'] = {
 		label = 'Money',
@@ -521,14 +521,14 @@ return {
 		description = 'Medium of exchange and unit of value used in transactions',
 		client = {
 			image = 'money.png',
-		}		
+		}
 	},
 	-- cards / permit / licenses
 	['id_card'] = {
 		label = 'ID Card',
 		weight = 0,
 		stack = false,
-		close = true,		
+		close = true,
 		description = 'Official document verifying identity and personal information',
 		client = {
 			image = 'id_card.png',
@@ -538,7 +538,7 @@ return {
 		label = 'Driver License',
 		weight = 0,
 		stack = false,
-		close = true,		
+		close = true,
 		description = 'Official document granting legal permission to operate a motor vehicle',
 		client = {
 			image = 'driver_license.png',
@@ -548,7 +548,7 @@ return {
 		label = 'Pilot License',
 		weight = 0,
 		stack = false,
-		close = true,		
+		close = true,
 		description = 'Official document granting legal permission to operate aircraft',
 		client = {
 			image = 'pilot_license.png',
@@ -568,7 +568,7 @@ return {
 		label = 'Weapon License',
 		weight = 0,
 		stack = false,
-		close = true,		
+		close = true,
 		description = 'Legal permit for firearm possession',
 		client = {
 			image = 'weapon_license.png',
@@ -578,7 +578,7 @@ return {
 		label = 'Hunting License',
 		weight = 0,
 		stack = false,
-		close = true,		
+		close = true,
 		description = 'Official permit allowing legal hunting activities',
 		client = {
 			image = 'hunting_license.png',
@@ -610,7 +610,7 @@ return {
 		weight = 1000,
 		stack = true,
 		close = true,
-		allowArmed = false,		
+		allowArmed = false,
 		description = 'A phone for tracking stocks and trading',
 		client = {
 			image = 'tradingphone.png',
@@ -634,7 +634,7 @@ return {
 		client = {
 			image = 'purchase_contract.png',
 		}
-	},	
+	},
 	-- cdn-fuel
 	['syphoningkit'] = {
 		label = 'Syphoning Kit',
@@ -730,23 +730,23 @@ return {
 			anim = { dict = 'clothingshirt', clip = 'try_shirt_positive_d' },
 			usetime = 3500
 		}
-	},	
-	-- qbx_core	
+	},
+	-- qbx_core
 	['walkstick'] = {
 		label = 'Walking Stick',
 		weight = 1000,
 		stack = true,
-		close = true,		
+		close = true,
 		description = 'Walking stick for you all grannies out there.. HAHA',
 		client = {
 			image = 'walkstick.png',
 		}
-	},	
+	},
 	['firework1'] = {
 		label = '2Brothers',
 		weight = 1000,
 		stack = true,
-		close = true,		
+		close = true,
 		description = 'Fireworks',
 		client = {
 			image = 'firework1.png',
@@ -756,7 +756,7 @@ return {
 		label = 'Weeping Willow',
 		weight = 1000,
 		stack = true,
-		close = true,		
+		close = true,
 		description = 'Fireworks',
 		client = {
 			image = 'firework4.png',
@@ -788,7 +788,7 @@ return {
 		client = {
 			image = 'goldbar.png',
 		}
-	},	
+	},
 	['lighter'] = {
 		label = 'Lighter',
 		weight = 0,
@@ -912,7 +912,7 @@ return {
 		client = {
 			image = 'laptop.png',
 		}
-	},		
+	},
 	-- ss_businesses
 	-- ONA
 	['pickaxe'] = {
@@ -923,7 +923,7 @@ return {
 		client = {
 			image = 'pickaxe.png',
 		}
-	},	
+	},
 	['plastic'] = { -- recycle prop_water_bottle_dark
 		label = 'Plastic',
 		weight = 100,
@@ -941,7 +941,7 @@ return {
 		client = {
 			image = 'glass.png',
 		}
-	},	
+	},
 	['metalscrap'] = { -- recycle prop_barrel_pile_02
 		label = 'Metal Scrap',
 		weight = 100,
@@ -959,7 +959,7 @@ return {
 		client = {
 			image = 'rubber.png',
 		}
-	},	
+	},
 	['steel'] = { -- fabrication iron + carbon
 		label = 'Steel',
 		weight = 100,
@@ -977,7 +977,7 @@ return {
 		client = {
 			image = 'carbon.png',
 		}
-	},	
+	},
 	['copper'] = {
 		label = 'Copper',
 		weight = 100,
@@ -986,7 +986,7 @@ return {
 		client = {
 			image = 'copper.png',
 		}
-	},	
+	},
 	['copper_stone'] = { -- bzzz_prop_mine_copper_big
 		label = 'Copper Stone',
 		weight = 100,
@@ -995,7 +995,7 @@ return {
 		client = {
 			image = 'copper_stone.png',
 		}
-	},	
+	},
 	['copper_cracked_stone'] = {
 		label = 'Cracked Copper Stone',
 		weight = 100,
@@ -1004,7 +1004,7 @@ return {
 		client = {
 			image = 'copper_cracked_stone.png',
 		}
-	},	
+	},
 	['copper_washed_stone'] = {
 		label = 'Washed Copper Stone',
 		weight = 100,
@@ -1040,7 +1040,7 @@ return {
 		client = {
 			image = 'bauxite_cracked_stone.png',
 		}
-	},	
+	},
 	['iron'] = { -- bzzz_prop_mine_iron_big
 		label = 'Iron',
 		weight = 100,
@@ -1058,7 +1058,7 @@ return {
 		client = {
 			image = 'coal.png',
 		}
-	},	
+	},
 	---- Agri Maroc
 	['apple'] = {
 		label = 'Fresh Apple',
@@ -1122,7 +1122,7 @@ return {
 		client = {
 			image = 'pineapple.png',
 		},
-	},	
+	},
 	['lettuce'] = {
 		label = 'Fresh Lettuce',
 		weight = 250,
@@ -1176,7 +1176,7 @@ return {
 		client = {
 			image = 'wheat.png',
 		},
-	},	
+	},
 	['mint'] = {
 		label = 'Fresh Mint',
 		weight = 250,
@@ -1185,7 +1185,7 @@ return {
 		client = {
 			image = 'mint.png',
 		},
-	},	
+	},
 	['bottled_milk'] = {
 		label = 'Bottle of Milk',
 		weight = 250,
@@ -1293,7 +1293,7 @@ return {
 		client = {
 			image = 'roasted_coffee_beans.png',
 		},
-	},	
+	},
 	['empty_bucket'] = {
 		label = 'Empty Bucket',
 		weight = 250,
@@ -1316,60 +1316,60 @@ return {
 		label = 'Apple Syrup',
 		weight = 150,
 		stack = true,
-		close = true,		
+		close = true,
 		description = 'Apple Syrup',
 		client = {
-			image = 'syrup_apple.png',			
+			image = 'syrup_apple.png',
 		}
 	},
 	['syrup_orange'] = {
 		label = 'Orange Syrup',
 		weight = 150,
 		stack = true,
-		close = true,		
+		close = true,
 		description = 'Orange Syrup',
 		client = {
-			image = 'syrup_orange.png',			
+			image = 'syrup_orange.png',
 		}
 	},
 	['syrup_lime'] = {
 		label = 'Lime Syrup',
 		weight = 150,
 		stack = true,
-		close = true,		
+		close = true,
 		description = 'Lime Syrup',
 		client = {
-			image = 'syrup_lime.png',			
+			image = 'syrup_lime.png',
 		}
 	},
 	['syrup_peach'] = {
 		label = 'Peach Syrup',
 		weight = 150,
 		stack = true,
-		close = true,		
+		close = true,
 		description = 'Peach Syrup',
 		client = {
-			image = 'syrup_peach.png',		
+			image = 'syrup_peach.png',
 		}
 	},
 	['syrup_pomegranate'] = {
 		label = 'Pomegranate Syrup',
 		weight = 150,
 		stack = true,
-		close = true,		
+		close = true,
 		description = 'Pomegranate Syrup',
 		client = {
-			image = 'syrup_pomegranate.png',			
+			image = 'syrup_pomegranate.png',
 		}
 	},
 	['syrup_pineapple'] = {
 		label = 'Pineapple Syrup',
 		weight = 150,
 		stack = true,
-		close = true,		
+		close = true,
 		description = 'Pineapple Syrup',
 		client = {
-			image = 'syrup_pineapple.png',		
+			image = 'syrup_pineapple.png',
 		}
 	},
 	-- Night Clubs
@@ -1437,88 +1437,88 @@ return {
 		label = 'Mulled Wine',
 		weight = 150,
 		stack = true,
-		close = true,		
+		close = true,
 		description = 'Mulled Wine',
 		client = {
 			image = 'mulled_wine.png',
-			event = 'ss_consumable:client:useItem',			
+			event = 'ss_consumable:client:useItem',
 		}
 	},
 	['beer'] = {
 		label = 'Beer',
 		weight = 150,
 		stack = true,
-		close = true,		
+		close = true,
 		description = 'Nothing like a good cold beer!',
 		client = {
 			image = 'beer.png',
-			event = 'ss_consumable:client:useItem',			
+			event = 'ss_consumable:client:useItem',
 		}
 	},
 	['rum'] = {
 		label = 'Rum',
 		weight = 150,
 		stack = true,
-		close = true,		
+		close = true,
 		description = 'Rum',
 		client = {
 			image = 'rum.png',
-			event = 'ss_consumable:client:useItem',			
+			event = 'ss_consumable:client:useItem',
 		}
 	},
 	['whiskey'] = {
 		label = 'Whiskey',
 		weight = 150,
 		stack = true,
-		close = true,		
+		close = true,
 		description = 'Whiskey',
 		client = {
 			image = 'whiskey.png',
-			event = 'ss_consumable:client:useItem',			
+			event = 'ss_consumable:client:useItem',
 		}
 	},
 	['vodka'] = {
 		label = 'Vodka',
 		weight = 150,
 		stack = true,
-		close = true,		
+		close = true,
 		description = 'Vodka',
 		client = {
 			image = 'vodka.png',
-			event = 'ss_consumable:client:useItem',			
+			event = 'ss_consumable:client:useItem',
 		}
 	},
 	['tequila'] = {
 		label = 'Tequila',
 		weight = 150,
 		stack = true,
-		close = true,		
+		close = true,
 		description = 'Tequila',
 		client = {
 			image = 'tequila.png',
-			event = 'ss_consumable:client:useItem',			
+			event = 'ss_consumable:client:useItem',
 		}
-	},	
+	},
 	['red_wine'] = {
 		label = 'Red Wine',
 		weight = 150,
 		stack = true,
-		close = true,		
+		close = true,
 		description = 'Red Wine',
 		client = {
 			image = 'red_wine.png',
-			event = 'ss_consumable:client:useItem',			
+			event = 'ss_consumable:client:useItem',
 		}
 	},
 	['white_wine'] = {
 		label = 'White Wine',
 		weight = 150,
 		stack = true,
-		close = true,		
+		close = true,
 		description = 'White Wine',
 		client = {
 			image = 'white_wine.png',
-			event = 'ss_consumable:client:useItem',			
+			event = 'ss_consumable:client:useItem',
 		}
 	},
 	-- Cafe Carrion & Cafe Arriba
@@ -1561,7 +1561,7 @@ return {
 			image = 'milkshake_vanilla.png',
 			event = 'ss_consumable:client:useItem',
 		},
-	},	
+	},
 	['milkshake_chocolate'] = {
 		label = 'Chocolate Milkshake',
 		weight = 250,
@@ -1601,49 +1601,49 @@ return {
 			image = 'juice_peach.png',
 			event = 'ss_consumable:client:useItem',
 		},
-	},	
+	},
 	['croissant'] = {
 		label = 'Croissant',
 		weight = 100,
 		stack = true,
-		close = true,		
+		close = true,
 		description = 'Croissant',
 		client = {
 			image = 'croissant.png',
-			event = 'ss_consumable:client:useItem',			
+			event = 'ss_consumable:client:useItem',
 		}
 	},
 	['macaron'] = {
 		label = 'Macaron',
 		weight = 100,
 		stack = true,
-		close = true,		
+		close = true,
 		description = 'Macaron',
 		client = {
 			image = 'macaron.png',
-			event = 'ss_consumable:client:useItem',			
+			event = 'ss_consumable:client:useItem',
 		}
-	},	
+	},
 	['strawberry_donut'] = {
 		label = 'Strawberry Donut',
 		weight = 100,
 		stack = true,
-		close = true,		
+		close = true,
 		description = 'Strawberry Donut',
 		client = {
 			image = 'strawberry_donut.png',
-			event = 'ss_consumable:client:useItem',			
+			event = 'ss_consumable:client:useItem',
 		}
 	},
 	['chocolate_donut'] = {
 		label = 'Chocolate Donut',
 		weight = 100,
 		stack = true,
-		close = true,		
+		close = true,
 		description = 'Chocolate Donut',
 		client = {
 			image = 'chocolate_donut.png',
-			event = 'ss_consumable:client:useItem',			
+			event = 'ss_consumable:client:useItem',
 		}
 	},
 	------ CAFES Kitchen Items
@@ -1651,160 +1651,160 @@ return {
 		label = 'Macaron Batter',
 		weight = 100,
 		stack = true,
-		close = true,		
+		close = true,
 		description = 'Macaron Batter',
 		client = {
-			image = 'macaron_batter.png',			
+			image = 'macaron_batter.png',
 		}
 	},
 	['croissant_dough'] = {
 		label = 'Croissant Dough',
 		weight = 100,
 		stack = true,
-		close = true,		
+		close = true,
 		description = 'Croissant Dough',
 		client = {
-			image = 'croissant_dough.png',			
+			image = 'croissant_dough.png',
 		}
 	},
 	['donut_dough'] = {
 		label = 'Donut Dough',
 		weight = 100,
 		stack = true,
-		close = true,		
+		close = true,
 		description = 'Donut Dough',
 		client = {
-			image = 'donut_dough.png',		
+			image = 'donut_dough.png',
 		}
 	},
 	['coffee_powder'] = {
 		label = 'Coffee Powder',
 		weight = 100,
 		stack = true,
-		close = true,		
+		close = true,
 		description = 'Coffee Powder',
 		client = {
-			image = 'coffee_powder.png',		
+			image = 'coffee_powder.png',
 		}
 	},
 	['bottled_orange_juice'] = {
 		label = 'Bottle of Orange Juice',
 		weight = 100,
 		stack = true,
-		close = true,		
+		close = true,
 		description = 'Bottle of Orange Juice',
 		client = {
-			image = 'bottled_orange_juice.png',		
+			image = 'bottled_orange_juice.png',
 		}
 	},
 	['pomegranate_seeds'] = {
 		label = 'Pomegranate Seeds',
 		weight = 100,
 		stack = true,
-		close = true,		
+		close = true,
 		description = 'Pomegranate Seeds',
 		client = {
-			image = 'pomegranate_seeds.png',		
+			image = 'pomegranate_seeds.png',
 		}
 	},
 	['sliced_apple'] = {
 		label = 'Sliced Apple',
 		weight = 100,
 		stack = true,
-		close = true,		
+		close = true,
 		description = 'Sliced Apple',
 		client = {
-			image = 'sliced_apple.png',		
+			image = 'sliced_apple.png',
 		}
 	},
 	['sliced_orange'] = {
 		label = 'Sliced Orange',
 		weight = 100,
 		stack = true,
-		close = true,		
+		close = true,
 		description = 'Sliced Orange',
 		client = {
-			image = 'sliced_orange.png',		
+			image = 'sliced_orange.png',
 		}
 	},
 	['sliced_lime'] = {
 		label = 'Sliced Lime',
 		weight = 100,
 		stack = true,
-		close = true,		
+		close = true,
 		description = 'Sliced Lime',
 		client = {
-			image = 'sliced_lime.png',		
+			image = 'sliced_lime.png',
 		}
 	},
 	['sliced_peach'] = {
 		label = 'Sliced Peach',
 		weight = 100,
 		stack = true,
-		close = true,		
+		close = true,
 		description = 'Sliced Peach',
 		client = {
-			image = 'sliced_peach.png',		
+			image = 'sliced_peach.png',
 		}
 	},
 	['sliced_pineapple'] = {
 		label = 'Sliced Pineapple',
 		weight = 100,
 		stack = true,
-		close = true,		
+		close = true,
 		description = 'Sliced Pineapple',
 		client = {
-			image = 'sliced_pineapple.png',		
+			image = 'sliced_pineapple.png',
 		}
 	},
 	['ice_cubes'] = {
 		label = 'Ice Cubes',
 		weight = 100,
 		stack = true,
-		close = true,		
+		close = true,
 		description = 'Ice Cubes',
 		client = {
-			image = 'ice_cubes.png',		
+			image = 'ice_cubes.png',
 		}
 	},
 	['syrup_vanilla'] = {
 		label = 'Vanilla Syrup',
 		weight = 150,
 		stack = true,
-		close = true,		
+		close = true,
 		description = 'Vanilla Syrup',
 		client = {
-			image = 'syrup_vanilla.png',			
+			image = 'syrup_vanilla.png',
 		}
 	},
 	['syrup_chocolate'] = {
 		label = 'Chocolate Syrup',
 		weight = 150,
 		stack = true,
-		close = true,		
+		close = true,
 		description = 'Chocolate Syrup',
 		client = {
-			image = 'syrup_chocolate.png',		
+			image = 'syrup_chocolate.png',
 		}
 	},
 	['icecream_vanilla_pack'] = {
 		label = 'Pack Vanilla Icecream',
 		weight = 150,
 		stack = true,
-		close = true,		
+		close = true,
 		description = 'Pack Vanilla Icecream',
 		client = {
-			image = 'icecream_vanilla_pack.png',		
+			image = 'icecream_vanilla_pack.png',
 		}
 	},
 	['icecream_chocolate_pack'] = {
 		label = 'Pack Chocolate Icecream',
 		weight = 150,
 		stack = true,
-		close = true,		
+		close = true,
 		description = 'Pack Chocolate Icecream',
 		client = {
-			image = 'icecream_chocolate_pack.png',		
+			image = 'icecream_chocolate_pack.png',
 		}
 	},
 	---- Medina Burger
@@ -2066,7 +2066,7 @@ return {
 			image = 'kitchen_knife.png',
 		},
 	},
-	-- ss_vehicleinsurance 
+	-- ss_vehicleinsurance
 	['vehicle_insurance'] = {
 		label = 'Vehicle Insurance',
 		weight = 100,
@@ -2094,7 +2094,7 @@ return {
 		client = {
 			image = 'repairkit.png',
 		}
-	},	
+	},
 	['weldingtool'] = {
 		label = 'Welding Tool',
 		weight = 1000,
@@ -2139,7 +2139,7 @@ return {
 		description = 'A vehicle window to repair your vehicle',
 		client = {
 			image = 'vwindow.png',
-			event = 'ss_vehicletools:client:useTool',			
+			event = 'ss_vehicletools:client:useTool',
 		}
 	},
 	['vrepairkit'] = {
@@ -2149,7 +2149,7 @@ return {
 		description = 'A vehicle window to repair your vehicle',
 		client = {
 			image = 'vwindow.png',
-			event = 'ss_vehicletools:client:useTool',			
+			event = 'ss_vehicletools:client:useTool',
 		}
 	},
 	['platform_tablet'] = {
@@ -2218,7 +2218,7 @@ return {
 		client = {
 			image = 'jammer.png',
 		}
-	},	
+	},
 	-- ss_courierjob
 	['soda_box'] = {
 		label = 'Soda Box',
@@ -2310,7 +2310,7 @@ return {
 			image = 'toothpaste_box.png',
 		}
 	},
-	
+
 	['chalkboard1'] = {
 		label = 'Chalkboard - Floor Stand',
 		weight = 5000,
@@ -2337,7 +2337,7 @@ return {
 		weight = 5000,
 		stack = false,
 		description = 'A frameless vertical chalkboard.',
-	},    
+	},
 	['receipt'] = {
         label = 'Receipt',
         weight = 20,
@@ -2375,5 +2375,5 @@ return {
                 end
             }
         }
-    },	
+    },
 }
