@@ -1,7 +1,269 @@
 return {
 	['water'] = {
 		label = 'Water',
-		weight = 500,
+		weight = 150,
+		stack = true,
+		close = true,		
+		description = 'Water',
+		client = {
+			image = 'water.png',
+			event = 'ss_consumable:client:useItem',			
+		}
+	},
+	['water_bottle_black'] = {
+		label = 'Black Water Bottle',
+		weight = 150,
+		stack = true,
+		close = true,		
+		description = 'Black Water Bottle',
+		client = {
+			image = 'water_bottle_black.png',
+			event = 'ss_consumable:client:useItem',			
+		}
+	},
+	['water_bottle_blue'] = {
+		label = 'Blue Water Bottle',
+		weight = 150,
+		stack = true,
+		close = true,		
+		description = 'Blue Water Bottle',
+		client = {
+			image = 'water_bottle_blue.png',
+			event = 'ss_consumable:client:useItem',			
+		}
+	},
+	['water_bottle_mint'] = {
+		label = 'Green Water Bottle',
+		weight = 150,
+		stack = true,
+		close = true,		
+		description = 'Green Water Bottle',
+		client = {
+			image = 'water_bottle_mint.png',
+			event = 'ss_consumable:client:useItem',			
+		}
+	},
+	['water_bottle_orange'] = {
+		label = 'Orange Water Bottle',
+		weight = 150,
+		stack = true,
+		close = true,		
+		description = 'Orange Water Bottle',
+		client = {
+			image = 'water_bottle_orange.png',
+			event = 'ss_consumable:client:useItem',			
+		}
+	},
+	['water_bottle_pink'] = {
+		label = 'Pink Water Bottle',
+		weight = 150,
+		stack = true,
+		close = true,		
+		description = 'Pink Water Bottle',
+		client = {
+			image = 'water_bottle_pink.png',
+			event = 'ss_consumable:client:useItem',			
+		}
+	},
+	['water_bottle_purple'] = {
+		label = 'Water',
+		weight = 150,
+		stack = true,
+		close = true,		
+		description = 'Water',
+		client = {
+			image = 'water_bottle_purple.png',
+			event = 'ss_consumable:client:useItem',			
+		}
+	},
+	['water_bottle_red'] = {
+		label = 'Water',
+		weight = 150,
+		stack = true,
+		close = true,		
+		description = 'Water',
+		client = {
+			image = 'water_bottle_red.png',
+			event = 'ss_consumable:client:useItem',			
+		}
+	},
+	['water_bottle_white'] = {
+		label = 'Water',
+		weight = 150,
+		stack = true,
+		close = true,		
+		description = 'Water',
+		client = {
+			image = 'water_bottle_white.png',
+			event = 'ss_consumable:client:useItem',			
+		}
+	},
+	['water_bottle_yellow'] = {
+		label = 'Water',
+		weight = 150,
+		stack = true,
+		close = true,		
+		description = 'Water',
+		client = {
+			image = 'water_bottle_yellow.png',
+			event = 'ss_consumable:client:useItem',			
+		}
+	},	
+	-- consumables (Public Shops)
+	['peanuts'] = {
+		label = 'Peanuts',
+		weight = 100,
+		stack = true,
+		close = true,		
+		description = 'Peanuts',
+		client = {
+			image = 'peanuts.png',
+			event = 'ss_consumable:client:useItem',			
+		}
+	},
+	['pretzels'] = {
+		label = 'Pretzels',
+		weight = 100,
+		stack = true,
+		close = true,		
+		description = 'Pretzels',
+		client = {
+			image = 'pretzels.png',
+			event = 'ss_consumable:client:useItem',			
+		}
+	},
+	['pepsi'] = {
+		label = 'Pepsi',
+		weight = 100,
+		stack = true,
+		close = true,		
+		description = 'Pepsi',
+		client = {
+			image = 'pepsi.png',
+			event = 'ss_consumable:client:useItem',			
+		}
+	},
+	['pepsi_zero'] = {
+		label = 'Pepsi Zero',
+		weight = 100,
+		stack = true,
+		close = true,		
+		description = 'Pepsi Zero',
+		client = {
+			image = 'pepsi_zero.png',
+			event = 'ss_consumable:client:useItem',			
+		}
+	},
+	['energy_drink'] = {
+		label = 'Energy Drink',
+		weight = 100,
+		stack = true,
+		close = true,		
+		description = 'Energy Drink',
+		client = {
+			image = 'energy_drink.png',
+			event = 'ss_consumable:client:useItem',			
+		}
+	},
+	['lollipop_red'] = {
+		label = 'Red Lollipop',
+		weight = 100,
+		stack = true,
+		close = true,		
+		description = 'Red Lollipop',
+		client = {
+			image = 'lollipop_red.png',
+			event = 'ss_consumable:client:useItem',			
+		}
+	},
+	['lollipop_green'] = {
+		label = 'Green Lollipop',
+		weight = 100,
+		stack = true,
+		close = true,		
+		description = 'Green Lollipop',
+		client = {
+			image = 'lollipop_green.png',
+			event = 'ss_consumable:client:useItem',			
+		}
+	},
+	['lollipop_purple'] = {
+		label = 'Purple Lollipop',
+		weight = 100,
+		stack = true,
+		close = true,		
+		description = 'Purple Lollipop',
+		client = {
+			image = 'lollipop_purple.png',
+			event = 'ss_consumable:client:useItem',			
+		}
+	},
+	['lollipop_yellow'] = {
+		label = 'Yellow Lollipop',
+		weight = 100,
+		stack = true,
+		close = true,		
+		description = 'Yellow Lollipop',
+		client = {
+			image = 'lollipop_yellow.png',
+			event = 'ss_consumable:client:useItem',			
+		}
+	},
+	['lollipop_blue'] = {
+		label = 'Blue Lollipop',
+		weight = 100,
+		stack = true,
+		close = true,		
+		description = 'Blue Lollipop',
+		client = {
+			image = 'lollipop_blue.png',
+			event = 'ss_consumable:client:useItem',			
+		}
+	},	
+	-- consumables (Smoking)
+	['pipe'] = {
+		label = 'Pipe',
+		weight = 0,
+		stack = true,
+		close = true,		
+		description = 'Pipe',
+		client = {
+			image = 'pipe.png',
+			event = 'ss_consumable:client:useItem',
+		}
+	},
+	['cigar'] = {
+		label = 'Cigar',
+		weight = 0,
+		stack = true,
+		close = true,		
+		description = 'Cigar',
+		client = {
+			image = 'cigar.png',
+			event = 'ss_consumable:client:useItem',
+		}
+	},
+	['cigarette'] = {
+		label = 'Cigarette',
+		weight = 0,
+		stack = true,
+		close = true,		
+		description = 'Cigarette',
+		client = {
+			image = 'cigarette.png',
+			event = 'ss_consumable:client:useItem',
+		}
+	},	
+	['joint'] = {
+		label = 'Joint',
+		weight = 0,
+		stack = true,
+		close = true,		
+		description = 'Sidney would be very proud at you',
+		client = {
+			image = 'joint.png',
+			event = 'ss_consumable:client:useItem',
+		}
 	},
 	-- misc
 	['phone'] = {
@@ -197,6 +459,36 @@ return {
 		description = 'The Label Has Been Ripped Off',
 		client = {
 			image = 'oxy.png',
+		}
+	},
+	['weed_bud'] = {
+		label = 'Weed Bud',
+		weight = 100,
+		stack = true,
+		close = true,
+		description = 'Weed Bud',
+		client = {
+			image = 'weed_bud.png',
+		}
+	},
+	['weed_budclean'] = {
+		label = 'Weed Bud Clean',
+		weight = 100,
+		stack = true,
+		close = true,
+		description = 'Weed Bud Clean',
+		client = {
+			image = 'weed_budclean.png',
+		}
+	},
+	['plastic_bag'] = {
+		label = 'Plastic Bag',
+		weight = 100,
+		stack = true,
+		close = true,
+		description = 'Plastic Bag',
+		client = {
+			image = 'plastic_bag.png',
 		}
 	},	
 	-- medic
@@ -449,28 +741,6 @@ return {
 		client = {
 			image = 'walkstick.png',
 		}
-	},
-	['joint'] = {
-		label = 'Joint',
-		weight = 0,
-		stack = true,
-		close = true,		
-		description = 'Sidney would be very proud at you',
-		client = {
-			image = 'joint.png',
-			event = 'ss_consumable:client:useItem',
-		}
-	},
-	['beer'] = {
-		label = 'Beer',
-		weight = 500,
-		stack = true,
-		close = true,		
-		description = 'Nothing like a good cold beer!',
-		client = {
-			image = 'beer.png',
-			event = 'ss_consumable:client:useItem',			
-		}
 	},	
 	['firework1'] = {
 		label = '2Brothers',
@@ -632,16 +902,6 @@ return {
 		description = 'Handy software to tear down some fences',
 		client = {
 			image = 'usb_device.png',
-		}
-	},
-	['coffee'] = {
-		label = 'Coffee',
-		weight = 200,
-		stack = true,
-		close = true,
-		description = 'Pump 4 Caffeine',
-		client = {
-			image = 'coffee.png',
 		}
 	},
 	['laptop'] = {
@@ -1025,6 +1285,15 @@ return {
 			image = 'raw_coffee_beans.png',
 		},
 	},
+	['roasted_coffee_beans'] = {
+		label = 'Roasted Coffee Beans',
+		weight = 250,
+		stack = true,
+		description = 'Roasted Coffee Beans',
+		client = {
+			image = 'roasted_coffee_beans.png',
+		},
+	},	
 	['empty_bucket'] = {
 		label = 'Empty Bucket',
 		weight = 250,
@@ -1042,14 +1311,509 @@ return {
 		client = {
 			image = 'bucket_milk.png',
 		},
+	},
+	['syrup_apple'] = {
+		label = 'Apple Syrup',
+		weight = 150,
+		stack = true,
+		close = true,		
+		description = 'Apple Syrup',
+		client = {
+			image = 'syrup_apple.png',			
+		}
+	},
+	['syrup_orange'] = {
+		label = 'Orange Syrup',
+		weight = 150,
+		stack = true,
+		close = true,		
+		description = 'Orange Syrup',
+		client = {
+			image = 'syrup_orange.png',			
+		}
+	},
+	['syrup_lime'] = {
+		label = 'Lime Syrup',
+		weight = 150,
+		stack = true,
+		close = true,		
+		description = 'Lime Syrup',
+		client = {
+			image = 'syrup_lime.png',			
+		}
+	},
+	['syrup_peach'] = {
+		label = 'Peach Syrup',
+		weight = 150,
+		stack = true,
+		close = true,		
+		description = 'Peach Syrup',
+		client = {
+			image = 'syrup_peach.png',		
+		}
+	},
+	['syrup_pomegranate'] = {
+		label = 'Pomegranate Syrup',
+		weight = 150,
+		stack = true,
+		close = true,		
+		description = 'Pomegranate Syrup',
+		client = {
+			image = 'syrup_pomegranate.png',			
+		}
+	},
+	['syrup_pineapple'] = {
+		label = 'Pineapple Syrup',
+		weight = 150,
+		stack = true,
+		close = true,		
+		description = 'Pineapple Syrup',
+		client = {
+			image = 'syrup_pineapple.png',		
+		}
+	},
+	-- Night Clubs
+	['cocktail_mojito'] = {
+		label = 'Mojito',
+		weight = 250,
+		stack = true,
+		description = 'Mojito Cocktail',
+		client = {
+			image = 'cocktail_mojito.png',
+			event = 'ss_consumable:client:useItem',
+		},
+	},
+	['cocktail_mimosa'] = {
+		label = 'Mimosa',
+		weight = 250,
+		stack = true,
+		description = 'Mimosa Cocktail',
+		client = {
+			image = 'cocktail_mimosa.png',
+			event = 'ss_consumable:client:useItem',
+		},
+	},
+	['cocktail_moscowmule'] = {
+		label = 'Moscow Mule',
+		weight = 250,
+		stack = true,
+		description = 'Moscow Mule Cocktail',
+		client = {
+			image = 'cocktail_moscowmule.png',
+			event = 'ss_consumable:client:useItem',
+		},
+	},
+	['cocktail_peachbellini'] = {
+		label = 'Bellini',
+		weight = 250,
+		stack = true,
+		description = 'Bellini Cocktail',
+		client = {
+			image = 'cocktail_peachbellini.png',
+			event = 'ss_consumable:client:useItem',
+		},
+	},
+	['cocktail_pinacolada'] = {
+		label = 'Piña Colada',
+		weight = 250,
+		stack = true,
+		description = 'Piña Colada Cocktail',
+		client = {
+			image = 'cocktail_pinacolada.png',
+			event = 'ss_consumable:client:useItem',
+		},
+	},
+	['cocktail_pomegranate'] = {
+		label = 'Martini',
+		weight = 250,
+		stack = true,
+		description = 'Martini Cocktail',
+		client = {
+			image = 'cocktail_pomegranate.png',
+			event = 'ss_consumable:client:useItem',
+		},
+	},
+	['mulled_wine'] = {
+		label = 'Mulled Wine',
+		weight = 150,
+		stack = true,
+		close = true,		
+		description = 'Mulled Wine',
+		client = {
+			image = 'mulled_wine.png',
+			event = 'ss_consumable:client:useItem',			
+		}
+	},
+	['beer'] = {
+		label = 'Beer',
+		weight = 150,
+		stack = true,
+		close = true,		
+		description = 'Nothing like a good cold beer!',
+		client = {
+			image = 'beer.png',
+			event = 'ss_consumable:client:useItem',			
+		}
+	},
+	['rum'] = {
+		label = 'Rum',
+		weight = 150,
+		stack = true,
+		close = true,		
+		description = 'Rum',
+		client = {
+			image = 'rum.png',
+			event = 'ss_consumable:client:useItem',			
+		}
+	},
+	['whiskey'] = {
+		label = 'Whiskey',
+		weight = 150,
+		stack = true,
+		close = true,		
+		description = 'Whiskey',
+		client = {
+			image = 'whiskey.png',
+			event = 'ss_consumable:client:useItem',			
+		}
+	},
+	['vodka'] = {
+		label = 'Vodka',
+		weight = 150,
+		stack = true,
+		close = true,		
+		description = 'Vodka',
+		client = {
+			image = 'vodka.png',
+			event = 'ss_consumable:client:useItem',			
+		}
+	},
+	['tequila'] = {
+		label = 'Tequila',
+		weight = 150,
+		stack = true,
+		close = true,		
+		description = 'Tequila',
+		client = {
+			image = 'tequila.png',
+			event = 'ss_consumable:client:useItem',			
+		}
 	},	
+	['red_wine'] = {
+		label = 'Red Wine',
+		weight = 150,
+		stack = true,
+		close = true,		
+		description = 'Red Wine',
+		client = {
+			image = 'red_wine.png',
+			event = 'ss_consumable:client:useItem',			
+		}
+	},
+	['white_wine'] = {
+		label = 'White Wine',
+		weight = 150,
+		stack = true,
+		close = true,		
+		description = 'White Wine',
+		client = {
+			image = 'white_wine.png',
+			event = 'ss_consumable:client:useItem',			
+		}
+	},
+	-- Cafe Carrion & Cafe Arriba
+	['coffee'] = {
+		label = 'Coffee',
+		weight = 250,
+		stack = true,
+		description = 'Coffee',
+		client = {
+			image = 'coffee.png',
+			event = 'ss_consumable:client:useItem',
+		},
+	},
+	['cappuccino'] = {
+		label = 'Cappuccino',
+		weight = 250,
+		stack = true,
+		description = 'Cappuccino',
+		client = {
+			image = 'cappuccino.png',
+			event = 'ss_consumable:client:useItem',
+		},
+	},
+	['tea'] = {
+		label = 'Tea',
+		weight = 250,
+		stack = true,
+		description = 'Tea',
+		client = {
+			image = 'tea.png',
+			event = 'ss_consumable:client:useItem',
+		},
+	},
+	['milkshake_vanilla'] = {
+		label = 'Vanilla Milkshake',
+		weight = 250,
+		stack = true,
+		description = 'Vanilla Milkshake',
+		client = {
+			image = 'milkshake_vanilla.png',
+			event = 'ss_consumable:client:useItem',
+		},
+	},	
+	['milkshake_chocolate'] = {
+		label = 'Chocolate Milkshake',
+		weight = 250,
+		stack = true,
+		description = 'Chocolate Milkshake',
+		client = {
+			image = 'milkshake_chocolate.png',
+			event = 'ss_consumable:client:useItem',
+		},
+	},
+	['juice_pineapple'] = {
+		label = 'Pineapple Juice',
+		weight = 250,
+		stack = true,
+		description = 'Pineapple Juice',
+		client = {
+			image = 'juice_pineapple.png',
+			event = 'ss_consumable:client:useItem',
+		},
+	},
+	['juice_lime'] = {
+		label = 'Lime Juice',
+		weight = 250,
+		stack = true,
+		description = 'Lime Juice',
+		client = {
+			image = 'juice_lime.png',
+			event = 'ss_consumable:client:useItem',
+		},
+	},
+	['juice_peach'] = {
+		label = 'Peach Juice',
+		weight = 250,
+		stack = true,
+		description = 'Peach Juice',
+		client = {
+			image = 'juice_peach.png',
+			event = 'ss_consumable:client:useItem',
+		},
+	},	
+	['croissant'] = {
+		label = 'Croissant',
+		weight = 100,
+		stack = true,
+		close = true,		
+		description = 'Croissant',
+		client = {
+			image = 'croissant.png',
+			event = 'ss_consumable:client:useItem',			
+		}
+	},
+	['macaron'] = {
+		label = 'Macaron',
+		weight = 100,
+		stack = true,
+		close = true,		
+		description = 'Macaron',
+		client = {
+			image = 'macaron.png',
+			event = 'ss_consumable:client:useItem',			
+		}
+	},	
+	['strawberry_donut'] = {
+		label = 'Strawberry Donut',
+		weight = 100,
+		stack = true,
+		close = true,		
+		description = 'Strawberry Donut',
+		client = {
+			image = 'strawberry_donut.png',
+			event = 'ss_consumable:client:useItem',			
+		}
+	},
+	['chocolate_donut'] = {
+		label = 'Chocolate Donut',
+		weight = 100,
+		stack = true,
+		close = true,		
+		description = 'Chocolate Donut',
+		client = {
+			image = 'chocolate_donut.png',
+			event = 'ss_consumable:client:useItem',			
+		}
+	},
+	------ CAFES Kitchen Items
+	['macaron_batter'] = {
+		label = 'Macaron Batter',
+		weight = 100,
+		stack = true,
+		close = true,		
+		description = 'Macaron Batter',
+		client = {
+			image = 'macaron_batter.png',			
+		}
+	},
+	['croissant_dough'] = {
+		label = 'Croissant Dough',
+		weight = 100,
+		stack = true,
+		close = true,		
+		description = 'Croissant Dough',
+		client = {
+			image = 'croissant_dough.png',			
+		}
+	},
+	['donut_dough'] = {
+		label = 'Donut Dough',
+		weight = 100,
+		stack = true,
+		close = true,		
+		description = 'Donut Dough',
+		client = {
+			image = 'donut_dough.png',		
+		}
+	},
+	['coffee_powder'] = {
+		label = 'Coffee Powder',
+		weight = 100,
+		stack = true,
+		close = true,		
+		description = 'Coffee Powder',
+		client = {
+			image = 'coffee_powder.png',		
+		}
+	},
+	['bottled_orange_juice'] = {
+		label = 'Bottle of Orange Juice',
+		weight = 100,
+		stack = true,
+		close = true,		
+		description = 'Bottle of Orange Juice',
+		client = {
+			image = 'bottled_orange_juice.png',		
+		}
+	},
+	['pomegranate_seeds'] = {
+		label = 'Pomegranate Seeds',
+		weight = 100,
+		stack = true,
+		close = true,		
+		description = 'Pomegranate Seeds',
+		client = {
+			image = 'pomegranate_seeds.png',		
+		}
+	},
+	['sliced_apple'] = {
+		label = 'Sliced Apple',
+		weight = 100,
+		stack = true,
+		close = true,		
+		description = 'Sliced Apple',
+		client = {
+			image = 'sliced_apple.png',		
+		}
+	},
+	['sliced_orange'] = {
+		label = 'Sliced Orange',
+		weight = 100,
+		stack = true,
+		close = true,		
+		description = 'Sliced Orange',
+		client = {
+			image = 'sliced_orange.png',		
+		}
+	},
+	['sliced_lime'] = {
+		label = 'Sliced Lime',
+		weight = 100,
+		stack = true,
+		close = true,		
+		description = 'Sliced Lime',
+		client = {
+			image = 'sliced_lime.png',		
+		}
+	},
+	['sliced_peach'] = {
+		label = 'Sliced Peach',
+		weight = 100,
+		stack = true,
+		close = true,		
+		description = 'Sliced Peach',
+		client = {
+			image = 'sliced_peach.png',		
+		}
+	},
+	['sliced_pineapple'] = {
+		label = 'Sliced Pineapple',
+		weight = 100,
+		stack = true,
+		close = true,		
+		description = 'Sliced Pineapple',
+		client = {
+			image = 'sliced_pineapple.png',		
+		}
+	},
+	['ice_cubes'] = {
+		label = 'Ice Cubes',
+		weight = 100,
+		stack = true,
+		close = true,		
+		description = 'Ice Cubes',
+		client = {
+			image = 'ice_cubes.png',		
+		}
+	},
+	['syrup_vanilla'] = {
+		label = 'Vanilla Syrup',
+		weight = 150,
+		stack = true,
+		close = true,		
+		description = 'Vanilla Syrup',
+		client = {
+			image = 'syrup_vanilla.png',			
+		}
+	},
+	['syrup_chocolate'] = {
+		label = 'Chocolate Syrup',
+		weight = 150,
+		stack = true,
+		close = true,		
+		description = 'Chocolate Syrup',
+		client = {
+			image = 'syrup_chocolate.png',		
+		}
+	},
+	['icecream_vanilla_pack'] = {
+		label = 'Pack Vanilla Icecream',
+		weight = 150,
+		stack = true,
+		close = true,		
+		description = 'Pack Vanilla Icecream',
+		client = {
+			image = 'icecream_vanilla_pack.png',		
+		}
+	},
+	['icecream_chocolate_pack'] = {
+		label = 'Pack Chocolate Icecream',
+		weight = 150,
+		stack = true,
+		close = true,		
+		description = 'Pack Chocolate Icecream',
+		client = {
+			image = 'icecream_chocolate_pack.png',		
+		}
+	},
 	---- Medina Burger
 	------ MB Sellable Items
 	['mb_chicken_burger'] = {
 		label = 'Chicken Burger',
 		weight = 250,
 		stack = true,
-		description = 'Medina Burger Chicken Burger',
+		description = 'Chicken Burger',
 		client = {
 			image = 'mb_chicken_burger.png',
 			event = 'ss_consumable:client:useItem',
@@ -1066,10 +1830,10 @@ return {
 		},
 	},
 	['mb_fries'] = {
-		label = 'BK Fries',
+		label = 'French Fries',
 		weight = 250,
 		stack = true,
-		description = 'Medina Burger Burger King Fries',
+		description = 'French Fries',
 		client = {
 			image = 'mb_fries.png',
 			event = 'ss_consumable:client:useItem',
@@ -1154,6 +1918,15 @@ return {
 			image = 'pizza_dough.png',
 		},
 	},
+	['pizza_dough_ingredients'] = {
+		label = 'Pizza Dough with Ingredients',
+		weight = 250,
+		stack = true,
+		description = 'Pizza Dough with Ingredients',
+		client = {
+			image = 'pizza_dough_ingredients.png',
+		},
+	},
 	['sliced_onion'] = {
 		label = 'Sliced Onion',
 		weight = 250,
@@ -1170,6 +1943,63 @@ return {
 		description = 'Cooked Shredded Ground Beef for Burger',
 		client = {
 			image = 'cooked_shredded_ground_beef.png',
+		},
+	},
+	['soda_coca'] = {
+		label = 'Cocacola 2L',
+		weight = 250,
+		stack = true,
+		description = 'Cocacola 2L',
+		client = {
+			image = 'soda_coca.png',
+		},
+	},
+	['soda_cocazero'] = {
+		label = 'Cocacola Zero 2L',
+		weight = 250,
+		stack = true,
+		description = 'Cocacola Zero 2L',
+		client = {
+			image = 'soda_cocazero.png',
+		},
+	},
+	['soda_hawai'] = {
+		label = 'Hawai 2L',
+		weight = 250,
+		stack = true,
+		description = 'Hawai 2L',
+		client = {
+			image = 'soda_hawai.png',
+		},
+	},
+	['soda_coca_cup'] = {
+		label = 'Cup of Cocacola',
+		weight = 250,
+		stack = true,
+		description = 'Cup of Cocacola',
+		client = {
+			image = 'soda_coca_cup.png',
+			event = 'ss_consumable:client:useItem',
+		},
+	},
+	['soda_cocazero_cup'] = {
+		label = 'Cup of Cocacola Zero',
+		weight = 250,
+		stack = true,
+		description = 'Cup of Cocacola Zero',
+		client = {
+			image = 'soda_cocazero_cup.png',
+			event = 'ss_consumable:client:useItem',
+		},
+	},
+	['soda_hawai_cup'] = {
+		label = 'Cup of Hawai',
+		weight = 250,
+		stack = true,
+		description = 'Cup of Hawai',
+		client = {
+			image = 'soda_hawai_cup.png',
+			event = 'ss_consumable:client:useItem',
 		},
 	},
 	------ Shared Kitchen Item (MB & BP)
@@ -1507,5 +2337,43 @@ return {
 		weight = 5000,
 		stack = false,
 		description = 'A frameless vertical chalkboard.',
-	},	
+	},    
+	['receipt'] = {
+        label = 'Receipt',
+        weight = 20,
+        stack = false,
+        close = true,
+        description = 'A receipt for a transaction.',
+        client = {
+            image = 'receipt.png',
+            event = 'ss_receipts:openReceipt',
+        },
+        buttons = {
+            {
+                label = 'Show Receipt',
+                action = function(slot)
+                    TriggerEvent('ss_receipts:showReceiptToClosestPlayer', slot)
+                end
+            }
+        }
+    },
+    ['payment_terminal'] = {
+        label = 'Receipt Printer',
+        weight = 2000,
+        stack = false,
+        close = true,
+        description = 'A handy device for printing receipts on-the-go!',
+        client = {
+            image = 'payment_terminal.png',
+            event = 'ss_receipts:openPayTerminal',
+        },
+        buttons = {
+            {
+                label = 'Print Receipt',
+                action = function()
+                    TriggerEvent('ss_receipts:quickPrint')
+                end
+            }
+        }
+    },	
 }

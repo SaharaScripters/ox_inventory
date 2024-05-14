@@ -4,7 +4,22 @@ return {
 		blip = {
 			id = 59, colour = 69, scale = 0.8
 		}, inventory = {
-			{ name = 'water', price = 10 }
+			{ name = 'water_bottle_black', price = 10 },
+			{ name = 'water_bottle_blue', price = 10 },
+			{ name = 'water_bottle_mint', price = 10 },
+			{ name = 'water_bottle_orange', price = 10 },
+			{ name = 'water_bottle_pink', price = 10 },
+			{ name = 'water_bottle_purple', price = 10 },
+			{ name = 'water_bottle_red', price = 10 },
+			{ name = 'water_bottle_white', price = 10 },
+			{ name = 'water_bottle_yellow', price = 10 },
+			{ name = 'peanuts', price = 10 },
+			{ name = 'pretzels', price = 10 },
+			{ name = 'lollipop_red', price = 10 },
+			{ name = 'lollipop_green', price = 10 },
+			{ name = 'lollipop_purple', price = 10 },
+			{ name = 'lollipop_yellow', price = 10 },
+			{ name = 'lollipop_blue', price = 10 }
 		}, locations = {
 			vec3(25.7, -1347.3, 29.49),
 			vec3(-3038.71, 585.9, 7.9),
@@ -34,9 +49,7 @@ return {
 		blip = {
 			id = 93, colour = 69, scale = 0.8
 		}, inventory = {
-			{ name = 'water', price = 10 },
-			{ name = 'cola', price = 10 },
-			{ name = 'burger', price = 15 },
+			{ name = 'beer', price = 10 },
 		}, locations = {
 			vec3(1135.808, -982.281, 46.415),
 			vec3(-1222.915, -906.983, 12.326),
@@ -54,6 +67,25 @@ return {
 			{ loc = vec3(1393.0, 3605.95, 35.11), length = 0.6, width = 0.6, heading = 200.0, minZ = 35.0, maxZ = 35.4, distance = 1.5 }
 		}
 	},
+	LiquorMart = {
+		name = 'Liquor Whole Sale',
+		groups = {unicorn = 1, ibiza = 1, club77 = 1, vazou = 1},
+		blip = {
+			id = 93, colour = 1, scale = 0.8
+		}, inventory = {
+			{ name = 'beer', price = 100 },
+			{ name = 'vodka', price = 1000 },
+			{ name = 'rum', price = 1000 },
+			{ name = 'tequila', price = 1000 },
+			{ name = 'whiskey', price = 1500 },
+			{ name = 'white_wine', price = 1500 },
+			{ name = 'red_wine', price = 1500 },
+		}, locations = {
+			vec3(382.70, -870.62, 29.29)
+		}, targets = {
+			{ loc = vec3(383.5, -882.55, 29.45), length = 0.55, width = 0.4, heading = 0.0, minZ = 29.25, maxZ = 29.65, distance = 1.5 }
+		}
+	},	
 	PoliceArmoury = {
 		name = 'DGSN Armoury',
 		groups = shared.police,
