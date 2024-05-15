@@ -2339,41 +2339,17 @@ return {
 		description = 'A frameless vertical chalkboard.',
 	},
 	['receipt'] = {
-        label = 'Receipt',
-        weight = 20,
-        stack = false,
-        close = true,
-        description = 'A receipt for a transaction.',
-        client = {
-            image = 'receipt.png',
-            event = 'ss_receipts:openReceipt',
-        },
-        buttons = {
-            {
-                label = 'Show Receipt',
-                action = function(slot)
-                    TriggerEvent('ss_receipts:showReceiptToClosestPlayer', slot)
-                end
-            }
-        }
-    },
-    ['payment_terminal'] = {
-        label = 'Receipt Printer',
-        weight = 2000,
-        stack = false,
-        close = true,
-        description = 'A handy device for printing receipts on-the-go!',
-        client = {
-            image = 'payment_terminal.png',
-            event = 'ss_receipts:openPayTerminal',
-        },
-        buttons = {
-            {
-                label = 'Print Receipt',
-                action = function()
-                    TriggerEvent('ss_receipts:quickPrint')
-                end
-            }
-        }
-    },
+		label = 'Receipt',
+		weight = 20,
+		stack = false,
+		close = true,
+		description = 'A receipt for a transaction.',
+	},
+	['payment_terminal'] = {
+		label = 'Receipt Printer',
+		weight = 2000,
+		stack = false,
+		close = true,
+		description = 'A handy device for printing receipts on-the-go!',
+	},
 }
