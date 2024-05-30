@@ -2,7 +2,7 @@ return {
 	General = {
 		name = 'Shop',
 		blip = {
-			id = 59, colour = 69, scale = 0.8
+			id = 59, colour = 69, scale = 0.6
 		}, inventory = {
 			{ name = 'water_bottle_black', price = 10 },
 			{ name = 'water_bottle_blue', price = 10 },
@@ -59,7 +59,7 @@ return {
 	Liquor = {
 		name = 'Liquor Store',
 		blip = {
-			id = 93, colour = 69, scale = 0.8
+			id = 93, colour = 69, scale = 0.6
 		}, inventory = {
 			{ name = 'beer', price = 10 },
 		}, locations = {
@@ -93,9 +93,9 @@ return {
 			{ name = 'white_wine', price = 1500 },
 			{ name = 'red_wine', price = 1500 },
 		}, locations = {
-			vec3(382.70, -870.62, 29.29)
+			vec3(223.11, -1742.75, 29.04),
 		}, targets = {
-			{ loc = vec3(383.5, -882.55, 29.45), length = 0.55, width = 0.4, heading = 0.0, minZ = 29.25, maxZ = 29.65, distance = 1.5 }
+			{ loc = vec3(228.55, -1750.15, 29.45), length = 0.45, width = 0.5, heading = 295.25, minZ = 29.20, maxZ = 29.60, distance = 1.5 }
 		}
 	},	
 	PoliceArmoury = {

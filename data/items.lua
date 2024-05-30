@@ -266,17 +266,6 @@ return {
 		}
 	},
 	-- misc
-	['phone'] = {
-		label = 'Phone',
-		weight = 1000,
-		stack = true,
-		close = true,
-		allowArmed = false,
-		description = 'Electronic device for communication and accessing information',
-		client = {
-			image = 'phone.png',
-		}
-	},
 	['radio'] = {
 		label = 'Radio',
 		weight = 1000,
@@ -505,13 +494,31 @@ return {
 		}
 	},
 	-- money
-	['black_money'] = {
-		label = 'Black Money',
+	['money_roll'] = {
+		label = 'Money Roll',
 		weight = 0,
 		stack = true,
-		description = 'Illegally obtained funds',
+		description = 'Medium of exchange and unit of value used in transactions',
 		client = {
-			image = 'black_money.png',
+			image = 'money_roll.png',
+		}
+	},
+	['money_unrolled'] = {
+		label = 'Unrolled Money',
+		weight = 0,
+		stack = true,
+		description = 'Medium of exchange and unit of value used in transactions',
+		client = {
+			image = 'money_unrolled.png',
+		}
+	},
+	['money_packed'] = {
+		label = 'Packed Money',
+		weight = 0,
+		stack = true,
+		description = 'Medium of exchange and unit of value used in transactions',
+		client = {
+			image = 'money_packed.png',
 		}
 	},
 	['money'] = {
@@ -523,7 +530,7 @@ return {
 			image = 'money.png',
 		}
 	},
-	-- cards / permit / licenses
+	-- cards / permits / licenses / badges
 	['id_card'] = {
 		label = 'ID Card',
 		weight = 0,
@@ -534,58 +541,128 @@ return {
 			image = 'id_card.png',
 		}
 	},
-	['driver_license'] = {
+	['license_driver'] = {
 		label = 'Driver License',
 		weight = 0,
 		stack = false,
 		close = true,
 		description = 'Official document granting legal permission to operate a motor vehicle',
 		client = {
-			image = 'driver_license.png',
+			image = 'license_driver.png',
 		}
 	},
-	['pilot_license'] = {
+	['license_pilot'] = {
 		label = 'Pilot License',
 		weight = 0,
 		stack = false,
 		close = true,
 		description = 'Official document granting legal permission to operate aircraft',
 		client = {
-			image = 'pilot_license.png',
+			image = 'license_pilot.png',
 		}
 	},
-	['boating_license'] = {
+	['license_boating'] = {
 		label = 'Boating License',
 		weight = 0,
 		stack = false,
 		close = true,
 		description = 'Official permit allowing legal operation of a boat',
 		client = {
-			image = 'boating_license.png',
+			image = 'license_boating.png',
 		}
 	},
-	['weapon_license'] = {
+	['license_weapon'] = {
 		label = 'Weapon License',
 		weight = 0,
 		stack = false,
 		close = true,
 		description = 'Legal permit for firearm possession',
 		client = {
-			image = 'weapon_license.png',
+			image = 'license_weapon.png',
 		}
 	},
-	['hunting_license'] = {
+	['license_hunting'] = {
 		label = 'Hunting License',
 		weight = 0,
 		stack = false,
 		close = true,
 		description = 'Official permit allowing legal hunting activities',
 		client = {
-			image = 'hunting_license.png',
+			image = 'license_hunting.png',
+		}
+	},
+	['license_fishing'] = {
+		label = 'Fishing License',
+		weight = 0,
+		stack = false,
+		close = true,
+		description = 'Official permit allowing legal fishing activities',
+		client = {
+			image = 'license_fishing.png',
+		}
+	},
+	['badge_government'] = {
+		label = 'Government Badge',
+		weight = 0,
+		stack = false,
+		close = true,
+		description = 'Official badge of official authority and service',
+		client = {
+			image = 'badge_government.png',
+		}
+	},
+	['badge_police'] = {
+		label = 'Police Badge',
+		weight = 0,
+		stack = false,
+		close = true,
+		description = 'Official badge granting law enforcement authority',
+		client = {
+			image = 'badge_police.png',
+		}
+	},
+	['badge_firefighter'] = {
+		label = 'Fire Fighter Badge',
+		weight = 0,
+		stack = false,
+		close = true,
+		description = 'Official badge symbolizes courage and service',
+		client = {
+			image = 'badge_firefighter.png',
+		}
+	},
+	['badge_hospital'] = {
+		label = 'Hospital Badge',
+		weight = 0,
+		stack = false,
+		close = true,
+		description = 'Official badge grants access and identifies medical personnel.',
+		client = {
+			image = 'badge_hospital.png',
+		}
+	},
+	['badge_judge'] = {
+		label = 'Judge Badge',
+		weight = 0,
+		stack = false,
+		close = true,
+		description = 'Official badge of judicial authority',
+		client = {
+			image = 'badge_judge.png',
+		}
+	},
+	['badge_lawyer'] = {
+		label = 'Lawyer Badge',
+		weight = 0,
+		stack = false,
+		close = true,
+		description = 'Official badge of legal expertise and advocacy.',
+		client = {
+			image = 'badge_lawyer.png',
 		}
 	},
 	-- npwd
-	--[[['phone'] = {
+	['phone'] = {
 		label = 'Phone',
 		weight = 190,
 		stack = false,
@@ -596,24 +673,11 @@ return {
 					pcall(function() return exports.npwd:setPhoneDisabled(false) end)
 				end
 			end,
-
 			remove = function(total)
 				if total < 1 then
 					pcall(function() return exports.npwd:setPhoneDisabled(true) end)
 				end
 			end
-		}
-	},--]]
-	-- ss_stockmarket
-	['tradingphone'] = {
-		label = 'Trading Phone',
-		weight = 1000,
-		stack = true,
-		close = true,
-		allowArmed = false,
-		description = 'A phone for tracking stocks and trading',
-		client = {
-			image = 'tradingphone.png',
 		}
 	},
 	-- ss_vehicleshops
@@ -1403,13 +1467,13 @@ return {
 			event = 'ss_consumable:client:useItem',
 		},
 	},
-	['cocktail_peachbellini'] = {
+	['cocktail_bellini'] = {
 		label = 'Bellini',
 		weight = 250,
 		stack = true,
 		description = 'Bellini Cocktail',
 		client = {
-			image = 'cocktail_peachbellini.png',
+			image = 'cocktail_bellini.png',
 			event = 'ss_consumable:client:useItem',
 		},
 	},
@@ -2057,6 +2121,15 @@ return {
 			image = 'ground_beef.png',
 		},
 	},
+	['cooked_ground_beef'] = {
+		label = 'Cooked Ground Beef',
+		weight = 250,
+		stack = true,
+		description = 'Cooked Ground Beef',
+		client = {
+			image = 'cooked_ground_beef.png',
+		},
+	},
 	['kitchen_knife'] = {
 		label = 'Kitchen Knife',
 		weight = 250,
@@ -2219,6 +2292,27 @@ return {
 			image = 'jammer.png',
 		}
 	},
+	-- ss_firefighterjob
+	['hose'] = {
+		label = 'Water Hose',
+		weight = 2500,
+		stack = true,
+		close = true,
+		description = 'Water Hose',
+		client = {
+			image = 'hose.png',
+		}
+	},
+	['watertank'] = {
+		label = 'Water Tank',
+		weight = 2500,
+		stack = true,
+		close = true,
+		description = 'Water Tank',
+		client = {
+			image = 'watertank.png',
+		}
+	},	
 	-- ss_courierjob
 	['soda_box'] = {
 		label = 'Soda Box',
