@@ -232,6 +232,7 @@ return {
 		['WEAPON_FIREEXTINGUISHER'] = {
 			label = 'Fire Extinguisher',
 			weight = 8616,
+            durability = 0.006
 		},
 
 		['WEAPON_FIREWORK'] = {
@@ -463,8 +464,8 @@ return {
 		},
 
 		['WEAPON_PETROLCAN'] = {
-			label = 'Gas Can',
-			weight = 12000,
+			label = 'Jerry Can',
+			weight = 4000,
 		},
 
 		['WEAPON_GADGETPISTOL'] = {
