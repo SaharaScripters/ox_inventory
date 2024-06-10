@@ -412,42 +412,76 @@ return {
 		}
 	},
 	-- ss_drugs
-	['aluminumoxide'] = {
-		label = 'Aluminium Powder',
+	['chemicals'] = { -- Farm
+		label = 'Chemicals',
 		weight = 100,
 		stack = true,
-		description = 'Some powder to mix with',
+		description = 'Chemicals',
 		client = {
-			image = 'aluminumoxide.png',
+			image = 'chemicals.png',
 		}
 	},
-	['meth'] = {
+	['hydrochloric_acid'] = { -- Shop
+		label = 'Hydrochloric Acid',
+		weight = 100,
+		stack = true,
+		description = 'Hydrochloric Acid',
+		client = {
+			image = 'hydrochloric_acid.png',
+		}
+	},
+	['mixed_liquid'] = { -- Craft
+		label = 'Mixed Liquid',
+		weight = 100,
+		stack = true,
+		description = 'Mixed Liquid',
+		client = {
+			image = 'mixed_liquid.png',
+		}
+	},
+	['meth_tray'] = { -- Craft
+		label = 'Meth Tray',
+		weight = 100,
+		stack = true,
+		description = 'Meth Tray',
+		client = {
+			image = 'meth_tray.png',
+		}
+	},
+	['meth'] = { -- Craft
 		label = 'Meth',
 		weight = 100,
 		stack = true,
-		close = true,
-		description = 'A baggie of Meth',
+		description = 'Meth',
 		client = {
-			image = 'meth_baggy.png',
+			image = 'meth.png',
 		}
 	},
-	['ironoxide'] = {
-		label = 'Iron Powder',
+	['sodium_hydroxide'] = { -- Shop
+		label = 'Sodium Hydroxide',
 		weight = 100,
 		stack = true,
-		description = 'Some powder to mix with.',
+		description = 'Sodium Hydroxide',
 		client = {
-			image = 'ironoxide.png',
+			image = 'sodium_hydroxide.png',
 		}
 	},
-	['oxy'] = {
-		label = 'Prescription Oxy',
-		weight = 0,
+	['sulfuric_acid'] = { -- Shop
+		label = 'Sulfuric Acid',
+		weight = 100,
 		stack = true,
-		close = true,
-		description = 'The Label Has Been Ripped Off',
+		description = 'Sulfuric Acid',
 		client = {
-			image = 'oxy.png',
+			image = 'sulfuric_acid.png',
+		}
+	},
+	['thionyl_chloride'] = { -- Farm
+		label = 'Thionyl Chloride',
+		weight = 100,
+		stack = true,
+		description = 'Thionyl Chloride',
+		client = {
+			image = 'thionyl_chloride.png',
 		}
 	},
 	['weed_bud'] = {
@@ -2206,12 +2240,12 @@ return {
 		}
 	},
 	['vshammy'] = {
-		label = 'Vehicle Window',
+		label = 'Shammy Towel',
 		weight = 1000,
 		stack = true,
-		description = 'A vehicle window to repair your vehicle',
+		description = 'Super Absorbent Shammy Towel for Car',
 		client = {
-			image = 'vwindow.png',
+			image = 'vshammy.png',
 			event = 'ss_vehicletools:client:useTool',
 		}
 	},
