@@ -412,6 +412,16 @@ return {
 		}
 	},
 	-- ss_drugs
+	-- Phone Card
+	['prepaid_phone_card'] = { -- Farm
+		label = 'Prepaid Phone Card',
+		weight = 100,
+		stack = true,
+		description = 'Prepaid Phone Card',
+		client = {
+			image = 'prepaid_phone_card.png',
+		}
+	},
 	-- Meth
 	['chemicals'] = { -- Farm
 		label = 'Chemicals',
