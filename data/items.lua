@@ -412,6 +412,7 @@ return {
 		}
 	},
 	-- ss_drugs
+	-- Meth
 	['chemicals'] = { -- Farm
 		label = 'Chemicals',
 		weight = 100,
@@ -475,38 +476,92 @@ return {
 			image = 'sulfuric_acid.png',
 		}
 	},
-	['thionyl_chloride'] = { -- Farm
-		label = 'Thionyl Chloride',
+	-- Coke
+	['trowel'] = { -- Farm
+		label = 'Trowel',
 		weight = 100,
 		stack = true,
-		description = 'Thionyl Chloride',
+		description = 'Perfect for your garden',
 		client = {
-			image = 'thionyl_chloride.png',
+			image = 'trowel.png',
 		}
 	},
-	['weed_bud'] = {
-		label = 'Weed Bud',
+	['coca_leaf'] = {
+		label = 'Coca Leaf',
+		weight = 100,		
+		description = 'Leaf from amazing plant',
+		stack = true,
+		client = {
+			image = 'coca_leaf.png',
+		}		
+	},
+	['coke_box'] = {
+		label = 'Coke Box',
 		weight = 100,
 		stack = true,
-		close = true,
-		description = 'Weed Bud',
+		description = 'Be careful not to spill it on the ground',
 		client = {
-			image = 'weed_bud.png',
+			image = 'coke_box.png',
 		}
 	},
-	['weed_budclean'] = {
-		label = 'Weed Bud Clean',
+	['coke_raw'] = {
+		label = 'Raw Cocaine',
 		weight = 100,
 		stack = true,
-		close = true,
-		description = 'Weed Bud Clean',
+		description = 'Coke with some dirty particles',
 		client = {
-			image = 'weed_budclean.png',
+			image = 'coke_raw.png',
+		}
+	},
+	['coke_pure'] = {
+		label = 'Pure Coke',
+		weight = 100,
+		stack = true,
+		description = 'Coke without any dirty particles',
+		client = {
+			image = 'coke_pure.png',
+		}
+	},
+	['coke_figure'] = {
+		label = 'Action Figure',
+		weight = 100,
+		stack = true,
+		description = 'Action Figure of the cartoon superhero Impotent Rage',
+		client = {
+			image = 'coke_figure.png',
+		}
+	},
+	['coke_figureempty'] = {
+		label = 'Empty Action Figure',
+		weight = 100,
+		stack = true,
+		description = 'EmptyAction Figure of the cartoon superhero Impotent Rage',
+		client = {
+			image = 'coke_figureempty.png',
+		}
+	},
+	['cocaine'] = {
+		label = 'Cocaine',
+		weight = 100,
+		stack = true,
+		description = 'Cocaine',
+		client = {
+			image = 'cocaine.png',
+		}
+	},
+	-- Weed
+	['scissors'] = {
+		label = 'Scissors',
+		weight = 250,
+		stack = true,
+		description = 'Perfect for your garden',
+		client = {
+			image = 'scissors.png',
 		}
 	},
 	['plastic_bag'] = {
 		label = 'Plastic Bag',
-		weight = 100,
+		weight = 1,
 		stack = true,
 		close = true,
 		description = 'Plastic Bag',
@@ -514,20 +569,37 @@ return {
 			image = 'plastic_bag.png',
 		}
 	},
-	-- medic
-	['bandage'] = {
-		label = 'Bandage',
-		weight = 115,
+	['weed_bud'] = {
+		label = 'Weed Bud',
+		weight = 15,
 		stack = true,
 		close = true,
+		description = 'Weed Bud',
 		client = {
-			anim = { dict = 'missheistdockssetup1clipboard@idle_a', clip = 'idle_a', flag = 49 },
-			prop = { model = `prop_rolled_sock_02`, pos = vec3(-0.14, -0.14, -0.08), rot = vec3(-50.0, -50.0, 0.0) },
-			disable = { move = true, car = true, combat = true },
-			usetime = 2500,
+			image = 'weed_bud.png',
 		}
 	},
-	-- money
+	['weed_cleaned_bud'] = {
+		label = 'Weed Clean Bud',
+		weight = 10,
+		stack = true,
+		close = true,
+		description = 'Weed Clean Bud',
+		client = {
+			image = 'weed_cleaned_bud.png',
+		}
+	},
+	['weed'] = {
+		label = 'Weed',
+		weight = 1,
+		stack = true,
+		close = true,
+		description = 'Weed',
+		client = {
+			image = 'weed.png',
+		}
+	},
+	-- Money Laundry
 	['money_roll'] = {
 		label = 'Money Roll',
 		weight = 0,
@@ -562,6 +634,254 @@ return {
 		description = 'Medium of exchange and unit of value used in transactions',
 		client = {
 			image = 'money.png',
+		}
+	},	
+	-- Lab Keys
+	-- Lab Weed Keys
+	['weed_lab_key_black'] = {
+		label = 'Weed Lab Key',
+		weight = 100,
+		stack = true,
+		close = true,
+		description = 'Key for Weed Laboratory',
+		client = {
+			image = 'weed_lab_key_black.png',
+		}
+	},
+	['weed_lab_key_1'] = {
+		label = 'Weed Lab Key',
+		weight = 100,
+		stack = true,
+		close = true,
+		description = 'Key for Weed Laboratory',
+		client = {
+			image = 'weed_lab_key.png',
+		}
+	},
+	['weed_lab_key_2'] = {
+		label = 'Weed Lab Key',
+		weight = 100,
+		stack = true,
+		close = true,
+		description = 'Key for Weed Laboratory',
+		client = {
+			image = 'weed_lab_key.png',
+		}
+	},
+	['weed_lab_key_3'] = {
+		label = 'Weed Lab Key',
+		weight = 100,
+		stack = true,
+		close = true,
+		description = 'Key for Weed Laboratory',
+		client = {
+			image = 'weed_lab_key.png',
+		}
+	},
+	['weed_lab_key_4'] = {
+		label = 'Weed Lab Key',
+		weight = 100,
+		stack = true,
+		close = true,
+		description = 'Key for Weed Laboratory',
+		client = {
+			image = 'weed_lab_key.png',
+		}
+	},
+	['weed_lab_key_5'] = {
+		label = 'Weed Lab Key',
+		weight = 100,
+		stack = true,
+		close = true,
+		description = 'Key for Weed Laboratory',
+		client = {
+			image = 'weed_lab_key.png',
+		}
+	},
+	['weed_lab_key_6'] = {
+		label = 'Weed Lab Key',
+		weight = 100,
+		stack = true,
+		close = true,
+		description = 'Key for Weed Laboratory',
+		client = {
+			image = 'weed_lab_key.png',
+		}
+	},
+	-- Lab Meth Keys
+	['meth_lab_key_black'] = {
+		label = 'Meth Lab Key',
+		weight = 100,
+		stack = true,
+		close = true,
+		description = 'Key for Meth Laboratory',
+		client = {
+			image = 'meth_lab_key_black.png',
+		}
+	},
+	['meth_lab_key_1'] = {
+		label = 'Meth Lab Key',
+		weight = 100,
+		stack = true,
+		close = true,
+		description = 'Key for Meth Laboratory',
+		client = {
+			image = 'meth_lab_key.png',
+		}
+	},
+	['meth_lab_key_2'] = {
+		label = 'Meth Lab Key',
+		weight = 100,
+		stack = true,
+		close = true,
+		description = 'Key for Meth Laboratory',
+		client = {
+			image = 'meth_lab_key.png',
+		}
+	},
+	['meth_lab_key_3'] = {
+		label = 'Meth Lab Key',
+		weight = 100,
+		stack = true,
+		close = true,
+		description = 'Key for Meth Laboratory',
+		client = {
+			image = 'meth_lab_key.png',
+		}
+	},
+	['meth_lab_key_4'] = {
+		label = 'Meth Lab Key',
+		weight = 100,
+		stack = true,
+		close = true,
+		description = 'Key for Meth Laboratory',
+		client = {
+			image = 'meth_lab_key.png',
+		}
+	},
+	['meth_lab_key_5'] = {
+		label = 'Meth Lab Key',
+		weight = 100,
+		stack = true,
+		close = true,
+		description = 'Key for Meth Laboratory',
+		client = {
+			image = 'meth_lab_key.png',
+		}
+	},
+	['meth_lab_key_6'] = {
+		label = 'Meth Lab Key',
+		weight = 100,
+		stack = true,
+		close = true,
+		description = 'Key for Meth Laboratory',
+		client = {
+			image = 'meth_lab_key.png',
+		}
+	},
+	-- Lab Coke Keys
+	['coke_lab_key_black'] = {
+		label = 'Coke Lab Key',
+		weight = 100,
+		stack = true,
+		close = true,
+		description = 'Key for Coke Laboratory',
+		client = {
+			image = 'coke_lab_key_black.png',
+		}
+	},
+	['coke_lab_key_1'] = {
+		label = 'Coke Lab Key',
+		weight = 100,
+		stack = true,
+		close = true,
+		description = 'Key for Coke Laboratory',
+		client = {
+			image = 'coke_lab_key.png',
+		}
+	},
+	['coke_lab_key_2'] = {
+		label = 'Coke Lab Key',
+		weight = 100,
+		stack = true,
+		close = true,
+		description = 'Key for Coke Laboratory',
+		client = {
+			image = 'coke_lab_key.png',
+		}
+	},
+	['coke_lab_key_3'] = {
+		label = 'Coke Lab Key',
+		weight = 100,
+		stack = true,
+		close = true,
+		description = 'Key for Coke Laboratory',
+		client = {
+			image = 'coke_lab_key.png',
+		}
+	},
+	['coke_lab_key_4'] = {
+		label = 'Coke Lab Key',
+		weight = 100,
+		stack = true,
+		close = true,
+		description = 'Key for Coke Laboratory',
+		client = {
+			image = 'coke_lab_key.png',
+		}
+	},
+	['coke_lab_key_5'] = {
+		label = 'Coke Lab Key',
+		weight = 100,
+		stack = true,
+		close = true,
+		description = 'Key for Coke Laboratory',
+		client = {
+			image = 'coke_lab_key.png',
+		}
+	},
+	['coke_lab_key_6'] = {
+		label = 'Coke Lab Key',
+		weight = 100,
+		stack = true,
+		close = true,
+		description = 'Key for Coke Laboratory',
+		client = {
+			image = 'coke_lab_key.png',
+		}
+	},
+	-- Lab Coke Keys
+	['money_laundry_lab_key_black'] = {
+		label = 'Money Laundry Lab Key',
+		weight = 100,
+		stack = true,
+		close = true,
+		description = 'Key for Money Laundry Laboratory',
+		client = {
+			image = 'money_laundry_lab_key_black.png',
+		}
+	},
+	['money_laundry_lab_key'] = {
+		label = 'Money Laundry Lab Key',
+		weight = 100,
+		stack = true,
+		close = true,
+		description = 'Key for Money Laundry Laboratory',
+		client = {
+			image = 'money_laundry_lab_key.png',
+		}
+	},
+	-- medic
+	['bandage'] = {
+		label = 'Bandage',
+		weight = 115,
+		stack = true,
+		close = true,
+		client = {
+			anim = { dict = 'missheistdockssetup1clipboard@idle_a', clip = 'idle_a', flag = 49 },
+			prop = { model = `prop_rolled_sock_02`, pos = vec3(-0.14, -0.14, -0.08), rot = vec3(-50.0, -50.0, 0.0) },
+			disable = { move = true, car = true, combat = true },
+			usetime = 2500,
 		}
 	},
 	-- cards / permits / licenses / badges
@@ -2324,6 +2644,36 @@ return {
 		description = 'Radio Signal Jammer',
 		client = {
 			image = 'jammer.png',
+		}
+	},
+	['warrant_apartment'] = {
+		label = 'Search Warrant',
+		weight = 2500,
+		stack = true,
+		close = true,
+		description = 'Search Apartment Warrant',
+		client = {
+			image = 'warrant.png',
+		}
+	},
+	['warrant_warehouse'] = {
+		label = 'Search Warrant',
+		weight = 2500,
+		stack = true,
+		close = true,
+		description = 'Search Warehouse Warrant',
+		client = {
+			image = 'warrant.png',
+		}
+	},
+	['warrant_lab'] = {
+		label = 'Search Warrant',
+		weight = 2500,
+		stack = true,
+		close = true,
+		description = 'Search Lab Warrant',
+		client = {
+			image = 'warrant.png',
 		}
 	},
 	-- ss_firefighterjob
