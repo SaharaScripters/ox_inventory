@@ -422,7 +422,77 @@ return {
 			image = 'prepaid_phone_card.png',
 		}
 	},
+	-- Weed
+	['weed_wrap'] = {
+		label = 'Weed Wrap',
+		weight = 250,
+		stack = true,
+		description = 'Weed Wrap',
+		client = {
+			image = 'weed_wrap.png',
+		}
+	},
+	['scissors'] = {
+		label = 'Scissors',
+		weight = 250,
+		stack = true,
+		description = 'Perfect for your garden',
+		client = {
+			image = 'scissors.png',
+		}
+	},
+	['plastic_bag'] = {
+		label = 'Plastic Bag',
+		weight = 1,
+		stack = true,
+		close = true,
+		description = 'Plastic Bag',
+		client = {
+			image = 'plastic_bag.png',
+		}
+	},
+	['weed_bud'] = {
+		label = 'Weed Bud',
+		weight = 15,
+		stack = true,
+		close = true,
+		description = 'Weed Bud',
+		client = {
+			image = 'weed_bud.png',
+		}
+	},
+	['weed_cleaned_bud'] = {
+		label = 'Weed Clean Bud',
+		weight = 10,
+		stack = true,
+		close = true,
+		description = 'Weed Clean Bud',
+		client = {
+			image = 'weed_cleaned_bud.png',
+		}
+	},
+	['weed'] = {
+		label = 'Weed',
+		weight = 1,
+		stack = true,
+		close = true,
+		description = 'Weed',
+		client = {
+			image = 'weed.png',
+		}
+	},
 	-- Meth
+	['meth_syringe'] = {
+		label = 'Meth Syringe',
+		weight = 10,
+		stack = true,
+		close = true,
+		description = 'Meth Syringe',
+		client = {
+			image = 'meth_syringe.png',
+			event = 'ss_consumable:client:useItem',	
+		}
+	},
 	['chemicals'] = { -- Farm
 		label = 'Chemicals',
 		weight = 100,
@@ -486,7 +556,17 @@ return {
 			image = 'sulfuric_acid.png',
 		}
 	},
-	-- Coke
+	-- Coke	
+	['cocaine'] = {
+		label = 'Cocaine',
+		weight = 1,
+		stack = true,
+		close = true,
+		description = 'Cocaine',
+		client = {
+			image = 'cocaine.png',
+		}
+	},
 	['trowel'] = { -- Farm
 		label = 'Trowel',
 		weight = 100,
@@ -548,65 +628,6 @@ return {
 		description = 'EmptyAction Figure of the cartoon superhero Impotent Rage',
 		client = {
 			image = 'coke_figureempty.png',
-		}
-	},
-	['cocaine'] = {
-		label = 'Cocaine',
-		weight = 100,
-		stack = true,
-		description = 'Cocaine',
-		client = {
-			image = 'cocaine.png',
-		}
-	},
-	-- Weed
-	['scissors'] = {
-		label = 'Scissors',
-		weight = 250,
-		stack = true,
-		description = 'Perfect for your garden',
-		client = {
-			image = 'scissors.png',
-		}
-	},
-	['plastic_bag'] = {
-		label = 'Plastic Bag',
-		weight = 1,
-		stack = true,
-		close = true,
-		description = 'Plastic Bag',
-		client = {
-			image = 'plastic_bag.png',
-		}
-	},
-	['weed_bud'] = {
-		label = 'Weed Bud',
-		weight = 15,
-		stack = true,
-		close = true,
-		description = 'Weed Bud',
-		client = {
-			image = 'weed_bud.png',
-		}
-	},
-	['weed_cleaned_bud'] = {
-		label = 'Weed Clean Bud',
-		weight = 10,
-		stack = true,
-		close = true,
-		description = 'Weed Clean Bud',
-		client = {
-			image = 'weed_cleaned_bud.png',
-		}
-	},
-	['weed'] = {
-		label = 'Weed',
-		weight = 1,
-		stack = true,
-		close = true,
-		description = 'Weed',
-		client = {
-			image = 'weed.png',
 		}
 	},
 	-- Money Laundry
@@ -1954,6 +1975,7 @@ return {
 		label = 'Coffee',
 		weight = 250,
 		stack = true,
+		close = true,
 		description = 'Coffee',
 		client = {
 			image = 'coffee.png',
@@ -1964,6 +1986,7 @@ return {
 		label = 'Cappuccino',
 		weight = 250,
 		stack = true,
+		close = true,
 		description = 'Cappuccino',
 		client = {
 			image = 'cappuccino.png',
@@ -1974,6 +1997,7 @@ return {
 		label = 'Tea',
 		weight = 250,
 		stack = true,
+		close = true,
 		description = 'Tea',
 		client = {
 			image = 'tea.png',
@@ -1984,6 +2008,7 @@ return {
 		label = 'Vanilla Milkshake',
 		weight = 250,
 		stack = true,
+		close = true,
 		description = 'Vanilla Milkshake',
 		client = {
 			image = 'milkshake_vanilla.png',
@@ -1994,6 +2019,7 @@ return {
 		label = 'Chocolate Milkshake',
 		weight = 250,
 		stack = true,
+		close = true,
 		description = 'Chocolate Milkshake',
 		client = {
 			image = 'milkshake_chocolate.png',
@@ -2004,6 +2030,7 @@ return {
 		label = 'Pineapple Juice',
 		weight = 250,
 		stack = true,
+		close = true,
 		description = 'Pineapple Juice',
 		client = {
 			image = 'juice_pineapple.png',
@@ -2014,6 +2041,7 @@ return {
 		label = 'Lime Juice',
 		weight = 250,
 		stack = true,
+		close = true,
 		description = 'Lime Juice',
 		client = {
 			image = 'juice_lime.png',
@@ -2024,6 +2052,7 @@ return {
 		label = 'Peach Juice',
 		weight = 250,
 		stack = true,
+		close = true,
 		description = 'Peach Juice',
 		client = {
 			image = 'juice_peach.png',
@@ -2241,6 +2270,7 @@ return {
 		label = 'Chicken Burger',
 		weight = 250,
 		stack = true,
+		close = true,
 		description = 'Chicken Burger',
 		client = {
 			image = 'mb_chicken_burger.png',
@@ -2251,6 +2281,7 @@ return {
 		label = 'Beef Burger',
 		weight = 250,
 		stack = true,
+		close = true,
 		description = 'Medina Burger Beef Burger',
 		client = {
 			image = 'mb_beef_burger.png',
@@ -2261,6 +2292,7 @@ return {
 		label = 'French Fries',
 		weight = 250,
 		stack = true,
+		close = true,
 		description = 'French Fries',
 		client = {
 			image = 'mb_fries.png',
@@ -2310,6 +2342,7 @@ return {
 		label = 'Chicken Pizza',
 		weight = 250,
 		stack = true,
+		close = true,
 		description = 'Black Pan Chicken Pizza',
 		client = {
 			image = 'bp_chicken_pizza.png',
@@ -2320,6 +2353,7 @@ return {
 		label = 'Beef Pizza',
 		weight = 250,
 		stack = true,
+		close = true,
 		description = 'Black Pan Beef Pizza',
 		client = {
 			image = 'bp_beef_pizza.png',
@@ -2330,6 +2364,7 @@ return {
 		label = 'Fries',
 		weight = 250,
 		stack = true,
+		close = true,
 		description = 'Black Pan Fries',
 		client = {
 			image = 'bp_fries.png',
@@ -2404,6 +2439,7 @@ return {
 		label = 'Cup of Cocacola',
 		weight = 250,
 		stack = true,
+		close = true,
 		description = 'Cup of Cocacola',
 		client = {
 			image = 'soda_coca_cup.png',
@@ -2414,6 +2450,7 @@ return {
 		label = 'Cup of Cocacola Zero',
 		weight = 250,
 		stack = true,
+		close = true,
 		description = 'Cup of Cocacola Zero',
 		client = {
 			image = 'soda_cocazero_cup.png',
@@ -2424,6 +2461,7 @@ return {
 		label = 'Cup of Hawai',
 		weight = 250,
 		stack = true,
+		close = true,
 		description = 'Cup of Hawai',
 		client = {
 			image = 'soda_hawai_cup.png',
