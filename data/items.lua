@@ -254,17 +254,6 @@ return {
 			event = 'ss_consumable:client:useItem',
 		}
 	},
-	['joint'] = {
-		label = 'Joint',
-		weight = 0,
-		stack = true,
-		close = true,
-		description = 'Sidney would be very proud at you',
-		client = {
-			image = 'joint.png',
-			event = 'ss_consumable:client:useItem',
-		}
-	},
 	-- misc
 	['radio'] = {
 		label = 'Radio',
@@ -423,6 +412,17 @@ return {
 		}
 	},
 	-- Weed
+	['joint'] = {
+		label = 'Joint',
+		weight = 0,
+		stack = true,
+		close = true,
+		description = 'Sidney would be very proud at you',
+		client = {
+			image = 'joint.png',
+			event = 'ss_consumable:client:useItem',
+		}
+	},
 	['weed_wrap'] = {
 		label = 'Weed Wrap',
 		weight = 250,
@@ -430,6 +430,15 @@ return {
 		description = 'Weed Wrap',
 		client = {
 			image = 'weed_wrap.png',
+		}
+	},
+	['weed'] = {
+		label = 'Weed',
+		weight = 1,
+		stack = true,
+		description = 'Weed',
+		client = {
+			image = 'weed.png',
 		}
 	},
 	['scissors'] = {
@@ -445,7 +454,6 @@ return {
 		label = 'Plastic Bag',
 		weight = 1,
 		stack = true,
-		close = true,
 		description = 'Plastic Bag',
 		client = {
 			image = 'plastic_bag.png',
@@ -455,7 +463,6 @@ return {
 		label = 'Weed Bud',
 		weight = 15,
 		stack = true,
-		close = true,
 		description = 'Weed Bud',
 		client = {
 			image = 'weed_bud.png',
@@ -465,32 +472,39 @@ return {
 		label = 'Weed Clean Bud',
 		weight = 10,
 		stack = true,
-		close = true,
 		description = 'Weed Clean Bud',
 		client = {
 			image = 'weed_cleaned_bud.png',
 		}
 	},
-	['weed'] = {
-		label = 'Weed',
+	-- Meth
+	['meth'] = { -- Craft
+		label = 'Meth',
+		weight = 100,
+		stack = true,
+		description = 'Meth',
+		client = {
+			image = 'meth.png',
+		}
+	},
+	['empty_meth_pipe'] = {
+		label = 'Empty Meth Pipe',
+		weight = 1,
+		stack = true,
+		description = 'Empty Meth Pipe',
+		client = {
+			image = 'empty_meth_pipe.png',
+		}
+	},
+	['meth_pipe'] = {
+		label = 'Meth Pipe',
 		weight = 1,
 		stack = true,
 		close = true,
-		description = 'Weed',
+		description = 'Meth Pipe',
 		client = {
-			image = 'weed.png',
-		}
-	},
-	-- Meth
-	['meth_syringe'] = {
-		label = 'Meth Syringe',
-		weight = 10,
-		stack = true,
-		close = true,
-		description = 'Meth Syringe',
-		client = {
-			image = 'meth_syringe.png',
-			event = 'ss_consumable:client:useItem',	
+			image = 'meth_pipe.png',
+			event = 'ss_consumable:client:useItem',
 		}
 	},
 	['chemicals'] = { -- Farm
@@ -511,33 +525,6 @@ return {
 			image = 'hydrochloric_acid.png',
 		}
 	},
-	['mixed_liquid'] = { -- Craft
-		label = 'Mixed Liquid',
-		weight = 100,
-		stack = true,
-		description = 'Mixed Liquid',
-		client = {
-			image = 'mixed_liquid.png',
-		}
-	},
-	['meth_tray'] = { -- Craft
-		label = 'Meth Tray',
-		weight = 100,
-		stack = true,
-		description = 'Meth Tray',
-		client = {
-			image = 'meth_tray.png',
-		}
-	},
-	['meth'] = { -- Craft
-		label = 'Meth',
-		weight = 100,
-		stack = true,
-		description = 'Meth',
-		client = {
-			image = 'meth.png',
-		}
-	},
 	['sodium_hydroxide'] = { -- Shop
 		label = 'Sodium Hydroxide',
 		weight = 100,
@@ -556,6 +543,24 @@ return {
 			image = 'sulfuric_acid.png',
 		}
 	},
+	['mixed_liquid'] = { -- Craft
+		label = 'Mixed Liquid',
+		weight = 100,
+		stack = true,
+		description = 'Mixed Liquid',
+		client = {
+			image = 'mixed_liquid.png',
+		}
+	},
+	['meth_tray'] = { -- Craft
+		label = 'Meth Tray',
+		weight = 100,
+		stack = true,
+		description = 'Meth Tray',
+		client = {
+			image = 'meth_tray.png',
+		}
+	},
 	-- Coke	
 	['cocaine'] = {
 		label = 'Cocaine',
@@ -565,6 +570,7 @@ return {
 		description = 'Cocaine',
 		client = {
 			image = 'cocaine.png',
+			event = 'ss_consumable:client:useItem',	
 		}
 	},
 	['trowel'] = { -- Farm
@@ -1063,6 +1069,16 @@ return {
 					pcall(function() return exports.npwd:setPhoneDisabled(true) end)
 				end
 			end
+		}
+	},
+	['gangphone'] = {
+		label = 'Gang Phone',
+		weight = 0,
+		stack = false,
+		close = true,
+		description = 'Gang Phone Management System',
+		client = {
+			image = 'phone.png',
 		}
 	},
 	-- ss_vehicleshops
