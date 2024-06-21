@@ -543,6 +543,15 @@ return {
 			image = 'sulfuric_acid.png',
 		}
 	},
+	['thionyl_chloride'] = { -- Shop
+		label = 'Thionyl Chloride',
+		weight = 100,
+		stack = true,
+		description = 'Thionyl Chloride',
+		client = {
+			image = 'thionyl_chloride.png',
+		}
+	},
 	['mixed_liquid'] = { -- Craft
 		label = 'Mixed Liquid',
 		weight = 100,
