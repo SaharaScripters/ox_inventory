@@ -426,10 +426,28 @@ return {
 	['weed_wrap'] = {
 		label = 'Weed Wrap',
 		weight = 250,
-		stack = true,
+		stack = false,
 		description = 'Weed Wrap',
 		client = {
 			image = 'weed_wrap.png',
+		}
+	},
+	['weed_crumbs'] = {
+		label = 'Weed Crumbs',
+		weight = 1,
+		stack = true,
+		description = 'Weed Crumbs obtained from the process of grinding weed',
+		client = {
+			image = 'weed_crumbs.png',
+		}
+	},
+	['weed_grinder'] = {
+		label = 'Weed Grinder',
+		weight = 1,
+		stack = true,
+		description = 'Weed Grinder to grind your weed',
+		client = {
+			image = 'weed_grinder.png',
 		}
 	},
 	['weed'] = {
@@ -561,7 +579,7 @@ return {
 			image = 'meth_tray.png',
 		}
 	},
-	-- Coke	
+	-- Coke
 	['cocaine'] = {
 		label = 'Cocaine',
 		weight = 1,
@@ -570,7 +588,7 @@ return {
 		description = 'Cocaine',
 		client = {
 			image = 'cocaine.png',
-			event = 'ss_consumable:client:useItem',	
+			event = 'ss_consumable:client:useItem',
 		}
 	},
 	['trowel'] = { -- Farm
@@ -584,12 +602,12 @@ return {
 	},
 	['coca_leaf'] = {
 		label = 'Coca Leaf',
-		weight = 100,		
+		weight = 100,
 		description = 'Leaf from amazing plant',
 		stack = true,
 		client = {
 			image = 'coca_leaf.png',
-		}		
+		}
 	},
 	['coke_box'] = {
 		label = 'Coke Box',
@@ -672,7 +690,7 @@ return {
 		client = {
 			image = 'money.png',
 		}
-	},	
+	},
 	-- Lab Keys
 	-- Lab Weed Keys
 	['weed_lab_key_black'] = {
@@ -2760,7 +2778,7 @@ return {
 		client = {
 			image = 'watertank.png',
 		}
-	},	
+	},
 	-- ss_courierjob
 	['soda_box'] = {
 		label = 'Soda Box',
