@@ -79,6 +79,22 @@ return {
 			{ loc = vec3(1393.0, 3605.95, 35.11), length = 0.6, width = 0.6, heading = 200.0, minZ = 35.0, maxZ = 35.4, distance = 1.5 }
 		}
 	},
+	SmokeShop = {
+		name = 'Smoke Shop',
+		blip = {
+			id = 59, colour = 69, scale = 0.6
+		}, inventory = {
+			{ name = 'weed_grinder', price = 200 },
+			{ name = 'lighter', price = 100 },
+			{ name = 'cigarette', price = 10 },
+			{ name = 'empty_meth_pipe', price = 10 },
+			{ name = 'weed_wrap', price = 10, metadata = {type = 10} },
+		}, locations = {
+			vec3(-1171.65, -1571.45, 4.65),
+		}, targets = {
+			{ loc = vec3(-1171.65, -1571.45, 4.35), length = 0.6, width = 0.7, heading = 310.0, minZ = 4.05, maxZ = 4.65, distance = 1.5 },
+		}
+	},
 	LiquorMart = {
 		name = 'Liquor Whole Sale',
 		groups = {unicorn = 1, ibiza = 1, club77 = 1, vazou = 1},
