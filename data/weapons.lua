@@ -1,10 +1,17 @@
 return {
 	Weapons = {
+		['WEAPON_HUNTINGRIFLE'] = {
+			label = 'Hunting Rifle',
+			weight = 3300,
+			durability = 0.03,
+			ammoname = 'ammo-hunting',
+		},
+
 		['WEAPON_RADARGUN'] = {
 			label = 'Radar Gun',
 			weight = 3300,
 		},
-		
+
 		['WEAPON_BATTLERIFLE'] = {
 			label = 'Battle Rifle',
 			weight = 3300,
@@ -1787,6 +1794,11 @@ return {
 	},
 
 	Ammo = {
+		['ammo-hunting'] = {
+			label = '7.62x39',
+			weight = 8,
+		},
+
 		['ammo-22'] = {
 			label = '.22 Long Rifle',
 			weight = 3,

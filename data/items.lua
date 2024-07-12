@@ -254,6 +254,17 @@ return {
 			event = 'ss_consumable:client:useItem',
 		}
 	},
+	['bong'] = {
+		label = 'Bong',
+		weight = 0,
+		stack = true,
+		close = true,
+		description = 'Bong',
+		client = {
+			image = 'bong.png',
+			event = 'ss_consumable:client:useItem',
+		}
+	},
 	-- misc
 	['radio'] = {
 		label = 'Radio',
@@ -466,15 +477,6 @@ return {
 		description = 'Perfect for your garden',
 		client = {
 			image = 'scissors.png',
-		}
-	},
-	['plastic_bag'] = {
-		label = 'Plastic Bag',
-		weight = 1,
-		stack = true,
-		description = 'Plastic Bag',
-		client = {
-			image = 'plastic_bag.png',
 		}
 	},
 	['weed_bud'] = {
@@ -1098,16 +1100,6 @@ return {
 			end
 		}
 	},
-	['gangphone'] = {
-		label = 'Gang Phone',
-		weight = 0,
-		stack = false,
-		close = true,
-		description = 'Gang Phone Management System',
-		client = {
-			image = 'phone.png',
-		}
-	},
 	-- ss_vehicleshops
 	['prepurchase_contract'] = {
 		label = 'Pre-Purchase Contract',
@@ -1272,13 +1264,13 @@ return {
 			image = 'painkillers.png',
 		}
 	},
-	['goldbar'] = {
+	['gold_bar'] = {
 		label = 'Gold Bar',
 		weight = 7000,
 		stack = true,
-		description = 'Looks pretty expensive to me',
+		description = 'Bank Gold Reserve',
 		client = {
-			image = 'goldbar.png',
+			image = 'gold_bar.png',
 		}
 	},
 	['lighter'] = {
@@ -1321,7 +1313,6 @@ return {
 			image = 'placeholder.png',
 		}
 	},
-
 	['thermite'] = {
 		label = 'Thermite',
 		weight = 1000,
@@ -1342,7 +1333,6 @@ return {
 			image = 'samsungphone.png',
 		}
 	},
-
 	['markedbills'] = {
 		label = 'Marked Money',
 		weight = 1000,
@@ -1353,7 +1343,6 @@ return {
 			image = 'markedbills.png',
 		}
 	},
-
 	['certificate'] = {
 		label = 'Certificate',
 		weight = 0,
@@ -1364,7 +1353,6 @@ return {
 			image = 'certificate.png',
 		}
 	},
-
 	['wine'] = {
 		label = 'Wine',
 		weight = 300,
@@ -1385,7 +1373,6 @@ return {
 			image = 'tablet.png',
 		}
 	},
-
 	['gatecrack'] = {
 		label = 'Gatecrack',
 		weight = 0,
@@ -1406,17 +1393,17 @@ return {
 		}
 	},
 	-- ss_businesses
-	-- ONA
-	['pickaxe'] = {
-		label = 'Pickaxe',
+	-- MANAGEM
+	['sledgehammer'] = {
+		label = 'Sledge Hammer',
 		weight = 100,
 		stack = false,
 		description = 'Tool with a pointed end and a flat blade, used for breaking and extracting minerals from rocks or ore deposits',
 		client = {
-			image = 'pickaxe.png',
+			image = 'sledgehammer.png',
 		}
 	},
-	['plastic'] = { -- recycle prop_water_bottle_dark
+	['plastic'] = {
 		label = 'Plastic',
 		weight = 100,
 		stack = true,
@@ -1425,7 +1412,43 @@ return {
 			image = 'plastic.png',
 		}
 	},
-	['glass'] = { -- recycle v_ilev_ch_glassdoor
+	['plastic_bottle'] = { -- recycle prop_water_bottle_dark
+		label = 'Plastic Bottle',
+		weight = 100,
+		stack = true,
+		description = 'Plastic Bottle',
+		client = {
+			image = 'plastic_bottle.png',
+		}
+	},
+	['plastic_recycled'] = {
+		label = 'Recycled Plastic',
+		weight = 100,
+		stack = true,
+		description = 'Recycled Plastic',
+		client = {
+			image = 'plastic_recycled.png',
+		}
+	},
+	['plastic_bag'] = {
+		label = 'Plastic Bag',
+		weight = 1,
+		stack = true,
+		description = 'Plastic Bag',
+		client = {
+			image = 'plastic_bag.png',
+		}
+	},
+	['empty_milk_box'] = {
+		label = 'Empty Milk Box',
+		weight = 1,
+		stack = true,
+		description = 'Empty Milk Box',
+		client = {
+			image = 'empty_milk_box.png',
+		}
+	},
+	['glass'] = {
 		label = 'Glass',
 		weight = 100,
 		stack = true,
@@ -1434,16 +1457,61 @@ return {
 			image = 'glass.png',
 		}
 	},
-	['metalscrap'] = { -- recycle prop_barrel_pile_02
+	['glass_bottles'] = { -- recycle v_ilev_ch_glassdoor
+		label = 'Glass Bottles',
+		weight = 100,
+		stack = true,
+		description = 'Glass Bottles',
+		client = {
+			image = 'glass_bottles.png',
+		}
+	},
+	['glass_recycled'] = {
+		label = 'Glass Recycled',
+		weight = 100,
+		stack = true,
+		description = 'Glass Recycled',
+		client = {
+			image = 'glass_recycled.png',
+		}
+	},
+	['metal'] = {
+		label = 'Metal',
+		weight = 100,
+		stack = true,
+		description = 'Metal',
+		client = {
+			image = 'metal.png',
+		}
+	},
+	['metal_rim'] = { -- recycle prop_barrel_pile_02
+		label = 'Metal Rim',
+		weight = 100,
+		stack = true,
+		description = 'Metal Rim',
+		client = {
+			image = 'metal_rim.png',
+		}
+	},
+	['metal_scrap'] = {
 		label = 'Metal Scrap',
 		weight = 100,
 		stack = true,
 		description = 'Discarded metal materials often recycled for reuse in manufacturing',
 		client = {
-			image = 'metalscrap.png',
+			image = 'metal_scrap.png',
 		}
 	},
-	['rubber'] = { -- recycle prop_rub_pile_03
+	['metal_bar'] = {
+		label = 'Metal Bar',
+		weight = 100,
+		stack = true,
+		description = 'Metal Bar',
+		client = {
+			image = 'metal_bar.png',
+		}
+	},
+	['rubber'] = {
 		label = 'Rubber',
 		weight = 100,
 		stack = true,
@@ -1452,22 +1520,22 @@ return {
 			image = 'rubber.png',
 		}
 	},
-	['steel'] = { -- fabrication iron + carbon
-		label = 'Steel',
+	['rubber_tire'] = { -- recycle prop_rub_pile_03
+		label = 'Rubber Tire',
 		weight = 100,
 		stack = true,
-		description = 'Strong alloy of iron and carbon, used widely in construction and manufacturing',
+		description = 'Rubber Tire',
 		client = {
-			image = 'steel.png',
+			image = 'rubber_tire.png',
 		}
 	},
-	['carbon'] = { -- fabrication coal
-		label = 'Carbon',
+	['rubber_recycled'] = {
+		label = 'Rubber Recycled',
 		weight = 100,
 		stack = true,
-		description = 'Elemental carbon extracted from coal, used in various industrial processes and applications',
+		description = 'Rubber Recycled',
 		client = {
-			image = 'carbon.png',
+			image = 'rubber_recycled.png',
 		}
 	},
 	['copper'] = {
@@ -1479,31 +1547,49 @@ return {
 			image = 'copper.png',
 		}
 	},
-	['copper_stone'] = { -- bzzz_prop_mine_copper_big
-		label = 'Copper Stone',
+	['copper_ore'] = { -- bzzz_prop_mine_copper_big
+		label = 'Copper Ore',
 		weight = 100,
 		stack = true,
 		description = 'Naturally occurring rock containing copper ore, extracted from mines for further processing and refining',
 		client = {
-			image = 'copper_stone.png',
+			image = 'copper_ore.png',
 		}
 	},
-	['copper_cracked_stone'] = {
-		label = 'Cracked Copper Stone',
+	['copper_washed'] = {
+		label = 'Washed Copper',
 		weight = 100,
 		stack = true,
-		description = 'Copper-bearing rock with fissures or fractures, typically extracted from mines for refining into usable copper',
+		description = 'Washed Copper',
 		client = {
-			image = 'copper_cracked_stone.png',
+			image = 'copper_washed.png',
 		}
 	},
-	['copper_washed_stone'] = {
-		label = 'Washed Copper Stone',
+	['copper_powder'] = {
+		label = 'Copper Powder',
 		weight = 100,
 		stack = true,
-		description = 'Copper-bearing rock cleaned or rinsed after extraction from mines, typically as a preliminary step before further processing',
+		description = 'Copper Powder',
 		client = {
-			image = 'copper_washed_stone.png',
+			image = 'copper_powder.png',
+		}
+	},
+	['copper_particles'] = {
+		label = 'Copper Particles',
+		weight = 100,
+		stack = true,
+		description = 'Copper Particles',
+		client = {
+			image = 'copper_particles.png',
+		}
+	},
+	['copper_bar'] = {
+		label = 'Copper Bar',
+		weight = 100,
+		stack = true,
+		description = 'Copper Bar',
+		client = {
+			image = 'copper_bar.png',
 		}
 	},
 	['aluminum'] = {
@@ -1515,40 +1601,302 @@ return {
 			image = 'aluminum.png',
 		}
 	},
-	['bauxite_stone'] = { -- bzzz_prop_mine_tin_big
-		label = 'Bauxite',
+	['bauxite_ore'] = { -- bzzz_prop_mine_tin_big
+		label = 'Bauxite Ore',
 		weight = 100,
 		stack = true,
 		description = 'Mineral ore rich in aluminum oxide, commonly used as the primary source for aluminum production',
 		client = {
-			image = 'bauxite.png',
+			image = 'bauxite_ore.png',
 		}
 	},
-	['bauxite_cracked_stone'] = {
-		label = 'Cracked Bauxite Stone',
+	['bauxite_washed'] = {
+		label = 'Washed Bauxite',
 		weight = 100,
 		stack = true,
-		description = 'Bauxite ore with fissures or fractures, typically extracted from mines for refining into aluminum',
+		description = 'Washed Bauxite',
 		client = {
-			image = 'bauxite_cracked_stone.png',
+			image = 'bauxite_washed.png',
 		}
 	},
-	['iron'] = { -- bzzz_prop_mine_iron_big
-		label = 'Iron',
+	['alumina_powder'] = {
+		label = 'Alumina Powder',
 		weight = 100,
 		stack = true,
-		description = 'Essential mineral for bodily functions',
+		description = 'Alumina Powder',
 		client = {
-			image = 'iron.png',
+			image = 'alumina_powder.png',
 		}
 	},
-	['coal'] = { -- bzzz_prop_mine_coal_big
-		label = 'Coal',
+	['alumina'] = {
+		label = 'Alumina',
+		weight = 100,
+		stack = true,
+		description = 'Alumina',
+		client = {
+			image = 'alumina.png',
+		}
+	},
+	['aluminum_bar'] = {
+		label = 'Aluminum Bar',
+		weight = 100,
+		stack = true,
+		description = 'Aluminum Bar',
+		client = {
+			image = 'aluminum_bar.png',
+		}
+	},
+	['steel'] = {
+		label = 'Steel',
+		weight = 100,
+		stack = true,
+		description = 'Strong alloy of iron and carbon, used widely in construction and manufacturing',
+		client = {
+			image = 'steel.png',
+		}
+	},
+	['iron_ore'] = { -- bzzz_prop_mine_iron_big
+		label = 'Iron Ore',
+		weight = 100,
+		stack = true,
+		description = 'Iron Ore',
+		client = {
+			image = 'iron_ore.png',
+		}
+	},
+	['iron_washed'] = {
+		label = 'Washed Iron',
+		weight = 100,
+		stack = true,
+		description = 'Washed Iron',
+		client = {
+			image = 'iron_washed.png',
+		}
+	},
+	['iron_powder'] = {
+		label = 'Iron Powder',
+		weight = 100,
+		stack = true,
+		description = 'Iron Powder',
+		client = {
+			image = 'iron_powder.png',
+		}
+	},
+	['coal_ore'] = { -- bzzz_prop_mine_coal_big
+		label = 'Coal Ore',
 		weight = 100,
 		stack = true,
 		description = 'Combustible sedimentary rock used primarily as a fuel source for power generation and industrial processes',
 		client = {
-			image = 'coal.png',
+			image = 'coal_ore.png',
+		}
+	},
+	['carbon_powder'] = {
+		label = 'Carbon Powder',
+		weight = 100,
+		stack = true,
+		description = 'Elemental carbon extracted from coal, used in various industrial processes and applications',
+		client = {
+			image = 'carbon_powder.png',
+		}
+	},
+	['pig_iron'] = { -- fabrication iron power + carbon powder
+		label = 'Pig Iron',
+		weight = 100,
+		stack = true,
+		description = 'Pig Iron',
+		client = {
+			image = 'pig_iron.png',
+		}
+	},
+	['steel_bar'] = {
+		label = 'Steel Bar',
+		weight = 100,
+		stack = true,
+		description = 'Steel Bar',
+		client = {
+			image = 'steel_bar.png',
+		}
+	},
+	['gold_ore'] = { -- bzzz_prop_mine_gold_big
+		label = 'Gold Ore',
+		weight = 100,
+		stack = true,
+		description = 'Gold Ore',
+		client = {
+			image = 'gold_ore.png',
+		}
+	},
+	['gold_washed'] = {
+		label = 'Washed Gold',
+		weight = 100,
+		stack = true,
+		description = 'Washed Gold',
+		client = {
+			image = 'gold_washed.png',
+		}
+	},
+	['goldbar'] = {
+		label = 'Gold Bar',
+		weight = 100,
+		stack = true,
+		description = 'Crafted Gold Bar',
+		client = {
+			image = 'gold_bar.png',
+		}
+	},
+	['gold_electronic'] = {
+		label = 'Electronic Gold',
+		weight = 100,
+		stack = true,
+		description = 'Electronic Gold',
+		client = {
+			image = 'gold_electronic.png',
+		}
+	},
+	---- Digital Den
+	['phone_body'] = {
+		label = 'Phone Body',
+		weight = 100,
+		stack = true,
+		description = 'Phone Body',
+		client = {
+			image = 'phone_body.png',
+		}
+	},
+	['phone_screen'] = {
+		label = 'Phone Screen',
+		weight = 100,
+		stack = true,
+		description = 'Phone Screen',
+		client = {
+			image = 'phone_screen.png',
+		}
+	},
+	['phone_motherboard'] = {
+		label = 'Phone Motherboard',
+		weight = 100,
+		stack = true,
+		description = 'Phone Motherboard',
+		client = {
+			image = 'phone_motherboard.png',
+		}
+	},
+	['phone_battery'] = {
+		label = 'Phone Battery',
+		weight = 100,
+		stack = true,
+		description = 'Phone Battery',
+		client = {
+			image = 'phone_battery.png',
+		}
+	},
+	['tablet_body'] = {
+		label = 'Tablet Body',
+		weight = 100,
+		stack = true,
+		description = 'Tablet Body',
+		client = {
+			image = 'tablet_body.png',
+		}
+	},
+	['tablet_screen'] = {
+		label = 'Tablet Screen',
+		weight = 100,
+		stack = true,
+		description = 'Tablet Screen',
+		client = {
+			image = 'tablet_screen.png',
+		}
+	},
+	['tablet_motherboard'] = {
+		label = 'Tablet Motherboard',
+		weight = 100,
+		stack = true,
+		description = 'Tablet Motherboard',
+		client = {
+			image = 'tablet_motherboard.png',
+		}
+	},
+	['tablet_battery'] = {
+		label = 'Tablet Battery',
+		weight = 100,
+		stack = true,
+		description = 'Tablet Battery',
+		client = {
+			image = 'tablet_battery.png',
+		}
+	},
+	['radio_body'] = {
+		label = 'Radio Body',
+		weight = 100,
+		stack = true,
+		description = 'Radio Body',
+		client = {
+			image = 'radio_body.png',
+		}
+	},
+	['radio_screen'] = {
+		label = 'Radio Screen',
+		weight = 100,
+		stack = true,
+		description = 'Radio Screen',
+		client = {
+			image = 'radio_screen.png',
+		}
+	},
+	['radio_motherboard'] = {
+		label = 'Radio Motherboard',
+		weight = 100,
+		stack = true,
+		description = 'Radio Motherboard',
+		client = {
+			image = 'radio_motherboard.png',
+		}
+	},
+	['radio_battery'] = {
+		label = 'Radio Battery',
+		weight = 100,
+		stack = true,
+		description = 'Radio Battery',
+		client = {
+			image = 'radio_battery.png',
+		}
+	},
+	['terminal_body'] = {
+		label = 'Terminal Body',
+		weight = 100,
+		stack = true,
+		description = 'Terminal Body',
+		client = {
+			image = 'terminal_body.png',
+		}
+	},
+	['terminal_screen'] = {
+		label = 'Terminal Screen',
+		weight = 100,
+		stack = true,
+		description = 'Terminal Screen',
+		client = {
+			image = 'terminal_screen.png',
+		}
+	},
+	['terminal_motherboard'] = {
+		label = 'Terminal Motherboard',
+		weight = 100,
+		stack = true,
+		description = 'Terminal Motherboard',
+		client = {
+			image = 'terminal_motherboard.png',
+		}
+	},
+	['terminal_battery'] = {
+		label = 'Terminal Battery',
+		weight = 100,
+		stack = true,
+		description = 'Terminal Battery',
+		client = {
+			image = 'terminal_battery.png',
 		}
 	},
 	---- Agri Maroc
@@ -1660,78 +2008,6 @@ return {
 			image = 'corn_cob.png',
 		},
 	},
-	['wheat'] = {
-		label = 'Wheat',
-		weight = 250,
-		stack = true,
-		description = 'Staple cereal grain widely cultivated for its versatile culinary uses in making bread, pasta, and other food products',
-		client = {
-			image = 'wheat.png',
-		},
-	},
-	['mint'] = {
-		label = 'Fresh Mint',
-		weight = 250,
-		stack = true,
-		description = 'Aromatic herb often used in cooking, beverages, and garnishes, known for its refreshing flavor',
-		client = {
-			image = 'mint.png',
-		},
-	},
-	['bottled_milk'] = {
-		label = 'Bottle of Milk',
-		weight = 250,
-		stack = true,
-		description = 'Dairy product, commonly used for drinking or cooking',
-		client = {
-			image = 'bottled_milk.png',
-		},
-	},
-	['cheese'] = {
-		label = 'Fresh Cheese',
-		weight = 250,
-		stack = true,
-		description = 'Sliced cheese suitable for making sandwiches, adding flavor and texture',
-		client = {
-			image = 'cheese.png',
-		},
-	},
-	['butter'] = {
-		label = 'Fresh Butter',
-		weight = 250,
-		stack = true,
-		description = 'Dairy product made from churned cream, commonly used as a spread or in cooking and baking',
-		client = {
-			image = 'butter.png',
-		},
-	},
-	['yeast'] = {
-		label = 'Yeast',
-		weight = 250,
-		stack = true,
-		description = 'Microscopic fungus used in baking and brewing to ferment dough and produce alcohol',
-		client = {
-			image = 'yeast.png',
-		},
-	},
-	['packed_coffee'] = {
-		label = 'Packed Coffee',
-		weight = 250,
-		stack = true,
-		description = 'Packed Coffee',
-		client = {
-			image = 'packed_coffee.png',
-		},
-	},
-	['packed_flour'] = {
-		label = 'Corn Flour',
-		weight = 250,
-		stack = true,
-		description = 'Corn Flour',
-		client = {
-			image = 'packed_flour.png',
-		},
-	},
 	['bottled_oil'] = {
 		label = 'Bottle of Oil',
 		weight = 250,
@@ -1741,31 +2017,13 @@ return {
 			image = 'bottled_oil.png',
 		},
 	},
-	['raw_beef'] = {
-		label = 'Raw Beef',
+	['mint'] = {
+		label = 'Fresh Mint',
 		weight = 250,
 		stack = true,
-		description = 'Raw Beef',
+		description = 'Aromatic herb often used in cooking, beverages, and garnishes, known for its refreshing flavor',
 		client = {
-			image = 'raw_beef.png',
-		},
-	},
-	['raw_chicken'] = {
-		label = 'Raw Chicken',
-		weight = 250,
-		stack = true,
-		description = 'Raw Chicken',
-		client = {
-			image = 'raw_chicken.png',
-		},
-	},
-	['egg'] = {
-		label = 'Fresh Eggs',
-		weight = 250,
-		stack = true,
-		description = 'Fresh Eggs',
-		client = {
-			image = 'egg.png',
+			image = 'mint.png',
 		},
 	},
 	['raw_coffee_beans'] = {
@@ -1786,6 +2044,69 @@ return {
 			image = 'roasted_coffee_beans.png',
 		},
 	},
+	['packed_coffee'] = {
+		label = 'Packed Coffee',
+		weight = 250,
+		stack = true,
+		description = 'Packed Coffee',
+		client = {
+			image = 'packed_coffee.png',
+		},
+	},
+	['wheat'] = {
+		label = 'Wheat',
+		weight = 250,
+		stack = true,
+		description = 'Staple cereal grain widely cultivated for its versatile culinary uses in making bread, pasta, and other food products',
+		client = {
+			image = 'wheat.png',
+		},
+	},
+	['packed_flour'] = {
+		label = 'Corn Flour',
+		weight = 250,
+		stack = true,
+		description = 'Corn Flour',
+		client = {
+			image = 'packed_flour.png',
+		},
+	},
+	['yeast'] = {
+		label = 'Yeast',
+		weight = 250,
+		stack = true,
+		description = 'Microscopic fungus used in baking and brewing to ferment dough and produce alcohol',
+		client = {
+			image = 'yeast.png',
+		},
+	},
+	['raw_beef'] = {
+		label = 'Raw Beef',
+		weight = 250,
+		stack = true,
+		description = 'Raw Beef',
+		client = {
+			image = 'raw_beef.png',
+		},
+	},
+	['raw_chicken'] = {
+		label = 'Raw Chicken',
+		weight = 250,
+		stack = true,
+		description = 'Raw Chicken',
+		client = {
+			image = 'raw_chicken.png',
+		},
+	},
+	['eggs'] = {
+		label = 'Fresh Eggs',
+		weight = 250,
+		stack = true,
+		description = 'Fresh Eggs',
+		client = {
+			image = 'eggs.png',
+		},
+	},
 	['empty_bucket'] = {
 		label = 'Empty Bucket',
 		weight = 250,
@@ -1802,6 +2123,42 @@ return {
 		description = 'Bucket of Milk',
 		client = {
 			image = 'bucket_milk.png',
+		},
+	},
+	['pasteurized_milk'] = {
+		label = 'Pasteurized Milk',
+		weight = 250,
+		stack = true,
+		description = 'Pasteurized Milk',
+		client = {
+			image = 'pasteurized_milk.png',
+		},
+	},
+	['milk_box'] = {
+		label = 'milk_box',
+		weight = 250,
+		stack = true,
+		description = 'Dairy product, commonly used for drinking or cooking',
+		client = {
+			image = 'milk_box.png',
+		},
+	},
+	['cheese'] = {
+		label = 'Fresh Cheese',
+		weight = 250,
+		stack = true,
+		description = 'Sliced cheese suitable for making sandwiches, adding flavor and texture',
+		client = {
+			image = 'cheese.png',
+		},
+	},
+	['butter'] = {
+		label = 'Fresh Butter',
+		weight = 250,
+		stack = true,
+		description = 'Dairy product made from churned cream, commonly used as a spread or in cooking and baking',
+		client = {
+			image = 'butter.png',
 		},
 	},
 	['syrup_apple'] = {
@@ -2309,36 +2666,36 @@ return {
 	},
 	---- Medina Burger
 	------ MB Sellable Items
-	['mb_chicken_burger'] = {
+	['bs_chicken_burger'] = {
 		label = 'Chicken Burger',
 		weight = 250,
 		stack = true,
 		close = true,
 		description = 'Chicken Burger',
 		client = {
-			image = 'mb_chicken_burger.png',
+			image = 'bs_chicken_burger.png',
 			event = 'ss_consumable:client:useItem',
 		},
 	},
-	['mb_beef_burger'] = {
+	['bs_beef_burger'] = {
 		label = 'Beef Burger',
 		weight = 250,
 		stack = true,
 		close = true,
-		description = 'Medina Burger Beef Burger',
+		description = 'Beef Burger',
 		client = {
-			image = 'mb_beef_burger.png',
+			image = 'bs_beef_burger.png',
 			event = 'ss_consumable:client:useItem',
 		},
 	},
-	['mb_fries'] = {
+	['bs_fries'] = {
 		label = 'French Fries',
 		weight = 250,
 		stack = true,
 		close = true,
 		description = 'French Fries',
 		client = {
-			image = 'mb_fries.png',
+			image = 'bs_fries.png',
 			event = 'ss_consumable:client:useItem',
 		},
 	},
@@ -2594,23 +2951,14 @@ return {
 		}
 	},
 	-- ss_mechanic
-	['advancedrepairkit'] = {
+	['toolsbox'] = {
 		label = 'Advanced Repairkit',
 		weight = 3000,
 		stack = true,
 		description = 'A nice toolbox with stuff to repair your vehicle',
 		client = {
-			image = 'advancedrepairkit.png',
+			image = 'toolsbox.png',
 			event = 'ss_mechanic:client:openToolbox',
-		}
-	},
-	['repairkit'] = { -- To be added on the job
-		label = 'Repairkit',
-		weight = 2500,
-		stack = true,
-		description = 'A nice toolbox with stuff to repair your vehicle',
-		client = {
-			image = 'repairkit.png',
 		}
 	},
 	['weldingtool'] = {
@@ -2621,6 +2969,36 @@ return {
 		client = {
 			image = 'weldingtool.png',
 			event = 'ss_mechanic:client:useWeldingTool',
+		}
+	},
+	['platform_tablet'] = {
+		label = 'Platform Tablet',
+		weight = 500,
+		stack = false,
+		description = 'Platform Tablet to customize your vehicle',
+		client = {
+			image = 'platform_tablet.png',
+			event = 'ss_mechanic:client:openPlatformTablet',
+		}
+	},
+	['shammy_towel'] = {
+		label = 'Shammy Towel',
+		weight = 1000,
+		stack = true,
+		description = 'Super Absorbent Shammy Towel for Car',
+		client = {
+			image = 'shammy_towel.png',
+			event = 'ss_vehicletools:client:useTool',
+		}
+	},
+	['repairkit'] = {
+		label = 'Vehicle Window',
+		weight = 1000,
+		stack = true,
+		description = 'A vehicle window to repair your vehicle',
+		client = {
+			image = 'repairkit.png',
+			event = 'ss_vehicletools:client:useTool',
 		}
 	},
 	['vtire'] = {
@@ -2650,37 +3028,17 @@ return {
 			image = 'vwindow.png',
 		}
 	},
-	['vshammy'] = {
-		label = 'Shammy Towel',
-		weight = 1000,
-		stack = true,
-		description = 'Super Absorbent Shammy Towel for Car',
-		client = {
-			image = 'vshammy.png',
-			event = 'ss_vehicletools:client:useTool',
-		}
-	},
-	['vrepairkit'] = {
-		label = 'Vehicle Window',
-		weight = 1000,
-		stack = true,
-		description = 'A vehicle window to repair your vehicle',
-		client = {
-			image = 'vwindow.png',
-			event = 'ss_vehicletools:client:useTool',
-		}
-	},
-	['platform_tablet'] = {
-		label = 'Platform Tablet',
-		weight = 500,
-		stack = false,
-		description = 'Platform Tablet to customize your vehicle',
-		client = {
-			image = 'platform_tablet.png',
-			event = 'ss_mechanic:client:openPlatformTablet',
-		}
-	},
 	-- ss_policejob
+	['bodycam'] = {
+		label = 'Bodycam',
+		weight = 100,
+		stack = true,
+		close = true,
+		description = 'Bodycam',
+		client = {
+			image = 'bodycam.png',
+		}
+	},
 	['handcuffs'] = {
 		label = 'Handcuffs',
 		weight = 100,
@@ -2697,7 +3055,7 @@ return {
 		stack = true,
 		description = 'Used a lot to keep DNA from blood, bullet shells and more',
 		client = {
-			image = 'evidence.png',
+			image = 'empty_evidence_bag.png',
 		}
 	},
 	['filled_evidence_bag'] = {
@@ -2706,7 +3064,7 @@ return {
 		stack = false,
 		description = 'A filled evidence bag to see who committed the crime >:(',
 		client = {
-			image = 'evidence.png',
+			image = 'filled_evidence_bag.png',
 		}
 	},
 	['police_stormram'] = {
@@ -2879,33 +3237,41 @@ return {
 			image = 'toothpaste_box.png',
 		}
 	},
-
 	['chalkboard1'] = {
 		label = 'Chalkboard - Floor Stand',
 		weight = 5000,
 		stack = false,
 		description = 'A chalkboard on a stand.',
+		client = {
+			image = 'chalkboard1.png',
+		}
 	},
-
 	['chalkboard2'] = {
 		label = 'Chalkboard - Wall Mount',
 		weight = 5000,
 		stack = false,
 		description = 'A chalkboard mounted to a wall.',
+		client = {
+			image = 'chalkboard2.png',
+		}
 	},
-
 	['chalkboard3'] = {
 		label = 'Chalkboard - Square',
 		weight = 5000,
 		stack = false,
 		description = 'A square chalkboard.',
+		client = {
+			image = 'chalkboard3.png',
+		}
 	},
-
 	['chalkboard4'] = {
 		label = 'Chalkboard - Vertical Frameless',
 		weight = 5000,
 		stack = false,
 		description = 'A frameless vertical chalkboard.',
+		client = {
+			image = 'chalkboard4.png',
+		}
 	},
 	['receipt'] = {
 		label = 'Receipt',
@@ -2913,6 +3279,9 @@ return {
 		stack = false,
 		close = true,
 		description = 'A receipt for a transaction.',
+		client = {
+			image = 'receipt.png',
+		}
 	},
 	['payment_terminal'] = {
 		label = 'Receipt Printer',
@@ -2920,5 +3289,127 @@ return {
 		stack = false,
 		close = true,
 		description = 'A handy device for printing receipts on-the-go!',
+		client = {
+			image = 'payment_terminal.png',
+		}
+	},
+	-- ss_hunting
+	['hunting_bait'] = {
+		label = 'Hunting Bait',
+		weight = 2000,
+		stack = true,
+		close = true,
+		description = 'Hunting Bait',
+		client = {
+			image = 'hunting_bait.png',
+		}
+	},
+	['deer_hide'] = {
+		label = 'Deer Hide',
+		weight = 6000,
+		stack = true,
+		description = 'Deer Hide',
+		client = {
+			image = 'deer_hide.png',
+		}
+	},
+	['deer_antlers'] = {
+		label = 'Deer Antlers',
+		weight = 6000,
+		stack = true,
+		description = 'Deer Antlers',
+		client = {
+			image = 'deer_antlers.png',
+		}
+	},
+	['carcass1'] = {
+		label = 'Carcass 1 Star',
+		weight = 6000,
+		stack = true,
+		description = 'Carcass 1 Star',
+		client = {
+			image = 'carcass1.png',
+		}
+	},
+	['carcass2'] = {
+		label = 'Carcass 2 Star',
+		weight = 6000,
+		stack = true,
+		description = 'Carcass 2 Stars',
+		client = {
+			image = 'carcass2.png',
+		}
+	},
+	['carcass3'] = {
+		label = 'Carcass 3 Stars',
+		weight = 6000,
+		stack = true,
+		description = 'Carcass 3 Stars',
+		client = {
+			image = 'carcass3.png',
+		}
+	},
+	['red_carcass1'] = {
+		label = 'Red Carcass 1 Star',
+		weight = 6000,
+		stack = true,
+		description = 'Red Carcass 1 Star',
+		client = {
+			image = 'redcarcass.png',
+		}
+	},
+	['red_carcass2'] = {
+		label = 'Red Carcass 2 Stars',
+		weight = 6000,
+		stack = true,
+		description = 'Red Carcass 2 Stars',
+		client = {
+			image = 'redcarcass2.png',
+		}
+	},
+	['red_carcass3'] = {
+		label = 'Red Carcass 3 Stars',
+		weight = 6000,
+		stack = true,
+		description = 'Red Carcass 3 Stars',
+		client = {
+			image = 'red_carcass3.png',
+		}
+	},
+	['mountain_lion_pelt'] = {
+		label = 'Mountain Lion Pelt',
+		weight = 6000,
+		stack = true,
+		description = 'Mountain Lion Pelt',
+		client = {
+			image = 'mountain_lion_pelt.png',
+		}
+	},
+	['mountain_lion_fang'] = {
+		label = 'Mountain Lion Fang',
+		weight = 6000,
+		stack = true,
+		description = 'Mountain Lion Fang',
+		client = {
+			image = 'mountain_lion_fang.png',
+		}
+	},
+	['coyote_pelt'] = {
+		label = 'Coyote Pelt',
+		weight = 6000,
+		stack = true,
+		description = 'Coyote Pelt',
+		client = {
+			image = 'coyote_pelt.png',
+		}
+	},
+	['boar_meat'] = {
+		label = 'Boar Meat',
+		weight = 6000,
+		stack = true,
+		description = 'Boar Meat',
+		client = {
+			image = 'boar_meat.png',
+		}
 	},
 }
