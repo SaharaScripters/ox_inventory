@@ -61,7 +61,9 @@ return {
 		blip = {
 			id = 93, colour = 69, scale = 0.6
 		}, inventory = {
-			{ name = 'beer', price = 10 },
+			{ name = 'beer_corona', price = 10 },
+			{ name = 'beer_medalla', price = 10 },
+			{ name = 'beer_heineken', price = 10 },
 		}, locations = {
 			vec3(1135.808, -982.281, 46.415),
 			vec3(-1222.915, -906.983, 12.326),
@@ -95,7 +97,7 @@ return {
 			{ loc = vec3(-1171.65, -1571.45, 4.35), length = 0.6, width = 0.7, heading = 310.0, minZ = 4.05, maxZ = 4.65, distance = 1.5 },
 		}
 	},
-	LiquorMart = {
+	--[[LiquorMart = {
 		name = 'Liquor Whole Sale',
 		groups = {unicorn = 1, ibiza = 1, club77 = 1, vazou = 1},
 		blip = {
@@ -113,26 +115,32 @@ return {
 		}, targets = {
 			{ loc = vec3(228.55, -1750.15, 29.45), length = 0.45, width = 0.5, heading = 295.25, minZ = 29.20, maxZ = 29.60, distance = 1.5 }
 		}
-	},	
+	},--]]	
 	PoliceArmoury = {
-		name = 'DGSN Armoury',
+		name = 'DGSN Armory',
 		groups = shared.police,
 		inventory = {
+			{ name = 'bodycam', price = 200, grade = 8 },
+			{ name = 'dashcam', price = 200, grade = 8 },
+			{ name = 'finger_scanner', price = 200, grade = 8 },
+			{ name = 'jammer', price = 200, grade = 8 },
+			{ name = 'police_stormram', price = 200, grade = 8 },
+			{ name = 'jammer', price = 200, grade = 8 },
 			{ name = 'ammo-9', price = 5, grade = 8 },
 			{ name = 'ammo-rifle', price = 5, grade = 8 },
 			{ name = 'handcuffs', price = 200, grade = 8 },
 			{ name = 'WEAPON_FLASHLIGHT', price = 200, grade = 8 },
 			{ name = 'WEAPON_NIGHTSTICK', price = 100, grade = 8 },
-			{ name = 'WEAPON_PISTOL', price = 500, metadata = { registered = true, serial = 'POL' }, grade = 8 },
-			{ name = 'WEAPON_CARBINERIFLE', price = 1000, metadata = { registered = true, serial = 'POL' }, grade = 8 },
-			{ name = 'WEAPON_STUNGUN', price = 500, metadata = { registered = true, serial = 'POL'}, grade = 8 },
+			{ name = 'WEAPON_PISTOL', price = 500, metadata = { registered = true, serial = 'DGSN' }, grade = 8 },
+			{ name = 'WEAPON_CARBINERIFLE', price = 1000, metadata = { registered = true, serial = 'DGSN' }, grade = 8 },
+			{ name = 'WEAPON_STUNGUN', price = 500, metadata = { registered = true, serial = 'DGSN'}, grade = 8 },
 		}, 
 		targets = {
             {
-                ped = `s_m_m_fiboffice_02`,
+                ped = `s_m_y_cop_01`,
                 scenario = 'WORLD_HUMAN_COP_IDLES',
-                loc = vec3(455.89, -1000.00, 34.06),
-                heading = 4,
+                loc = vec3(-306.11, -1061.20, 27.34),
+                heading = 337,
             },
 		}
 	},

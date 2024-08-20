@@ -266,6 +266,16 @@ return {
 		}
 	},
 	-- misc
+	['remotecontrol'] = {
+		label = 'Remote Control',
+		weight = 250,
+		stack = false,
+		close = true,
+		description = 'TV Remote Control',
+		client = {
+			image = 'remotecontrol.png',
+		},
+	},
 	['radio'] = {
 		label = 'Radio',
 		weight = 1000,
@@ -937,7 +947,7 @@ return {
 			image = 'money_laundry_lab_key.png',
 		}
 	},
-	-- medic
+	-- ss_hospitaljob
 	['bandage'] = {
 		label = 'Bandage',
 		weight = 115,
@@ -948,6 +958,44 @@ return {
 			prop = { model = `prop_rolled_sock_02`, pos = vec3(-0.14, -0.14, -0.08), rot = vec3(-50.0, -50.0, 0.0) },
 			disable = { move = true, car = true, combat = true },
 			usetime = 2500,
+		}
+	},
+	['surgical_kit'] = {
+		label = 'Surgical Kit',
+		weight = 100,
+		stack = false,
+		description = 'Surgical Kit',
+		client = {
+			image = 'surgical_kit.png',
+		}
+	},
+	['firstaid_kit'] = {
+		label = 'Firstaid Kit',
+		weight = 100,
+		stack = false,
+		description = 'Firstaid Kit',
+		client = {
+			image = 'firstaid_kit.png',
+		}
+	},
+	['painkillers'] = {
+		label = 'Painkillers',
+		weight = 0,
+		stack = false,
+		close = true,
+		description = 'Painkillers',
+		client = {
+			image = 'painkillers.png',
+		}
+	},
+	['medical_mask'] = {
+		label = 'Medical Mask',
+		weight = 3000,
+		stack = true,
+		close = true,
+		client = {
+			anim = { dict = 'missheist_agency2ahelmet', clip = 'take_off_helmet_stand' },
+			usetime = 1000
 		}
 	},
 	-- cards / permits / licenses / badges
@@ -1185,28 +1233,38 @@ return {
 		}
 	},
 	-- armors
-	['heavyarmor'] = {
-		label = 'Heavy Armor',
-		weight = 5000,
-		stack = true,
-		close = true,
-		description = 'Some protection will not hurt... right?',
-		client = {
-			image = 'armor.png',
-		}
-	},
-	['armor'] = {
-		label = 'Armor',
-		weight = 5000,
-		stack = true,
-		close = true,
-		description = 'Some protection will not hurt... right?',
-		client = {
-			image = 'armor.png',
-		}
-	},
 	['armour'] = {
 		label = 'Bulletproof Vest',
+		weight = 3000,
+		stack = false,
+		close = true,
+		client = {
+			anim = { dict = 'clothingshirt', clip = 'try_shirt_positive_d' },
+			usetime = 3500
+		}
+	},
+	['policebriarmour'] = {
+		label = 'BRI Kevlar',
+		weight = 3000,
+		stack = false,
+		close = true,
+		client = {
+			anim = { dict = 'clothingshirt', clip = 'try_shirt_positive_d' },
+			usetime = 3500
+		}
+	},
+	['policehcarmour'] = {
+		label = 'HC Police Kevlar',
+		weight = 3000,
+		stack = false,
+		close = true,
+		client = {
+			anim = { dict = 'clothingshirt', clip = 'try_shirt_positive_d' },
+			usetime = 3500
+		}
+	},
+	['policearmour'] = {
+		label = 'Police Kevlar',
 		weight = 3000,
 		stack = false,
 		close = true,
@@ -2293,14 +2351,36 @@ return {
 			event = 'ss_consumable:client:useItem',
 		}
 	},
-	['beer'] = {
-		label = 'Beer',
+	['beer_corona'] = {
+		label = 'Corona Beer',
 		weight = 150,
 		stack = true,
 		close = true,
-		description = 'Nothing like a good cold beer!',
+		description = 'Corona Beer',
 		client = {
-			image = 'beer.png',
+			image = 'beer_corona.png',
+			event = 'ss_consumable:client:useItem',
+		}
+	},
+	['beer_medalla'] = {
+		label = 'Medalla Beer',
+		weight = 150,
+		stack = true,
+		close = true,
+		description = 'Medalla Beer',
+		client = {
+			image = 'beer_medalla.png',
+			event = 'ss_consumable:client:useItem',
+		}
+	},
+	['beer_heineken'] = {
+		label = 'Heineken Beer',
+		weight = 150,
+		stack = true,
+		close = true,
+		description = 'Heineken Beer',
+		client = {
+			image = 'beer_heineken.png',
 			event = 'ss_consumable:client:useItem',
 		}
 	},
@@ -2808,63 +2888,63 @@ return {
 			image = 'cooked_shredded_ground_beef.png',
 		},
 	},
-	['soda_coca'] = {
+	['soda_sprite'] = {
+		label = 'Sprite 2L',
+		weight = 250,
+		stack = true,
+		description = 'Sprite 2L',
+		client = {
+			image = 'soda_sprite.png',
+		},
+	},
+	['soda_sevenup'] = {
+		label = '7UP 2L',
+		weight = 250,
+		stack = true,
+		description = '7UP 2L',
+		client = {
+			image = 'soda_sevenup.png',
+		},
+	},
+	['soda_cocacola'] = {
 		label = 'Cocacola 2L',
 		weight = 250,
 		stack = true,
 		description = 'Cocacola 2L',
 		client = {
-			image = 'soda_coca.png',
+			image = 'soda_cocacola.png',
 		},
 	},
-	['soda_cocazero'] = {
-		label = 'Cocacola Zero 2L',
+	['soda_sprite_cup'] = {
+		label = 'Cup of Sprite',
 		weight = 250,
 		stack = true,
-		description = 'Cocacola Zero 2L',
+		close = true,
+		description = 'Cup of Sprite',
 		client = {
-			image = 'soda_cocazero.png',
+			image = 'soda_sprite_cup.png',
+			event = 'ss_consumable:client:useItem',
 		},
 	},
-	['soda_hawai'] = {
-		label = 'Hawai 2L',
+	['soda_sevenup_cup'] = {
+		label = 'Cup of 7UP',
 		weight = 250,
 		stack = true,
-		description = 'Hawai 2L',
+		close = true,
+		description = 'Cup of 7UP',
 		client = {
-			image = 'soda_hawai.png',
+			image = 'soda_sevenup_cup.png',
+			event = 'ss_consumable:client:useItem',
 		},
 	},
-	['soda_coca_cup'] = {
+	['soda_cocacola_cup'] = {
 		label = 'Cup of Cocacola',
 		weight = 250,
 		stack = true,
 		close = true,
 		description = 'Cup of Cocacola',
 		client = {
-			image = 'soda_coca_cup.png',
-			event = 'ss_consumable:client:useItem',
-		},
-	},
-	['soda_cocazero_cup'] = {
-		label = 'Cup of Cocacola Zero',
-		weight = 250,
-		stack = true,
-		close = true,
-		description = 'Cup of Cocacola Zero',
-		client = {
-			image = 'soda_cocazero_cup.png',
-			event = 'ss_consumable:client:useItem',
-		},
-	},
-	['soda_hawai_cup'] = {
-		label = 'Cup of Hawai',
-		weight = 250,
-		stack = true,
-		close = true,
-		description = 'Cup of Hawai',
-		client = {
-			image = 'soda_hawai_cup.png',
+			image = 'soda_cocacola_cup.png',
 			event = 'ss_consumable:client:useItem',
 		},
 	},
@@ -2981,24 +3061,34 @@ return {
 			event = 'ss_mechanic:client:openPlatformTablet',
 		}
 	},
+	['bodycam'] = {
+		label = 'Bodycam',
+		weight = 100,
+		stack = true,
+		close = true,
+		description = 'Bodycam',
+		client = {
+			image = 'bodycam.png',
+		}
+	},
 	['shammy_towel'] = {
 		label = 'Shammy Towel',
 		weight = 1000,
 		stack = true,
+		close = true,
 		description = 'Super Absorbent Shammy Towel for Car',
 		client = {
 			image = 'shammy_towel.png',
-			event = 'ss_vehicletools:client:useTool',
 		}
 	},
 	['repairkit'] = {
 		label = 'Vehicle Window',
 		weight = 1000,
 		stack = true,
+		close = true,
 		description = 'A vehicle window to repair your vehicle',
 		client = {
 			image = 'repairkit.png',
-			event = 'ss_vehicletools:client:useTool',
 		}
 	},
 	['vtire'] = {
@@ -3037,6 +3127,16 @@ return {
 		description = 'Bodycam',
 		client = {
 			image = 'bodycam.png',
+		}
+	},
+	['dashcam'] = {
+		label = 'Dashcam',
+		weight = 100,
+		stack = true,
+		close = true,
+		description = 'Dashcam',
+		client = {
+			image = 'dashcam.png',
 		}
 	},
 	['handcuffs'] = {
@@ -3099,7 +3199,6 @@ return {
 		label = 'Search Warrant',
 		weight = 2500,
 		stack = true,
-		close = true,
 		description = 'Search Apartment Warrant',
 		client = {
 			image = 'warrant.png',
@@ -3109,7 +3208,6 @@ return {
 		label = 'Search Warrant',
 		weight = 2500,
 		stack = true,
-		close = true,
 		description = 'Search Warehouse Warrant',
 		client = {
 			image = 'warrant.png',
@@ -3119,12 +3217,32 @@ return {
 		label = 'Search Warrant',
 		weight = 2500,
 		stack = true,
-		close = true,
 		description = 'Search Lab Warrant',
 		client = {
 			image = 'warrant.png',
 		}
 	},
+	['inmate_visit_permission'] = {
+		label = 'Inmate Visit Permission',
+		weight = 2500,
+		stack = true,
+		description = 'Inmate Visit Permission',
+		client = {
+			image = 'inmate_visit_permission.png',
+		}
+	},
+	-- ss_jail
+	['kabab_box'] = {
+		label = 'Kabab Box',
+		weight = 250,
+		stack = true,
+		close = true,
+		description = 'Kabab Box',
+		client = {
+			image = 'kabab_box.png',
+			event = 'ss_consumable:client:useItem',
+		},
+	},	
 	-- ss_firefighterjob
 	['hose'] = {
 		label = 'Water Hose',

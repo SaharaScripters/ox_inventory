@@ -14,12 +14,13 @@ return {
 	{
 		target = { -- qtarget support
 	 		name = 'dgsn_evidence', -- name of zone must be uniuqe
-	 		loc = vec3(466.1, -996.8, 30.2),
-	 		length = 0.3,
-	 		width = 0.5,
-	 		heading = 0.0,
-	 		minZ = 30.1,
-	 		maxZ = 30.3
+	 		loc = vec3(-322.85, -1042.8, 27.6),
+	 		length = 0.7,
+	 		width = 2.25,
+	 		heading = 340.0,
+	 		minZ = 31.4,
+	 		maxZ = 30.0,
+			debug = false
 	 	}		
 	}	
 }
