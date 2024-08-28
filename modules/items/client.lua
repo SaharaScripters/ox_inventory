@@ -88,7 +88,7 @@ local ox_inventory = exports[shared.resource]
 -- Clientside item use functions
 -----------------------------------------------------------------------------------------------
 
-Item('bandage', function(data, slot)
+--[[Item('bandage', function(data, slot)
 	local maxHealth = GetEntityMaxHealth(cache.ped)
 	local health = GetEntityHealth(cache.ped)
 	ox_inventory:useItem(data, function(data)
@@ -97,9 +97,25 @@ Item('bandage', function(data, slot)
 			lib.notify({ description = 'You feel better already' })
 		end
 	end)
+end)--]]
+
+Item('medical_mask', function(data, slot)
+    ox_inventory:useItem(data, function(data)
+        if data then
+            local playerPed = cache.ped
+            local gender = GetEntityModel(playerPed)
+            if gender == `mp_m_freemode_01` then
+                SetPedComponentVariation(playerPed, 1, 232, 5, 2)
+            elseif gender == `mp_f_freemode_01` then
+                SetPedComponentVariation(playerPed, 1, 233, 5, 2)
+            else
+                lib.notify({title = 'MEDICAL EQUIPMENT', description = 'You can not wear a medical mask for this gender', type = 'error'})
+            end
+        end
+    end)
 end)
 
-Item('armour', function(data, slot)
+--[[Item('armour', function(data, slot)
 	if GetPedArmour(cache.ped) < 100 then
 		ox_inventory:useItem(data, function(data)
 			if data then
@@ -108,6 +124,57 @@ Item('armour', function(data, slot)
 			end
 		end)
 	end
+end)--]]
+
+Item('policebriarmour', function(data, slot)
+    if GetPedArmour(cache.ped) < 100 then
+        ox_inventory:useItem(data, function(data)
+            if data then
+                SetPlayerMaxArmour(PlayerData.id, 100)
+                SetPedArmour(cache.ped, 100)
+            end
+        end)
+    end
+end)
+
+Item('policehcarmour', function(data, slot)
+    if GetPedArmour(cache.ped) < 100 then
+        ox_inventory:useItem(data, function(data)
+            if data then
+                SetPlayerMaxArmour(PlayerData.id, 100)
+                SetPedArmour(cache.ped, 100)
+                local playerPed = cache.ped
+                local gender = GetEntityModel(playerPed)
+                if gender == `mp_m_freemode_01` then
+                    SetPedComponentVariation(playerPed, 9, 3, 1, 2)
+                elseif gender == `mp_f_freemode_01` then
+                    SetPedComponentVariation(playerPed, 9, 4, 0, 2)
+                else
+                    lib.notify({title = 'ARMOURY', description = 'You can not set armour for this gender', type = 'error'})
+                end
+            end
+        end)
+    end
+end)
+
+Item('policearmour', function(data, slot)
+    if GetPedArmour(cache.ped) < 100 then
+        ox_inventory:useItem(data, function(data)
+            if data then
+                SetPlayerMaxArmour(PlayerData.id, 100)
+                SetPedArmour(cache.ped, 100)
+                local playerPed = cache.ped
+                local gender = GetEntityModel(playerPed)
+                if gender == `mp_m_freemode_01` then
+                    SetPedComponentVariation(playerPed, 9, 3, 0, 2)
+                elseif gender == `mp_f_freemode_01` then
+                    SetPedComponentVariation(playerPed, 9, 4, 0, 2)
+                else
+                    lib.notify({title = 'ARMOURY', description = 'You can not set armour for this gender', type = 'error'})
+                end
+            end
+        end)
+    end
 end)
 
 client.parachute = false
@@ -116,7 +183,7 @@ Item('parachute', function(data, slot)
 		ox_inventory:useItem(data, function(data)
 			if data then
 				local chute = `GADGET_PARACHUTE`
-				SetPlayerParachuteTintIndex(PlayerData.id, -1)
+				SetPlayerParachuteTintIndex(PlayerData.id, 6)
 				GiveWeaponToPed(cache.ped, chute, 0, true, false)
 				SetPedGadget(cache.ped, chute, true)
 				lib.requestModel(1269906701)

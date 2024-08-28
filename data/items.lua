@@ -948,7 +948,7 @@ return {
 		}
 	},
 	-- ss_hospitaljob
-	['bandage'] = {
+	--[[['bandage'] = {
 		label = 'Bandage',
 		weight = 115,
 		stack = true,
@@ -959,11 +959,33 @@ return {
 			disable = { move = true, car = true, combat = true },
 			usetime = 2500,
 		}
+	},--]]
+	['bandage'] = {
+		label = 'Bandage',
+		weight = 250,
+		stack = true,
+		close = true,
+		description = 'Bandage',
+		client = {
+			image = 'bandage.png',
+			event = 'ss_consumable:client:useItem',
+		},
+	},
+	['syringe_adrenaline'] = {
+		label = 'Syringe Adrenaline',
+		weight = 250,
+		stack = true,
+		close = true,
+		description = 'Syringe Adrenaline',
+		client = {
+			image = 'syringe_adrenaline.png',
+			event = 'ss_consumable:client:useItem',
+		},
 	},
 	['surgical_kit'] = {
 		label = 'Surgical Kit',
 		weight = 100,
-		stack = false,
+		stack = true,
 		description = 'Surgical Kit',
 		client = {
 			image = 'surgical_kit.png',
@@ -972,7 +994,7 @@ return {
 	['firstaid_kit'] = {
 		label = 'Firstaid Kit',
 		weight = 100,
-		stack = false,
+		stack = true,
 		description = 'Firstaid Kit',
 		client = {
 			image = 'firstaid_kit.png',
@@ -981,11 +1003,12 @@ return {
 	['painkillers'] = {
 		label = 'Painkillers',
 		weight = 0,
-		stack = false,
+		stack = true,
 		close = true,
 		description = 'Painkillers',
 		client = {
 			image = 'painkillers.png',
+			event = 'ss_consumable:client:useItem',
 		}
 	},
 	['medical_mask'] = {
@@ -994,7 +1017,7 @@ return {
 		stack = true,
 		close = true,
 		client = {
-			anim = { dict = 'missheist_agency2ahelmet', clip = 'take_off_helmet_stand' },
+			anim = { dict = 'mp_masks@standard_car@ds@', clip = 'put_on_mask' },
 			usetime = 1000
 		}
 	},
@@ -1313,15 +1336,6 @@ return {
 			image = 'usb_device.png',
 		}
 	},
-	['painkillers'] = {
-		label = 'Painkillers',
-		weight = 0,
-		stack = true,
-		description = 'For pain you can not stand anymore, take this pill that would make you feel great again',
-		client = {
-			image = 'painkillers.png',
-		}
-	},
 	['gold_bar'] = {
 		label = 'Gold Bar',
 		weight = 7000,
@@ -1360,7 +1374,6 @@ return {
 			image = 'iphone.png',
 		}
 	},
-
 	['small_tv'] = {
 		label = 'Small TV',
 		weight = 30000,
