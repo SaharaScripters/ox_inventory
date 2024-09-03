@@ -168,7 +168,24 @@ return {
                 heading = 172,
             },
 		}
-	},	
+	},
+	FireDepartmentShop = {
+		name = 'Fire Department Shop',
+		groups = {
+			['civilprotection'] = 0
+		},
+		inventory = {
+			{ name = 'watertank', price = 1, grade = 9 },
+		}, 
+		targets = {
+            {
+                ped = `s_m_m_paramedic_01`,
+                scenario = 'WORLD_HUMAN_COP_IDLES',
+                loc = vec3(-631.79, -135.96, 38.23),
+                heading = 34.0,
+            },
+		}
+	},
 	--[[YouTool = {
 		name = 'YouTool',
 		blip = {

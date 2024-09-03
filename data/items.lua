@@ -264,13 +264,37 @@ return {
 			image = 'bong.png',
 			event = 'ss_consumable:client:useItem',
 		}
-	},
+	},    
+	-- ss_playerstatus
+    ['ziptie'] = {
+        label = 'Ziptie',
+        weight = 100,
+        stack = true,
+        close = true,
+        description = 'Ziptie to tie people up',
+        client = {
+            event = 'ss_playerstatus:client:useziptie',
+            image = 'ziptie.png',
+        }
+    },
+    ['cutter'] = {
+        label = 'Cutter',
+        weight = 100,
+        stack = true,
+        close = true,
+        description = 'Cutter Blade for cutting things like zipties',
+        client = {
+            event = 'ss_playerstatus:client:usecutter',
+            image = 'cutter.png',
+        }
+    },
 	-- misc
 	['remotecontrol'] = {
 		label = 'Remote Control',
 		weight = 250,
 		stack = false,
 		close = true,
+		allowArmed = false,		
 		description = 'TV Remote Control',
 		client = {
 			image = 'remotecontrol.png',
@@ -296,18 +320,6 @@ return {
 		client = {
 			anim = { dict = 'clothingshirt', clip = 'try_shirt_positive_d' },
 			usetime = 1500
-		}
-	},
-	['electroniclockpick'] = {
-		label = 'Electronic Lockpick',
-		weight = 160,
-		stack = true,
-		close = true,
-		allowArmed = false,
-		description = 'Device for bypassing electronic locks',
-		client = {
-			image = 'lockpick.png',
-			event = 'lockpicks:UseLockpick',
 		}
 	},
 	['advancedlockpick'] = {
@@ -339,6 +351,7 @@ return {
 		weight = 600,
 		stack = true,
 		close = true,
+		allowArmed = false,		
 		description = 'Optical device for magnified viewing of distant objects',
 		client = {
 			image = 'binoculars.png',
@@ -349,6 +362,7 @@ return {
 		weight = 30000,
 		stack = false,
 		close = true,
+		allowArmed = false,		
 		description = 'An oxygen tank and a rebreather',
 		client = {
 			anim = { dict = 'clothingshirt', clip = 'try_shirt_positive_d' },
@@ -965,6 +979,7 @@ return {
 		weight = 250,
 		stack = true,
 		close = true,
+		allowArmed = false,		
 		description = 'Bandage',
 		client = {
 			image = 'bandage.png',
@@ -976,6 +991,7 @@ return {
 		weight = 250,
 		stack = true,
 		close = true,
+		allowArmed = false,		
 		description = 'Syringe Adrenaline',
 		client = {
 			image = 'syringe_adrenaline.png',
@@ -986,6 +1002,7 @@ return {
 		label = 'Surgical Kit',
 		weight = 100,
 		stack = true,
+		allowArmed = false,	
 		description = 'Surgical Kit',
 		client = {
 			image = 'surgical_kit.png',
@@ -995,6 +1012,7 @@ return {
 		label = 'Firstaid Kit',
 		weight = 100,
 		stack = true,
+		allowArmed = false,	
 		description = 'Firstaid Kit',
 		client = {
 			image = 'firstaid_kit.png',
