@@ -109,6 +109,16 @@ return {
 			event = 'ss_consumable:client:useItem',
 		}
 	},
+	['water_cooking'] = {
+		label = 'Cooking Water',
+		weight = 150,
+		stack = true,
+		close = true,
+		description = 'Cooking Water',
+		client = {
+			image = 'water_cooking.png',
+		}
+	},
 	-- consumables (Public Shops)
 	['peanuts'] = {
 		label = 'Peanuts',
@@ -273,7 +283,7 @@ return {
         close = true,
         description = 'Ziptie to tie people up',
         client = {
-            event = 'ss_playerstatus:client:useziptie',
+            event = 'ss_playerinteraction:client:useziptie',
             image = 'ziptie.png',
         }
     },
@@ -284,7 +294,7 @@ return {
         close = true,
         description = 'Cutter Blade for cutting things like zipties',
         client = {
-            event = 'ss_playerstatus:client:usecutter',
+            event = 'ss_playerinteraction:client:usecutter',
             image = 'cutter.png',
         }
     },
@@ -322,30 +332,6 @@ return {
 			usetime = 1500
 		}
 	},
-	['advancedlockpick'] = {
-		label = 'Advanced Lockpick',
-		weight = 160,
-		stack = true,
-		close = true,
-		allowArmed = false,
-		description = 'Expert tool for intricate lock manipulation',
-		client = {
-			image = 'lockpick.png',
-			event = 'lockpicks:UseLockpick',
-		}
-	},
-	['lockpick'] = {
-		label = 'Lockpick',
-		weight = 160,
-		stack = true,
-		close = true,
-		allowArmed = false,
-		description = 'Tool for bypassing locks without proper authorization',
-		client = {
-			image = 'lockpick.png',
-			event = 'lockpicks:UseLockpick',
-		}
-	},
 	['binoculars'] = {
 		label = 'Binoculars',
 		weight = 600,
@@ -372,17 +358,17 @@ return {
 	['diving_fill'] = {
 		label = 'Diving Tube',
 		weight = 3000,
-		stack = false,
+		stack = true,
 		close = true,
 		client = {
-			image = 'diving_tube.png',
+			image = 'diving_fill.png',
 		}
 	},
 	['screwdriverset'] = {
 		label = 'Toolkit',
 		weight = 1000,
 		stack = true,
-		description = 'Very useful to screw... screws...',
+		description = 'Very useful to screw',
 		client = {
 			image = 'screwdriverset.png',
 		}
@@ -396,15 +382,30 @@ return {
 			image = 'nitrous.png',
 		}
 	},
-	-- robberies
-	['electronickit'] = {
-		label = 'Electronic Kit',
-		weight = 100,
+	-- Robberies
+	-- Tools
+	['advancedlockpick'] = {
+		label = 'Advanced Lockpick',
+		weight = 160,
 		stack = true,
 		close = true,
-		description = 'If you have always wanted to build a robot you can maybe start here. Maybe you will be the new Elon Musk?',
+		allowArmed = false,
+		description = 'Expert tool for intricate lock manipulation',
 		client = {
-			image = 'electronickit.png',
+			image = 'lockpick.png',
+			event = 'lockpicks:UseLockpick',
+		}
+	},
+	['lockpick'] = {
+		label = 'Lockpick',
+		weight = 160,
+		stack = true,
+		close = true,
+		allowArmed = false,
+		description = 'Tool for bypassing locks without proper authorization',
+		client = {
+			image = 'lockpick.png',
+			event = 'lockpicks:UseLockpick',
 		}
 	},
 	['drill'] = {
@@ -412,27 +413,202 @@ return {
 		weight = 20000,
 		stack = true,
 		close = true,
-		description = 'The real deal...',
+		description = 'The real deal',
 		client = {
 			image = 'drill.png',
 		}
 	},
-	['rolex'] = {
-		label = 'Golden Watch',
-		weight = 1500,
+	-- ss_houserobbery
+		-- Tier 1
+	['tier1_kettle'] = {
+		label = 'Electric Kettle',
+		weight = 15000,
 		stack = true,
-		description = 'A golden watch seems like the jackpot to me!',
+		description = 'Electric Kettle',
 		client = {
-			image = 'rolex.png',
+			image = 'tier1_kettle.png',
 		}
 	},
-	['diamond'] = {
-		label = 'Diamond',
+	['tier1_titanuim_ring'] = {
+		label = 'Titanuim Ring',
+		weight = 100,
+		stack = true,
+		description = 'Titanuim Ring',
+		client = {
+			image = 'tier1_titanuim_ring.png',
+		}
+	},
+	['tier1_oppo_laptop'] = {
+		label = 'Oppo Laptop',
+		weight = 2000,
+		stack = true,
+		description = 'Oppo Laptop',
+		client = {
+			image = 'tier1_oppo_laptop.png',
+		}
+	},
+	['tier1_oppo_phone'] = {
+		label = 'Oppo Phone',
+		weight = 500,
+		stack = true,
+		description = 'Oppo Phone',
+		client = {
+			image = 'tier1_oppo_phone.png',
+		}
+	},
+	['tier1_oppo_tablet'] = {
+		label = 'Oppo Tablet',
 		weight = 1000,
 		stack = true,
-		description = 'A diamond seems like the jackpot to me!',
+		description = 'Oppo Tablet',
 		client = {
-			image = 'diamond.png',
+			image = 'tier1_oppo_tablet.png',
+		}
+	},
+	['tier1_oppo_watch'] = {
+		label = 'Oppo Watch',
+		weight = 300,
+		stack = true,
+		description = 'Oppo Watch',
+		client = {
+			image = 'tier1_oppo_watch.png',
+		}
+	},
+		-- Tier 2
+	['tier2_medium_tv'] = {
+		label = 'Medium TV',
+		weight = 20000,
+		stack = true,
+		description = 'Medium TV',
+		client = {
+			image = 'tier2_medium_tv.png',
+		}
+	},
+	['tier2_game_console'] = {
+		label = 'Gaming Console',
+		weight = 5000,
+		stack = true,
+		description = 'Gaming Console',
+		client = {
+			image = 'tier2_game_console.png',
+		}
+	},
+	['tier2_silver_ring'] = {
+		label = 'Silver Ring',
+		weight = 100,
+		stack = true,
+		description = 'Silver Ring',
+		client = {
+			image = 'tier2_silver_ring.png',
+		}
+	},
+	['tier2_samsung_laptop'] = {
+		label = 'Samsung Laptop',
+		weight = 2000,
+		stack = true,
+		description = 'Samsung Laptop',
+		client = {
+			image = 'tier2_samsung_laptop.png',
+		}
+	},
+	['tier2_samsung_phone'] = {
+		label = 'Samsung Phone',
+		weight = 500,
+		stack = true,
+		description = 'Samsung Phone',
+		client = {
+			image = 'tier2_samsung_phone.png',
+		}
+	},
+	['tier2_samsung_tablet'] = {
+		label = 'Samsung Tablet',
+		weight = 1000,
+		stack = true,
+		description = 'Samsung Tablet',
+		client = {
+			image = 'tier2_samsung_tablet.png',
+		}
+	},
+	['tier2_samsung_watch'] = {
+		label = 'Samsung Watch',
+		weight = 300,
+		stack = true,
+		description = 'Samsung Watch',
+		client = {
+			image = 'tier2_samsung_watch.png',
+		}
+	},
+		-- Tier 3
+	['tier3_microwave'] = {
+		label = 'Microwave',
+		weight = 4000,
+		stack = true,
+		description = 'Microwave',
+		client = {
+			image = 'tier3_microwave.png',
+		}
+	},
+	['tier3_casette_player'] = {
+		label = 'Casette Player',
+		weight = 4000,
+		stack = true,
+		description = 'Casette Player',
+		client = {
+			image = 'tier3_casette_player.png',
+		}
+	},
+	['tier3_coffee_maker'] = {
+		label = 'Coffee Maker',
+		weight = 3000,
+		stack = true,
+		description = 'Coffee Maker',
+		client = {
+			image = 'tier3_coffee_maker.png',
+		}
+	},
+	['tier3_gold_ring'] = {
+		label = 'Golden Ring',
+		weight = 100,
+		stack = true,
+		description = 'Golden Ring',
+		client = {
+			image = 'tier3_gold_ring.png',
+		}
+	},
+	['tier3_apple_laptop'] = {
+		label = 'Apple Laptop',
+		weight = 2000,
+		stack = true,
+		description = 'Apple Laptop',
+		client = {
+			image = 'tier3_apple_laptop.png',
+		}
+	},
+	['tier3_apple_phone'] = {
+		label = 'Apple Phone',
+		weight = 500,
+		stack = true,
+		description = 'Apple Phone',
+		client = {
+			image = 'tier3_apple_phone.png',
+		}
+	},
+	['tier3_apple_tablet'] = {
+		label = 'Apple Tablet',
+		weight = 1000,
+		stack = true,
+		description = 'Apple Tablet',
+		client = {
+			image = 'tier3_apple_tablet.png',
+		}
+	},
+	['tier3_apple_watch'] = {
+		label = 'Apple Watch',
+		weight = 300,
+		stack = true,
+		description = 'Apple Watch',
+		client = {
+			image = 'tier3_apple_watch.png',
 		}
 	},
 	-- ss_drugs
@@ -798,6 +974,26 @@ return {
 			image = 'weed_lab_key.png',
 		}
 	},
+	['weed_lab_key_7'] = {
+		label = 'Weed Lab Key',
+		weight = 100,
+		stack = true,
+		close = true,
+		description = 'Key for Weed Laboratory',
+		client = {
+			image = 'weed_lab_key.png',
+		}
+	},
+	['weed_lab_key_8'] = {
+		label = 'Weed Lab Key',
+		weight = 100,
+		stack = true,
+		close = true,
+		description = 'Key for Weed Laboratory',
+		client = {
+			image = 'weed_lab_key.png',
+		}
+	},
 	-- Lab Meth Keys
 	['meth_lab_key_black'] = {
 		label = 'Meth Lab Key',
@@ -860,6 +1056,26 @@ return {
 		}
 	},
 	['meth_lab_key_6'] = {
+		label = 'Meth Lab Key',
+		weight = 100,
+		stack = true,
+		close = true,
+		description = 'Key for Meth Laboratory',
+		client = {
+			image = 'meth_lab_key.png',
+		}
+	},
+	['meth_lab_key_7'] = {
+		label = 'Meth Lab Key',
+		weight = 100,
+		stack = true,
+		close = true,
+		description = 'Key for Meth Laboratory',
+		client = {
+			image = 'meth_lab_key.png',
+		}
+	},
+	['meth_lab_key_8'] = {
 		label = 'Meth Lab Key',
 		weight = 100,
 		stack = true,
@@ -940,6 +1156,26 @@ return {
 			image = 'coke_lab_key.png',
 		}
 	},
+	['coke_lab_key_7'] = {
+		label = 'Coke Lab Key',
+		weight = 100,
+		stack = true,
+		close = true,
+		description = 'Key for Coke Laboratory',
+		client = {
+			image = 'coke_lab_key.png',
+		}
+	},
+	['coke_lab_key_8'] = {
+		label = 'Coke Lab Key',
+		weight = 100,
+		stack = true,
+		close = true,
+		description = 'Key for Coke Laboratory',
+		client = {
+			image = 'coke_lab_key.png',
+		}
+	},
 	-- Lab Coke Keys
 	['money_laundry_lab_key_black'] = {
 		label = 'Money Laundry Lab Key',
@@ -959,6 +1195,77 @@ return {
 		description = 'Key for Money Laundry Laboratory',
 		client = {
 			image = 'money_laundry_lab_key.png',
+		}
+	},
+	-- Heists Cards
+	['heist_card1'] = {
+		label = 'White Heist Card',
+		weight = 100,
+		stack = true,
+		close = true,
+		description = 'White Heist Card',
+		client = {
+			image = 'heist_card1.png',
+		}
+	},
+	['heist_card2'] = {
+		label = 'Green Heist Card',
+		weight = 100,
+		stack = true,
+		close = true,
+		description = 'Green Heist Card',
+		client = {
+			image = 'heist_card2.png',
+		}
+	},
+	['heist_card3'] = {
+		label = 'Orange Heist Card',
+		weight = 100,
+		stack = true,
+		close = true,
+		description = 'Orange Heist Card',
+		client = {
+			image = 'heist_card3.png',
+		}
+	},
+	['heist_card4'] = {
+		label = 'Blue Heist Card',
+		weight = 100,
+		stack = true,
+		close = true,
+		description = 'Blue Heist Card',
+		client = {
+			image = 'heist_card4.png',
+		}
+	},
+	['heist_card5'] = {
+		label = 'Purple Heist Card',
+		weight = 100,
+		stack = true,
+		close = true,
+		description = 'Purple Heist Card',
+		client = {
+			image = 'heist_card5.png',
+		}
+	},
+	['heist_card6'] = {
+		label = 'Red Heist Card',
+		weight = 100,
+		stack = true,
+		close = true,
+		description = 'Red Heist Card',
+		client = {
+			image = 'heist_card6.png',
+		}
+	},
+	['heist_card7'] = {
+		label = 'Black Heist Card',
+		weight = 100,
+		stack = true,
+		close = true,
+		description = 'Black Heist Card',
+		client = {
+			image = 'heist_card7.png',
 		}
 	},
 	-- ss_hospitaljob
@@ -998,14 +1305,23 @@ return {
 			event = 'ss_consumable:client:useItem',
 		},
 	},
-	['surgical_kit'] = {
-		label = 'Surgical Kit',
+	['medical_weed_bud'] = {
+		label = 'Medical Weed Bud',
+		weight = 15,
+		stack = true,
+		description = 'Medical Weed Bud',
+		client = {
+			image = 'weed_bud.png',
+		}
+	},
+	['medical_cannabis'] = {
+		label = 'Medical Cannabis',
 		weight = 100,
 		stack = true,
 		allowArmed = false,	
-		description = 'Surgical Kit',
+		description = 'Medical Cannabis',
 		client = {
-			image = 'surgical_kit.png',
+			image = 'medical_cannabis.png',
 		}
 	},
 	['firstaid_kit'] = {
@@ -1314,6 +1630,18 @@ return {
 			usetime = 3500
 		}
 	},
+	['gps_tracker'] = {
+        label = 'GPS Tracker',
+        weight = 1000,
+        stack = false,
+        consume = 0,
+        server = {
+            export = 'Renewed-Dutyblips.toggleItem'
+        },
+		client = {
+			image = 'gps_tracker.png',
+		}
+    },	
 	-- qbx_core
 	['walkstick'] = {
 		label = 'Walking Stick',
@@ -1354,7 +1682,7 @@ return {
 			image = 'usb_device.png',
 		}
 	},
-	['gold_bar'] = {
+	['goldbar'] = {
 		label = 'Gold Bar',
 		weight = 7000,
 		stack = true,
@@ -1482,6 +1810,34 @@ return {
 		}
 	},
 	-- ss_businesses
+	-- CHILLSPOT
+	['tobacco'] = {
+		label = 'Tobacco',
+		weight = 20,
+		stack = true,
+		description = 'Tobacco',
+		client = {
+			image = 'tobacco.png',
+		}
+	},
+	['tobacco_dry_leaves'] = {
+		label = 'Dried Tobacco Leaves',
+		weight = 20,
+		stack = true,
+		description = 'Dried Tobacco Leaves',
+		client = {
+			image = 'tobacco_dry_leaves.png',
+		}
+	},
+	['tobacco_raw_leaves'] = {
+		label = 'Raw Tobacco Leaves',
+		weight = 20,
+		stack = true,
+		description = 'Raw Tobacco Leaves',
+		client = {
+			image = 'tobacco_raw_leaves.png',
+		}
+	},
 	-- MANAGEM
 	['sledgehammer'] = {
 		label = 'Sledge Hammer',
@@ -1825,7 +2181,7 @@ return {
 			image = 'gold_washed.png',
 		}
 	},
-	['goldbar'] = {
+	['gold_bar'] = {
 		label = 'Gold Bar',
 		weight = 100,
 		stack = true,
@@ -3092,16 +3448,6 @@ return {
 			event = 'ss_mechanic:client:openPlatformTablet',
 		}
 	},
-	['bodycam'] = {
-		label = 'Bodycam',
-		weight = 100,
-		stack = true,
-		close = true,
-		description = 'Bodycam',
-		client = {
-			image = 'bodycam.png',
-		}
-	},
 	['shammy_towel'] = {
 		label = 'Shammy Towel',
 		weight = 1000,
@@ -3171,13 +3517,25 @@ return {
 		}
 	},
 	['handcuffs'] = {
-		label = 'Handcuffs',
+		label = 'Handcuff',
 		weight = 100,
 		stack = true,
 		close = true,
 		description = 'Comes in handy when people misbehave. Maybe it can be used for something else?',
 		client = {
+            event = 'ss_playerinteraction:client:usecuff',
 			image = 'handcuffs.png',
+		}
+	},
+	['handcuffs_key'] = {
+		label = 'Handcuffs Key',
+		weight = 100,
+		stack = true,
+		close = true,
+		description = 'Handcuffs Keys',
+		client = {
+            event = 'ss_playerinteraction:client:useuncuff',
+			image = 'handcuffs_key.png',
 		}
 	},
 	['empty_evidence_bag'] = {
@@ -3196,15 +3554,6 @@ return {
 		description = 'A filled evidence bag to see who committed the crime >:(',
 		client = {
 			image = 'filled_evidence_bag.png',
-		}
-	},
-	['police_stormram'] = {
-		label = 'Stormram',
-		weight = 18000,
-		stack = true,
-		description = 'A nice tool to break into doors',
-		client = {
-			image = 'police_stormram.png',
 		}
 	},
 	['finger_scanner'] = {
@@ -3254,7 +3603,7 @@ return {
 		}
 	},
 	['inmate_visit_permission'] = {
-		label = 'Inmate Visit Permission',
+		label = 'Visit Permission',
 		weight = 2500,
 		stack = true,
 		description = 'Inmate Visit Permission',
@@ -3263,15 +3612,25 @@ return {
 		}
 	},
 	-- ss_jail
-	['kabab_box'] = {
-		label = 'Kabab Box',
+	['beans_bowl'] = {
+		label = 'Beans Bowl',
 		weight = 250,
 		stack = true,
 		close = true,
-		description = 'Kabab Box',
+		description = 'Beans Bowl',
 		client = {
-			image = 'kabab_box.png',
+			image = 'beans_bowl.png',
 			event = 'ss_consumable:client:useItem',
+		},
+	},
+	['jail_coin'] = {
+		label = 'Jail Coin',
+		weight = 10,
+		stack = true,
+		close = true,
+		description = 'Jail Coin',
+		client = {
+			image = 'jail_coin.png',
 		},
 	},	
 	-- ss_firefighterjob
@@ -3561,4 +3920,126 @@ return {
 			image = 'boar_meat.png',
 		}
 	},
+	-- ss_notepad
+	['notepad'] = {
+		label = 'Notepad',
+		weight = 500,
+		stack = false,
+		close = true,
+		description = 'Notepad for writing and note',
+		client = {
+			image = 'notepad.png',
+			event = 'ss_notepad:client:openNotepad',
+		}
+	},
+	['notepadpage'] = {
+		label = 'NotePad Page',
+		weight = 50,
+		stack = false,
+		close = true,
+		description = 'Notepad page for writing and note',
+		client = {
+			image = 'notepadpage.png',
+			event = 'ss_notepad:client:openNotepadPage',
+		}
+	},	
+	-- ss_addons (weapon tinting)
+	['tint_army'] = { 
+		label = 'Army Weapon Tint',
+		stack = true,
+		close = true,
+		allowArmed = true,
+		weight = 10,
+		client = {
+			image = 'tint_army.png',
+		},
+		server = {
+			export = 'ss_addons.setweapontint',
+			tint = 4
+		}
+	},
+	['tint_police'] = { 
+		label = 'DGSN Weapon Tint',
+		stack = true,
+		close = true,
+		allowArmed = true,
+		weight = 10,
+		client = {
+			image = 'tint_police.png',
+		},
+		server = {
+			export = 'ss_addons.setweapontint',
+			tint = 5
+		}
+	},
+	['tint_platinum'] = { 
+		label = 'Platinum Weapon Tint',
+		stack = true,
+		close = true,
+		allowArmed = true,
+		weight = 10,
+		client = {
+			image = 'tint_platinum.png',
+		},
+		server = {
+			export = 'ss_addons.setweapontint',
+			tint = 7
+		}
+	},
+	['tint_gold'] = { 
+		label = 'Gold Weapon Tint',
+		stack = true,
+		close = true,
+		allowArmed = true,
+		weight = 10,
+		client = {
+			image = 'tint_gold.png',
+		},
+		server = {
+			export = 'ss_addons.setweapontint',
+			tint = 2
+		}
+	},
+	['tint_pink'] = { 
+		label = 'Pink Weapon Tint',
+		stack = true,
+		close = true,
+		allowArmed = true,
+		weight = 10,
+		client = {
+			image = 'tint_pink.png',
+		},
+		server = {
+			export = 'ss_addons.setweapontint',
+			tint = 3
+		}
+	},
+	['tint_green'] = { 
+		label = 'Green Weapon Tint',
+		stack = true,
+		close = true,
+		allowArmed = true,
+		weight = 10,
+		client = {
+			image = 'tint_green.png',
+		},
+		server = {
+			export = 'ss_addons.setweapontint',
+			tint = 1
+		}
+	},
+	['tint_orange'] = { 
+		label = 'Orange Weapon Tint',
+		stack = true,
+		close = true,
+		allowArmed = true,
+		weight = 10,
+		client = {
+			image = 'tint_orange.png',
+		},
+		server = {
+			export = 'ss_addons.setweapontint',
+			tint = 6
+		}
+	},	
 }
