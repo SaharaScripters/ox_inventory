@@ -1486,23 +1486,174 @@ return {
 			image = 'badge_lawyer.png',
 		}
 	},
-	-- npwd
+	-- av laptop
+	['laptop'] = {
+		label = 'Laptop',
+		weight = 1,
+		stack = false,
+		close = true,
+		description = '',
+		client = {
+			image = 'laptop.png',
+		}
+	},
+	['decrypter'] = {
+		label = 'Decrypter',
+		weight = 1,
+		stack = true,
+		close = true,
+		description = '',
+		client = {
+			image = 'decrypter.png',
+		}
+	},
+	['black_usb'] = {
+		label = 'Black USB',
+		weight = 1,
+		stack = true,
+		close = true,
+		description = '',
+		client = {
+			image = 'black_usb.png',
+		}
+	},
+	['pendrive'] = {
+		label = 'Pendrive',
+		weight = 1,
+		stack = false,
+		close = false,
+		description = 'Can store personal data',
+		client = {
+			image = 'pendrive.png',
+		}
+	},	
+	-- av boosting
+	['dongle'] = {
+		label = 'USB Dongle',
+		weight = 1,
+		stack = false,
+		close = true,
+		description = '',
+		client = {
+			image = 'dongle.png',
+		}
+	},
+	['vpn'] = {
+		label = 'VPN',
+		weight = 1,
+		stack = true,
+		close = false,
+		description = '',
+		client = {
+			image = 'vpn.png',
+		}
+	},
+	['transponder'] = {
+		label = 'Transponder',
+		weight = 1,
+		stack = true,
+		close = true,
+		description = '',
+		client = {
+			image = 'transponder.png',
+		}
+	},
+	['hacking_device'] = {
+		label = 'Hacking Device',
+		weight = 1,
+		stack = true,
+		close = true,
+		description = '',
+		client = {
+			image = 'hacking_device.png',
+		}
+	},
+	-- av cameras
+	['gopro'] = {
+		label = 'GoPro',
+		weight = 1,
+		stack = true,
+		close = true,
+		description = 'A camera',
+		client = {
+			image = 'gopro.png',
+		}
+	},
+	['security_cam'] = {
+		label = 'Security Cam',
+		weight = 1,
+		stack = true,
+		close = true,
+		description = 'Security Cam',
+		client = {
+			image = 'security_cam.png',
+		}
+	},
+	['cam_jammer'] = {
+		label = 'Cam Jammer',
+		weight = 1,
+		stack = true,
+		close = true,
+		description = 'Cam Jammer',
+		client = {
+			image = 'cam_jammer.png',
+		}
+	},
+	-- av gangs
+	['spray'] = {
+		label = 'Spray',
+		weight = 1,
+		stack = true,
+		close = true,
+		description = '',
+		client = {
+			image = 'spray.png',
+		}
+	},
+	['spray_remover'] = {
+		label = 'Spray Remover',
+		weight = 1,
+		stack = true,
+		close = true,
+		description = '',
+		client = {
+			image = 'spray_remover.png',
+		}
+	},
+	-- rcore_casino
+	['casino_chips'] = {
+		label = 'Casino Chips',
+		weight = 1,
+		stack = true,
+		description = '',
+		client = {
+			image = 'casino_chips.png',
+		}
+	},
+	-- lb phone
 	['phone'] = {
 		label = 'Phone',
 		weight = 190,
 		stack = false,
 		consume = 0,
 		client = {
-			add = function(total)
-				if total > 0 then
-					pcall(function() return exports.npwd:setPhoneDisabled(false) end)
-				end
+			export = 'lb-phone.UsePhoneItem',
+			remove = function()
+				TriggerEvent('lb-phone:itemRemoved')
 			end,
-			remove = function(total)
-				if total < 1 then
-					pcall(function() return exports.npwd:setPhoneDisabled(true) end)
-				end
+			add = function()
+				TriggerEvent('lb-phone:itemAdded')
 			end
+		}
+	},
+	['phone_charger'] = {
+		label = 'Phone Charger',
+		weight = 3000,
+		stack = true,
+		close = true,
+		client = {
+			anim = {dict = 'cellphone@', clip = 'cellphone_text_read_base'},
+			usetime = 3500
 		}
 	},
 	-- ss_vehicleshops
@@ -1798,15 +1949,6 @@ return {
 		description = 'Handy software to tear down some fences',
 		client = {
 			image = 'usb_device.png',
-		}
-	},
-	['laptop'] = {
-		label = 'Laptop',
-		weight = 4000,
-		stack = true,
-		description = 'Expensive laptop',
-		client = {
-			image = 'laptop.png',
 		}
 	},
 	-- ss_businesses

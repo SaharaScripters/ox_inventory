@@ -177,6 +177,19 @@ Item('policearmour', function(data, slot)
     end
 end)
 
+Item('phone_charger', function(data, slot)
+	ox_inventory:useItem(data, function(data)
+		lib.notify({description = 'You started charging your phone', type = 'inform'})
+		CreateThread(function ()
+		    exports['lb-phone']:ToggleCharging(true)
+		    -- Change the 10 to the amount of minutes you want it to charge
+		    Wait(60000 --[[ = 1 Minute ]] * 10)
+		    exports['lb-phone']:ToggleCharging(false)
+			lib.notify({description = 'Your battery has been emptied', type = 'inform'})
+		end)
+	end)
+end)
+
 client.parachute = false
 Item('parachute', function(data, slot)
 	if not client.parachute then
