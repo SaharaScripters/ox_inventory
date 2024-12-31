@@ -274,7 +274,7 @@ return {
 			image = 'bong.png',
 			event = 'ss_consumable:client:useItem',
 		}
-	},    
+	},
 	-- ss_playerstatus
     ['ziptie'] = {
         label = 'Ziptie',
@@ -304,7 +304,7 @@ return {
 		weight = 250,
 		stack = false,
 		close = true,
-		allowArmed = false,		
+		allowArmed = false,
 		description = 'TV Remote Control',
 		client = {
 			image = 'remotecontrol.png',
@@ -337,7 +337,7 @@ return {
 		weight = 600,
 		stack = true,
 		close = true,
-		allowArmed = false,		
+		allowArmed = false,
 		description = 'Optical device for magnified viewing of distant objects',
 		client = {
 			image = 'binoculars.png',
@@ -348,7 +348,7 @@ return {
 		weight = 30000,
 		stack = false,
 		close = true,
-		allowArmed = false,		
+		allowArmed = false,
 		description = 'An oxygen tank and a rebreather',
 		client = {
 			anim = { dict = 'clothingshirt', clip = 'try_shirt_positive_d' },
@@ -1278,7 +1278,7 @@ return {
 		client = {
 			image = 'gold_bar.png',
 		}
-	},	
+	},
 	-- ss_hospitaljob
 	--[[['bandage'] = {
 		label = 'Bandage',
@@ -1297,7 +1297,7 @@ return {
 		weight = 250,
 		stack = true,
 		close = true,
-		allowArmed = false,		
+		allowArmed = false,
 		description = 'Bandage',
 		client = {
 			image = 'bandage.png',
@@ -1309,7 +1309,7 @@ return {
 		weight = 250,
 		stack = true,
 		close = true,
-		allowArmed = false,		
+		allowArmed = false,
 		description = 'Syringe Adrenaline',
 		client = {
 			image = 'syringe_adrenaline.png',
@@ -1329,7 +1329,7 @@ return {
 		label = 'Medical Cannabis',
 		weight = 100,
 		stack = true,
-		allowArmed = false,	
+		allowArmed = false,
 		description = 'Medical Cannabis',
 		client = {
 			image = 'medical_cannabis.png',
@@ -1339,7 +1339,7 @@ return {
 		label = 'Firstaid Kit',
 		weight = 100,
 		stack = true,
-		allowArmed = false,	
+		allowArmed = false,
 		description = 'Firstaid Kit',
 		client = {
 			image = 'firstaid_kit.png',
@@ -1537,7 +1537,7 @@ return {
 		client = {
 			image = 'pendrive.png',
 		}
-	},	
+	},
 	-- av_boosting
 	['dongle'] = {
 		label = 'USB Dongle',
@@ -1715,6 +1715,7 @@ return {
 		description = 'A Jerrycan to carry Fuel with you',
 		client = {
 			image = 'jerrycan.png',
+			event = 'ss_fuel:client:useFuelContainer'
 		}
 	},
 	['power_bank_vehicle'] = {
@@ -1725,6 +1726,7 @@ return {
 		description = 'EV Battery Power Bank',
 		client = {
 			image = 'power_bank_vehicle.png',
+			event = 'ss_fuel:client:useFuelContainer'
 		}
 	},
 	-- ss_spray
@@ -1897,7 +1899,7 @@ return {
 		client = {
 			image = 'lighter.png',
 		}
-	},	
+	},
 	-- MANAGEM (miner)
 	['sledgehammer'] = {
 		label = 'Sledge Hammer',
@@ -2755,7 +2757,7 @@ return {
 		client = {
 			image = 'sugar_cane_bagasse.png',
 		},
-	},	
+	},
 	['syrup_apple'] = {
 		label = 'Apple Syrup',
 		weight = 150,
@@ -3810,7 +3812,7 @@ return {
 		client = {
 			image = 'jail_coin.png',
 		},
-	},	
+	},
 	-- ss_firefighterjob
 	['hose'] = {
 		label = 'Water Hose',
@@ -4120,9 +4122,9 @@ return {
 			image = 'notepadpage.png',
 			event = 'ss_notepad:client:openNotepadPage',
 		}
-	},	
+	},
 	-- ss_addons (weapon tinting)
-	['tint_army'] = { 
+	['tint_army'] = {
 		label = 'Army Weapon Tint',
 		stack = true,
 		close = true,
@@ -4136,7 +4138,7 @@ return {
 			tint = 4
 		}
 	},
-	['tint_police'] = { 
+	['tint_police'] = {
 		label = 'DGSN Weapon Tint',
 		stack = true,
 		close = true,
@@ -4150,7 +4152,7 @@ return {
 			tint = 5
 		}
 	},
-	['tint_platinum'] = { 
+	['tint_platinum'] = {
 		label = 'Platinum Weapon Tint',
 		stack = true,
 		close = true,
@@ -4164,7 +4166,7 @@ return {
 			tint = 7
 		}
 	},
-	['tint_gold'] = { 
+	['tint_gold'] = {
 		label = 'Gold Weapon Tint',
 		stack = true,
 		close = true,
@@ -4178,7 +4180,7 @@ return {
 			tint = 2
 		}
 	},
-	['tint_pink'] = { 
+	['tint_pink'] = {
 		label = 'Pink Weapon Tint',
 		stack = true,
 		close = true,
@@ -4192,7 +4194,7 @@ return {
 			tint = 3
 		}
 	},
-	['tint_green'] = { 
+	['tint_green'] = {
 		label = 'Green Weapon Tint',
 		stack = true,
 		close = true,
@@ -4206,7 +4208,7 @@ return {
 			tint = 1
 		}
 	},
-	['tint_orange'] = { 
+	['tint_orange'] = {
 		label = 'Orange Weapon Tint',
 		stack = true,
 		close = true,
@@ -4219,5 +4221,5 @@ return {
 			export = 'ss_addons.setweapontint',
 			tint = 6
 		}
-	},	
+	},
 }
