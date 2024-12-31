@@ -177,7 +177,7 @@ Item('policearmour', function(data, slot)
     end
 end)
 
-Item('phone_charger', function(data, slot)
+Item('power_bank', function(data, slot)
 	ox_inventory:useItem(data, function(data)
 		lib.notify({description = 'You started charging your phone', type = 'inform'})
 		CreateThread(function ()

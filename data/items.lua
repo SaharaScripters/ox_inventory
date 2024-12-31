@@ -637,7 +637,7 @@ return {
 	['weed_wrap'] = {
 		label = 'Weed Wrap',
 		weight = 250,
-		stack = false,
+		stack = true,
 		description = 'Weed Wrap',
 		client = {
 			image = 'weed_wrap.png',
@@ -1197,7 +1197,8 @@ return {
 			image = 'money_laundry_lab_key.png',
 		}
 	},
-	-- Heists Cards
+	-- Heists Cards & Loots
+	-- Cards
 	['heist_card1'] = {
 		label = 'White Heist Card',
 		weight = 100,
@@ -1268,6 +1269,16 @@ return {
 			image = 'heist_card7.png',
 		}
 	},
+	-- loots
+	['goldbar'] = {
+		label = 'Gold Bar',
+		weight = 7000,
+		stack = true,
+		description = 'Bank Gold Reserve',
+		client = {
+			image = 'gold_bar.png',
+		}
+	},	
 	-- ss_hospitaljob
 	--[[['bandage'] = {
 		label = 'Bandage',
@@ -1334,14 +1345,14 @@ return {
 			image = 'firstaid_kit.png',
 		}
 	},
-	['painkillers'] = {
-		label = 'Painkillers',
+	['painkiller'] = {
+		label = 'Pain Killer',
 		weight = 0,
 		stack = true,
 		close = true,
-		description = 'Painkillers',
+		description = 'Pain Killer',
 		client = {
-			image = 'painkillers.png',
+			image = 'painkiller.png',
 			event = 'ss_consumable:client:useItem',
 		}
 	},
@@ -1486,10 +1497,10 @@ return {
 			image = 'badge_lawyer.png',
 		}
 	},
-	-- av laptop
+	-- av_laptop
 	['laptop'] = {
 		label = 'Laptop',
-		weight = 1,
+		weight = 2000,
 		stack = false,
 		close = true,
 		description = '',
@@ -1499,7 +1510,7 @@ return {
 	},
 	['decrypter'] = {
 		label = 'Decrypter',
-		weight = 1,
+		weight = 100,
 		stack = true,
 		close = true,
 		description = '',
@@ -1509,7 +1520,7 @@ return {
 	},
 	['black_usb'] = {
 		label = 'Black USB',
-		weight = 1,
+		weight = 50,
 		stack = true,
 		close = true,
 		description = '',
@@ -1519,7 +1530,7 @@ return {
 	},
 	['pendrive'] = {
 		label = 'Pendrive',
-		weight = 1,
+		weight = 50,
 		stack = false,
 		close = false,
 		description = 'Can store personal data',
@@ -1527,10 +1538,10 @@ return {
 			image = 'pendrive.png',
 		}
 	},	
-	-- av boosting
+	-- av_boosting
 	['dongle'] = {
 		label = 'USB Dongle',
-		weight = 1,
+		weight = 50,
 		stack = false,
 		close = true,
 		description = '',
@@ -1540,7 +1551,7 @@ return {
 	},
 	['vpn'] = {
 		label = 'VPN',
-		weight = 1,
+		weight = 50,
 		stack = true,
 		close = false,
 		description = '',
@@ -1550,7 +1561,7 @@ return {
 	},
 	['transponder'] = {
 		label = 'Transponder',
-		weight = 1,
+		weight = 150,
 		stack = true,
 		close = true,
 		description = '',
@@ -1560,7 +1571,7 @@ return {
 	},
 	['hacking_device'] = {
 		label = 'Hacking Device',
-		weight = 1,
+		weight = 150,
 		stack = true,
 		close = true,
 		description = '',
@@ -1568,10 +1579,10 @@ return {
 			image = 'hacking_device.png',
 		}
 	},
-	-- av cameras
+	-- av_cameras
 	['gopro'] = {
 		label = 'GoPro',
-		weight = 1,
+		weight = 100,
 		stack = true,
 		close = true,
 		description = 'A camera',
@@ -1581,7 +1592,7 @@ return {
 	},
 	['security_cam'] = {
 		label = 'Security Cam',
-		weight = 1,
+		weight = 250,
 		stack = true,
 		close = true,
 		description = 'Security Cam',
@@ -1591,7 +1602,7 @@ return {
 	},
 	['cam_jammer'] = {
 		label = 'Cam Jammer',
-		weight = 1,
+		weight = 150,
 		stack = true,
 		close = true,
 		description = 'Cam Jammer',
@@ -1599,7 +1610,7 @@ return {
 			image = 'cam_jammer.png',
 		}
 	},
-	-- av gangs
+	-- av_gangs
 	['spray'] = {
 		label = 'Spray',
 		weight = 1,
@@ -1620,10 +1631,30 @@ return {
 			image = 'spray_remover.png',
 		}
 	},
+	-- av_racing
+	['racing_receiver'] = {
+		label = 'Racing Receiver',
+		weight = 1,
+		stack = true,
+		description = 'Racing Receiver',
+		client = {
+			image = 'racing_receiver.png',
+		}
+	},
+	-- av_cameras
+	['dvr'] = {
+		label = 'DVR',
+		weight = 1,
+		stack = true,
+		description = 'Digital Video Recorder',
+		client = {
+			image = 'dvr.png',
+		}
+	},
 	-- rcore_casino
 	['casino_chips'] = {
 		label = 'Casino Chips',
-		weight = 1,
+		weight = 0,
 		stack = true,
 		description = '',
 		client = {
@@ -1633,7 +1664,7 @@ return {
 	-- lb phone
 	['phone'] = {
 		label = 'Phone',
-		weight = 190,
+		weight = 100,
 		stack = false,
 		consume = 0,
 		client = {
@@ -1646,9 +1677,9 @@ return {
 			end
 		}
 	},
-	['phone_charger'] = {
-		label = 'Phone Charger',
-		weight = 3000,
+	['power_bank'] = {
+		label = 'Power Bank',
+		weight = 120,
 		stack = true,
 		close = true,
 		client = {
@@ -1675,17 +1706,7 @@ return {
 			image = 'purchase_contract.png',
 		}
 	},
-	-- cdn-fuel
-	['syphoningkit'] = {
-		label = 'Syphoning Kit',
-		weight = 0,
-		stack = false,
-		close = true,
-		description = 'A Syphoning Kit for Fuel stealing',
-		client = {
-			image = 'syphoningkit.png',
-		}
-	},
+	-- ss_fuel
 	['jerrycan'] = {
 		label = 'Jerrycan',
 		weight = 0,
@@ -1694,6 +1715,16 @@ return {
 		description = 'A Jerrycan to carry Fuel with you',
 		client = {
 			image = 'jerrycan.png',
+		}
+	},
+	['power_bank_vehicle'] = {
+		label = 'Power Bank',
+		weight = 0,
+		stack = false,
+		close = true,
+		description = 'EV Battery Power Bank',
+		client = {
+			image = 'power_bank_vehicle.png',
 		}
 	},
 	-- ss_spray
@@ -1792,165 +1823,7 @@ return {
 		client = {
 			image = 'gps_tracker.png',
 		}
-    },	
-	-- qbx_core
-	['walkstick'] = {
-		label = 'Walking Stick',
-		weight = 1000,
-		stack = true,
-		close = true,
-		description = 'Walking stick for you all grannies out there.. HAHA',
-		client = {
-			image = 'walkstick.png',
-		}
-	},
-	['firework1'] = {
-		label = '2Brothers',
-		weight = 1000,
-		stack = true,
-		close = true,
-		description = 'Fireworks',
-		client = {
-			image = 'firework1.png',
-		}
-	},
-	['firework4'] = {
-		label = 'Weeping Willow',
-		weight = 1000,
-		stack = true,
-		close = true,
-		description = 'Fireworks',
-		client = {
-			image = 'firework4.png',
-		}
-	},
-	['trojan_usb'] = {
-		label = 'Trojan USB',
-		weight = 0,
-		stack = true,
-		description = 'Handy software to shut down some systems',
-		client = {
-			image = 'usb_device.png',
-		}
-	},
-	['goldbar'] = {
-		label = 'Gold Bar',
-		weight = 7000,
-		stack = true,
-		description = 'Bank Gold Reserve',
-		client = {
-			image = 'gold_bar.png',
-		}
-	},
-	['lighter'] = {
-		label = 'Lighter',
-		weight = 0,
-		stack = true,
-		description = 'On new years eve a nice fire to stand next to',
-		client = {
-			image = 'lighter.png',
-		}
-	},
-	['labkey'] = {
-		label = 'Key',
-		weight = 500,
-		stack = false,
-		close = true,
-		description = 'Key for a lock...?',
-		client = {
-			image = 'labkey.png',
-		}
-	},
-	['iphone'] = {
-		label = 'iPhone',
-		weight = 1000,
-		stack = true,
-		close = true,
-		description = 'Very expensive phone',
-		client = {
-			image = 'iphone.png',
-		}
-	},
-	['small_tv'] = {
-		label = 'Small TV',
-		weight = 30000,
-		stack = false,
-		close = true,
-		description = 'TV',
-		client = {
-			image = 'placeholder.png',
-		}
-	},
-	['thermite'] = {
-		label = 'Thermite',
-		weight = 1000,
-		stack = true,
-		close = true,
-		description = 'Sometimes you would wish for everything to burn',
-		client = {
-			image = 'thermite.png',
-		}
-	},
-	['samsungphone'] = {
-		label = 'Samsung S10',
-		weight = 1000,
-		stack = true,
-		close = true,
-		description = 'Very expensive phone',
-		client = {
-			image = 'samsungphone.png',
-		}
-	},
-	['markedbills'] = {
-		label = 'Marked Money',
-		weight = 1000,
-		stack = false,
-		close = true,
-		description = 'Money?',
-		client = {
-			image = 'markedbills.png',
-		}
-	},
-	['certificate'] = {
-		label = 'Certificate',
-		weight = 0,
-		stack = true,
-		close = true,
-		description = 'Certificate that proves you own certain stuff',
-		client = {
-			image = 'certificate.png',
-		}
-	},
-	['wine'] = {
-		label = 'Wine',
-		weight = 300,
-		stack = true,
-		close = false,
-		description = 'Some good wine to drink on a fine evening',
-		client = {
-			image = 'wine.png',
-		}
-	},
-	['tablet'] = {
-		label = 'Tablet',
-		weight = 2000,
-		stack = true,
-		close = true,
-		description = 'Expensive tablet',
-		client = {
-			image = 'tablet.png',
-		}
-	},
-	['gatecrack'] = {
-		label = 'Gatecrack',
-		weight = 0,
-		stack = true,
-		close = true,
-		description = 'Handy software to tear down some fences',
-		client = {
-			image = 'usb_device.png',
-		}
-	},
+    },
 	-- ss_businesses
 	-- CHILLSPOT
 	['tobacco'] = {
@@ -1980,7 +1853,52 @@ return {
 			image = 'tobacco_raw_leaves.png',
 		}
 	},
-	-- MANAGEM
+	['cigar_paper'] = {
+		label = 'Cigar Paper',
+		weight = 20,
+		stack = true,
+		description = 'Cigar Paper',
+		client = {
+			image = 'cigar_paper.png',
+		}
+	},
+	['cigarette_paper'] = {
+		label = 'Cigarette Paper',
+		weight = 20,
+		stack = true,
+		description = 'Cigarette Paper',
+		client = {
+			image = 'cigarette_paper.png',
+		}
+	},
+	['paper_pulp_slurry'] = {
+		label = 'Pulp Slurry',
+		weight = 20,
+		stack = true,
+		description = 'Paper Pulp Slurry',
+		client = {
+			image = 'paper_pulp_slurry.png',
+		}
+	},
+	['plastic_bag'] = {
+		label = 'Plastic Bag',
+		weight = 1,
+		stack = true,
+		description = 'Plastic Bag',
+		client = {
+			image = 'plastic_bag.png',
+		}
+	},
+	['lighter'] = {
+		label = 'Lighter',
+		weight = 0,
+		stack = true,
+		description = 'On new years eve a nice fire to stand next to',
+		client = {
+			image = 'lighter.png',
+		}
+	},	
+	-- MANAGEM (miner)
 	['sledgehammer'] = {
 		label = 'Sledge Hammer',
 		weight = 100,
@@ -1989,6 +1907,15 @@ return {
 		client = {
 			image = 'sledgehammer.png',
 		}
+	},
+	['kitchen_knife'] = {
+		label = 'Kitchen Knife',
+		weight = 250,
+		stack = true,
+		description = 'Kitchen Knife',
+		client = {
+			image = 'kitchen_knife.png',
+		},
 	},
 	['plastic'] = {
 		label = 'Plastic',
@@ -2015,15 +1942,6 @@ return {
 		description = 'Recycled Plastic',
 		client = {
 			image = 'plastic_recycled.png',
-		}
-	},
-	['plastic_bag'] = {
-		label = 'Plastic Bag',
-		weight = 1,
-		stack = true,
-		description = 'Plastic Bag',
-		client = {
-			image = 'plastic_bag.png',
 		}
 	},
 	['empty_milk_box'] = {
@@ -2341,7 +2259,7 @@ return {
 			image = 'gold_electronic.png',
 		}
 	},
-	---- Digital Den
+	---- Digital Den (digitalden)
 	['phone_body'] = {
 		label = 'Phone Body',
 		weight = 100,
@@ -2486,28 +2404,73 @@ return {
 			image = 'terminal_battery.png',
 		}
 	},
-	---- Agri Maroc
+	['laptop_body'] = {
+		label = 'Laptop Body',
+		weight = 100,
+		stack = true,
+		description = 'Laptop Body',
+		client = {
+			image = 'laptop_body.png',
+		}
+	},
+	['laptop_screen'] = {
+		label = 'Laptop Screen',
+		weight = 100,
+		stack = true,
+		description = 'Laptop Screen',
+		client = {
+			image = 'laptop_screen.png',
+		}
+	},
+	['laptop_motherboard'] = {
+		label = 'Laptop Motherboard',
+		weight = 100,
+		stack = true,
+		description = 'Laptop Motherboard',
+		client = {
+			image = 'laptop_motherboard.png',
+		}
+	},
+	['laptop_battery'] = {
+		label = 'Laptop Battery',
+		weight = 100,
+		stack = true,
+		description = 'Laptop Battery',
+		client = {
+			image = 'laptop_battery.png',
+		}
+	},
+	---- MAROC BIO (farmer)
 	['apple'] = {
 		label = 'Fresh Apple',
-		weight = 250,
+		weight = 10,
 		stack = true,
 		description = 'Crisp and juicy fruit with various nutritional benefits',
 		client = {
 			image = 'apple.png',
 		},
 	},
-	['grape'] = {
-		label = 'Fresh Grape',
-		weight = 250,
+	['grapes_red'] = {
+		label = 'Fresh Red Grapes',
+		weight = 10,
 		stack = true,
 		description = 'Juicy and flavorful fruit, often enjoyed as a snack or used in cooking and winemaking',
 		client = {
-			image = 'grape.png',
+			image = 'grapes_red.png',
+		},
+	},
+	['grapes_green'] = {
+		label = 'Fresh Green Grapes',
+		weight = 10,
+		stack = true,
+		description = 'Juicy and flavorful fruit, often enjoyed as a snack or used in cooking and winemaking',
+		client = {
+			image = 'grapes_green.png',
 		},
 	},
 	['lime'] = {
 		label = 'Fresh Lime',
-		weight = 250,
+		weight = 10,
 		stack = true,
 		description = 'Tangy citrus fruit used in cooking, beverages, and garnishes',
 		client = {
@@ -2516,7 +2479,7 @@ return {
 	},
 	['orange'] = {
 		label = 'Fresh Orange',
-		weight = 250,
+		weight = 10,
 		stack = true,
 		description = 'Juicy citrus fruit, rich in vitamin C, commonly consumed as a snack or juice',
 		client = {
@@ -2525,7 +2488,7 @@ return {
 	},
 	['peach'] = {
 		label = 'Fresh Peach',
-		weight = 250,
+		weight = 10,
 		stack = true,
 		description = 'Juicy stone fruit, known for its sweet flavor and fuzzy skin, enjoyed fresh or in various culinary dishes',
 		client = {
@@ -2534,7 +2497,7 @@ return {
 	},
 	['pomegranate'] = {
 		label = 'Fresh Pomegranate',
-		weight = 250,
+		weight = 10,
 		stack = true,
 		description = 'Juicy fruit with edible seeds, known for its sweet-tart flavor and rich in antioxidants',
 		client = {
@@ -2543,7 +2506,7 @@ return {
 	},
 	['pineapple'] = {
 		label = 'Fresh Pineapple',
-		weight = 250,
+		weight = 40,
 		stack = true,
 		description = 'Juicy tropical fruit with sweet and tangy flavor, enjoyed fresh or in various culinary dishes',
 		client = {
@@ -2552,16 +2515,25 @@ return {
 	},
 	['lettuce'] = {
 		label = 'Fresh Lettuce',
-		weight = 250,
+		weight = 40,
 		stack = true,
 		description = 'Crisp and leafy vegetable, commonly used as a base for salads and sandwiches',
 		client = {
 			image = 'lettuce.png',
 		},
 	},
+	['mushroom'] = {
+		label = 'Mushroom',
+		weight = 40,
+		stack = true,
+		description = 'Mushroom',
+		client = {
+			image = 'mushroom.png',
+		},
+	},
 	['onion'] = {
 		label = 'Fresh Onion',
-		weight = 250,
+		weight = 10,
 		stack = true,
 		description = 'Pungent bulb vegetable used as a flavoring agent in various cuisines',
 		client = {
@@ -2570,7 +2542,7 @@ return {
 	},
 	['potato'] = {
 		label = 'Fresh Potato',
-		weight = 250,
+		weight = 10,
 		stack = true,
 		description = 'Versatile starchy tuber, used in various culinary dishes and as a staple food in many cuisines',
 		client = {
@@ -2579,7 +2551,7 @@ return {
 	},
 	['tomato'] = {
 		label = 'Fresh Tomato',
-		weight = 250,
+		weight = 10,
 		stack = true,
 		description = 'Juicy fruit used in salads, sandwiches, sauces, and various culinary dishes',
 		client = {
@@ -2588,7 +2560,7 @@ return {
 	},
 	['corn_cob'] = {
 		label = 'Corn Cob',
-		weight = 250,
+		weight = 10,
 		stack = true,
 		description = 'Cylindrical core of corn kernels, often boiled or grilled and enjoyed as a vegetable side dish',
 		client = {
@@ -2597,7 +2569,7 @@ return {
 	},
 	['bottled_oil'] = {
 		label = 'Bottle of Oil',
-		weight = 250,
+		weight = 80,
 		stack = true,
 		description = 'Bottle of Oil',
 		client = {
@@ -2606,7 +2578,7 @@ return {
 	},
 	['mint'] = {
 		label = 'Fresh Mint',
-		weight = 250,
+		weight = 1,
 		stack = true,
 		description = 'Aromatic herb often used in cooking, beverages, and garnishes, known for its refreshing flavor',
 		client = {
@@ -2649,13 +2621,13 @@ return {
 			image = 'wheat.png',
 		},
 	},
-	['packed_flour'] = {
-		label = 'Corn Flour',
+	['wheat_flour'] = {
+		label = 'Wheat Flour',
 		weight = 250,
 		stack = true,
-		description = 'Corn Flour',
+		description = 'Wheat Flour',
 		client = {
-			image = 'packed_flour.png',
+			image = 'wheat_flour.png',
 		},
 	},
 	['yeast'] = {
@@ -2748,6 +2720,42 @@ return {
 			image = 'butter.png',
 		},
 	},
+	['sugar_cane_raw'] = {
+		label = 'Raw Sugar Cane',
+		weight = 250,
+		stack = true,
+		description = 'Raw Sugar Cane',
+		client = {
+			image = 'sugar_cane_raw.png',
+		},
+	},
+	['sugar_cane'] = {
+		label = 'Sugar Cane',
+		weight = 250,
+		stack = true,
+		description = 'Sugar Cane',
+		client = {
+			image = 'sugar_cane.png',
+		},
+	},
+	['sugar_cane_dried'] = {
+		label = 'Dried Sugar Cane',
+		weight = 100,
+		stack = true,
+		description = 'Dried Sugar Cane',
+		client = {
+			image = 'sugar_cane_dried.png',
+		},
+	},
+	['sugar_cane_bagasse'] = {
+		label = 'Sugar Cane Bagasse',
+		weight = 100,
+		stack = true,
+		description = 'Sugar Cane Bagasse',
+		client = {
+			image = 'sugar_cane_bagasse.png',
+		},
+	},	
 	['syrup_apple'] = {
 		label = 'Apple Syrup',
 		weight = 150,
@@ -2806,6 +2814,16 @@ return {
 		description = 'Pineapple Syrup',
 		client = {
 			image = 'syrup_pineapple.png',
+		}
+	},
+	['syrup_sugar_cane'] = {
+		label = 'Sugar Cane Syrup',
+		weight = 150,
+		stack = true,
+		close = true,
+		description = 'Sugar Cane Syrup',
+		client = {
+			image = 'syrup_sugar_cane.png',
 		}
 	},
 	-- Night Clubs
@@ -3026,7 +3044,7 @@ return {
 	},
 	['milkshake_chocolate'] = {
 		label = 'Chocolate Milkshake',
-		weight = 250,
+		weight = 100,
 		stack = true,
 		close = true,
 		description = 'Chocolate Milkshake',
@@ -3037,7 +3055,7 @@ return {
 	},
 	['juice_pineapple'] = {
 		label = 'Pineapple Juice',
-		weight = 250,
+		weight = 100,
 		stack = true,
 		close = true,
 		description = 'Pineapple Juice',
@@ -3048,7 +3066,7 @@ return {
 	},
 	['juice_lime'] = {
 		label = 'Lime Juice',
-		weight = 250,
+		weight = 100,
 		stack = true,
 		close = true,
 		description = 'Lime Juice',
@@ -3059,7 +3077,7 @@ return {
 	},
 	['juice_peach'] = {
 		label = 'Peach Juice',
-		weight = 250,
+		weight = 100,
 		stack = true,
 		close = true,
 		description = 'Peach Juice',
@@ -3070,7 +3088,7 @@ return {
 	},
 	['croissant'] = {
 		label = 'Croissant',
-		weight = 100,
+		weight = 20,
 		stack = true,
 		close = true,
 		description = 'Croissant',
@@ -3081,7 +3099,7 @@ return {
 	},
 	['macaron'] = {
 		label = 'Macaron',
-		weight = 100,
+		weight = 10,
 		stack = true,
 		close = true,
 		description = 'Macaron',
@@ -3092,7 +3110,7 @@ return {
 	},
 	['strawberry_donut'] = {
 		label = 'Strawberry Donut',
-		weight = 100,
+		weight = 30,
 		stack = true,
 		close = true,
 		description = 'Strawberry Donut',
@@ -3103,7 +3121,7 @@ return {
 	},
 	['chocolate_donut'] = {
 		label = 'Chocolate Donut',
-		weight = 100,
+		weight = 30,
 		stack = true,
 		close = true,
 		description = 'Chocolate Donut',
@@ -3125,7 +3143,7 @@ return {
 	},
 	['croissant_dough'] = {
 		label = 'Croissant Dough',
-		weight = 100,
+		weight = 200,
 		stack = true,
 		close = true,
 		description = 'Croissant Dough',
@@ -3135,7 +3153,7 @@ return {
 	},
 	['donut_dough'] = {
 		label = 'Donut Dough',
-		weight = 100,
+		weight = 300,
 		stack = true,
 		close = true,
 		description = 'Donut Dough',
@@ -3273,42 +3291,42 @@ return {
 			image = 'icecream_chocolate_pack.png',
 		}
 	},
-	---- Medina Burger
-	------ MB Sellable Items
-	['bs_chicken_burger'] = {
+	---- Burgershot
+	------ BS Sellable Items
+	['burger_chicken'] = {
 		label = 'Chicken Burger',
 		weight = 250,
 		stack = true,
 		close = true,
 		description = 'Chicken Burger',
 		client = {
-			image = 'bs_chicken_burger.png',
+			image = 'burger_chicken.png',
 			event = 'ss_consumable:client:useItem',
 		},
 	},
-	['bs_beef_burger'] = {
+	['burger_beef'] = {
 		label = 'Beef Burger',
 		weight = 250,
 		stack = true,
 		close = true,
 		description = 'Beef Burger',
 		client = {
-			image = 'bs_beef_burger.png',
+			image = 'burger_beef.png',
 			event = 'ss_consumable:client:useItem',
 		},
 	},
-	['bs_fries'] = {
+	['french_fries'] = {
 		label = 'French Fries',
 		weight = 250,
 		stack = true,
 		close = true,
 		description = 'French Fries',
 		client = {
-			image = 'bs_fries.png',
+			image = 'french_fries.png',
 			event = 'ss_consumable:client:useItem',
 		},
 	},
-	------ MB Kitchen Items
+	------ BurgerShot Kitchen Items
 	['bun_dough'] = {
 		label = 'Bun Dough',
 		weight = 250,
@@ -3336,47 +3354,74 @@ return {
 			image = 'sliced_lettuce.png',
 		},
 	},
-	['cooked_patty_ground_beef'] = {
-		label = 'Cooked Patty Ground Beef',
+	['sliced_potato'] = {
+		label = 'Sliced Potato',
 		weight = 250,
 		stack = true,
-		description = 'Cooked Patty Ground Beef for Burger',
+		description = 'Sliced Potato',
 		client = {
-			image = 'cooked_patty_ground_beef.png',
+			image = 'sliced_potato.png',
+		},
+	},
+	['fried_potato'] = {
+		label = 'Fried Potato',
+		weight = 250,
+		stack = true,
+		description = 'Fried Potato',
+		client = {
+			image = 'fried_potato.png',
+		},
+	},
+	['ground_beef_patty'] = {
+		label = 'Ground Beef Patty',
+		weight = 250,
+		stack = true,
+		description = 'Ground Beef Patty for Burgers',
+		client = {
+			image = 'ground_beef_patty.png',
+		},
+	},
+	['fried_chicken'] = {
+		label = 'Fried Chicken',
+		weight = 250,
+		stack = true,
+		description = 'Fried Chicken',
+		client = {
+			image = 'fried_chicken.png',
 		},
 	},
 	---- Black Pan
 	------ BP Sellable Items
-	['bp_chicken_pizza'] = {
+	['pizza_chicken'] = {
 		label = 'Chicken Pizza',
 		weight = 250,
 		stack = true,
 		close = true,
-		description = 'Black Pan Chicken Pizza',
+		description = 'Chicken Pizza',
 		client = {
-			image = 'bp_chicken_pizza.png',
+			image = 'pizza_chicken.png',
 			event = 'ss_consumable:client:useItem',
 		},
 	},
-	['bp_beef_pizza'] = {
+	['pizza_beef'] = {
 		label = 'Beef Pizza',
 		weight = 250,
 		stack = true,
 		close = true,
-		description = 'Black Pan Beef Pizza',
+		description = 'Beef Pizza',
 		client = {
-			image = 'bp_beef_pizza.png',
+			image = 'pizza_beef.png',
 			event = 'ss_consumable:client:useItem',
 		},
 	},
-	['bp_fries'] = {
-		label = 'Fries',
+	['onion_rings'] = {
+		label = 'Onion Rings',
 		weight = 250,
 		stack = true,
 		close = true,
-		description = 'Black Pan Fries',
+		description = 'Onion Rings',
 		client = {
-			image = 'bp_fries.png',
+			image = 'onion_rings.png',
 			event = 'ss_consumable:client:useItem',
 		},
 	},
@@ -3390,13 +3435,22 @@ return {
 			image = 'pizza_dough.png',
 		},
 	},
-	['pizza_dough_ingredients'] = {
-		label = 'Pizza Dough with Ingredients',
+	['dressed_beef_pizza_dough'] = {
+		label = 'Beef Pizza Dough',
 		weight = 250,
 		stack = true,
-		description = 'Pizza Dough with Ingredients',
+		description = 'Dressed Beef Pizza Dough',
 		client = {
-			image = 'pizza_dough_ingredients.png',
+			image = 'dressed_beef_pizza_dough.png',
+		},
+	},
+	['dressed_chicken_pizza_dough'] = {
+		label = 'Chicken Pizza Dough',
+		weight = 250,
+		stack = true,
+		description = 'Dressed Chicken Pizza Dough',
+		client = {
+			image = 'dressed_chicken_pizza_dough.png',
 		},
 	},
 	['sliced_onion'] = {
@@ -3408,13 +3462,40 @@ return {
 			image = 'sliced_onion.png',
 		},
 	},
-	['cooked_shredded_ground_beef'] = {
-		label = 'Cooked Shredded Ground Beef',
+	['fried_onion'] = {
+		label = 'Fried Onion',
 		weight = 250,
 		stack = true,
-		description = 'Cooked Shredded Ground Beef for Burger',
+		description = 'Fried Onion',
 		client = {
-			image = 'cooked_shredded_ground_beef.png',
+			image = 'fried_onion.png',
+		},
+	},
+	['sliced_mushroom'] = {
+		label = 'Sliced Mushroom',
+		weight = 250,
+		stack = true,
+		description = 'Sliced Mushroom',
+		client = {
+			image = 'sliced_mushroom.png',
+		},
+	},
+	['shredded_chicken'] = {
+		label = 'Shredded Chicken',
+		weight = 250,
+		stack = true,
+		description = 'Shredded Chicken',
+		client = {
+			image = 'shredded_chicken.png',
+		},
+	},
+	['cooked_ground_beef'] = {
+		label = 'Cooked Ground Beef',
+		weight = 250,
+		stack = true,
+		description = 'Cooked Ground Beef',
+		client = {
+			image = 'cooked_ground_beef.png',
 		},
 	},
 	['soda_sprite'] = {
@@ -3477,25 +3558,7 @@ return {
 			event = 'ss_consumable:client:useItem',
 		},
 	},
-	------ Shared Kitchen Item (MB & BP)
-	['sliced_potato'] = {
-		label = 'Sliced Potato',
-		weight = 250,
-		stack = true,
-		description = 'Sliced Potato',
-		client = {
-			image = 'sliced_potato.png',
-		},
-	},
-	['fried_potato'] = {
-		label = 'Fried Potato',
-		weight = 250,
-		stack = true,
-		description = 'Fried Potato',
-		client = {
-			image = 'fried_potato.png',
-		},
-	},
+	------ Shared Kitchen Item (BurgerShot & BlackPan)
 	['sliced_tomato'] = {
 		label = 'Sliced Tomato',
 		weight = 250,
@@ -3514,15 +3577,6 @@ return {
 			image = 'sliced_chicken.png',
 		},
 	},
-	['fried_chicken'] = {
-		label = 'Fried Chicken',
-		weight = 250,
-		stack = true,
-		description = 'Fried Chicken',
-		client = {
-			image = 'fried_chicken.png',
-		},
-	},
 	['ground_beef'] = {
 		label = 'Ground Beef',
 		weight = 250,
@@ -3530,24 +3584,6 @@ return {
 		description = 'Ground Beef',
 		client = {
 			image = 'ground_beef.png',
-		},
-	},
-	['cooked_ground_beef'] = {
-		label = 'Cooked Ground Beef',
-		weight = 250,
-		stack = true,
-		description = 'Cooked Ground Beef',
-		client = {
-			image = 'cooked_ground_beef.png',
-		},
-	},
-	['kitchen_knife'] = {
-		label = 'Kitchen Knife',
-		weight = 250,
-		stack = true,
-		description = 'Kitchen Knife',
-		client = {
-			image = 'kitchen_knife.png',
 		},
 	},
 	-- ss_vehicleinsurance

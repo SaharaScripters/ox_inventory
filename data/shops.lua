@@ -20,7 +20,6 @@ return {
 			{ name = 'lollipop_purple', price = 10 },
 			{ name = 'lollipop_yellow', price = 10 },
 			{ name = 'lollipop_blue', price = 10 },
-			{ name = 'water_cooking', price = 10 },
 			--[[{ name = 'payment_terminal', price = 10, metadata = {jobHash = 'medinaburger', label = 'Medina Burger Terminal'} },
 			{ name = 'payment_terminal', price = 10, metadata = {jobHash = 'blackpan', label = 'Black Pan Terminal'} },
 			{ name = 'payment_terminal', price = 10, metadata = {jobHash = 'carrion', label = 'Cafe Carrion Terminal'} },
@@ -92,6 +91,51 @@ return {
 			{ name = 'WEAPON_STUNGUN', price = 500, metadata = { registered = true, serial = 'DGSN'}, grade = 8 },
 		}, locations = {
 			vec3(-306.11, -1061.20, 28.34),
+		}
+		--[[targets = {
+            {
+                ped = `s_m_y_cop_01`,
+                scenario = 'WORLD_HUMAN_COP_IDLES',
+                loc = vec3(-306.11, -1061.20, 27.34),
+                heading = 337,
+            },
+		}--]]
+	},
+	ChemicalStore = {
+		name = 'Chemical Supply Store',
+        blip = {id = 499, colour = 69, scale = 0.5},
+		groups = {['miner'] = 0, ['chillspot'] = 0, ['black'] = 0, ['gang1'] = 0, ['gang2'] = 0, ['gang3'] = 0, ['gang4'] = 0, ['gang5'] = 0, ['gang6'] = 0, ['gang7'] = 0, ['gang8'] = 0,},
+		inventory = {
+			{ name = 'sodium_hydroxide', price = 10 },
+			{ name = 'sulfuric_acid', price = 10 },
+			{ name = 'hydrochloric_acid', price = 10 },
+			{ name = 'thionyl_chloride', price = 10 },
+		}, locations = {
+			vec3(45.06, -1748.29, 29.55),
+		}
+		--[[targets = {
+            {
+                ped = `s_m_y_cop_01`,
+                scenario = 'WORLD_HUMAN_COP_IDLES',
+                loc = vec3(-306.11, -1061.20, 27.34),
+                heading = 337,
+            },
+		}--]]
+	},
+	ConvenienceStore = {
+		name = 'Convenience Store',
+        blip = {id = 827, colour = 69, scale = 0.5},
+		groups = {['blackpan'] = 0, ['burgershot'] = 0, ['dahab'] = 0, ['carrion'] = 0, ['chillspot'] = 0, ['club77'] = 0, ['ibiza'] = 0, ['unicorn'] = 0, ['vazou'] = 0},
+		inventory = {
+			{ name = 'soda_sevenup', price = 10 },
+			{ name = 'soda_cocacola', price = 10 },
+			{ name = 'soda_sprite', price = 10 },
+			{ name = 'icecream_vanilla_pack', price = 10 },
+			{ name = 'icecream_chocolate_pack', price = 10 },
+			{ name = 'kitchen_knife', price = 10 },
+			{ name = 'water_cooking', price = 10 },
+		}, locations = {
+			vec3(27.68, -1768.84, 29.51),
 		}
 		--[[targets = {
             {

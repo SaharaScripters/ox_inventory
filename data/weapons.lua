@@ -11,6 +11,11 @@ return {
 			label = 'Radar Gun',
 			weight = 3300,
 		},
+		
+		['WEAPON_MEGAPHONE'] = {
+			label = 'MegaPhone',
+			weight = 1000,
+		},		
 
 		['WEAPON_BATTLERIFLE'] = {
 			label = 'Battle Rifle',
