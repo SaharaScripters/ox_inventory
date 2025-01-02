@@ -1726,7 +1726,6 @@ return {
 		description = 'EV Battery Power Bank',
 		client = {
 			image = 'power_bank_vehicle.png',
-			event = 'ss_fuel:client:useFuelContainer'
 		}
 	},
 	-- ss_spray
@@ -1738,7 +1737,6 @@ return {
 		description = 'Spray can that can be used to draw on walls',
 		client = {
 			image = 'spray_can.png',
-			event = 'ss_spray:client:openSprayMenu',
 		},
 	},
 	['spray_rag'] = {
