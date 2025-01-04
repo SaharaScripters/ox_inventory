@@ -1718,11 +1718,11 @@ return {
 		}
 	},
 	['power_bank_vehicle'] = {
-		label = 'Power Bank',
+		label = 'EV Charger',
 		weight = 0,
 		stack = false,
 		close = true,
-		description = 'EV Battery Power Bank',
+		description = 'EV Charger',
 		client = {
 			image = 'power_bank_vehicle.png',
 		}
