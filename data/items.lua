@@ -1715,7 +1715,6 @@ return {
 		description = 'A Jerrycan to carry Fuel with you',
 		client = {
 			image = 'jerrycan.png',
-			event = 'ss_fuel:client:useFuelContainer'
 		}
 	},
 	['power_bank_vehicle'] = {
