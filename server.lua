@@ -68,13 +68,14 @@ exports('setPlayerInventory', server.setPlayerInventory)
 AddEventHandler('ox_inventory:setPlayerInventory', server.setPlayerInventory)
 
 ---@param playerPed number
----@param coordinates vector3|vector3[]
----@param distance? number
----@return vector3|false
-local function getClosestStashCoords(playerPed, coordinates, distance)
+---@param stash OxInventory
+---@return vector3?
+local function getClosestStashCoords(playerPed, stash)
 	local playerCoords = GetEntityCoords(playerPed)
+	local distance = stash.distance or 10
+    local coordinates = stash.coords
 
-	if not distance then distance = 10 end
+    if not coordinates then return end
 
 	if type(coordinates) == 'table' then
 		for i = 1, #coordinates do
@@ -85,10 +86,10 @@ local function getClosestStashCoords(playerPed, coordinates, distance)
 			end
 		end
 
-		return false
+		return
 	end
 
-	return #(coordinates - playerCoords) < distance and coordinates
+	return #(coordinates - playerCoords) < distance and coordinates or nil
 end
 
 ---@param source number
@@ -99,8 +100,10 @@ end
 local function openInventory(source, invType, data, ignoreSecurityChecks)
 	if Inventory.Lock then return false end
 
-	local left = Inventory(source) --[[@as OxInventory]]
+	local left = Inventory(source)
 	local right, closestCoords
+
+    if not left then return end
 
     left:closeInventory(true)
 	Inventory.CloseAll(left, source)
@@ -108,6 +111,8 @@ local function openInventory(source, invType, data, ignoreSecurityChecks)
     if invType == 'player' and data == source then
         data = nil
     end
+
+    local playerPed = left.player.ped
 
 	if data then
         local isDataTable = type(data) == 'table'
@@ -117,9 +122,22 @@ local function openInventory(source, invType, data, ignoreSecurityChecks)
 			if right == false then return false end
 		elseif isDataTable then
 			if data.netid then
+                local entity = NetworkGetEntityFromNetworkId(data.netid)
+
+                if not entity then return end
+
+                if not ignoreSecurityChecks then
+                    if #(GetEntityCoords(playerPed) - GetEntityCoords(entity)) > 16 then return end
+                end
+
+                if invType == 'glovebox' then
+                    if not ignoreSecurityChecks and GetVehiclePedIsIn(playerPed, false) ~= entity then
+                        return
+                    end
+                end
+
                 if invType == 'trunk' then
-                    local entity = NetworkGetEntityFromNetworkId(data.netid)
-                    local lockStatus = entity > 0 and GetVehicleDoorLockStatus(entity)
+                    local lockStatus = ignoreSecurityChecks and 0 or GetVehicleDoorLockStatus(entity)
 
                     -- 0: no lock; 1: unlocked; 8: boot unlocked
                     if lockStatus > 1 and lockStatus ~= 8 then
@@ -127,8 +145,29 @@ local function openInventory(source, invType, data, ignoreSecurityChecks)
                     end
                 end
 
+                local plate = (invType == 'glovebox' or invType == 'trunk') and GetVehicleNumberPlateText(entity)
+
+                if plate then
+                    if server.trimplate then plate = string.strtrim(plate) end
+
+                    if not data.id  then
+                        data.id = (invType == 'glovebox' and 'glove' or 'trunk') .. plate
+                    end
+                end
+
 				data.type = invType
 				right = Inventory(data)
+
+                if right and data.netid ~= right.netid then
+                    local invEntity = NetworkGetEntityFromNetworkId(right.netid)
+
+                    if invEntity > 0 and DoesEntityExist(invEntity) or plate and not string.match(GetVehicleNumberPlateText(invEntity) or '', plate) then
+                        return
+                    end
+
+                    Inventory.Remove(right)
+                    right = Inventory(data)
+                end
 			elseif invType == 'drop' then
 				right = Inventory(data.id)
 			else
@@ -188,7 +227,7 @@ local function openInventory(source, invType, data, ignoreSecurityChecks)
 		end
 
 		if not ignoreSecurityChecks and right.coords then
-			closestCoords = getClosestStashCoords(left.player.ped, right.coords)
+			closestCoords = getClosestStashCoords(playerPed, right)
 
 			if not closestCoords then return end
 		end
@@ -378,6 +417,13 @@ lib.callback.register('ox_inventory:useItem', function(source, itemName, slot, m
 			end
 
 			data.consume = consume
+
+            if not TriggerEventHooks('usingItem', {
+				source = source,
+                inventoryId = inventory and inventory.id,
+                item = inventory.items[slot],
+                consume = consume
+			}) then return false end
 
             ---@type boolean
 			local success = lib.callback.await('ox_inventory:usingItem', source, data, noAnim)
