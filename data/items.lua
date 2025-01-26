@@ -382,6 +382,16 @@ return {
 			image = 'nitrous.png',
 		}
 	},
+	['skateboard'] = {
+		label = 'skateboard',
+		weight = 20000,
+		stack = true,
+		close = true,
+		description = 'Skateboard',
+		client = {
+			image = 'skateboard.png',
+		}
+	},	
 	-- Robberies
 	-- Tools
 	['advancedlockpick'] = {
