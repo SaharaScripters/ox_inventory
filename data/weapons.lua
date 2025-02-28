@@ -11,6 +11,12 @@ return {
 			label = 'Radar Gun',
 			weight = 3300,
 		},
+
+		['WEAPON_THROWLINE'] = {
+			label = 'Throw Bag',
+			weight = 100,
+			ammoname = 'AMMO_THROWLINE',
+		},
 		
 		['WEAPON_MEGAPHONE'] = {
 			label = 'MegaPhone',

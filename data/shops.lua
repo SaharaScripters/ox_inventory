@@ -68,6 +68,8 @@ return {
 		inventory = {
 			{ name = 'bodycam', price = 10, grade = 8 },
 			{ name = 'dashcam', price = 10, grade = 8 },
+			{ name = 'nightvision', price = 10, grade = 8 },
+			{ name = 'helmet_flashlight', price = 10, grade = 8 },
 			{ name = 'gps_tracker', price = 10, grade = 8 },
 			{ name = 'finger_scanner', price = 10, grade = 8 },
 			{ name = 'jammer', price = 10, grade = 8 },

@@ -4,6 +4,7 @@ return {
 		weight = 150,
 		stack = true,
 		close = true,
+		allowArmed = false,
 		description = 'Water',
 		client = {
 			image = 'water.png',
@@ -15,6 +16,7 @@ return {
 		weight = 150,
 		stack = true,
 		close = true,
+		allowArmed = false,
 		description = 'Black Water Bottle',
 		client = {
 			image = 'water_bottle_black.png',
@@ -26,6 +28,7 @@ return {
 		weight = 150,
 		stack = true,
 		close = true,
+		allowArmed = false,
 		description = 'Blue Water Bottle',
 		client = {
 			image = 'water_bottle_blue.png',
@@ -37,6 +40,7 @@ return {
 		weight = 150,
 		stack = true,
 		close = true,
+		allowArmed = false,
 		description = 'Green Water Bottle',
 		client = {
 			image = 'water_bottle_mint.png',
@@ -48,6 +52,7 @@ return {
 		weight = 150,
 		stack = true,
 		close = true,
+		allowArmed = false,
 		description = 'Orange Water Bottle',
 		client = {
 			image = 'water_bottle_orange.png',
@@ -59,6 +64,7 @@ return {
 		weight = 150,
 		stack = true,
 		close = true,
+		allowArmed = false,
 		description = 'Pink Water Bottle',
 		client = {
 			image = 'water_bottle_pink.png',
@@ -70,6 +76,7 @@ return {
 		weight = 150,
 		stack = true,
 		close = true,
+		allowArmed = false,
 		description = 'Water',
 		client = {
 			image = 'water_bottle_purple.png',
@@ -81,6 +88,7 @@ return {
 		weight = 150,
 		stack = true,
 		close = true,
+		allowArmed = false,
 		description = 'Water',
 		client = {
 			image = 'water_bottle_red.png',
@@ -92,6 +100,7 @@ return {
 		weight = 150,
 		stack = true,
 		close = true,
+		allowArmed = false,
 		description = 'Water',
 		client = {
 			image = 'water_bottle_white.png',
@@ -103,6 +112,7 @@ return {
 		weight = 150,
 		stack = true,
 		close = true,
+		allowArmed = false,
 		description = 'Water',
 		client = {
 			image = 'water_bottle_yellow.png',
@@ -113,7 +123,6 @@ return {
 		label = 'Cooking Water',
 		weight = 150,
 		stack = true,
-		close = true,
 		description = 'Cooking Water',
 		client = {
 			image = 'water_cooking.png',
@@ -125,6 +134,7 @@ return {
 		weight = 100,
 		stack = true,
 		close = true,
+		allowArmed = false,
 		description = 'Peanuts',
 		client = {
 			image = 'peanuts.png',
@@ -136,6 +146,7 @@ return {
 		weight = 100,
 		stack = true,
 		close = true,
+		allowArmed = false,
 		description = 'Pretzels',
 		client = {
 			image = 'pretzels.png',
@@ -147,6 +158,7 @@ return {
 		weight = 100,
 		stack = true,
 		close = true,
+		allowArmed = false,
 		description = 'Pepsi',
 		client = {
 			image = 'pepsi.png',
@@ -158,6 +170,7 @@ return {
 		weight = 100,
 		stack = true,
 		close = true,
+		allowArmed = false,
 		description = 'Pepsi Zero',
 		client = {
 			image = 'pepsi_zero.png',
@@ -169,6 +182,7 @@ return {
 		weight = 100,
 		stack = true,
 		close = true,
+		allowArmed = false,
 		description = 'Energy Drink',
 		client = {
 			image = 'energy_drink.png',
@@ -180,6 +194,7 @@ return {
 		weight = 100,
 		stack = true,
 		close = true,
+		allowArmed = false,
 		description = 'Red Lollipop',
 		client = {
 			image = 'lollipop_red.png',
@@ -191,6 +206,7 @@ return {
 		weight = 100,
 		stack = true,
 		close = true,
+		allowArmed = false,
 		description = 'Green Lollipop',
 		client = {
 			image = 'lollipop_green.png',
@@ -202,6 +218,7 @@ return {
 		weight = 100,
 		stack = true,
 		close = true,
+		allowArmed = false,
 		description = 'Purple Lollipop',
 		client = {
 			image = 'lollipop_purple.png',
@@ -213,6 +230,7 @@ return {
 		weight = 100,
 		stack = true,
 		close = true,
+		allowArmed = false,
 		description = 'Yellow Lollipop',
 		client = {
 			image = 'lollipop_yellow.png',
@@ -224,6 +242,7 @@ return {
 		weight = 100,
 		stack = true,
 		close = true,
+		allowArmed = false,
 		description = 'Blue Lollipop',
 		client = {
 			image = 'lollipop_blue.png',
@@ -236,6 +255,7 @@ return {
 		weight = 0,
 		stack = true,
 		close = true,
+		allowArmed = false,
 		description = 'Pipe',
 		client = {
 			image = 'pipe.png',
@@ -247,6 +267,7 @@ return {
 		weight = 0,
 		stack = true,
 		close = true,
+		allowArmed = false,
 		description = 'Cigar',
 		client = {
 			image = 'cigar.png',
@@ -258,6 +279,7 @@ return {
 		weight = 0,
 		stack = true,
 		close = true,
+		allowArmed = false,
 		description = 'Cigarette',
 		client = {
 			image = 'cigarette.png',
@@ -269,6 +291,7 @@ return {
 		weight = 0,
 		stack = true,
 		close = true,
+		allowArmed = false,
 		description = 'Bong',
 		client = {
 			image = 'bong.png',
@@ -281,6 +304,7 @@ return {
         weight = 100,
         stack = true,
         close = true,
+		allowArmed = false,
         description = 'Ziptie to tie people up',
         client = {
             event = 'ss_playerinteraction:client:useziptie',
@@ -292,6 +316,7 @@ return {
         weight = 100,
         stack = true,
         close = true,
+		allowArmed = false,
         description = 'Cutter Blade for cutting things like zipties',
         client = {
             event = 'ss_playerinteraction:client:usecutter',
@@ -313,7 +338,7 @@ return {
 	['radio'] = {
 		label = 'Radio',
 		weight = 1000,
-		stack = false,
+		stack = true,
 		close = true,
 		allowArmed = false,
 		description = 'Portable two-way radio for short-distance communication',
@@ -326,6 +351,7 @@ return {
 		weight = 8000,
 		stack = true,
 		close = true,
+		allowArmed = false,
 		description = 'Safety device for slowing descent during falls',
 		client = {
 			anim = { dict = 'clothingshirt', clip = 'try_shirt_positive_d' },
@@ -346,7 +372,7 @@ return {
 	['diving_gear'] = {
 		label = 'Diving Gear',
 		weight = 30000,
-		stack = false,
+		stack = true,
 		close = true,
 		allowArmed = false,
 		description = 'An oxygen tank and a rebreather',
@@ -360,6 +386,7 @@ return {
 		weight = 3000,
 		stack = true,
 		close = true,
+		allowArmed = false,
 		client = {
 			image = 'diving_fill.png',
 		}
@@ -368,6 +395,8 @@ return {
 		label = 'Toolkit',
 		weight = 1000,
 		stack = true,
+		close = true,
+		allowArmed = false,
 		description = 'Very useful to screw',
 		client = {
 			image = 'screwdriverset.png',
@@ -377,6 +406,8 @@ return {
 		label = 'Nitrous',
 		weight = 1000,
 		stack = true,
+		close = true,
+		allowArmed = false,
 		description = 'Speed up, gas pedal! :D',
 		client = {
 			image = 'nitrous.png',
@@ -387,11 +418,42 @@ return {
 		weight = 20000,
 		stack = true,
 		close = true,
+		allowArmed = false,
 		description = 'Skateboard',
 		client = {
 			image = 'skateboard.png',
 		}
-	},	
+	},
+	['low_speaker'] = {
+		label = 'Low Speaker',
+		weight = 200,
+		stack = true,
+		close = true,
+		allowArmed = false,
+		client = {
+			export = 'ss_speakers.useSpeaker'
+		}
+	},
+	['medium_speaker'] = {
+		label = 'Medium Speaker',
+		weight = 200,
+		stack = true,
+		close = true,
+		allowArmed = false,
+		client = {
+			export = 'ss_speakers.useSpeaker'
+		}
+	},
+	['high_speaker'] = {
+		label = 'Party Speaker',
+		weight = 200,
+		stack = true,
+		close = true,
+		allowArmed = false,
+		client = {
+			export = 'ss_speakers.useSpeaker'
+		}
+	},
 	-- Robberies
 	-- Tools
 	['advancedlockpick'] = {
@@ -423,6 +485,7 @@ return {
 		weight = 20000,
 		stack = true,
 		close = true,
+		allowArmed = false,
 		description = 'The real deal',
 		client = {
 			image = 'drill.png',
@@ -621,6 +684,142 @@ return {
 			image = 'tier3_apple_watch.png',
 		}
 	},
+	-- projectx-atmrobbery
+	['nylonrope'] = {
+		label = 'Nylon Rope',
+		description = 'The strongest rope material..',
+		weight = 125,
+		stack = true,
+		close = true,
+		allowArmed = false,
+		client = {
+			image = 'nylonrope.png',
+			event = 'projectx-atmrobbery:client:UseRope',
+		}
+	},
+	['atmred'] = {
+		label = 'Red ATM',
+		description = 'A console of an automated teller.',
+		weight = 350,
+		stack = false,
+		close = true,
+		allowArmed = false,
+		client = {
+			image = 'atmred.png',
+			event = 'projectx-atmrobbery:client:UseAtm-Red',
+		}
+	},
+	['atmblue'] = {
+		label = 'Blue ATM',
+		description = 'A console of an automated teller.',
+		weight = 350,
+		stack = false,
+		close = true,
+		allowArmed = false,
+		client = {
+			image = 'atmblue.png',
+			event = 'projectx-atmrobbery:client:UseAtm-Blue',
+		}
+	},
+	['atmgreen'] = {
+		label = 'Green ATM',
+		description = 'A console of an automated teller.',
+		weight = 350,
+		stack = false,
+		close = true,
+		allowArmed = false,
+		client = {
+			image = 'atmgreen.png',
+			event = 'projectx-atmrobbery:client:UseAtm-Green',
+		}
+	},
+	['atmpanel'] = {
+		label = 'ATM Panel',
+		description = 'A back panel from an automated teller.',
+		weight = 125,
+		stack = false,
+		close = true,
+		allowArmed = false,
+		client = {
+			image = 'atmpanel.png',
+		}
+	},
+	['atmcables'] = {
+		label = 'ATM Cables',
+		description = 'Cables from an automated teller.',
+		weight = 125,
+		stack = false,
+		close = true,
+		allowArmed = false,
+		client = {
+			image = 'atmcables.png',
+		}
+	},
+	['atmmotherboard'] = {
+		label = 'ATM Motherboard',
+		description = 'A motherboard from an automated teller.',
+		weight = 125,
+		stack = false,
+		close = true,
+		allowArmed = false,
+		client = {
+			image = 'atmmotherboard.png',
+		}
+	},
+	['blowtorch'] = {
+		label = 'Blow Torch',
+		description = 'Ooo hot...',
+		weight = 125,
+		stack = false,
+		close = true,
+		allowArmed = false,
+		client = {
+			image = 'blowtorch.png',
+		}
+	},
+	['laserdrill'] = {
+		label = 'Laser Drill',
+		description = 'I wonder what this does...',
+		weight = 125,
+		stack = false,
+		close = true,
+		allowArmed = false,
+		client = {
+			image = 'laserdrill.png',
+		}
+	},
+	-- ['screwdriverset'] = {
+	-- 	label = 'Screwdriverset',
+	-- 	description = 'A Screw driver set',
+	-- 	weight = 50,
+	-- 	close = true,
+	-- 	stack = false,
+	-- 	client = {
+	-- 		image = 'screwdriverset.png',
+	-- 	}
+	-- },
+	['x_gastank'] = {
+		label = 'X Gas Tank',
+		weight = 200,
+		stack = true,
+		close = false,
+		allowArmed = false,
+		description = '????',
+		client = {
+			image = 'x_gastank.png',
+		}
+	},
+	['x_fakecredit'] = {
+		label = 'X Credit Card',
+		weight = 200,
+		stack = true,
+		close = false,
+		allowArmed = false,
+		description = '????',
+		client = {
+			image = 'x_fakecredit.png',
+		}
+	},
 	-- ss_drugs
 	-- Phone Card
 	['prepaid_phone_card'] = { -- Farm
@@ -638,6 +837,7 @@ return {
 		weight = 0,
 		stack = true,
 		close = true,
+		allowArmed = false,
 		description = 'Sidney would be very proud at you',
 		client = {
 			image = 'joint.png',
@@ -684,6 +884,8 @@ return {
 		label = 'Scissors',
 		weight = 250,
 		stack = true,
+		close = true,
+		allowArmed = false,
 		description = 'Perfect for your garden',
 		client = {
 			image = 'scissors.png',
@@ -731,6 +933,7 @@ return {
 		weight = 1,
 		stack = true,
 		close = true,
+		allowArmed = false,
 		description = 'Meth Pipe',
 		client = {
 			image = 'meth_pipe.png',
@@ -806,6 +1009,7 @@ return {
 		weight = 1,
 		stack = true,
 		close = true,
+		allowArmed = false,
 		description = 'Cocaine',
 		client = {
 			image = 'cocaine.png',
@@ -816,6 +1020,8 @@ return {
 		label = 'Trowel',
 		weight = 100,
 		stack = true,
+		close = true,
+		allowArmed = false,
 		description = 'Perfect for your garden',
 		client = {
 			image = 'trowel.png',
@@ -918,7 +1124,6 @@ return {
 		label = 'Weed Lab Key',
 		weight = 100,
 		stack = true,
-		close = true,
 		description = 'Key for Weed Laboratory',
 		client = {
 			image = 'weed_lab_key_black.png',
@@ -928,7 +1133,6 @@ return {
 		label = 'Weed Lab Key',
 		weight = 100,
 		stack = true,
-		close = true,
 		description = 'Key for Weed Laboratory',
 		client = {
 			image = 'weed_lab_key.png',
@@ -938,7 +1142,6 @@ return {
 		label = 'Weed Lab Key',
 		weight = 100,
 		stack = true,
-		close = true,
 		description = 'Key for Weed Laboratory',
 		client = {
 			image = 'weed_lab_key.png',
@@ -948,7 +1151,6 @@ return {
 		label = 'Weed Lab Key',
 		weight = 100,
 		stack = true,
-		close = true,
 		description = 'Key for Weed Laboratory',
 		client = {
 			image = 'weed_lab_key.png',
@@ -958,7 +1160,6 @@ return {
 		label = 'Weed Lab Key',
 		weight = 100,
 		stack = true,
-		close = true,
 		description = 'Key for Weed Laboratory',
 		client = {
 			image = 'weed_lab_key.png',
@@ -968,7 +1169,6 @@ return {
 		label = 'Weed Lab Key',
 		weight = 100,
 		stack = true,
-		close = true,
 		description = 'Key for Weed Laboratory',
 		client = {
 			image = 'weed_lab_key.png',
@@ -978,7 +1178,6 @@ return {
 		label = 'Weed Lab Key',
 		weight = 100,
 		stack = true,
-		close = true,
 		description = 'Key for Weed Laboratory',
 		client = {
 			image = 'weed_lab_key.png',
@@ -988,7 +1187,6 @@ return {
 		label = 'Weed Lab Key',
 		weight = 100,
 		stack = true,
-		close = true,
 		description = 'Key for Weed Laboratory',
 		client = {
 			image = 'weed_lab_key.png',
@@ -998,7 +1196,6 @@ return {
 		label = 'Weed Lab Key',
 		weight = 100,
 		stack = true,
-		close = true,
 		description = 'Key for Weed Laboratory',
 		client = {
 			image = 'weed_lab_key.png',
@@ -1009,7 +1206,6 @@ return {
 		label = 'Meth Lab Key',
 		weight = 100,
 		stack = true,
-		close = true,
 		description = 'Key for Meth Laboratory',
 		client = {
 			image = 'meth_lab_key_black.png',
@@ -1019,7 +1215,6 @@ return {
 		label = 'Meth Lab Key',
 		weight = 100,
 		stack = true,
-		close = true,
 		description = 'Key for Meth Laboratory',
 		client = {
 			image = 'meth_lab_key.png',
@@ -1029,7 +1224,6 @@ return {
 		label = 'Meth Lab Key',
 		weight = 100,
 		stack = true,
-		close = true,
 		description = 'Key for Meth Laboratory',
 		client = {
 			image = 'meth_lab_key.png',
@@ -1039,7 +1233,6 @@ return {
 		label = 'Meth Lab Key',
 		weight = 100,
 		stack = true,
-		close = true,
 		description = 'Key for Meth Laboratory',
 		client = {
 			image = 'meth_lab_key.png',
@@ -1049,7 +1242,6 @@ return {
 		label = 'Meth Lab Key',
 		weight = 100,
 		stack = true,
-		close = true,
 		description = 'Key for Meth Laboratory',
 		client = {
 			image = 'meth_lab_key.png',
@@ -1059,7 +1251,6 @@ return {
 		label = 'Meth Lab Key',
 		weight = 100,
 		stack = true,
-		close = true,
 		description = 'Key for Meth Laboratory',
 		client = {
 			image = 'meth_lab_key.png',
@@ -1069,7 +1260,6 @@ return {
 		label = 'Meth Lab Key',
 		weight = 100,
 		stack = true,
-		close = true,
 		description = 'Key for Meth Laboratory',
 		client = {
 			image = 'meth_lab_key.png',
@@ -1079,7 +1269,6 @@ return {
 		label = 'Meth Lab Key',
 		weight = 100,
 		stack = true,
-		close = true,
 		description = 'Key for Meth Laboratory',
 		client = {
 			image = 'meth_lab_key.png',
@@ -1089,7 +1278,6 @@ return {
 		label = 'Meth Lab Key',
 		weight = 100,
 		stack = true,
-		close = true,
 		description = 'Key for Meth Laboratory',
 		client = {
 			image = 'meth_lab_key.png',
@@ -1100,7 +1288,6 @@ return {
 		label = 'Coke Lab Key',
 		weight = 100,
 		stack = true,
-		close = true,
 		description = 'Key for Coke Laboratory',
 		client = {
 			image = 'coke_lab_key_black.png',
@@ -1110,7 +1297,6 @@ return {
 		label = 'Coke Lab Key',
 		weight = 100,
 		stack = true,
-		close = true,
 		description = 'Key for Coke Laboratory',
 		client = {
 			image = 'coke_lab_key.png',
@@ -1120,7 +1306,6 @@ return {
 		label = 'Coke Lab Key',
 		weight = 100,
 		stack = true,
-		close = true,
 		description = 'Key for Coke Laboratory',
 		client = {
 			image = 'coke_lab_key.png',
@@ -1130,7 +1315,6 @@ return {
 		label = 'Coke Lab Key',
 		weight = 100,
 		stack = true,
-		close = true,
 		description = 'Key for Coke Laboratory',
 		client = {
 			image = 'coke_lab_key.png',
@@ -1140,7 +1324,7 @@ return {
 		label = 'Coke Lab Key',
 		weight = 100,
 		stack = true,
-		close = true,
+
 		description = 'Key for Coke Laboratory',
 		client = {
 			image = 'coke_lab_key.png',
@@ -1150,7 +1334,6 @@ return {
 		label = 'Coke Lab Key',
 		weight = 100,
 		stack = true,
-		close = true,
 		description = 'Key for Coke Laboratory',
 		client = {
 			image = 'coke_lab_key.png',
@@ -1160,7 +1343,6 @@ return {
 		label = 'Coke Lab Key',
 		weight = 100,
 		stack = true,
-		close = true,
 		description = 'Key for Coke Laboratory',
 		client = {
 			image = 'coke_lab_key.png',
@@ -1170,7 +1352,6 @@ return {
 		label = 'Coke Lab Key',
 		weight = 100,
 		stack = true,
-		close = true,
 		description = 'Key for Coke Laboratory',
 		client = {
 			image = 'coke_lab_key.png',
@@ -1180,7 +1361,6 @@ return {
 		label = 'Coke Lab Key',
 		weight = 100,
 		stack = true,
-		close = true,
 		description = 'Key for Coke Laboratory',
 		client = {
 			image = 'coke_lab_key.png',
@@ -1191,7 +1371,6 @@ return {
 		label = 'Money Laundry Lab Key',
 		weight = 100,
 		stack = true,
-		close = true,
 		description = 'Key for Money Laundry Laboratory',
 		client = {
 			image = 'money_laundry_lab_key_black.png',
@@ -1201,7 +1380,6 @@ return {
 		label = 'Money Laundry Lab Key',
 		weight = 100,
 		stack = true,
-		close = true,
 		description = 'Key for Money Laundry Laboratory',
 		client = {
 			image = 'money_laundry_lab_key.png',
@@ -1213,7 +1391,6 @@ return {
 		label = 'White Heist Card',
 		weight = 100,
 		stack = true,
-		close = true,
 		description = 'White Heist Card',
 		client = {
 			image = 'heist_card1.png',
@@ -1223,7 +1400,6 @@ return {
 		label = 'Green Heist Card',
 		weight = 100,
 		stack = true,
-		close = true,
 		description = 'Green Heist Card',
 		client = {
 			image = 'heist_card2.png',
@@ -1233,7 +1409,6 @@ return {
 		label = 'Orange Heist Card',
 		weight = 100,
 		stack = true,
-		close = true,
 		description = 'Orange Heist Card',
 		client = {
 			image = 'heist_card3.png',
@@ -1243,7 +1418,6 @@ return {
 		label = 'Blue Heist Card',
 		weight = 100,
 		stack = true,
-		close = true,
 		description = 'Blue Heist Card',
 		client = {
 			image = 'heist_card4.png',
@@ -1253,7 +1427,6 @@ return {
 		label = 'Purple Heist Card',
 		weight = 100,
 		stack = true,
-		close = true,
 		description = 'Purple Heist Card',
 		client = {
 			image = 'heist_card5.png',
@@ -1263,7 +1436,6 @@ return {
 		label = 'Red Heist Card',
 		weight = 100,
 		stack = true,
-		close = true,
 		description = 'Red Heist Card',
 		client = {
 			image = 'heist_card6.png',
@@ -1273,7 +1445,6 @@ return {
 		label = 'Black Heist Card',
 		weight = 100,
 		stack = true,
-		close = true,
 		description = 'Black Heist Card',
 		client = {
 			image = 'heist_card7.png',
@@ -1339,7 +1510,6 @@ return {
 		label = 'Medical Cannabis',
 		weight = 100,
 		stack = true,
-		allowArmed = false,
 		description = 'Medical Cannabis',
 		client = {
 			image = 'medical_cannabis.png',
@@ -1349,6 +1519,7 @@ return {
 		label = 'Firstaid Kit',
 		weight = 100,
 		stack = true,
+		close = true,
 		allowArmed = false,
 		description = 'Firstaid Kit',
 		client = {
@@ -1360,6 +1531,7 @@ return {
 		weight = 0,
 		stack = true,
 		close = true,
+		allowArmed = false,
 		description = 'Pain Killer',
 		client = {
 			image = 'painkiller.png',
@@ -1371,6 +1543,7 @@ return {
 		weight = 3000,
 		stack = true,
 		close = true,
+		allowArmed = false,
 		client = {
 			anim = { dict = 'mp_masks@standard_car@ds@', clip = 'put_on_mask' },
 			usetime = 1000
@@ -1382,6 +1555,7 @@ return {
 		weight = 0,
 		stack = false,
 		close = true,
+		allowArmed = false,
 		description = 'Official document verifying identity and personal information',
 		client = {
 			image = 'id_card.png',
@@ -1392,6 +1566,7 @@ return {
 		weight = 0,
 		stack = false,
 		close = true,
+		allowArmed = false,
 		description = 'Official document granting legal permission to operate a motor vehicle',
 		client = {
 			image = 'license_driver.png',
@@ -1402,6 +1577,7 @@ return {
 		weight = 0,
 		stack = false,
 		close = true,
+		allowArmed = false,
 		description = 'Official document granting legal permission to operate aircraft',
 		client = {
 			image = 'license_pilot.png',
@@ -1412,6 +1588,7 @@ return {
 		weight = 0,
 		stack = false,
 		close = true,
+		allowArmed = false,
 		description = 'Official permit allowing legal operation of a boat',
 		client = {
 			image = 'license_boating.png',
@@ -1422,6 +1599,7 @@ return {
 		weight = 0,
 		stack = false,
 		close = true,
+		allowArmed = false,
 		description = 'Legal permit for firearm possession',
 		client = {
 			image = 'license_weapon.png',
@@ -1432,6 +1610,7 @@ return {
 		weight = 0,
 		stack = false,
 		close = true,
+		allowArmed = false,
 		description = 'Official permit allowing legal hunting activities',
 		client = {
 			image = 'license_hunting.png',
@@ -1442,6 +1621,7 @@ return {
 		weight = 0,
 		stack = false,
 		close = true,
+		allowArmed = false,
 		description = 'Official permit allowing legal fishing activities',
 		client = {
 			image = 'license_fishing.png',
@@ -1452,6 +1632,7 @@ return {
 		weight = 0,
 		stack = false,
 		close = true,
+		allowArmed = false,
 		description = 'Official badge of official authority and service',
 		client = {
 			image = 'badge_government.png',
@@ -1462,6 +1643,7 @@ return {
 		weight = 0,
 		stack = false,
 		close = true,
+		allowArmed = false,
 		description = 'Official badge granting law enforcement authority',
 		client = {
 			image = 'badge_police.png',
@@ -1472,6 +1654,7 @@ return {
 		weight = 0,
 		stack = false,
 		close = true,
+		allowArmed = false,
 		description = 'Official badge symbolizes courage and service',
 		client = {
 			image = 'badge_firefighter.png',
@@ -1482,6 +1665,7 @@ return {
 		weight = 0,
 		stack = false,
 		close = true,
+		allowArmed = false,
 		description = 'Official badge grants access and identifies medical personnel.',
 		client = {
 			image = 'badge_hospital.png',
@@ -1492,6 +1676,7 @@ return {
 		weight = 0,
 		stack = false,
 		close = true,
+		allowArmed = false,
 		description = 'Official badge of judicial authority',
 		client = {
 			image = 'badge_judge.png',
@@ -1502,6 +1687,7 @@ return {
 		weight = 0,
 		stack = false,
 		close = true,
+		allowArmed = false,
 		description = 'Official badge of legal expertise and advocacy.',
 		client = {
 			image = 'badge_lawyer.png',
@@ -1513,6 +1699,7 @@ return {
 		weight = 2000,
 		stack = false,
 		close = true,
+		allowArmed = false,
 		description = '',
 		client = {
 			image = 'laptop.png',
@@ -1532,7 +1719,6 @@ return {
 		label = 'Black USB',
 		weight = 50,
 		stack = true,
-		close = true,
 		description = '',
 		client = {
 			image = 'black_usb.png',
@@ -1542,7 +1728,6 @@ return {
 		label = 'Pendrive',
 		weight = 50,
 		stack = false,
-		close = false,
 		description = 'Can store personal data',
 		client = {
 			image = 'pendrive.png',
@@ -1553,7 +1738,6 @@ return {
 		label = 'USB Dongle',
 		weight = 50,
 		stack = false,
-		close = true,
 		description = '',
 		client = {
 			image = 'dongle.png',
@@ -1563,7 +1747,6 @@ return {
 		label = 'VPN',
 		weight = 50,
 		stack = true,
-		close = false,
 		description = '',
 		client = {
 			image = 'vpn.png',
@@ -1574,6 +1757,7 @@ return {
 		weight = 150,
 		stack = true,
 		close = true,
+		allowArmed = false,
 		description = '',
 		client = {
 			image = 'transponder.png',
@@ -1584,6 +1768,7 @@ return {
 		weight = 150,
 		stack = true,
 		close = true,
+		allowArmed = false,
 		description = '',
 		client = {
 			image = 'hacking_device.png',
@@ -1595,6 +1780,7 @@ return {
 		weight = 100,
 		stack = true,
 		close = true,
+		allowArmed = false,
 		description = 'A camera',
 		client = {
 			image = 'gopro.png',
@@ -1605,6 +1791,7 @@ return {
 		weight = 250,
 		stack = true,
 		close = true,
+		allowArmed = false,
 		description = 'Security Cam',
 		client = {
 			image = 'security_cam.png',
@@ -1615,6 +1802,7 @@ return {
 		weight = 150,
 		stack = true,
 		close = true,
+		allowArmed = false,
 		description = 'Cam Jammer',
 		client = {
 			image = 'cam_jammer.png',
@@ -1626,6 +1814,7 @@ return {
 		weight = 1,
 		stack = true,
 		close = true,
+		allowArmed = false,
 		description = '',
 		client = {
 			image = 'spray.png',
@@ -1675,7 +1864,9 @@ return {
 	['phone'] = {
 		label = 'Phone',
 		weight = 100,
-		stack = false,
+		stack = true,
+		close = true,
+		allowArmed = false,
 		consume = 0,
 		client = {
 			export = 'lb-phone.UsePhoneItem',
@@ -1692,6 +1883,7 @@ return {
 		weight = 120,
 		stack = true,
 		close = true,
+		allowArmed = false,
 		client = {
 			anim = {dict = 'cellphone@', clip = 'cellphone_text_read_base'},
 			usetime = 3500
@@ -1722,6 +1914,7 @@ return {
 		weight = 0,
 		stack = false,
 		close = true,
+		allowArmed = false,
 		description = 'A Jerrycan to carry Fuel with you',
 		client = {
 			image = 'jerrycan.png',
@@ -1732,6 +1925,7 @@ return {
 		weight = 0,
 		stack = false,
 		close = true,
+		allowArmed = false,
 		description = 'EV Charger',
 		client = {
 			image = 'power_bank_vehicle.png',
@@ -1743,6 +1937,7 @@ return {
 		weight = 250,
 		stack = true,
 		close = true,
+		allowArmed = false,
 		description = 'Spray can that can be used to draw on walls',
 		client = {
 			image = 'spray_can.png',
@@ -1753,6 +1948,7 @@ return {
 		weight = 250,
 		stack = true,
 		close = true,
+		allowArmed = false,
 		description = 'Rag that can be used to remove spray',
 		client = {
 			image = 'spray_rag.png',
@@ -1765,6 +1961,15 @@ return {
 		weight = 50,
 		stack = false,
 		description = 'Your Vehicle Key',
+		client = {
+			image = 'vehiclekey.png',
+		}
+	},
+	['tempvehiclekey'] = {
+		label = 'Temporary Vehicle Key',
+		weight = 50,
+		stack = false,
+		description = 'Your Temporary Vehicle Key',
 		client = {
 			image = 'vehiclekey.png',
 		}
@@ -1786,6 +1991,7 @@ return {
 		weight = 3000,
 		stack = false,
 		close = true,
+		allowArmed = false,
 		client = {
 			anim = { dict = 'clothingshirt', clip = 'try_shirt_positive_d' },
 			usetime = 3500
@@ -1796,6 +2002,7 @@ return {
 		weight = 3000,
 		stack = false,
 		close = true,
+		allowArmed = false,
 		client = {
 			anim = { dict = 'clothingshirt', clip = 'try_shirt_positive_d' },
 			usetime = 3500
@@ -1806,6 +2013,7 @@ return {
 		weight = 3000,
 		stack = false,
 		close = true,
+		allowArmed = false,
 		client = {
 			anim = { dict = 'clothingshirt', clip = 'try_shirt_positive_d' },
 			usetime = 3500
@@ -1816,6 +2024,8 @@ return {
 		weight = 3000,
 		stack = false,
 		close = true,
+		allowArmed = false,
+		close = true,
 		client = {
 			anim = { dict = 'clothingshirt', clip = 'try_shirt_positive_d' },
 			usetime = 3500
@@ -1825,6 +2035,8 @@ return {
         label = 'GPS Tracker',
         weight = 1000,
         stack = false,
+		close = true,
+		allowArmed = false,
         consume = 0,
         server = {
             export = 'Renewed-Dutyblips.toggleItem'
@@ -2769,7 +2981,6 @@ return {
 		label = 'Apple Syrup',
 		weight = 150,
 		stack = true,
-		close = true,
 		description = 'Apple Syrup',
 		client = {
 			image = 'syrup_apple.png',
@@ -2779,7 +2990,6 @@ return {
 		label = 'Orange Syrup',
 		weight = 150,
 		stack = true,
-		close = true,
 		description = 'Orange Syrup',
 		client = {
 			image = 'syrup_orange.png',
@@ -2789,7 +2999,6 @@ return {
 		label = 'Lime Syrup',
 		weight = 150,
 		stack = true,
-		close = true,
 		description = 'Lime Syrup',
 		client = {
 			image = 'syrup_lime.png',
@@ -2799,7 +3008,6 @@ return {
 		label = 'Peach Syrup',
 		weight = 150,
 		stack = true,
-		close = true,
 		description = 'Peach Syrup',
 		client = {
 			image = 'syrup_peach.png',
@@ -2809,7 +3017,6 @@ return {
 		label = 'Pomegranate Syrup',
 		weight = 150,
 		stack = true,
-		close = true,
 		description = 'Pomegranate Syrup',
 		client = {
 			image = 'syrup_pomegranate.png',
@@ -2819,7 +3026,6 @@ return {
 		label = 'Pineapple Syrup',
 		weight = 150,
 		stack = true,
-		close = true,
 		description = 'Pineapple Syrup',
 		client = {
 			image = 'syrup_pineapple.png',
@@ -2829,7 +3035,6 @@ return {
 		label = 'Sugar Cane Syrup',
 		weight = 150,
 		stack = true,
-		close = true,
 		description = 'Sugar Cane Syrup',
 		client = {
 			image = 'syrup_sugar_cane.png',
@@ -2840,6 +3045,8 @@ return {
 		label = 'Mojito',
 		weight = 250,
 		stack = true,
+		close = true,
+		allowArmed = false,
 		description = 'Mojito Cocktail',
 		client = {
 			image = 'cocktail_mojito.png',
@@ -2850,6 +3057,8 @@ return {
 		label = 'Mimosa',
 		weight = 250,
 		stack = true,
+		close = true,
+		allowArmed = false,
 		description = 'Mimosa Cocktail',
 		client = {
 			image = 'cocktail_mimosa.png',
@@ -2860,6 +3069,8 @@ return {
 		label = 'Moscow Mule',
 		weight = 250,
 		stack = true,
+		close = true,
+		allowArmed = false,
 		description = 'Moscow Mule Cocktail',
 		client = {
 			image = 'cocktail_moscowmule.png',
@@ -2870,6 +3081,8 @@ return {
 		label = 'Bellini',
 		weight = 250,
 		stack = true,
+		close = true,
+		allowArmed = false,
 		description = 'Bellini Cocktail',
 		client = {
 			image = 'cocktail_bellini.png',
@@ -2877,10 +3090,12 @@ return {
 		},
 	},
 	['cocktail_pinacolada'] = {
-		label = 'Piña Colada',
+		label = 'Pina Colada',
 		weight = 250,
 		stack = true,
-		description = 'Piña Colada Cocktail',
+		close = true,
+		allowArmed = false,
+		description = 'Pina Colada Cocktail',
 		client = {
 			image = 'cocktail_pinacolada.png',
 			event = 'ss_consumable:client:useItem',
@@ -2890,6 +3105,8 @@ return {
 		label = 'Martini',
 		weight = 250,
 		stack = true,
+		close = true,
+		allowArmed = false,
 		description = 'Martini Cocktail',
 		client = {
 			image = 'cocktail_pomegranate.png',
@@ -2901,6 +3118,7 @@ return {
 		weight = 150,
 		stack = true,
 		close = true,
+		allowArmed = false,
 		description = 'Mulled Wine',
 		client = {
 			image = 'mulled_wine.png',
@@ -2912,6 +3130,7 @@ return {
 		weight = 150,
 		stack = true,
 		close = true,
+		allowArmed = false,
 		description = 'Corona Beer',
 		client = {
 			image = 'beer_corona.png',
@@ -2923,6 +3142,7 @@ return {
 		weight = 150,
 		stack = true,
 		close = true,
+		allowArmed = false,
 		description = 'Medalla Beer',
 		client = {
 			image = 'beer_medalla.png',
@@ -2934,6 +3154,7 @@ return {
 		weight = 150,
 		stack = true,
 		close = true,
+		allowArmed = false,
 		description = 'Heineken Beer',
 		client = {
 			image = 'beer_heineken.png',
@@ -2945,6 +3166,7 @@ return {
 		weight = 150,
 		stack = true,
 		close = true,
+		allowArmed = false,
 		description = 'Rum',
 		client = {
 			image = 'rum.png',
@@ -2956,6 +3178,7 @@ return {
 		weight = 150,
 		stack = true,
 		close = true,
+		allowArmed = false,
 		description = 'Whiskey',
 		client = {
 			image = 'whiskey.png',
@@ -2967,6 +3190,7 @@ return {
 		weight = 150,
 		stack = true,
 		close = true,
+		allowArmed = false,
 		description = 'Vodka',
 		client = {
 			image = 'vodka.png',
@@ -2978,6 +3202,7 @@ return {
 		weight = 150,
 		stack = true,
 		close = true,
+		allowArmed = false,
 		description = 'Tequila',
 		client = {
 			image = 'tequila.png',
@@ -2989,6 +3214,7 @@ return {
 		weight = 150,
 		stack = true,
 		close = true,
+		allowArmed = false,
 		description = 'Red Wine',
 		client = {
 			image = 'red_wine.png',
@@ -3000,6 +3226,7 @@ return {
 		weight = 150,
 		stack = true,
 		close = true,
+		allowArmed = false,
 		description = 'White Wine',
 		client = {
 			image = 'white_wine.png',
@@ -3012,6 +3239,7 @@ return {
 		weight = 250,
 		stack = true,
 		close = true,
+		allowArmed = false,
 		description = 'Coffee',
 		client = {
 			image = 'coffee.png',
@@ -3023,6 +3251,7 @@ return {
 		weight = 250,
 		stack = true,
 		close = true,
+		allowArmed = false,
 		description = 'Cappuccino',
 		client = {
 			image = 'cappuccino.png',
@@ -3034,6 +3263,7 @@ return {
 		weight = 250,
 		stack = true,
 		close = true,
+		allowArmed = false,
 		description = 'Tea',
 		client = {
 			image = 'tea.png',
@@ -3045,6 +3275,7 @@ return {
 		weight = 250,
 		stack = true,
 		close = true,
+		allowArmed = false,
 		description = 'Vanilla Milkshake',
 		client = {
 			image = 'milkshake_vanilla.png',
@@ -3056,6 +3287,7 @@ return {
 		weight = 100,
 		stack = true,
 		close = true,
+		allowArmed = false,
 		description = 'Chocolate Milkshake',
 		client = {
 			image = 'milkshake_chocolate.png',
@@ -3067,6 +3299,7 @@ return {
 		weight = 100,
 		stack = true,
 		close = true,
+		allowArmed = false,
 		description = 'Pineapple Juice',
 		client = {
 			image = 'juice_pineapple.png',
@@ -3078,6 +3311,7 @@ return {
 		weight = 100,
 		stack = true,
 		close = true,
+		allowArmed = false,
 		description = 'Lime Juice',
 		client = {
 			image = 'juice_lime.png',
@@ -3089,6 +3323,7 @@ return {
 		weight = 100,
 		stack = true,
 		close = true,
+		allowArmed = false,
 		description = 'Peach Juice',
 		client = {
 			image = 'juice_peach.png',
@@ -3100,6 +3335,7 @@ return {
 		weight = 20,
 		stack = true,
 		close = true,
+		allowArmed = false,
 		description = 'Croissant',
 		client = {
 			image = 'croissant.png',
@@ -3111,6 +3347,7 @@ return {
 		weight = 10,
 		stack = true,
 		close = true,
+		allowArmed = false,
 		description = 'Macaron',
 		client = {
 			image = 'macaron.png',
@@ -3122,6 +3359,7 @@ return {
 		weight = 30,
 		stack = true,
 		close = true,
+		allowArmed = false,
 		description = 'Strawberry Donut',
 		client = {
 			image = 'strawberry_donut.png',
@@ -3133,6 +3371,7 @@ return {
 		weight = 30,
 		stack = true,
 		close = true,
+		allowArmed = false,
 		description = 'Chocolate Donut',
 		client = {
 			image = 'chocolate_donut.png',
@@ -3144,7 +3383,6 @@ return {
 		label = 'Macaron Batter',
 		weight = 100,
 		stack = true,
-		close = true,
 		description = 'Macaron Batter',
 		client = {
 			image = 'macaron_batter.png',
@@ -3154,7 +3392,6 @@ return {
 		label = 'Croissant Dough',
 		weight = 200,
 		stack = true,
-		close = true,
 		description = 'Croissant Dough',
 		client = {
 			image = 'croissant_dough.png',
@@ -3164,7 +3401,6 @@ return {
 		label = 'Donut Dough',
 		weight = 300,
 		stack = true,
-		close = true,
 		description = 'Donut Dough',
 		client = {
 			image = 'donut_dough.png',
@@ -3174,7 +3410,6 @@ return {
 		label = 'Coffee Powder',
 		weight = 100,
 		stack = true,
-		close = true,
 		description = 'Coffee Powder',
 		client = {
 			image = 'coffee_powder.png',
@@ -3184,7 +3419,6 @@ return {
 		label = 'Bottle of Orange Juice',
 		weight = 100,
 		stack = true,
-		close = true,
 		description = 'Bottle of Orange Juice',
 		client = {
 			image = 'bottled_orange_juice.png',
@@ -3194,7 +3428,6 @@ return {
 		label = 'Pomegranate Seeds',
 		weight = 100,
 		stack = true,
-		close = true,
 		description = 'Pomegranate Seeds',
 		client = {
 			image = 'pomegranate_seeds.png',
@@ -3204,7 +3437,6 @@ return {
 		label = 'Sliced Apple',
 		weight = 100,
 		stack = true,
-		close = true,
 		description = 'Sliced Apple',
 		client = {
 			image = 'sliced_apple.png',
@@ -3214,7 +3446,6 @@ return {
 		label = 'Sliced Orange',
 		weight = 100,
 		stack = true,
-		close = true,
 		description = 'Sliced Orange',
 		client = {
 			image = 'sliced_orange.png',
@@ -3224,7 +3455,6 @@ return {
 		label = 'Sliced Lime',
 		weight = 100,
 		stack = true,
-		close = true,
 		description = 'Sliced Lime',
 		client = {
 			image = 'sliced_lime.png',
@@ -3234,7 +3464,6 @@ return {
 		label = 'Sliced Peach',
 		weight = 100,
 		stack = true,
-		close = true,
 		description = 'Sliced Peach',
 		client = {
 			image = 'sliced_peach.png',
@@ -3244,7 +3473,6 @@ return {
 		label = 'Sliced Pineapple',
 		weight = 100,
 		stack = true,
-		close = true,
 		description = 'Sliced Pineapple',
 		client = {
 			image = 'sliced_pineapple.png',
@@ -3254,7 +3482,6 @@ return {
 		label = 'Ice Cubes',
 		weight = 100,
 		stack = true,
-		close = true,
 		description = 'Ice Cubes',
 		client = {
 			image = 'ice_cubes.png',
@@ -3264,7 +3491,6 @@ return {
 		label = 'Vanilla Syrup',
 		weight = 150,
 		stack = true,
-		close = true,
 		description = 'Vanilla Syrup',
 		client = {
 			image = 'syrup_vanilla.png',
@@ -3274,7 +3500,6 @@ return {
 		label = 'Chocolate Syrup',
 		weight = 150,
 		stack = true,
-		close = true,
 		description = 'Chocolate Syrup',
 		client = {
 			image = 'syrup_chocolate.png',
@@ -3284,7 +3509,6 @@ return {
 		label = 'Pack Vanilla Icecream',
 		weight = 150,
 		stack = true,
-		close = true,
 		description = 'Pack Vanilla Icecream',
 		client = {
 			image = 'icecream_vanilla_pack.png',
@@ -3294,7 +3518,6 @@ return {
 		label = 'Pack Chocolate Icecream',
 		weight = 150,
 		stack = true,
-		close = true,
 		description = 'Pack Chocolate Icecream',
 		client = {
 			image = 'icecream_chocolate_pack.png',
@@ -3307,6 +3530,7 @@ return {
 		weight = 250,
 		stack = true,
 		close = true,
+		allowArmed = false,
 		description = 'Chicken Burger',
 		client = {
 			image = 'burger_chicken.png',
@@ -3318,6 +3542,7 @@ return {
 		weight = 250,
 		stack = true,
 		close = true,
+		allowArmed = false,
 		description = 'Beef Burger',
 		client = {
 			image = 'burger_beef.png',
@@ -3329,6 +3554,7 @@ return {
 		weight = 250,
 		stack = true,
 		close = true,
+		allowArmed = false,
 		description = 'French Fries',
 		client = {
 			image = 'french_fries.png',
@@ -3406,6 +3632,7 @@ return {
 		weight = 250,
 		stack = true,
 		close = true,
+		allowArmed = false,
 		description = 'Chicken Pizza',
 		client = {
 			image = 'pizza_chicken.png',
@@ -3417,6 +3644,7 @@ return {
 		weight = 250,
 		stack = true,
 		close = true,
+		allowArmed = false,
 		description = 'Beef Pizza',
 		client = {
 			image = 'pizza_beef.png',
@@ -3428,6 +3656,7 @@ return {
 		weight = 250,
 		stack = true,
 		close = true,
+		allowArmed = false,
 		description = 'Onion Rings',
 		client = {
 			image = 'onion_rings.png',
@@ -3539,6 +3768,7 @@ return {
 		weight = 250,
 		stack = true,
 		close = true,
+		allowArmed = false,
 		description = 'Cup of Sprite',
 		client = {
 			image = 'soda_sprite_cup.png',
@@ -3550,6 +3780,7 @@ return {
 		weight = 250,
 		stack = true,
 		close = true,
+		allowArmed = false,
 		description = 'Cup of 7UP',
 		client = {
 			image = 'soda_sevenup_cup.png',
@@ -3561,6 +3792,7 @@ return {
 		weight = 250,
 		stack = true,
 		close = true,
+		allowArmed = false,
 		description = 'Cup of Cocacola',
 		client = {
 			image = 'soda_cocacola_cup.png',
@@ -3595,7 +3827,7 @@ return {
 			image = 'ground_beef.png',
 		},
 	},
-	-- ss_vehicleinsurance
+	-- ss_vehicleinsurance (NOT IN USE)
 	['vehicle_insurance'] = {
 		label = 'Vehicle Insurance',
 		weight = 100,
@@ -3609,6 +3841,8 @@ return {
 		label = 'Advanced Repairkit',
 		weight = 3000,
 		stack = true,
+		close = true,
+		allowArmed = false,
 		description = 'A nice toolbox with stuff to repair your vehicle',
 		client = {
 			image = 'toolsbox.png',
@@ -3619,6 +3853,8 @@ return {
 		label = 'Welding Tool',
 		weight = 1000,
 		stack = true,
+		close = true,
+		allowArmed = false,
 		description = 'A welding tool to repair your vehicle body',
 		client = {
 			image = 'weldingtool.png',
@@ -3628,7 +3864,9 @@ return {
 	['platform_tablet'] = {
 		label = 'Platform Tablet',
 		weight = 500,
-		stack = false,
+		stack = true,
+		close = true,
+		allowArmed = false,
 		description = 'Platform Tablet to customize your vehicle',
 		client = {
 			image = 'platform_tablet.png',
@@ -3640,6 +3878,7 @@ return {
 		weight = 1000,
 		stack = true,
 		close = true,
+		allowArmed = false,
 		description = 'Super Absorbent Shammy Towel for Car',
 		client = {
 			image = 'shammy_towel.png',
@@ -3650,6 +3889,7 @@ return {
 		weight = 1000,
 		stack = true,
 		close = true,
+		allowArmed = false,
 		description = 'A vehicle window to repair your vehicle',
 		client = {
 			image = 'repairkit.png',
@@ -3686,8 +3926,9 @@ return {
 	['bodycam'] = {
 		label = 'Bodycam',
 		weight = 100,
-		stack = true,
+		stack = false,
 		close = true,
+		allowArmed = false,
 		description = 'Bodycam',
 		client = {
 			image = 'bodycam.png',
@@ -3696,8 +3937,9 @@ return {
 	['dashcam'] = {
 		label = 'Dashcam',
 		weight = 100,
-		stack = true,
+		stack = false,
 		close = true,
+		allowArmed = false,
 		description = 'Dashcam',
 		client = {
 			image = 'dashcam.png',
@@ -3706,8 +3948,9 @@ return {
 	['handcuffs'] = {
 		label = 'Handcuff',
 		weight = 100,
-		stack = true,
+		stack = false,
 		close = true,
+		allowArmed = false,
 		description = 'Comes in handy when people misbehave. Maybe it can be used for something else?',
 		client = {
             event = 'ss_playerinteraction:client:usecuff',
@@ -3717,8 +3960,9 @@ return {
 	['handcuffs_key'] = {
 		label = 'Handcuffs Key',
 		weight = 100,
-		stack = true,
+		stack = false,
 		close = true,
+		allowArmed = false,
 		description = 'Handcuffs Keys',
 		client = {
             event = 'ss_playerinteraction:client:useuncuff',
@@ -3747,6 +3991,8 @@ return {
 		label = 'Finger Prints Scanner',
 		weight = 100,
 		stack = false,
+		close = true,
+		allowArmed = false,
 		description = 'Finger Prints Scanner',
 		client = {
 			image = 'finger_scanner.png',
@@ -3755,8 +4001,9 @@ return {
 	['jammer'] = {
 		label = 'Jammer',
 		weight = 2500,
-		stack = true,
+		stack = false,
 		close = true,
+		allowArmed = false,
 		description = 'Radio Signal Jammer',
 		client = {
 			image = 'jammer.png',
@@ -3765,7 +4012,7 @@ return {
 	['warrant_apartment'] = {
 		label = 'Search Warrant',
 		weight = 2500,
-		stack = true,
+		stack = false,
 		description = 'Search Apartment Warrant',
 		client = {
 			image = 'warrant.png',
@@ -3774,7 +4021,7 @@ return {
 	['warrant_warehouse'] = {
 		label = 'Search Warrant',
 		weight = 2500,
-		stack = true,
+		stack = false,
 		description = 'Search Warehouse Warrant',
 		client = {
 			image = 'warrant.png',
@@ -3783,7 +4030,7 @@ return {
 	['warrant_lab'] = {
 		label = 'Search Warrant',
 		weight = 2500,
-		stack = true,
+		stack = false,
 		description = 'Search Lab Warrant',
 		client = {
 			image = 'warrant.png',
@@ -3792,10 +4039,38 @@ return {
 	['inmate_visit_permission'] = {
 		label = 'Visit Permission',
 		weight = 2500,
-		stack = true,
+		stack = false,
 		description = 'Inmate Visit Permission',
 		client = {
 			image = 'inmate_visit_permission.png',
+		}
+	},
+	['nightvision'] = {
+		label = 'Night Vision Gadget',
+		weight = 100,
+		stack = false,
+		close = true,
+		allowArmed = false,
+		description = 'Night Vision Gadget',
+		client = {
+			image = 'nightvision.png',
+			remove = function()
+				TriggerEvent('ss_policejob:removedNightVision')
+			end,
+		}
+	},
+	['helmet_flashlight'] = {
+		label = 'Helmet Flashlight',
+		weight = 100,
+		stack = false,
+		close = true,
+		allowArmed = false,
+		description = 'Helmet Flashlight',
+		client = {
+			image = 'helmet_flashlight.png',
+			remove = function()
+				TriggerEvent('ss_policejob:turnOffFlashLight')
+			end,
 		}
 	},
 	-- ss_jail
@@ -3804,6 +4079,7 @@ return {
 		weight = 250,
 		stack = true,
 		close = true,
+		allowArmed = false,
 		description = 'Beans Bowl',
 		client = {
 			image = 'beans_bowl.png',
@@ -3814,32 +4090,10 @@ return {
 		label = 'Jail Coin',
 		weight = 10,
 		stack = true,
-		close = true,
 		description = 'Jail Coin',
 		client = {
 			image = 'jail_coin.png',
 		},
-	},
-	-- ss_firefighterjob
-	['hose'] = {
-		label = 'Water Hose',
-		weight = 2500,
-		stack = true,
-		close = true,
-		description = 'Water Hose',
-		client = {
-			image = 'hose.png',
-		}
-	},
-	['watertank'] = {
-		label = 'Water Tank',
-		weight = 2500,
-		stack = true,
-		close = true,
-		description = 'Water Tank',
-		client = {
-			image = 'watertank.png',
-		}
 	},
 	-- ss_courierjob
 	['soda_box'] = {
@@ -3932,10 +4186,13 @@ return {
 			image = 'toothpaste_box.png',
 		}
 	},
+	-- Chalk Boards
 	['chalkboard1'] = {
 		label = 'Chalkboard - Floor Stand',
 		weight = 5000,
 		stack = false,
+		close = true,
+		allowArmed = false,
 		description = 'A chalkboard on a stand.',
 		client = {
 			image = 'chalkboard1.png',
@@ -3945,6 +4202,8 @@ return {
 		label = 'Chalkboard - Wall Mount',
 		weight = 5000,
 		stack = false,
+		close = true,
+		allowArmed = false,
 		description = 'A chalkboard mounted to a wall.',
 		client = {
 			image = 'chalkboard2.png',
@@ -3954,6 +4213,8 @@ return {
 		label = 'Chalkboard - Square',
 		weight = 5000,
 		stack = false,
+		close = true,
+		allowArmed = false,
 		description = 'A square chalkboard.',
 		client = {
 			image = 'chalkboard3.png',
@@ -3963,6 +4224,8 @@ return {
 		label = 'Chalkboard - Vertical Frameless',
 		weight = 5000,
 		stack = false,
+		close = true,
+		allowArmed = false,
 		description = 'A frameless vertical chalkboard.',
 		client = {
 			image = 'chalkboard4.png',
@@ -3981,8 +4244,9 @@ return {
 	['payment_terminal'] = {
 		label = 'Receipt Printer',
 		weight = 2000,
-		stack = false,
+		stack = true,
 		close = true,
+		allowArmed = false,
 		description = 'A handy device for printing receipts on-the-go!',
 		client = {
 			image = 'payment_terminal.png',
@@ -4113,6 +4377,7 @@ return {
 		weight = 500,
 		stack = false,
 		close = true,
+		allowArmed = false,
 		description = 'Notepad for writing and note',
 		client = {
 			image = 'notepad.png',
@@ -4124,6 +4389,7 @@ return {
 		weight = 50,
 		stack = false,
 		close = true,
+		allowArmed = false,
 		description = 'Notepad page for writing and note',
 		client = {
 			image = 'notepadpage.png',
