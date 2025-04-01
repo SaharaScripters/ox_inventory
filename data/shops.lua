@@ -67,33 +67,58 @@ return {
 		name = 'DGSN Armory',
 		groups = shared.police,
 		inventory = {
-			{ name = 'bodycam', price = 10, grade = 8 },
-			{ name = 'dashcam', price = 10, grade = 8 },
-			{ name = 'nightvision', price = 10, grade = 8 },
-			{ name = 'helmet_flashlight', price = 10, grade = 8 },
-			{ name = 'gps_tracker', price = 10, grade = 8 },
-			{ name = 'finger_scanner', price = 10, grade = 8 },
-			{ name = 'jammer', price = 10, grade = 8 },
-			{ name = 'ammo-9', price = 1, grade = 8 },
-			{ name = 'ammo-rifle', price = 1, grade = 8 },
-			{ name = 'handcuffs', price = 10, grade = 8 },
-			{ name = 'handcuffs_key', price = 10, grade = 8 },
+			--{ name = 'bodycam', price = 10, grade = 8 },
+			--{ name = 'dashcam', price = 10, grade = 8 },
+			{ name = 'nightvision', price = 100, grade = 8 },
+			{ name = 'helmet_flashlight', price = 50, grade = 8 },
+			{ name = 'gps_tracker', price = 100, grade = 8 },
+			{ name = 'finger_scanner', price = 100, grade = 8 },
+			{ name = 'jammer', price = 500, grade = 8 },
+			{ name = 'handcuffs', price = 100, grade = 8 },
+			{ name = 'handcuffs_key', price = 50, grade = 8 },
 			{ name = 'tint_army', price = 200, grade = 8 },
 			{ name = 'tint_police', price = 200, grade = 8 },
 			{ name = 'policehcarmour', price = 200, grade = 8 },
 			{ name = 'policearmour', price = 200, grade = 8 },
 			{ name = 'policebriarmour', price = 200, grade = 8 },
-			{ name = 'warrant_apartment', price = 200, grade = 8 },
-			{ name = 'warrant_warehouse', price = 200, grade = 8 },
-			{ name = 'warrant_lab', price = 200, grade = 8 },
+			{ name = 'warrant_apartment', price = 10, grade = 8 },
+			{ name = 'warrant_warehouse', price = 10, grade = 8 },
+			{ name = 'warrant_lab', price = 10, grade = 8 },
 			{ name = 'inmate_visit_permission', price = 200, grade = 8 },
 			{ name = 'WEAPON_FLASHLIGHT', price = 200, grade = 8 },
+			{ name = 'uv_flashlight', price = 100, grade = 8 },
+			{ name = 'gsrkit', price = 100, grade = 8 },
+			{ name = 'badge_police', price = 50, grade = 8 },
+			{ name = 'mdt', price = 50, grade = 8 },
+			{ name = 'armband', price = 200, grade = 8 },
+			{ name = 'ammo-9', price = 1, grade = 8 },
+			{ name = 'ammo-shotgun', price = 2, grade = 8 },
+			{ name = 'ammo-rifle', price = 3, grade = 8 },
 			{ name = 'WEAPON_NIGHTSTICK', price = 100, grade = 8 },
-			{ name = 'WEAPON_PISTOL', price = 500, metadata = { registered = true, serial = 'DGSN' }, grade = 8 },
-			{ name = 'WEAPON_CARBINERIFLE', price = 1000, metadata = { registered = true, serial = 'DGSN' }, grade = 8 },
 			{ name = 'WEAPON_STUNGUN', price = 500, metadata = { registered = true, serial = 'DGSN'}, grade = 8 },
+			{ name = 'WEAPON_PISTOL', price = 1500, metadata = { registered = true, serial = 'DGSN' }, grade = 8 },
+			{ name = 'WEAPON_SMG', price = 2000, metadata = { registered = true, serial = 'DGSN' }, grade = 8 },
+			{ name = 'WEAPON_PUMPSHOTGUN', price = 2500, metadata = { registered = true, serial = 'DGSN' }, grade = 8 },
+			{ name = 'WEAPON_CARBINERIFLE', price = 3000, metadata = { registered = true, serial = 'DGSN' }, grade = 8 },
 		}, locations = {
 			vec3(-306.11, -1061.20, 28.34),
+		}
+		--[[targets = {
+            {
+                ped = `s_m_y_cop_01`,
+                scenario = 'WORLD_HUMAN_COP_IDLES',
+                loc = vec3(-306.11, -1061.20, 27.34),
+                heading = 337,
+            },
+		}--]]
+	},
+	CHUShop = {
+		name = 'CHU Shop',
+		groups = shared.ambulance,
+		inventory = {
+			{ name = 'chu_visitor_pass', price = 5, grade = 4 },
+		}, locations = {
+			vector3(-674.36, 338.51, 83.08),
 		}
 		--[[targets = {
             {
@@ -128,13 +153,15 @@ return {
 	ConvenienceStore = {
 		name = 'Convenience Store',
         blip = {id = 827, colour = 69, scale = 0.5},
-		groups = {['blackpan'] = 0, ['burgershot'] = 0, ['dahab'] = 0, ['carrion'] = 0, ['chillspot'] = 0, ['club77'] = 0, ['ibiza'] = 0, ['unicorn'] = 0, ['vazou'] = 0},
+		groups = {['blackpan'] = 0, ['burgershot'] = 0, ['dahab'] = 0, ['carrion'] = 0, ['chillspot'] = 0, ['club77'] = 0, ['ibiza'] = 0, ['unicorn'] = 0, ['vazou'] = 0, ['farmer'] = 0},
 		inventory = {
-			{ name = 'soda_sevenup', price = 20 },
-			{ name = 'soda_cocacola', price = 20 },
-			{ name = 'soda_sprite', price = 20 },
-			{ name = 'icecream_vanilla_pack', price = 20 },
-			{ name = 'icecream_chocolate_pack', price = 20 },
+			{ name = 'soda_sevenup', price = 73 },
+			{ name = 'soda_cocacola', price = 73 },
+			{ name = 'soda_sprite', price = 73 },
+			{ name = 'icecream_vanilla_pack', price = 15 },
+			{ name = 'icecream_chocolate_pack', price = 15 },
+			{ name = 'syrup_vanilla', price = 15 },
+			{ name = 'syrup_chocolate', price = 15 },
 			{ name = 'kitchen_knife', price = 10 },
 			{ name = 'water_cooking', price = 10 },
 		}, locations = {
@@ -156,6 +183,23 @@ return {
 			{name = 'water', price = 1, currency = 'jail_coin'},
 		}, locations = {
 			vec3(1780.58, 2559.07, 45.67),
+		}
+		--[[targets = {
+            {
+                ped = `s_m_y_chef_01`,
+                scenario = 'WORLD_HUMAN_DRUG_DEALER',
+                loc = vec3(1784.13, 2559.02, 44.67),
+                heading = 96.0,
+            },
+		}--]]
+	},
+	BlackShop = {
+		name = 'Black Shop',
+		groups = {['black'] = 0},
+		inventory = {
+			{name = 'WEAPON_BAT', price = 1}
+		}, locations = {
+			vector3(2570.37, 299.23, 108.73),
 		}
 		--[[targets = {
             {

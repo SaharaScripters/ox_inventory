@@ -327,7 +327,7 @@ return {
 	['remotecontrol'] = {
 		label = 'Remote Control',
 		weight = 250,
-		stack = false,
+		stack = true,
 		close = true,
 		allowArmed = false,
 		description = 'TV Remote Control',
@@ -464,7 +464,7 @@ return {
 		allowArmed = false,
 		description = 'Expert tool for intricate lock manipulation',
 		client = {
-			image = 'lockpick.png',
+			image = 'advancedlockpick.png',
 			event = 'lockpicks:UseLockpick',
 		}
 	},
@@ -495,7 +495,7 @@ return {
 		-- Tier 1
 	['tier1_kettle'] = {
 		label = 'Electric Kettle',
-		weight = 15000,
+		weight = 8000,
 		stack = true,
 		description = 'Electric Kettle',
 		client = {
@@ -882,13 +882,24 @@ return {
 	},
 	['scissors'] = {
 		label = 'Scissors',
-		weight = 250,
+		weight = 100,
 		stack = true,
 		close = true,
 		allowArmed = false,
 		description = 'Perfect for your garden',
 		client = {
 			image = 'scissors.png',
+		}
+	},
+	['sickle'] = {
+		label = 'Sickle',
+		weight = 200,
+		stack = true,
+		close = true,
+		allowArmed = false,
+		description = 'Perfect for your garden',
+		client = {
+			image = 'sickle.png',
 		}
 	},
 	['weed_bud'] = {
@@ -1084,7 +1095,7 @@ return {
 	-- Money Laundry
 	['money_roll'] = {
 		label = 'Money Roll',
-		weight = 0,
+		weight = 0.5,
 		stack = true,
 		description = 'Medium of exchange and unit of value used in transactions',
 		client = {
@@ -1093,7 +1104,7 @@ return {
 	},
 	['money_unrolled'] = {
 		label = 'Unrolled Money',
-		weight = 0,
+		weight = 0.5,
 		stack = true,
 		description = 'Medium of exchange and unit of value used in transactions',
 		client = {
@@ -1102,7 +1113,7 @@ return {
 	},
 	['money_packed'] = {
 		label = 'Packed Money',
-		weight = 0,
+		weight = 0.5,
 		stack = true,
 		description = 'Medium of exchange and unit of value used in transactions',
 		client = {
@@ -1111,7 +1122,7 @@ return {
 	},
 	['money'] = {
 		label = 'Money',
-		weight = 0,
+		weight = 0.5,
 		stack = true,
 		description = 'Medium of exchange and unit of value used in transactions',
 		client = {
@@ -1549,11 +1560,20 @@ return {
 			usetime = 1000
 		}
 	},
+	['chu_visitor_pass'] = {
+		label = 'Visitor Pass',
+		weight = 100,
+		stack = true,
+		description = 'CHU Visitor Pass',
+		client = {
+			image = 'chu_visitor_pass.png',
+		}
+	},
 	-- cards / permits / licenses / badges
 	['id_card'] = {
 		label = 'ID Card',
 		weight = 0,
-		stack = false,
+		stack = true,
 		close = true,
 		allowArmed = false,
 		description = 'Official document verifying identity and personal information',
@@ -1564,7 +1584,7 @@ return {
 	['license_driver'] = {
 		label = 'Driver License',
 		weight = 0,
-		stack = false,
+		stack = true,
 		close = true,
 		allowArmed = false,
 		description = 'Official document granting legal permission to operate a motor vehicle',
@@ -1575,7 +1595,7 @@ return {
 	['license_pilot'] = {
 		label = 'Pilot License',
 		weight = 0,
-		stack = false,
+		stack = true,
 		close = true,
 		allowArmed = false,
 		description = 'Official document granting legal permission to operate aircraft',
@@ -1586,7 +1606,7 @@ return {
 	['license_boating'] = {
 		label = 'Boating License',
 		weight = 0,
-		stack = false,
+		stack = true,
 		close = true,
 		allowArmed = false,
 		description = 'Official permit allowing legal operation of a boat',
@@ -1597,7 +1617,7 @@ return {
 	['license_weapon'] = {
 		label = 'Weapon License',
 		weight = 0,
-		stack = false,
+		stack = true,
 		close = true,
 		allowArmed = false,
 		description = 'Legal permit for firearm possession',
@@ -1608,7 +1628,7 @@ return {
 	['license_hunting'] = {
 		label = 'Hunting License',
 		weight = 0,
-		stack = false,
+		stack = true,
 		close = true,
 		allowArmed = false,
 		description = 'Official permit allowing legal hunting activities',
@@ -1619,7 +1639,7 @@ return {
 	['license_fishing'] = {
 		label = 'Fishing License',
 		weight = 0,
-		stack = false,
+		stack = true,
 		close = true,
 		allowArmed = false,
 		description = 'Official permit allowing legal fishing activities',
@@ -1630,7 +1650,7 @@ return {
 	['badge_government'] = {
 		label = 'Government Badge',
 		weight = 0,
-		stack = false,
+		stack = true,
 		close = true,
 		allowArmed = false,
 		description = 'Official badge of official authority and service',
@@ -1641,7 +1661,7 @@ return {
 	['badge_police'] = {
 		label = 'Police Badge',
 		weight = 0,
-		stack = false,
+		stack = true,
 		close = true,
 		allowArmed = false,
 		description = 'Official badge granting law enforcement authority',
@@ -1652,7 +1672,7 @@ return {
 	['badge_firefighter'] = {
 		label = 'Fire Fighter Badge',
 		weight = 0,
-		stack = false,
+		stack = true,
 		close = true,
 		allowArmed = false,
 		description = 'Official badge symbolizes courage and service',
@@ -1663,7 +1683,7 @@ return {
 	['badge_hospital'] = {
 		label = 'Hospital Badge',
 		weight = 0,
-		stack = false,
+		stack = true,
 		close = true,
 		allowArmed = false,
 		description = 'Official badge grants access and identifies medical personnel.',
@@ -1674,7 +1694,7 @@ return {
 	['badge_judge'] = {
 		label = 'Judge Badge',
 		weight = 0,
-		stack = false,
+		stack = true,
 		close = true,
 		allowArmed = false,
 		description = 'Official badge of judicial authority',
@@ -1685,7 +1705,7 @@ return {
 	['badge_lawyer'] = {
 		label = 'Lawyer Badge',
 		weight = 0,
-		stack = false,
+		stack = true,
 		close = true,
 		allowArmed = false,
 		description = 'Official badge of legal expertise and advocacy.',
@@ -1716,7 +1736,7 @@ return {
 		}
 	},
 	['black_usb'] = {
-		label = 'Black USB',
+		label = 'Illgal Black USB',
 		weight = 50,
 		stack = true,
 		description = '',
@@ -1911,8 +1931,8 @@ return {
 	-- ss_fuel
 	['jerrycan'] = {
 		label = 'Jerrycan',
-		weight = 0,
-		stack = false,
+		weight = 300,
+		stack = true,
 		close = true,
 		allowArmed = false,
 		description = 'A Jerrycan to carry Fuel with you',
@@ -1922,7 +1942,7 @@ return {
 	},
 	['power_bank_vehicle'] = {
 		label = 'EV Charger',
-		weight = 0,
+		weight = 300,
 		stack = false,
 		close = true,
 		allowArmed = false,
@@ -1988,7 +2008,7 @@ return {
 	-- armors
 	['armour'] = {
 		label = 'Bulletproof Vest',
-		weight = 3000,
+		weight = 500,
 		stack = false,
 		close = true,
 		allowArmed = false,
@@ -1999,7 +2019,7 @@ return {
 	},
 	['policebriarmour'] = {
 		label = 'BRI Kevlar',
-		weight = 3000,
+		weight = 500,
 		stack = false,
 		close = true,
 		allowArmed = false,
@@ -2010,7 +2030,7 @@ return {
 	},
 	['policehcarmour'] = {
 		label = 'HC Police Kevlar',
-		weight = 3000,
+		weight = 500,
 		stack = false,
 		close = true,
 		allowArmed = false,
@@ -2021,7 +2041,7 @@ return {
 	},
 	['policearmour'] = {
 		label = 'Police Kevlar',
-		weight = 3000,
+		weight = 500,
 		stack = false,
 		close = true,
 		allowArmed = false,
@@ -2029,6 +2049,18 @@ return {
 		client = {
 			anim = { dict = 'clothingshirt', clip = 'try_shirt_positive_d' },
 			usetime = 3500
+		}
+	},
+	['armband'] = {
+		label = 'Police Arm Band',
+		weight = 100,
+		stack = true,
+		close = true,
+		allowArmed = false,
+		close = true,
+		description = 'Police Armband',
+		client = {
+			image = 'armband.png',
 		}
 	},
 	['gps_tracker'] = {
@@ -2045,6 +2077,16 @@ return {
 			image = 'gps_tracker.png',
 		}
     },
+	['mdt'] = {
+		label = ' Police MDT',
+		weight = 200,
+		stack = true,
+		close = true,
+		allowArmed = false,
+		client = {
+			export = 'ss_mdtpolice.openPoliceMDT'
+		}
+	},
 	-- ss_businesses
 	-- CHILLSPOT
 	['tobacco'] = {
@@ -3524,7 +3566,7 @@ return {
 		}
 	},
 	---- Burgershot
-	------ BS Sellable Items
+	------ Sellable Items
 	['burger_chicken'] = {
 		label = 'Chicken Burger',
 		weight = 250,
@@ -3838,7 +3880,7 @@ return {
 	},
 	-- ss_mechanic
 	['toolsbox'] = {
-		label = 'Advanced Repairkit',
+		label = 'Tools Box',
 		weight = 3000,
 		stack = true,
 		close = true,
@@ -3885,7 +3927,7 @@ return {
 		}
 	},
 	['repairkit'] = {
-		label = 'Vehicle Window',
+		label = 'Repair Kit',
 		weight = 1000,
 		stack = true,
 		close = true,
@@ -4000,7 +4042,7 @@ return {
 	},
 	['jammer'] = {
 		label = 'Jammer',
-		weight = 2500,
+		weight = 500,
 		stack = false,
 		close = true,
 		allowArmed = false,
@@ -4011,7 +4053,7 @@ return {
 	},
 	['warrant_apartment'] = {
 		label = 'Search Warrant',
-		weight = 2500,
+		weight = 100,
 		stack = false,
 		description = 'Search Apartment Warrant',
 		client = {
@@ -4020,7 +4062,7 @@ return {
 	},
 	['warrant_warehouse'] = {
 		label = 'Search Warrant',
-		weight = 2500,
+		weight = 100,
 		stack = false,
 		description = 'Search Warehouse Warrant',
 		client = {
@@ -4029,7 +4071,7 @@ return {
 	},
 	['warrant_lab'] = {
 		label = 'Search Warrant',
-		weight = 2500,
+		weight = 100,
 		stack = false,
 		description = 'Search Lab Warrant',
 		client = {
@@ -4038,11 +4080,31 @@ return {
 	},
 	['inmate_visit_permission'] = {
 		label = 'Visit Permission',
-		weight = 2500,
+		weight = 100,
 		stack = false,
 		description = 'Inmate Visit Permission',
 		client = {
 			image = 'inmate_visit_permission.png',
+		}
+	},
+	['uv_flashlight'] = {
+		label = 'UV Flashlight',
+		weight = 100,
+		stack = true,
+		close = true,
+		description = 'Ultraviolet Flashlight',
+		client = {
+			image = 'uv_flashlight.png',
+		}
+	},
+	['gsrkit'] = {
+		label = 'GSR Kit',
+		weight = 100,
+		stack = true,
+		close = true,
+		description = 'GSR Kit',
+		client = {
+			image = 'gsrkit.png',
 		}
 	},
 	['nightvision'] = {
@@ -4061,7 +4123,7 @@ return {
 	},
 	['helmet_flashlight'] = {
 		label = 'Helmet Flashlight',
-		weight = 100,
+		weight = 50,
 		stack = false,
 		close = true,
 		allowArmed = false,
@@ -4072,6 +4134,16 @@ return {
 				TriggerEvent('ss_policejob:turnOffFlashLight')
 			end,
 		}
+	},
+	-- Black Items
+	['black_coin'] = {
+		label = 'Black Coin',
+		weight = 100,
+		stack = true,
+		description = 'Black Coin crafted by Black Organization',
+		client = {
+			image = 'black_coin.png',
+		},
 	},
 	-- ss_jail
 	['beans_bowl'] = {
