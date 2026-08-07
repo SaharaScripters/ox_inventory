@@ -63,9 +63,13 @@ function server.setPlayerInventory(player, data)
 
     if inv then
         inv.player = server.setPlayerData(player)
-
+        
         repeat
             inv.player.ped = GetPlayerPed(player.source)
+        
+            if inv.player.ped == 0 then
+                Wait(0)
+            end
         until inv.player.ped ~= 0
 
         if server.syncInventory then server.syncInventory(inv) end
