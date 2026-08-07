@@ -63,10 +63,10 @@ function server.setPlayerInventory(player, data)
 
     if inv then
         inv.player = server.setPlayerData(player)
-        
+
         repeat
             inv.player.ped = GetPlayerPed(player.source)
-        
+
             if inv.player.ped == 0 then
                 Wait(0)
             end
@@ -183,9 +183,7 @@ local function openInventory(source, invType, data, ignoreSecurityChecks)
                 if plate then
                     if server.trimplate then plate = string.strtrim(plate) end
 
-                    if not data.id then
-                        data.id = (invType == 'glovebox' and 'glove' or 'trunk') .. plate
-                    end
+                    data.id = (invType == 'glovebox' and 'glove' or 'trunk') .. plate
                 end
 
                 data.type = invType
